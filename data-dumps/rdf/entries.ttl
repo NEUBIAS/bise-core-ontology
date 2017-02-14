@@ -95,7 +95,7 @@
 
 <http://biii.org/entry/id:First%20we%20want%20to%20stress%20one%20point:%20Try%20to%20understand%20what%20is%20happening,%20and%20do%20not%20be%20satisfied%20with%20just%20any%20answer%20you%20obtain!%20It%20is%20by%20far%20better%20that%20you%20seriously%20wor%20on%20half%20of%20the%20exercises%20and%20learn%20some%20image%20processing,%20than%20that%20you%20go%20through%20all%20of%20them,%20but%20understand%20nothing.%20This%20is%20a%20waste%20of%20your%20time.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.cb.uu.se/%7Ecris/Documents/ipcourse.pdf> .
+        biii:hasPaper  <http://www.cb.uu.se/%7Ecris/Documents/ipcourse.pdf> .
 
 <http://biii.org/entry/id:2103>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -105,7 +105,7 @@
 
 <http://biii.org/entry/id:Caltech,%20MBL%20Physiology%20Course%202008>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.rpgroup.caltech.edu/courses/PBoC%20ASTAR/files_2011/Matlab/Image%20Analysis%20with%20Matlab.pdf> .
+        biii:hasPaper  <http://www.rpgroup.caltech.edu/courses/PBoC%20ASTAR/files_2011/Matlab/Image%20Analysis%20with%20Matlab.pdf> .
 
 <http://biii.org/entry/id:767>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -137,7 +137,7 @@
 
 <http://biii.org/entry/id:FIJI%20scripting%20editor%20and%20can%20thus%20be%20used%20to%20write%20ImageJ%20Macros%20(see%20http://fiji.sc/wiki/index.php/Jython_Scripting).>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.jython.org/> .
+        biii:hasPaper  <http://www.jython.org/> .
 
 <http://biii.org/entry/id:2108>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -4344,7 +4344,7 @@
 
 <http://biii.org/entry/id:A%20starting%20point%20for%20beginners%20and%20advanced%20when%20they%20encounter%20a%20new%20challenge%20or%20as%20a%20place%20to%20get%20ideas%20from.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.imageprocessingblog.com> .
+        biii:hasPaper  <http://www.imageprocessingblog.com> .
 
 <http://biii.org/entry/id:2259>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -4360,7 +4360,7 @@
 
 <http://biii.org/entry/id:The%20overall%20purpose%20of%20this%20book%20is%20to%20provide%20a%20path%20for%20busy%20biologists%20into%20understanding%20fluorescence%20images%20and%20how%20to%20analyze%20them,%20using%20the%20free,%20open-source%20software%20Fiji%20to%20explore%20the%20concepts.%20No%20background%20in%20image%20analysis%20or%20computer%20programming%20is%20assumed,%20nor%20is%20the%20maths%20here%20very%20deep.%20Specifically,%20if%20you%20are%20at%20ease%20with%20arithmetic,%20means,%20medians,%20standard%20deviations%20and%20the%20occasional%20square%20root,%20this%20is%20enough.%20There%20are%20a%20large%20number%20of%20questions%20and%20practicals%20strewn%20throughout%20the%20pages.%20In%20most%20cases,%20my%20suggested%20solutions%20are%20provided%20at%20the%20end%20of%20each%20chapter.%20You%20may%20well%20%0Cfind%20alternative%20or%20better%20solutions.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://go.qub.ac.uk/imagej-intro> .
+        biii:hasPaper  <http://go.qub.ac.uk/imagej-intro> .
 
 <http://biii.org/entry/id:2286>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -4571,7 +4571,7 @@
 
 <http://biii.org/entry/id:%3C/cite%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://bio7.org/> .
+        biii:hasPaper  <http://bio7.org/> .
 
 <http://biii.org/entry/id:2265>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -4632,7 +4632,7 @@
 
 <http://biii.org/entry/id:%3C/cite%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.endrov.net/> .
+        biii:hasPaper  <http://www.endrov.net/> .
 
 <http://biii.org/entry/id:2273>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -4666,7 +4666,7 @@
 
 <http://biii.org/entry/id:%3C/ul%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.bioconductor.org/packages/release/bioc/html/EBImage.html> .
+        biii:hasPaper  <http://www.bioconductor.org/packages/release/bioc/html/EBImage.html> .
 
 <http://biii.org/entry/id:2299>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -4997,7 +4997,7 @@
 
 <http://biii.org/entry/id:See%20%3Ca%20href=%22http://rsbweb.nih.gov/ij/plugins/track/track.html%22%3Eplugin%20page%20in%20ImageJ%20website%3C/a%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Manual_Tracking> .
+        biii:hasPaper  <http://fiji.sc/Manual_Tracking> .
 
 <http://biii.org/entry/id:2244>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5061,7 +5061,7 @@
 
 <http://biii.org/entry/id:%20%20*%20Machine%20Learning%20in%20Python>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.cellcognition.org> .
+        biii:hasPaper  <http://www.cellcognition.org> .
 
 <http://biii.org/entry/id:2316>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5073,7 +5073,7 @@
 
 <http://biii.org/entry/id:A%20short%20tutorial%20is%20available%20in%20the%20plugin%20web%20page%20(above).%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:https://sites.google.com/site/qingzongtseng/find-focus> .
+        biii:hasPaper  <https://sites.google.com/site/qingzongtseng/find-focus> .
 
 <http://biii.org/entry/id:2317>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5681,7 +5681,7 @@
 
 <http://biii.org/entry/id:[MATLAB%20Image%20Processing%20Toolbox](http://biii.info/node/2276)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://easerver.caltech.edu/wordpress/schnitzcells/> .
+        biii:hasPaper  <http://easerver.caltech.edu/wordpress/schnitzcells/> .
 
 <http://biii.org/entry/id:2319>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5690,7 +5690,7 @@
 
 <http://biii.org/entry/id:OpenMOLE%20(Open%20MOdeL%20Experiment)%20is%20a%20workflow%20engine%20designed%20to%20leverage%20the%20computing%20power%20of%20distributed%20execution%20environments%20for%20naturally%20parallel%20processes.%20A%20process%20is%20told%20naturally%20parallel%20if%20the%20same%20computation%20runs%20many%20times%20for%20a%20set%20of%20different%20inputs,%20such%20as%20model%20experiment%20or%20data%20processing%E2%80%A6%20It%20is%20free%20software%20distributed%20under%20the%20AGPLv3%20free%20software%20license.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.openmole.org/> .
+        biii:hasPaper  <http://www.openmole.org/> .
 
 <http://biii.org/entry/id:2320>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5738,7 +5738,7 @@
 
 <http://biii.org/entry/id:[Avizo%20Fire](http://www.vsg3d.com/avizo/fire)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.vsg3d.com/avizo/overview> .
+        biii:hasPaper  <http://www.vsg3d.com/avizo/overview> .
 
 <http://biii.org/entry/id:2324>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5754,7 +5754,7 @@
 
 <http://biii.org/entry/id:CATMAID%20is%20intended%20to%20serve%20as%20data%20sharing%20platform%20for%20biologists%20using%20high-resolution%20imaging%20techniques%20to%20probe%20large%20specimens.%20Any%20high-throughput,%20high-content%20imaging%20project%20such%20as%20gene%20expression%20pattern%20screens%20would%20benefit%20from%20the%20interface%20for%20data%20sharing%20and%20annotation.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fly.mpi-cbg.de/~saalfeld/catmaid/> .
+        biii:hasPaper  <http://fly.mpi-cbg.de/~saalfeld/catmaid/> .
 
 <http://biii.org/entry/id:2271>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5827,7 +5827,7 @@
 
 <http://biii.org/entry/id:*%20%3Chttp://math.hawaii.edu/lab/197/octave.pdf%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.gnu.org/software/octave/> .
+        biii:hasPaper  <http://www.gnu.org/software/octave/> .
 
 <http://biii.org/entry/id:2269>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5951,7 +5951,7 @@
 
 <http://biii.org/entry/id:%3C/ul%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://icy.bioimageanalysis.org> .
+        biii:hasPaper  <http://icy.bioimageanalysis.org> .
 
 <http://biii.org/entry/id:1436>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -5983,7 +5983,7 @@
 
 <http://biii.org/entry/id:A%20complete%20environment%20will%20require%20installing%20multiple%20packages.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://mahotas.rtfd.org/> .
+        biii:hasPaper  <http://mahotas.rtfd.org/> .
 
 <http://biii.org/entry/id:2277>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6076,7 +6076,7 @@
 
 <http://biii.org/entry/id:%3C/ul%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://itk.org/> .
+        biii:hasPaper  <http://itk.org/> .
 
 <http://biii.org/entry/id:2329>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6113,7 +6113,7 @@
 
 <http://biii.org/entry/id:%3Chttp://www.mediacy.com/index.aspx?page=Products%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.mediacy.com/index.aspx?page=Image_Pro_Software> .
+        biii:hasPaper  <http://www.mediacy.com/index.aspx?page=Image_Pro_Software> .
 
 <http://biii.org/entry/id:2331>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6158,7 +6158,7 @@
 
 <http://biii.org/entry/id:The%20goal%20of%20XuvTools%20is%20to%20provide%20tools,%20that%20combine%20multiple%20microscopic%20recordings%20to%20obtain%20a%20larger%20field%20of%20view%20(%E2%80%9Cstitching%E2%80%9D)%20and%20a%20higher%20dynamic%20range%20(%E2%80%9CHDR%E2%80%9D%20recombination),%20or%20better%20resolution%20(multi%20view%20reconstruction),%20and%20to%20make%20these%20tools%20publicly%20available.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.xuvtools.org> .
+        biii:hasPaper  <http://www.xuvtools.org> .
 
 <http://biii.org/entry/id:2337>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6222,7 +6222,7 @@
 
 <http://biii.org/entry/id:Wagner,%20T%20and%20Lipinski,%20H%202013.%20IJBlob:%20An%20ImageJ%20Library%20for%20Connected%20Component%20Analysis%20and%20Shape%20Analysis.%20Journal%20of%20Open%20Research%20Software%201(1):e6,%20DOI:%20%3Chttp://dx.doi.org/10.5334/jors.ae%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:https://code.google.com/p/ijblob/> .
+        biii:hasPaper  <https://code.google.com/p/ijblob/> .
 
 <http://biii.org/entry/id:2229>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6328,7 +6328,7 @@
 
 <http://biii.org/entry/id:This%20tool%20is%20very%20useful%20when%20creating%20custom%20work%20flows%20integrating%20multiple%20components.%20Each%20component%20can%20be%20linked%20to%20a%20button%20for%20a%20more%20streamlined%20and%20accessible%20workflow.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start> .
+        biii:hasPaper  <http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start> .
 
 <http://biii.org/entry/id:2366>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6354,7 +6354,7 @@
 
 <http://biii.org/entry/id:Examples%20of%20available%20categories%20of%20operators%20:%20filtering,%20edge%20detection,%20mathematical%20morphology,%20segmentation,%20Frequency%20operations,%20mathematical/logical%20operations,%20measurements...>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.adcis.net/en/Image-Processing-And-Analysis-Software-And-Custom-Engineering-Developments.html> .
+        biii:hasPaper  <http://www.adcis.net/en/Image-Processing-And-Analysis-Software-And-Custom-Engineering-Developments.html> .
 
 <http://biii.org/entry/id:2370>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6417,7 +6417,7 @@
 
 <http://biii.org/entry/id:%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://ilastik.org/documentation/counting/counting.html> .
+        biii:hasPaper  <http://ilastik.org/documentation/counting/counting.html> .
 
 <http://biii.org/entry/id:2387>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6447,7 +6447,7 @@
 
 <http://biii.org/entry/id:Image%20pre-processing:%20some%20pre-processing%20is%20included%20in%20the%20plugin%20to%20facilitate%20the%20segmentation%20task.%20However,%20other%20pre-preprocessing%20may%20be%20required%20depending%20on%20the%20input%20image.%20It%20is%20up%20to%20the%20user%20to%20decide%20what%20filtering%20may%20be%20most%20appropriate%20upstream.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Morphological_Segmentation> .
+        biii:hasPaper  <http://fiji.sc/Morphological_Segmentation> .
 
 <http://biii.org/entry/id:2383>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6539,7 +6539,7 @@
 
 <http://biii.org/entry/id:The%20implemented%20algorithm%20is%20based%20on%20the%20assumption%20that,%20compared%20to%20the%20background%20region,%20object%20(foreground)%20regions%20are%20small.%20The%20plugin%20builds%20local%20histograms%20and%20assumes%20the%20most%20occuring%20intensity%20to%20be%20part%20of%20the%20background.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://mosaic.mpi-cbg.de/?q=downloads/imageJ> .
+        biii:hasPaper  <http://mosaic.mpi-cbg.de/?q=downloads/imageJ> .
 
 <http://biii.org/entry/id:2402>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6659,7 +6659,7 @@
 
 <http://biii.org/entry/id:[Source%20code](https://github.com/trakem2/register_virtual_stack_slices)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Register_Virtual_Stack_Slices> .
+        biii:hasPaper  <http://fiji.sc/Register_Virtual_Stack_Slices> .
 
 <http://biii.org/entry/id:2421>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -6994,7 +6994,7 @@
 
 <http://biii.org/entry/id:%3EThe%20scikit-image%20SciKit%20(toolkit%20for%20SciPy)%20extends%20scipy.ndimage%20to%20provide%20a%20versatile%20set%20of%20image%20processing%20routines.%20It%20is%20written%20in%20the%20Python%20language.%20This%20SciKit%20is%20developed%20by%20the%20SciPy%20community.%20All%20contributions%20are%20most%20welcome!>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://scikit-image.org/> .
+        biii:hasPaper  <http://scikit-image.org/> .
 
 <http://biii.org/entry/id:2413>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7019,7 +7019,7 @@
 
 <http://biii.org/entry/id:Centre%20de%20Recherche%20Public%20Henri%20Tudor>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper    <http://biii.org/paper/id:Volker%20Baecker> ;
+        biii:hasPaper    <Volker%20Baecker> ;
         biii:hasCurator  <http://biii.org/curator/id:%20ISBN:%202-919941-18-6> .
 
 <http://biii.org/entry/id:2441>
@@ -7213,7 +7213,7 @@
 
 <http://biii.org/entry/id:%3EThe%20user%20can%20handle%20simultaneously%20large%20data%20sets%20of%20raw%20data,%20visualize%20fluorescence%20recovery%20curves,%20exclude%20low%20quality%20data,%20perform%20data%20normalization,%20extract%20quantitative%20parameters,%20perform%20batch%20analysis%20and%20save%20the%20resulting%20data%20and%20figures%20for%20further%20use.%20Our%20tool%20is%20implemented%20as%20a%20single-screen%20Graphical%20User%20Interface%20(GUI)%20and%20is%20highly%20interactive,%20as%20it%20permits%20parameterization%20and%20visual%20data%20quality%20assessment%20at%20various%20points%20during%20the%20analysis.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://bioinformatics.oxfordjournals.org/content/28/13/1800.full> .
+        biii:hasPaper  <http://bioinformatics.oxfordjournals.org/content/28/13/1800.full> .
 
 <http://biii.org/entry/id:2468>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7368,7 +7368,7 @@
 
 <http://biii.org/entry/id:The%20syntax%20includes%20many%20constructs%20from%20Fortran%20and%20some%20from%20C.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.exelisvis.com/ProductsServices/IDL.aspx> .
+        biii:hasPaper  <http://www.exelisvis.com/ProductsServices/IDL.aspx> .
 
 <http://biii.org/entry/id:2488>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7424,7 +7424,7 @@
 
 <http://biii.org/entry/id:The%20Wolfram%20Language%20(popularly%20referred%20to%20as%20Mathematica,%20or%20simply%20M)%20is%20a%20general%20multi-paradigm%20programming%20language%20developed%20by%20Wolfram%20Research,%20that%20serves%20as%20the%20main%20interfacing%20language%20for%20Mathematica%20and%20the%20Wolfram%20Programming%20Cloud.%20It%20is%20designed%20to%20be%20as%20general%20as%20possible,%20with%20emphasis%20on%20symbolic%20computation,%20functional%20programming,%20and%20rule-based%20programming.%20It%20is%20built%20to%20represent%20arbitrary%20structures%20and%20data.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.wolfram.com/language/> .
+        biii:hasPaper  <http://www.wolfram.com/language/> .
 
 <http://biii.org/entry/id:2486>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7467,7 +7467,7 @@
 
 <http://biii.org/entry/id:The%20original%20paper%20is%20%3Cbib%3E2449%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Auto_Threshold#Moments> .
+        biii:hasPaper  <http://fiji.sc/Auto_Threshold#Moments> .
 
 <http://biii.org/entry/id:2494>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7633,7 +7633,7 @@
 
 <http://biii.org/entry/id:Can%20be%20run%20in%20batch%20mode.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://rsbweb.nih.gov/ij/plugins/texture.html> .
+        biii:hasPaper  <http://rsbweb.nih.gov/ij/plugins/texture.html> .
 
 <http://biii.org/entry/id:2520>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7752,7 +7752,7 @@
 
 <http://biii.org/entry/id:ages,%20analyse%20textures%20or%20simplify%20segmentation%20like%20tasks.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.math.univ-toulouse.fr/~weiss/PageCodes.html> .
+        biii:hasPaper  <http://www.math.univ-toulouse.fr/~weiss/PageCodes.html> .
 
 <http://biii.org/entry/id:2537>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7819,7 +7819,7 @@
 
 <http://biii.org/entry/id:%3ECtrax%20is%20an%20open-source,%20freely%20available,%20machine%20vision%20program%20for%20estimating%20the%20positions%20and%20orientations%20of%20many%20walking%20flies,%20maintaining%20their%20individual%20identities%20over%20long%20periods%20of%20time.%20It%20was%20designed%20to%20allow%20high-throughput,%20quantitative%20analysis%20of%20behavior%20in%20freely%20moving%20flies.%20Our%20primary%20goal%20in%20this%20project%20is%20to%20provide%20quantitative%20behavior%20analysis%20tools%20to%20the%20neuroethology%20community,%20thus%20we've%20endeavored%20to%20make%20the%20system%20adaptable%20to%20other%20labs'%20setups.%20We%20have%20assessed%20the%20quality%20of%20the%20tracking%20results%20for%20our%20setup,%20and%20found%20that%20it%20can%20maintain%20fly%20identities%20indefinitely%20with%20minimal%20supervision,%20and%20on%20average%20for%201.5%20fly-hours%20automatically.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://ctrax.sourceforge.net/> .
+        biii:hasPaper  <http://ctrax.sourceforge.net/> .
 
 <http://biii.org/entry/id:2547>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7885,7 +7885,7 @@
 
 <http://biii.org/entry/id:%20%20ConfoMap%20on%20Carl%20Zeiss'%20microscopes>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.digitalsurf.fr/en/mntkey.html> .
+        biii:hasPaper  <http://www.digitalsurf.fr/en/mntkey.html> .
 
 <http://biii.org/entry/id:2557>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -7997,7 +7997,7 @@
 
 <http://biii.org/entry/id:Fluoimager%E2%84%A2>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.visiopharm.com> .
+        biii:hasPaper  <http://www.visiopharm.com> .
 
 <http://biii.org/entry/id:2466>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -8068,7 +8068,7 @@
 
 <http://biii.org/entry/id:It%20is%20focused%20on%20quantification%20of%20spatial%20properties%20of%20many%20objects%20and%20their%20mutual%20spatial%20relations%20in%20a%20collection%20of%20many%203D%20images.%20%20It%20can%20be%20used%20for%20analysis%20of%20a%20collection%20of%202D%20images%20or%20time%20lapse%20series%20of%202D%20or%203D%20images%20as%20well.%20It%20has%20a%20modular%20design%20and%20is%20extensible%20via%20plug-ins.%20It%20is%20a%20stand-alone,%20easy%20to%20install%20application%20written%20in%20C++%20language.%20The%20GUI%20is%20written%20using%20cross-platform%20wxWidgets%20library.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://cbia.fi.muni.cz/projects/acquiarium.html> .
+        biii:hasPaper  <http://cbia.fi.muni.cz/projects/acquiarium.html> .
 
 <http://biii.org/entry/id:2569>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -8613,7 +8613,7 @@
 
 <http://biii.org/entry/id:We%20are%20not%20joking,%20because%20many%20workflows%20are%20human-written%20text%20and%20called%20%22instructions%22,%20%22manuals%22%20or%20tutorials.%20As%20we%20think%20that%20workflow%20could%20also%20take%20those%20forms%20beside%20scripting%20languages,%20we%20added%20human%20language%20as%20one%20of%20those%20listed%20in%20%22languages%22%20in%20biii.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://en.wikipedia.org/wiki/Language> .
+        biii:hasPaper  <http://en.wikipedia.org/wiki/Language> .
 
 <http://biii.org/entry/id:2531>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -8752,7 +8752,7 @@
 
 <http://biii.org/entry/id:%3Cbib%3E2591%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.sussex.ac.uk/gdsc/intranet/microscopy/imagej/findfoci> .
+        biii:hasPaper  <http://www.sussex.ac.uk/gdsc/intranet/microscopy/imagej/findfoci> .
 
 <http://biii.org/entry/id:2386>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -9338,7 +9338,7 @@
 
 <http://biii.org/entry/id:Inside%20the%20workflow%20zip%20file%20is%20multiple%20folders%20called%20%22Nodes%22,%20each%20containing%20parameter%20settings%20for%20components%20(functions,%20or%20image%20processing%20algorithm%20implementations).%20In%20a%20sense,%20KNIME%20workflow%20is%20a%20structured%20set%20of%20XML%20files%20that%20specifies%20the%20processing%20parameters%20and%20the%20order%20of%20processing.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://tech.knime.org/getting-started> .
+        biii:hasPaper  <http://tech.knime.org/getting-started> .
 
 <http://biii.org/entry/id:2491>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -9388,7 +9388,7 @@
 
 <http://biii.org/entry/id:A%20primer%20for%20using%20this%20class%20in%20Jython%20script%20is%20in%20[CMCI%20Jython/Fiji%20cookbook:%20FeatureJ](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#laplacian)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagescience.org/meijering/software/featurej/laplacian/> .
+        biii:hasPaper  <http://imagescience.org/meijering/software/featurej/laplacian/> .
 
 <http://biii.org/entry/id:1959>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -9476,7 +9476,7 @@
 <http://biii.org/entry/id:%3Cem%3ETwo%20macros%20are%20available,%20one%20using%20edge%20detection,%20the%20second%20one%20using%20background%20subtraction.%3C/em%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
         rdfs:label       " Lionel Larue" ;
-        biii:hasPaper    <http://biii.org/paper/id:%20Fabrice%20P%20Cordeli%C3%A8res> ;
+        biii:hasPaper    <%20Fabrice%20P%20Cordeli%C3%A8res> ;
         biii:hasCurator  <http://biii.org/curator/id:%20William%20J%20Ashby> .
 
 <http://biii.org/entry/id:2416>
@@ -9513,7 +9513,7 @@
 
 <http://biii.org/entry/id:Operator%20Index:%20%3Chttps://clouard.users.greyc.fr/Pandore/programmes/en/index_operatorsP0.html%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:https://clouard.users.greyc.fr/Pandore/> .
+        biii:hasPaper  <https://clouard.users.greyc.fr/Pandore/> .
 
 <http://biii.org/entry/id:2610>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -9535,7 +9535,7 @@
 
 <http://biii.org/entry/id:Previously%20(?)%20known%20as%20[3D%20ImageJ%20Suite](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_ij_suite:start).>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://icy.bioimageanalysis.org/plugin/mcib3d%20library> .
+        biii:hasPaper  <http://icy.bioimageanalysis.org/plugin/mcib3d%20library> .
 
 <http://biii.org/entry/id:2611>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -9634,7 +9634,7 @@
 
 <http://biii.org/entry/id:ImageJ2%20%3Chttp://imagej.net%3E%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagej.net> .
+        biii:hasPaper  <http://imagej.net> .
 
 <http://biii.org/entry/id:2618>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -9710,7 +9710,7 @@
 
 <http://biii.org/entry/id:-%20Hessian%20Orientation>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://bigwww.epfl.ch/thevenaz/differentials/> .
+        biii:hasPaper  <http://bigwww.epfl.ch/thevenaz/differentials/> .
 
 <http://biii.org/entry/id:1750>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10011,7 +10011,7 @@
 
 <http://biii.org/entry/id:(The%20class%20deals%20mainly%20with%20fluorescence%20images/micrographs%20rather%20than%20medical%20images,%20but%20the%20concepts%20and%20procedures%20are%20often%20similar)%20%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://microscopy.duke.edu/learn/image_analysis.html> .
+        biii:hasPaper  <http://microscopy.duke.edu/learn/image_analysis.html> .
 
 <http://biii.org/entry/id:2614>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10445,7 +10445,7 @@
 
 <http://biii.org/entry/id:See%20%3Chttp://bio.cse.ohio-state.edu/CellTrack/%3E%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://bio.cse.ohio-state.edu/CellTrack/> .
+        biii:hasPaper  <http://bio.cse.ohio-state.edu/CellTrack/> .
 
 <http://biii.org/entry/id:2630>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10474,7 +10474,7 @@
 
 <http://biii.org/entry/id:See%20%3Cbib%3E2615%3C/bib%3E.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Ridge_Detection> .
+        biii:hasPaper  <http://fiji.sc/Ridge_Detection> .
 
 <http://biii.org/entry/id:2632>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10701,7 +10701,7 @@
 
 <http://biii.org/entry/id:-%20Smooth%20to%20Average%22%20filter.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.cellprofiler.org/CPmanual/Smooth.html> .
+        biii:hasPaper  <http://www.cellprofiler.org/CPmanual/Smooth.html> .
 
 <http://biii.org/entry/id:2634>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10808,7 +10808,7 @@
 
 <http://biii.org/entry/id:%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:spatial_statistics_2d_3d:start> .
+        biii:hasPaper  <http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:spatial_statistics_2d_3d:start> .
 
 <http://biii.org/entry/id:2637>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10880,7 +10880,7 @@
 
 <http://biii.org/entry/id:A%20faster%20implementation%20is%20available%20as%20a%20plugin%20[Skeletonize3D](http://biii.info/node/1832)%20written%20by%20Ignacio%20Arganda-Carreras.%20Pros%20of%20this%20plugin%20is%20[summarized%20here](https://imagej.nih.gov/ij/docs/guide/146-29.html#infobox:Skeletonize-vs-Skeletonize3D).>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:https://github.com/imagej/imagej1/blob/master/ij/process/BinaryProcessor.java#L101-L131> .
+        biii:hasPaper  <https://github.com/imagej/imagej1/blob/master/ij/process/BinaryProcessor.java#L101-L131> .
 
 <http://biii.org/entry/id:1832>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10907,7 +10907,7 @@
 
 <http://biii.org/entry/id:See%20%3Chttp://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Derivati.html%3E.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.imagescience.org/meijering/software/featurej/derivatives/> .
+        biii:hasPaper  <http://www.imagescience.org/meijering/software/featurej/derivatives/> .
 
 <http://biii.org/entry/id:2609>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10965,7 +10965,7 @@
 
 <http://biii.org/entry/id:*%20%20[Source%20code](https://github.com/ut666/VolViewer%20%22GitHub%20repository%22)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://cmpdartsvr3.cmp.uea.ac.uk/wiki/BanghamLab/index.php/VolViewer> .
+        biii:hasPaper  <http://cmpdartsvr3.cmp.uea.ac.uk/wiki/BanghamLab/index.php/VolViewer> .
 
 <http://biii.org/entry/id:2583>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10975,7 +10975,7 @@
 
 <http://biii.org/entry/id:Many%20of%20the%20same%20processing%20and%20analysis%20functions%20available%20in%20other%20image%20processing%20applications%20can%20be%20found%20here%20(cropping,%20resizing,%20spatial%20filters,%20Fourier%20transforms,%20segmentation%20etc.),%20and%20it%20includes%20a%20comprehensive%20html-based%20offline%20manual.%20The%20%22SoftWoRx%22%20package%20of%20GE%20Healthcare%20(formerly%20Applied%20Precision)%20was%20based%20on%20Priism/IVE.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://msg.ucsf.edu/IVE/> .
+        biii:hasPaper  <http://msg.ucsf.edu/IVE/> .
 
 <http://biii.org/entry/id:2554>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -10985,7 +10985,7 @@
 
 <http://biii.org/entry/id:A%20video%20tutorial%20is%20available%20(be%20careful%20of%20sounds,%20the%20video%20automatically%20starts!):%20[Sample%20Drift%20Correction%20Following%204D%20Confocal%20Time-lapse%20Imaging](http://www.jove.com/video/51086/sample-drift-correction-following-4d-confocal-time-lapse-imaging)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Correct_3D_drift> .
+        biii:hasPaper  <http://fiji.sc/Correct_3D_drift> .
 
 <http://biii.org/entry/id:2536>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11050,7 +11050,7 @@
 
 <http://biii.org/entry/id:This%20is%20a%20scripting%20example%20to%20process%20stack%20of%20images%20using%20[AnalyzeSkeleton3D](http://biii.info/node/1976)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://fiji.sc/Analyze_Skeleton_2D_time_series> .
+        biii:hasPaper  <http://fiji.sc/Analyze_Skeleton_2D_time_series> .
 
 <http://biii.org/entry/id:2640>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11063,7 +11063,7 @@
 
 <http://biii.org/entry/id:In%20microscopy,%20Labview%20can%20be%20used%20efficiently%20to%20perform%20any%20kind%20of%20instrument%20control,%20and%20in%20particular%20%22Feedback%20Microscopy%22%20(also%20called%20intelligent%20microscopy,%20etc...)%20where%20the%20live%20analysis%20of%20a%20captured%20image%20will%20update%20the%20target%20of%20the%20microscope%20to%20make%20it%20understand%20where%20to%20image%20efficiently.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.ni.com/labview/> .
+        biii:hasPaper  <http://www.ni.com/labview/> .
 
 <http://biii.org/entry/id:2346>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11203,7 +11203,7 @@
 
 <http://biii.org/entry/id:This%20software%20is%20e.g.%20being%20used%20by%20life%20scientists%20to%20help%20them%20better%20evaluate%20drug%20treatments%20or%20understand%20biological%20processes%20directly%20from%20whole-slide%20tissue%20images,%20by%20pathologists%20to%20share%20and%20ease%20their%20diagnosis,%20and%20by%20teachers%20and%20students%20for%20pathology%20training%20purposes.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.cytomine.be/> .
+        biii:hasPaper  <http://www.cytomine.be/> .
 
 <http://biii.org/entry/id:2275>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11243,7 +11243,7 @@
 
 <http://biii.org/entry/id:%3Cp%3E%3Cb%3ESupported%20Formats:%3C/b%3E%20hdf5,%20tiff,%20jpeg,%20png,%20bmp,%20pnm,%20gif,%20hdr,%20exr,%20sif%3C/p%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.ilastik.org/> .
+        biii:hasPaper  <http://www.ilastik.org/> .
 
 <http://biii.org/entry/id:2642>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11320,7 +11320,7 @@
 
 <http://biii.org/entry/id:The%20incessant%20development%20of%20improved%20microscopy%20imaging%20techniques,%20as%20well%20as%20the%20advent%20of%20highly%20selective%20fluorescent%20dyes%20has%20made%20possible%20the%20precise%20identification%20of%20tagged%20molecules%20in%20almost%20any%20biological%20specimen.%20Of%20particular%20interest%20are%20the%20visualization%20and%20the%20study%20of%20living%20cells,%20which%20induce%20tight%20constraints%20on%20the%20imaging%20process.%20To%20avoid%20the%20alteration%20of%20the%20sample%20and%20to%20achieve%20a%20high%20temporal%20resolution,%20low%20fluorophore%20concentrations,%20low-power%20illumination%20and%20short%20exposure%20time%20need%20to%20be%20used%20in%20practice.%20Such%20restrictions%20have%20a%20tremendous%20impact%20on%20the%20image%20quality.%20This%20is%20why%20we%20have%20recently%20introduced%20a%20new%20method,%20coined%20PURE-LET%20[1,2,3],%20for%20efficient,%20fast,%20and%20automatic%20denoising%20of%20multidimensional%20fluorescence%20microscopy%20images.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://bigwww.epfl.ch/algorithms/denoise/> .
+        biii:hasPaper  <http://bigwww.epfl.ch/algorithms/denoise/> .
 
 <http://biii.org/entry/id:2382>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11364,7 +11364,7 @@
 
 <http://biii.org/entry/id:The%20file%20has%20implemented%20both%20point%20to%20point%20and%20point%20to%20plane%20as%20well%20as%20a%20couple%20of%20other%20features%20such%20as%20extrapolation,%20weighting%20functions,%20edge%20point%20rejection,%20etc.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www2.imm.dtu.dk/~jakw/publications/bscthesis.pdf> .
+        biii:hasPaper  <http://www2.imm.dtu.dk/~jakw/publications/bscthesis.pdf> .
 
 <http://biii.org/entry/id:2649>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11388,7 +11388,7 @@
 
 <http://biii.org/entry/id:NeuronStudio%20is%20being%20developed%20at%20the%20Computational%20Neurobiology%20and%20Imaging%20Center%20(CNIC),%20a%20research%20laboratory%20at%20the%20Neuroscience%20Department%20of%20the%20Mount%20Sinai%20School%20of%20Medicine%20in%20New%20York.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://research.mssm.edu/cnic/tools-ns.html> .
+        biii:hasPaper  <http://research.mssm.edu/cnic/tools-ns.html> .
 
 <http://biii.org/entry/id:2654>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11419,7 +11419,7 @@
 
 <http://biii.org/entry/id:Example%20datasets%20are%20also%20available.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://knossostool.org/> .
+        biii:hasPaper  <http://knossostool.org/> .
 
 <http://biii.org/entry/id:2658>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11444,7 +11444,7 @@
 
 <http://biii.org/entry/id:%3Cbib%3E2662%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:https://fairsim.github.io/> .
+        biii:hasPaper  <https://fairsim.github.io/> .
 
 <http://biii.org/entry/id:2643>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11460,7 +11460,7 @@
 
 <http://biii.org/entry/id:SR-Tesseler%20software%20comes%20with%20a%20very%20simple%20and%20intuitive%20graphical%20user%20interface,%20providing%20direct%20visual%20feedback%20of%20the%20results%20and%20is%20freely%20available%20under%20GPLv3%20license.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.iins.u-bordeaux.fr/team-sibarita-SR-Tesseler> .
+        biii:hasPaper  <http://www.iins.u-bordeaux.fr/team-sibarita-SR-Tesseler> .
 
 <http://biii.org/entry/id:2665>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11640,7 +11640,7 @@
 
 <http://biii.org/entry/id:%20%3Cbib%3E2656%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagej.net/MorphoLibJ> .
+        biii:hasPaper  <http://imagej.net/MorphoLibJ> .
 
 <http://biii.org/entry/id:2650>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11662,7 +11662,7 @@
 
 <http://biii.org/entry/id:%3Cbib%3E2655%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagej.net/Fourier_Ring_Correlation_Plugin> .
+        biii:hasPaper  <http://imagej.net/Fourier_Ring_Correlation_Plugin> .
 
 <http://biii.org/entry/id:2663>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11675,7 +11675,7 @@
 
 <http://biii.org/entry/id:%3Cbib%3E2665%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://mmtg.fel.cvut.cz/simtoolbox/> .
+        biii:hasPaper  <http://mmtg.fel.cvut.cz/simtoolbox/> .
 
 <http://biii.org/entry/id:2666>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11845,7 +11845,7 @@
 
 <http://biii.org/entry/id:%3Cbib%3E2701%3C/bib%3E>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:https://sourceforge.net/projects/stabitissue/> .
+        biii:hasPaper  <https://sourceforge.net/projects/stabitissue/> .
 
 <http://biii.org/entry/id:2702>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11894,7 +11894,7 @@
 
 <http://biii.org/entry/id:The%20ViBE-Z%20database,%20atlas%20and%20software%20are%20provided%20via%20a%20web%20interface.%20A%20data%20preparation%20step%20is%20needed%20in%20order%20to%20provide%20the%20right%20input%20data%20and%20format.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://vibez.informatik.uni-freiburg.de/> .
+        biii:hasPaper  <http://vibez.informatik.uni-freiburg.de/> .
 
 <http://biii.org/entry/id:2671>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -11988,7 +11988,7 @@
 
 <http://biii.org/entry/id:Objects%20based%20methods%20(2%20methods:%20distances%20between%20centres%20and%20centre-particle%20coincidence)>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:start> .
+        biii:hasPaper  <http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:start> .
 
 <http://biii.org/entry/id:2690>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -12033,7 +12033,7 @@
 
 <http://biii.org/entry/id:Counting%20and%20measurements%20on%20objects>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:distance_analysis_diana_2d_3d_:start> .
+        biii:hasPaper  <http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:distance_analysis_diana_2d_3d_:start> .
 
 <http://biii.org/entry/id:2685>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -12114,7 +12114,7 @@
 
 <http://biii.org/entry/id:MorphoLeaf%20is%20developed%20by%20the%20Modeling%20and%20Digital%20Imaging%20and%20the%20Transcription%20Factors%20and%20Architecture%20teams%20of%20the%20Institut%20Jean-Pierre%20Bourgin,%20INRA%20Versailles,%20France,%20and%20the%20Biophyscis%20and%20Development%20group%20at%20RDP,%20Lyon.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://morpholeaf.versailles.inra.fr/> .
+        biii:hasPaper  <http://morpholeaf.versailles.inra.fr/> .
 
 <http://biii.org/entry/id:2674>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -12142,7 +12142,7 @@
 
 <http://biii.org/entry/id:Publication:%20%22Open%20Source%20Image%20registration%20plugin%20for%20correlative%20light%20to%20electron%20microscopy:%20e%C2%A2-CLEM%20easy%20Cell%20Correlative%20Light%20to%20Electron%20Microscopy%22.%20Xavier%20Heiligenstein*,%20Perrine%20Paul-Gilloteaux*,%20Martin%20Belle,%20Marie-Charlotte%20Domart,%20Banafshe%20Larijani,%20Lucy%20Collinson,%20Gra%C3%A7a%20Raposo%20Jean%20Salamero.%20In%20preparation,%202016.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://icy.bioimageanalysis.org/plugin/ec-CLEM> .
+        biii:hasPaper  <http://icy.bioimageanalysis.org/plugin/ec-CLEM> .
 
 <http://biii.org/entry/id:2699>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -12171,7 +12171,7 @@
 
 <http://biii.org/entry/id:Free-D%20is%20developed%20by%20the%20Modeling%20and%20Digital%20Imaging%20team%20of%20the%20Institut%20Jean-Pierre%20Bourgin,%20INRA%20Versailles,%20France.%20>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://free-d.versailles.inra.fr/> .
+        biii:hasPaper  <http://free-d.versailles.inra.fr/> .
 
 <http://biii.org/entry/id:2679>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -12233,7 +12233,7 @@
 
 <http://biii.org/entry/id:The%20goal%20of%20XuvTools%20is%20to%20provide%20tools,%20that%20combine%20multiple%20microscopic%20recordings%20to%20obtain%20a%20larger%20field%20of%20view%20(%E2%80%9Cstitching%E2%80%9D)%20and%20a%20higher%20dynamic%20range%20(%E2%80%9CHDR%E2%80%9D%20recombination),%20or%20better%20resolution%20(multi%20view%20reconstruction),%20and%20to%20make%20these%20tools%20publicly%20available.>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://www.xuvtools.org> .
+        biii:hasPaper  <http://www.xuvtools.org> .
 
 <http://biii.org/entry/id:2718>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
@@ -12323,7 +12323,7 @@
 
 <http://biii.org/entry/id:Part%20of%20the%20mosaic%20suite>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
-        biii:hasPaper  <http://biii.org/paper/id:http://imagej.net/Squassh> .
+        biii:hasPaper  <http://imagej.net/Squassh> .
 
 <http://biii.org/entry/id:2723>
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Entry ;
