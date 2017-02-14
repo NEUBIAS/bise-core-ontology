@@ -1,0 +1,26 @@
+PREFIX biii: <http://biii.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wprdf: <http://rdf.wikipathways.org/>
+PREFIX prov:  <http://www.w3.org/ns/prov#>
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX dc:    <http://purl.org/dc/elements/1.1/>
+
+#id_paper;id_type;Title;Journal;Volume;Number;Pages;Year;ISSN;doi;Abstract;Date;URL;ISBN;Issue;Month
+
+CONSTRUCT {
+
+?paperURI a biii:Paper;
+    rdfs:label ?Title ;
+    biii:journal ?Journal ;
+    biii:doi ?doi ;
+    biii:isbn ?ISBN ;
+    biii:location ?URL .
+
+} WHERE {
+	BIND("http://biii.org/" AS ?baseURI)
+  BIND(URI(CONCAT(?baseURI,'paper/id:', ?id_paper)) AS ?paperURI)
+}

@@ -1,0 +1,300 @@
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix biii:  <http://biii.org/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wprdf:  <http://rdf.wikipathways.org/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://biii.org/entry/id:3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:1436>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2098>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2109>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2116>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2123>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2263>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2264>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2265>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2266>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2267>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2268>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2269>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2270>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2271>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2272>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2273>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2274>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2275>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2276>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2277>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2278>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2279>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2291>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2294>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2296>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2297>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2298>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2300>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2302>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2303>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2306>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2307>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2308>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2314>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2317>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2318>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2319>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2320>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2321>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2322>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2323>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2324>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2325>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2326>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2327>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2328>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2329>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2330>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2331>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2332>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2333>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2334>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2335>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2344>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2345>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2368>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2420>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2424>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2443>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2467>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2518>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2530>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2552>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2561>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2564>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2583>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2605>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2608>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2609>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2627>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2640>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2641>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2642>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2643>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2645>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2650>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2657>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2660>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2663>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2669>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2670>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2672>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2673>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2675>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2679>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2688>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2694>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2696>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2703>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2705>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2709>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2718>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2719>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2720>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2721>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .
+
+<http://biii.org/entry/id:2722>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Software .

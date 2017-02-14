@@ -1,0 +1,548 @@
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix biii:  <http://biii.org/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wprdf:  <http://rdf.wikipathways.org/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://biii.org/paper/id:2737>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Experimenters guide to colocalization studies finding a way thro" ;
+        biii:journal   "Methods Cell Biol" ;
+        biii:doi       "10.1016/B978-0-12-420138-5.00021-5" ;
+        biii:isbn      "2014" ;
+        biii:location  " however, guidance for the choice of the appropriate method is rarely proposed. In this review, we provide the reader with a basic description of the available colocalization approaches, proposing a guideline for their use, either alone or in combination.</p>" .
+
+<http://biii.org/paper/id:2760>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Autofocusing in computer microscopy selecting the optimal focus " ;
+        biii:journal  "Microsc Res Tech" ;
+        biii:doi      "10.1002/jemt.20118" .
+
+<http://biii.org/paper/id:2775>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Beyond colocalization inferring spatial interactions between sub" ;
+        biii:journal  "BMC Bioinformatics" ;
+        biii:doi      "10.1186/1471-2105-11-372" .
+
+<http://biii.org/paper/id:2777>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Using CellX to quantify intracellular events" ;
+        biii:journal   "Curr Protoc Mol Biol" ;
+        biii:doi       "10.1002/0471142727.mb1422s101" ;
+        biii:location  "2013" .
+
+<http://biii.org/paper/id:2778>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Avoiding twisted pixels ethical guidelines for the appropriate u" ;
+        biii:journal  "Sci Eng Ethics" ;
+        biii:doi      "10.1007/s11948-010-9201-y" .
+
+<http://biii.org/paper/id:2782>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Momentpreserving thresolding A new approach" ;
+        biii:journal   "Computer Vision, Graphics, and Image Processing" ;
+        biii:doi       "http://dx.doi.org/10.1016/0734-189X(85)90133-1" ;
+        biii:location  "http://www.sciencedirect.com/science/article/pii/0734189X85901331" .
+
+<http://biii.org/paper/id:2784>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Huygens Remote Manager A Web Interface for HighVolume Batch Deco" ;
+        biii:journal   "Imaging & Microscopy" ;
+        biii:doi       "10.1002/imic.200790154" ;
+        biii:location  "http://doi.wiley.com/10.1002/imic.200790154" .
+
+<http://biii.org/paper/id:2787>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Quantification of histochemical staining by color deconvolution" ;
+        biii:journal  "Anal Quant Cytol Histol" .
+
+<http://biii.org/paper/id:2789>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "ImmunoRatio a publicly available web application for quantitativ" ;
+        biii:journal  "Breast Cancer Res" ;
+        biii:doi      "10.1186/bcr2615" .
+
+<http://biii.org/paper/id:2792>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Biological imaging software tools" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2084" .
+
+<http://biii.org/paper/id:2793>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Ncadherin and ?1integrins cooperate during the development of th" ;
+        biii:journal   "Dev Biol" ;
+        biii:doi       "10.1016/j.ydbio.2012.02.001" ;
+        biii:location  "2012 Apr 15" .
+
+<http://biii.org/paper/id:2796>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Computational imaging in cell biology" ;
+        biii:journal  "J Cell Biol" ;
+        biii:doi      "10.1083/jcb.200302097" .
+
+<http://biii.org/paper/id:2798>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "SparkMaster automated calcium spark analysis with ImageJ" ;
+        biii:journal  "Am J Physiol Cell Physiol" ;
+        biii:doi      "10.1152/ajpcell.00586.2006" .
+
+<http://biii.org/paper/id:2800>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Amplitude distribution of calcium sparks in confocal images theo" ;
+        biii:journal  "Biophys J" ;
+        biii:doi      "10.1016/S0006-3495(99)77229-2" .
+
+<http://biii.org/paper/id:2804>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Why join groups Lessons from parasitemanipulated Artemia" ;
+        biii:journal  "Ecol Lett" ;
+        biii:doi      "10.1111/ele.12074" .
+
+<http://biii.org/paper/id:2811>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Simple system using natural mineral water for highthroughput phe" ;
+        biii:journal   "International Journal of High Throughput Screening" ;
+        biii:doi       "10.2147/IJHTS.S40565" ;
+        biii:location  "http://www.dovepress.com/simple-system-using-natural-mineral-water-for-high-throughput-phenotyp-peer-reviewed-article-IJHTS" .
+
+<http://biii.org/paper/id:2812>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Quickandclean article figures with FigureJ" ;
+        biii:journal  "J Microsc" ;
+        biii:doi      "10.1111/jmi.12069" .
+
+<http://biii.org/paper/id:2817>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "ImageJ Macro Tool Sets for Biological Image Analysis" ;
+        biii:journal  "ImageJ User and Developer Conference 2012" ;
+        biii:isbn     "2-919941-18-6" .
+
+<http://biii.org/paper/id:2818>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "ImmunoMembrane a publicly available web application for digital " ;
+        biii:journal  "Histopathology" ;
+        biii:doi      "10.1111/j.1365-2559.2011.04142.x" .
+
+<http://biii.org/paper/id:2830>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Robust singleparticle tracking in livecell timelapse sequences" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.1237" .
+
+<http://biii.org/paper/id:2831>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Automated cell tracking and analysis in phasecontrast videos iTr" ;
+        biii:journal   "PLoS One" ;
+        biii:doi       "10.1371/journal.pone.0081266" ;
+        biii:location  "2013" .
+
+<http://biii.org/paper/id:2839>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "method for normalizing histology slides for quantitative analysi" ;
+        biii:journal  "Biomedical Imaging: From Nano to Macro, 2009. ISBI '09. IEEE International Symposium on" ;
+        biii:doi      "10.1109/ISBI.2009.5193250" .
+
+<http://biii.org/paper/id:2850>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "PAR1dependent orientation gradient of dynamic microtubules direc" ;
+        biii:journal  "J Cell Biol" ;
+        biii:doi      "10.1083/jcb.201103160" .
+
+<http://biii.org/paper/id:2871>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "PALMsiever a tool to turn raw data into results for singlemolecu" ;
+        biii:journal  "Bioinformatics" ;
+        biii:doi      "10.1093/bioinformatics/btu720" .
+
+<http://biii.org/paper/id:2882>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Arabidopsis plants acclimate to water deficit at low cost throug" ;
+        biii:journal   "Plant Physiology" ;
+        biii:doi       "10.1104/pp.110.157008" ;
+        biii:location  "http://www.ncbi.nlm.nih.gov/pubmed/20631317" .
+
+<http://biii.org/paper/id:2886>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Towards realtime image deconvolution application to confocal and" ;
+        biii:journal  "Sci Rep" ;
+        biii:doi      "10.1038/srep02523" .
+
+<http://biii.org/paper/id:2897>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Segmentation and quantification of subcellular structures in flu" ;
+        biii:journal  "Nat Protoc" ;
+        biii:doi      "10.1038/nprot.2014.037" .
+
+<http://biii.org/paper/id:2901>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Automated detection and measurement of isolated retinal arteriol" ;
+        biii:journal  "PLoS One" ;
+        biii:doi      "10.1371/journal.pone.0091791" .
+
+<http://biii.org/paper/id:2906>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "FISHquant automatic counting of transcripts in 3D FISH images" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2406" .
+
+<http://biii.org/paper/id:2915>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "rapidSTORM accurate fast opensource software for localization mi" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2224" .
+
+<http://biii.org/paper/id:2918>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "PixFRET an ImageJ plugin for FRET calculation that can accommoda" ;
+        biii:journal  "Microsc Res Tech" ;
+        biii:doi      "10.1002/jemt.20215" .
+
+<http://biii.org/paper/id:2933>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "TANGO a generic tool for highthroughput 3D image analysis for st" ;
+        biii:journal  "Bioinformatics" ;
+        biii:doi      "10.1093/bioinformatics/btt276" .
+
+<http://biii.org/paper/id:2956>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Automated whole animal bioimaging assay for human cancer dissemi" ;
+        biii:journal  "PLoS One" ;
+        biii:doi      "10.1371/journal.pone.0031281" .
+
+<http://biii.org/paper/id:2960>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Objective comparison of particle tracking methods" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2808" .
+
+<http://biii.org/paper/id:2962>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Fluorophore localization algorithms for superresolution microsco" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2844" .
+
+<http://biii.org/paper/id:2964>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Software opens the door to quantitative imaging" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth0207-120" .
+
+<http://biii.org/paper/id:2973>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Fluorescence Lifetime Imaging Microscopy FLIM Data Analysis with" ;
+        biii:journal   "Journal of Statistical Software" ;
+        biii:location  "http://www.jstatsoft.org/v18/i08/paper" .
+
+<http://biii.org/paper/id:2983>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Microtubule dynamics reconstituted in vitro and imaged by single" ;
+        biii:journal  "Methods Cell Biol" ;
+        biii:doi      "10.1016/S0091-679X(10)95013-9" .
+
+<http://biii.org/paper/id:3000>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Distinctive Image Features from ScaleInvariant Keypoints" ;
+        biii:journal   "International Journal of Computer Vision" ;
+        biii:doi       "10.1023/B:VISI.0000029664.99615.94" ;
+        biii:location  "http://dx.doi.org/10.1023/B%3AVISI.0000029664.99615.94" .
+
+<http://biii.org/paper/id:3001>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Multiimage matching using multiscale oriented patches" ;
+        biii:journal   "Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition" ;
+        biii:location  " 8 patch of bias/gain normalised intensity values. The density of features in the image is controlled using a novel adaptive non-maximal suppression algorithm, which gives a better spatial distribution of features than previous approaches. Matching is achieved using a fast nearest neighbour algorithm that indexes features based on their low frequency Haar wavelet coefficients. We also introduce a novel outlier rejection procedure that verifies a pairwise feature match based on a background distribution of incorrect feature matches. Feature matches are refined using RANSAC and used in an automatic 2D panorama stitcher that has been extensively tested on hundreds of sample inputs." .
+
+<http://biii.org/paper/id:3023>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Sickle cell anaemia among EtiTurks haematological clinical and g" ;
+        biii:journal   "Br J Haematol" ;
+        biii:isbn      " this 30-year-old female was mildly affected and exhibited a high level of fetal haemoglobin.</p>" ;
+        biii:location  " this chromosome has previously primarily been observed among SS patients from West Africa. The suggestion that the beta S-chromosome among Eti-Turks originates from that area is supported by a relatively high incidence of alpha-thalassaemia-2 (the 3.7 kb deletion), also frequently present in the Black population of West Africa, and by the absence of other major haplotypes, such as types 20 and 3, characteristic for the beta S-chromosome in the population of Central Africa and Kenya, and in Senegal, respectively. The Saudi Arabian type of beta S chromosome in association with the haplotype 19 beta S chromosome was present in only one Eti-Turk patient" .
+
+<http://biii.org/paper/id:3026>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Active mask segmentation of fluorescence microscope images" ;
+        biii:journal  "IEEE Trans Image Process" ;
+        biii:doi      "10.1109/TIP.2009.2021081" .
+
+<http://biii.org/paper/id:3028>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "SLTLoG A Vesicle Segmentation Method with Automatic Scale Select" ;
+        biii:journal   "{ISBI - 2014 IEEE International Symposium on Biomedical Imaging}" ;
+        biii:location  "https://hal.inria.fr/hal-00921793" .
+
+<http://biii.org/paper/id:3031>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Stepbystep quantitative analysis of focal adhesions" ;
+        biii:journal   "MethodsX" ;
+        biii:doi       "10.1016/j.mex.2014.06.004" ;
+        biii:location  "http://www.researchgate.net/publication/263737052_Step-by-step_quantitative_analysis_of_focal_adhesions" .
+
+<http://biii.org/paper/id:3040>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Endosomal WASH and exocyst complexes control exocytosis of MT1MM" ;
+        biii:journal  "J Cell Biol" ;
+        biii:doi      "10.1083/jcb.201306162" .
+
+<http://biii.org/paper/id:3048>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Advances in image correlation spectroscopy measuring number dens" ;
+        biii:journal  "Cell Biochem Biophys" ;
+        biii:doi      "10.1007/s12013-007-9000-5" .
+
+<http://biii.org/paper/id:3084>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Highthroughput subpixel precision analysis of bacterial morphoge" ;
+        biii:journal  "Mol Microbiol" ;
+        biii:doi      "10.1111/j.1365-2958.2011.07579.x" .
+
+<http://biii.org/paper/id:3092>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "High Resolution Tracking of Cell Membrane Dynamics in Moving Cel" ;
+        biii:journal   "Mathematical Modelling of Natural Phenomena" ;
+        biii:doi       "10.1051/mmnp/20105102" ;
+        biii:location  "http://www.mmnp-journal.org/article_S0973534810051023" .
+
+<http://biii.org/paper/id:3097>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "FindFoci A Focus Detection Algorithm with Automated Parameter Tr" ;
+        biii:journal  "PLoS One" ;
+        biii:doi      "10.1371/journal.pone.0114749" .
+
+<http://biii.org/paper/id:3154>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Curvelet analysis of kymograph for tracking bidirectional partic" ;
+        biii:journal  "Image Processing (ICIP), 2010 17th IEEE International Conference on" ;
+        biii:doi      "10.1109/ICIP.2010.5652479" .
+
+<http://biii.org/paper/id:3156>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "highlevel 3D visualization API for Java and ImageJ" ;
+        biii:journal  "BMC Bioinformatics" ;
+        biii:doi      "10.1186/1471-2105-11-274" .
+
+<http://biii.org/paper/id:3167>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Threedimensional multiscale line filter for segmentation and vis" ;
+        biii:journal  "Med Image Anal" .
+
+<http://biii.org/paper/id:3172>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Automated segmentation and tracking for largescale analysis of f" ;
+        biii:journal  "J Microsc" ;
+        biii:doi      "10.1111/j.1365-2818.2010.03404.x" .
+
+<http://biii.org/paper/id:3183>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "idTracker tracking individuals in a group by automatic identific" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2994" .
+
+<http://biii.org/paper/id:3208>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Whole slide quantification of stromal lymphatic vessel distribut" ;
+        biii:journal  "ISRN Obstet Gynecol" ;
+        biii:doi      "10.5402/2011/354861" .
+
+<http://biii.org/paper/id:3217>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "NonLocal Means Denoising" ;
+        biii:journal   "Image Processing On Line" ;
+        biii:doi       "10.5201/ipol10.5201/ipol.201110.5201/ipol.2011.bcm_nlm" ;
+        biii:location  "http://www.ipol.im/?utm_source=doihttp://www.ipol.im/pub/art/2011/?utm_source=doihttp://www.ipol.im/pub/art/2011/bcm_nlm/?utm_source=doi" .
+
+<http://biii.org/paper/id:3218>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Auxin depletion from leaf primordia contributes to organ pattern" ;
+        biii:journal  "Proc Natl Acad Sci U S A" ;
+        biii:doi      "10.1073/pnas.1421878112" .
+
+<http://biii.org/paper/id:3220>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "unbiased detector of curvilinear structures" ;
+        biii:journal   "IEEE Transactions on Pattern Analysis and Machine Intelligence" ;
+        biii:doi       "10.1109/34.659930" ;
+        biii:location  "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=659930" .
+
+<http://biii.org/paper/id:3223>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "NIH Image to ImageJ 25 years of image analysis" ;
+        biii:journal   "Nature Methods" ;
+        biii:doi       "10.1038/nmeth.2089" ;
+        biii:location  "http://www.nature.com/doifinder/10.1038/nmeth.2089" .
+
+<http://biii.org/paper/id:3239>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "OpenComet an automated tool for comet assay image analysis" ;
+        biii:journal  "Redox Biol" ;
+        biii:doi      "10.1016/j.redox.2013.12.020" .
+
+<http://biii.org/paper/id:3257>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "selforganized biomechanical network drives shape changes during " ;
+        biii:journal   "Nature" ;
+        biii:doi       "10.1038/nature14603" ;
+        biii:location  "2015 Aug 20" .
+
+<http://biii.org/paper/id:3258>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "CellTrack an opensource software for cell tracking and motility " ;
+        biii:journal   "Bioinformatics" ;
+        biii:doi       "10.1093/bioinformatics/btn247" ;
+        biii:location  "http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/btn247" .
+
+<http://biii.org/paper/id:3260>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Phase locking and multiple oscillating attractors for the couple" ;
+        biii:journal   "Proceedings of the National Academy of Sciences" ;
+        biii:doi       "10.1073/pnas.1320474111" ;
+        biii:location  "http://www.pnas.org/cgi/doi/10.1073/pnas.1320474111" .
+
+<http://biii.org/paper/id:3261>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Extracting Fluorescent Reporter Time Courses of Cell Lineages fr" ;
+        biii:journal   "PLoS ONE" ;
+        biii:doi       "10.1371/journal.pone.0027886" ;
+        biii:location  "http://dx.plos.org/10.1371/journal.pone.0027886" .
+
+<http://biii.org/paper/id:3276>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "FibrilTool an ImageJ plugin to quantify fibrillar structures in " ;
+        biii:journal  "Nat Protoc" ;
+        biii:doi      "10.1038/nprot.2014.024" .
+
+<http://biii.org/paper/id:3281>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Statistical analysis of 3D images detects regular spatial distri" ;
+        biii:journal  "PLoS Comput Biol" ;
+        biii:doi      "10.1371/journal.pcbi.1000853" .
+
+<http://biii.org/paper/id:3285>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "3D reconstruction of histological sections Application to mammar" ;
+        biii:journal   "Microscopy Research and Technique" ;
+        biii:doi       "10.1002/jemt.v73:1110.1002/jemt.20829" ;
+        biii:location  "http://doi.wiley.com/10.1002/jemt.v73%3A11http://doi.wiley.com/10.1002/jemt.20829http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fjemt.20829" .
+
+<http://biii.org/paper/id:3343>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Measuring image resolution in optical nanoscopy" ;
+        biii:journal  "Nat Methods" ;
+        biii:doi      "10.1038/nmeth.2448" .
+
+<http://biii.org/paper/id:3344>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Fourier shell correlation threshold criteria" ;
+        biii:journal  "J Struct Biol" ;
+        biii:doi      "10.1016/j.jsb.2005.05.009" .
+
+<http://biii.org/paper/id:3345>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "MorphoLibJ integrated library and plugins for mathematical morph" ;
+        biii:journal  "Bioinformatics" ;
+        biii:doi      "10.1093/bioinformatics/btw413" .
+
+<http://biii.org/paper/id:3349>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "neuTube 10 A New Design for Efficient Neuron Reconstruction Soft" ;
+        biii:journal  "eNeuro" ;
+        biii:doi      "10.1523/ENEURO.0049-14.2014" .
+
+<http://biii.org/paper/id:3357>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "SRTesseler a method to segment and quantify localizationbased su" ;
+        biii:journal  "Nature Methods" ;
+        biii:doi      "10.1038/nmeth.3579" .
+
+<http://biii.org/paper/id:3358>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Opensource image reconstruction of superresolution structured il" ;
+        biii:journal  "Nat Commun" ;
+        biii:doi      "10.1038/ncomms10980" .
+
+<http://biii.org/paper/id:3364>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "SIMToolbox a MATLAB toolbox for structured illumination fluoresc" ;
+        biii:journal  "Bioinformatics" ;
+        biii:doi      "10.1093/bioinformatics/btv576" .
+
+<http://biii.org/paper/id:3406>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Parallel DistributedMemory Particle Method Enables AcquisitionRa" ;
+        biii:journal  "PLOS One" ;
+        biii:doi      "10.1371/journal.pone.0152528" .
+
+<http://biii.org/paper/id:3411>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "ClusDoC A combined cluster detection and colocalization analysis" ;
+        biii:journal  "Mol Biol Cell" ;
+        biii:doi      "10.1091/mbc.E16-07-0478" .
+
+<http://biii.org/paper/id:3413>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Realtime analysis and visualization for singlemolecule based sup" ;
+        biii:journal  "PLoS One" ;
+        biii:doi      "10.1371/journal.pone.0062918" .
+
+<http://biii.org/paper/id:3415>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "software framework for the analysis of complex microscopy image " ;
+        biii:journal  "IEEE Trans Inf Technol Biomed" ;
+        biii:doi      "10.1109/TITB.2010.2049024" .
+
+<http://biii.org/paper/id:3419>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Fast Optimized Cluster Algorithm for Localizations FOCAL a spati" ;
+        biii:journal  "Bioinformatics" ;
+        biii:doi      "10.1093/bioinformatics/btv630" .
+
+<http://biii.org/paper/id:3421>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "guided tour into subcellular colocalization analysis in light mi" ;
+        biii:journal   "J Microsc" ;
+        biii:doi       "10.1111/j.1365-2818.2006.01706.x" ;
+        biii:location  "2006 Dec" .
+
+<http://biii.org/paper/id:3425>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "Intravital placenta imaging reveals microcirculatory dynamics im" ;
+        biii:journal   "PLoS Pathog" ;
+        biii:doi       "10.1371/journal.ppat.1003154" ;
+        biii:location  "2013 Jan" .
+
+<http://biii.org/paper/id:3428>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "SynPAnal software for rapid quantification of the density and in" ;
+        biii:journal  "PLoS One" ;
+        biii:doi      "10.1371/journal.pone.0115298" .
+
+<http://biii.org/paper/id:3430>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Automatic Bayesian single molecule identification for localizati" ;
+        biii:journal  "Sci Rep" ;
+        biii:doi      "10.1038/srep33521" .
+
+<http://biii.org/paper/id:3435>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "ViBEZ a framework for 3D virtual colocalization analysis in zebr" ;
+        biii:journal   "Nature Methods" ;
+        biii:doi       "10.1038/nmeth.2076" ;
+        biii:location  "http://www.nature.com/nmeth/journal/v9/n7/pdf/nmeth.2076.pdf" .
+
+<http://biii.org/paper/id:3456>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label    "Infection Counter Automated Quantification of in Vitro Virus Rep" ;
+        biii:journal  "Viruses" ;
+        biii:doi      "10.3390/v8070201" .
+
+<http://biii.org/paper/id:3475>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  biii:Paper ;
+        rdfs:label     "jicbioimage a tool for automated and reproducible bioimage analy" ;
+        biii:journal   "PeerJ" ;
+        biii:doi       "10.7717/peerj.2674" ;
+        biii:location  "https://peerj.com/articles/2674" .
