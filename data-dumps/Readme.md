@@ -9,10 +9,9 @@
 ## Sample SPARQL queries
 The following queries search for BIII registry entities whose label contains the word "segmentation" or "registration" : 
 
-  PREFIX biii:<http://biii.org/> 
-  SELECT * WHERE {
-    ?x rdfs:label ?label
-    FILTER (regex(?label,"segmentation") || regex(?label,"registration"))
-    ?x rdf:type ?type
-
-  } 
+    PREFIX biii:<http://biii.org/> 
+    SELECT ?x ?label ?type WHERE {
+      ?x rdfs:label ?label
+      FILTER (regex(?label,"segmentation") || regex(?label,"registration"))
+      ?x rdf:type ?type
+    } 
