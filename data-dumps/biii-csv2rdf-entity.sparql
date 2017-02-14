@@ -18,7 +18,7 @@ CONSTRUCT {
     rdfs:label ?Title ;
     rdfs:comment ?Body ;
 
-    biii:hasPaper ?paperURI ;
+    biii:hasPaper ?paperURL ;
     biii:hasCurator ?curatorURI ;
     biii:hasAuthor ?Authors ;
     biii:hasLocationPath ?LocationPath ;
@@ -31,6 +31,6 @@ WHERE {
   #BIND(xsd:string(?id_entity) AS ?id)
 	#BIND(URI(CONCAT(?baseURI,'entry/id:', xsd:string(?id))) AS ?entryURI)
   BIND(URI(CONCAT(?baseURI,'entry/id:', ?id_entity)) AS ?entryURI)
-  BIND(URI(CONCAT(?baseURI,'paper/id:', ?id_paper)) AS ?paperURI)
+  BIND(URI(?id_paper) AS ?paperURL)
   BIND(URI(CONCAT(?baseURI,'curator/id:', ?id_curator)) AS ?curatorURI)
 }
