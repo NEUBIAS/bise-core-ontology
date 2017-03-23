@@ -1,273 +1,451 @@
 @prefix : <http://bise-eu.info/core-ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://bise-eu.info/core-ontology> .
-
-<http://bise-eu.info/core-ontology> rdf:type owl:Ontology ;
-                                     owl:versionIRI <http://bise-eu.info/core-ontology/1.0.0> ;
-                                     rdfs:comment "BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine."^^xsd:string .
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://bise-eu.info/core-ontology#covers
-:covers rdf:type owl:ObjectProperty ;
-        rdfs:domain :Training ;
-        rdfs:range :Entry .
-
-
-###  http://bise-eu.info/core-ontology#has-author
-:has-author rdf:type owl:ObjectProperty ;
-            rdfs:domain :Entry ;
-            rdfs:range prov:Person .
-
-
-###  http://bise-eu.info/core-ontology#has-citation
-:has-citation rdf:type owl:ObjectProperty ;
-              rdfs:domain :Entry ;
-              rdfs:range :Citation .
-
-
-###  http://bise-eu.info/core-ontology#has-curator
-:has-curator rdf:type owl:ObjectProperty ;
-             rdfs:domain :Entry ;
-             rdfs:range :Contributor .
-
-
-###  http://bise-eu.info/core-ontology#reliesOn
-:reliesOn rdf:type owl:ObjectProperty ;
-          rdfs:domain :Article ;
-          rdfs:range :Entry .
-
-
-###  http://bise-eu.info/core-ontology#requiresSkill
-:requiresSkill rdf:type owl:ObjectProperty ;
-               rdfs:domain :Entry .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://bise-eu.info/core-ontology#has-description
-:has-description rdf:type owl:DatatypeProperty ;
-rdfs:comment "A short description of the BISE resource."^^xsd:string .
-
-
-###  http://bise-eu.info/core-ontology#has-title
-:has-title rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:string ;
-           rdfs:comment "A textual value representing a title."@en .
-
-
-###  http://bise-eu.info/core-ontology#has-value
-:has-value rdf:type owl:DatatypeProperty ;
-           rdfs:comment "Any value."@en .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://bise-eu.info/core-ontology#Article
-:Article rdf:type owl:Class ;
-         rdfs:subClassOf :Entry .
-
-
-###  http://bise-eu.info/core-ontology#Citation
-:Citation rdf:type owl:Class ;
-          rdfs:subClassOf :Entry .
-
-
-###  http://bise-eu.info/core-ontology#Contributor
-:Contributor rdf:type owl:Class ;
-             rdfs:subClassOf prov:Person .
-
-
-###  http://bise-eu.info/core-ontology#Entry
-:Entry rdf:type owl:Class ;
-       rdfs:subClassOf prov:Entity .
-
-
-###  http://bise-eu.info/core-ontology#Library
-:Library rdf:type owl:Class ;
-         rdfs:subClassOf :Software .
-
-
-###  http://bise-eu.info/core-ontology#Plugin
-:Plugin rdf:type owl:Class ;
-        rdfs:subClassOf :Software .
-
-
-###  http://bise-eu.info/core-ontology#Software
-:Software rdf:type owl:Class ;
-          rdfs:subClassOf :Entry .
-
-
-###  http://bise-eu.info/core-ontology#StandaloneApp
-:StandaloneApp rdf:type owl:Class ;
-               rdfs:subClassOf :Software .
-
-
-###  http://bise-eu.info/core-ontology#Tag
-:Tag rdf:type owl:Class ;
-     rdfs:subClassOf :Entry .
-
-
-###  http://bise-eu.info/core-ontology#Training
-:Training rdf:type owl:Class ;
-          rdfs:subClassOf :Entry .
-
-
-###  http://bise-eu.info/core-ontology#WebApp
-:WebApp rdf:type owl:Class ;
-        rdfs:subClassOf :Software .
-
-
-###  http://bise-eu.info/core-ontology#Workflow
-:Workflow rdf:type owl:Class ;
-          rdfs:subClassOf :Software .
-
-
-###  http://www.w3.org/ns/prov#Agent
-prov:Agent rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/prov#Entity
-prov:Entity rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/prov#Person
-prov:Person rdf:type owl:Class ;
-            rdfs:subClassOf prov:Agent .
-
-
-###  http://www.w3.org/ns/prov#SoftwareAgent
-prov:SoftwareAgent rdf:type owl:Class ;
-                   rdfs:subClassOf prov:Agent .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://bise-eu.info/core-ontology#Article
-:Article rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Citation
-:Citation rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Contributor
-:Contributor rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Entry
-:Entry rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Process
-:Process rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Runtime
-:Runtime rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Training
-:Training rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#Workflow
-:Workflow rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#covers
-:covers rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#has-author
-:has-author rdf:type owl:NamedIndividual .
-
-
-###  http://bise-eu.info/core-ontology#has-citation
-:has-citation rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/R7OTZv39VWzx4zwooBqXpfW
-<http://webprotege.stanford.edu/R7OTZv39VWzx4zwooBqXpfW> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/R87Ro2J2JAXts9TeiIIm9mf
-<http://webprotege.stanford.edu/R87Ro2J2JAXts9TeiIIm9mf> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/R8DI97wh9cxO6pAVJOqUsoM
-<http://webprotege.stanford.edu/R8DI97wh9cxO6pAVJOqUsoM> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/R8F5fqDWvSWwmp4r8k3HXxV
-<http://webprotege.stanford.edu/R8F5fqDWvSWwmp4r8k3HXxV> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/R8IB168QAHEfzAIc6006aMB
-<http://webprotege.stanford.edu/R8IB168QAHEfzAIc6006aMB> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/R9DCCdv9it0JgxlFHcaP0jU
-<http://webprotege.stanford.edu/R9DCCdv9it0JgxlFHcaP0jU> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/RB9hqbsQIxlByXZNyM4JL2C
-<http://webprotege.stanford.edu/RB9hqbsQIxlByXZNyM4JL2C> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/RCe7MDJ44Tn756HsjqTLMIy
-<http://webprotege.stanford.edu/RCe7MDJ44Tn756HsjqTLMIy> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/RCgflXeBK7lC7cfB760oEnY
-<http://webprotege.stanford.edu/RCgflXeBK7lC7cfB760oEnY> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/RD1VGahXMzmpml5eyld3YvU
-<http://webprotege.stanford.edu/RD1VGahXMzmpml5eyld3YvU> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/RDMmqB4d5Nh36Mhxfz9weuz
-<http://webprotege.stanford.edu/RDMmqB4d5Nh36Mhxfz9weuz> rdf:type owl:NamedIndividual .
-
-
-###  http://webprotege.stanford.edu/RfH4zMLaEqKWpGdiJnuhBn
-<http://webprotege.stanford.edu/RfH4zMLaEqKWpGdiJnuhBn> rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/prov#Agent
-prov:Agent rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/prov#Entity
-prov:Entity rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/prov#Person
-prov:Person rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/prov#SoftwareAgent
-prov:SoftwareAgent rdf:type owl:NamedIndividual .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:Contributor rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string .
-
-
-###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://bise-eu.info/core-ontology> a owl:Ontology ;
+	owl:versionIRI <http://bise-eu.info/core-ontology/1.0.0> ;
+	dc:contributor "" ;
+	dcterms:issued "" ;
+	rdfs:comment "BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine."@en ;
+	dcterms:title "" ;
+	dc:creator "" ;
+	dcterms:license "" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://bise-eu.info/core-ontology#hasAuthor
+
+:hasAuthor a owl:ObjectProperty ;
+	rdfs:domain :Entry ;
+	rdfs:range prov:Person ;
+	rdfs:label "has author"@en .
+# 
+# http://bise-eu.info/core-ontology#hasCitation
+
+:hasCitation a owl:ObjectProperty ;
+	rdfs:domain :Entry ;
+	rdfs:range :Citation ;
+	rdfs:label "has citation"@en .
+# 
+# http://bise-eu.info/core-ontology#hasEdamFormat
+
+:hasEdamFormat a owl:ObjectProperty ;
+	rdfs:domain :Dataset ;
+	rdfs:comment "'has EDAM format' is a relation between a BISE dataset and a format as defined in BioImagingEDAM."@en ;
+	rdfs:label "has EDAM format"@en .
+# 
+# http://bise-eu.info/core-ontology#hasForRequiredSkill
+
+:hasForRequiredSkill a owl:ObjectProperty ;
+	rdfs:domain :Entry ;
+	rdfs:label "has for required skill"@en .
+# 
+# http://bise-eu.info/core-ontology#hasMaintainer
+
+:hasMaintainer a owl:ObjectProperty ;
+	rdfs:domain :Entry ;
+	rdfs:range :Contributor ;
+	rdfs:label "has maintainer"@en .
+# 
+# http://bise-eu.info/core-ontology#hasTrainingMaterial
+
+:hasTrainingMaterial a owl:ObjectProperty ;
+	owl:inverseOf :isTrainingMaterialOf ;
+	rdfs:domain :Entry ;
+	rdfs:range :TrainingMaterial .
+
+:TrainingMaterial a owl:Class .
+
+:hasTrainingMaterial rdfs:label "has training material"@en .
+# 
+# http://bise-eu.info/core-ontology#isCompatibleWith
+
+:isCompatibleWith a owl:ObjectProperty ;
+	rdfs:domain :Software ;
+	rdfs:range :Software ;
+	rdfs:comment "'Is compatible with' is are relation between two softwares saying that they can be used together."@en ;
+	rdfs:label "is compatible with"@en .
+# 
+# http://bise-eu.info/core-ontology#isTrainingMaterialOf
+
+:isTrainingMaterialOf a owl:ObjectProperty ;
+	rdfs:domain :TrainingMaterial ;
+	rdfs:range :Entry ;
+	rdfs:label "is training material of"@en .
+# 
+# http://bise-eu.info/core-ontology#reliesOn
+
+:reliesOn a owl:ObjectProperty ;
+	rdfs:domain :ScientificPublication ;
+	rdfs:range :Entry ;
+	rdfs:label "relies on"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://bise-eu.info/core-ontology#hasBiologicalContext
+
+:hasBiologicalContext a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Dataset ;
+	rdfs:range xsd:string ;
+	rdfs:label "has biological context"@en .
+# 
+# http://bise-eu.info/core-ontology#hasDOI
+
+:hasDOI a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:string ;
+	rdfs:label "has DOI"@en .
+# 
+# http://bise-eu.info/core-ontology#hasDescription
+
+:hasDescription a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A short description of the BISE resource."@en ;
+	rdfs:label "has description" .
+# 
+# http://bise-eu.info/core-ontology#hasDimension
+
+:hasDimension a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range _:genid1 .
+
+_:genid1 a rdfs:Datatype ;
+	owl:oneOf _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first "2D" ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first "2D+t" ;
+	rdf:rest _:genid4 .
+
+_:genid4 a rdf:List ;
+	rdf:first "3D" ;
+	rdf:rest _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first "3D+t" ;
+	rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first "nD" ;
+	rdf:rest rdf:nil .
+
+:hasDimension rdfs:label "has dimension"@en .
+# 
+# http://bise-eu.info/core-ontology#hasDocumentation
+
+:hasDocumentation a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:anyURI ;
+	rdfs:label "has documentation"@en .
+# 
+# http://bise-eu.info/core-ontology#hasExecutionPlatform
+
+:hasExecutionPlatform a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range _:genid7 .
+
+_:genid7 a rdfs:Datatype ;
+	owl:oneOf _:genid10 .
+
+_:genid10 a rdf:List ;
+	rdf:first "linux" ;
+	rdf:rest _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first "mac" ;
+	rdf:rest _:genid8 .
+
+_:genid8 a rdf:List ;
+	rdf:first "windows" ;
+	rdf:rest rdf:nil .
+
+:hasExecutionPlatform rdfs:label "has execution platform"@en .
+# 
+# http://bise-eu.info/core-ontology#hasFormat
+
+:hasFormat a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Dataset ;
+	rdfs:range xsd:string ;
+	rdfs:label "has format"@en .
+# 
+# http://bise-eu.info/core-ontology#hasGroundTruth
+
+:hasGroundTruth a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Dataset ;
+	rdfs:range xsd:string ;
+	rdfs:label "has ground truth"@en .
+# 
+# http://bise-eu.info/core-ontology#hasIllustration
+
+:hasIllustration a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:anyURI ;
+	rdfs:label "has illustration"@en .
+# 
+# http://bise-eu.info/core-ontology#hasImagingDetails
+
+:hasImagingDetails a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Dataset ;
+	rdfs:range xsd:string ;
+	rdfs:label "has imaging details"@en .
+# 
+# http://bise-eu.info/core-ontology#hasIteractionLevel
+
+:hasIteractionLevel a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range _:genid11 .
+
+_:genid11 a rdfs:Datatype ;
+	owl:oneOf _:genid14 .
+
+_:genid14 a rdf:List ;
+	rdf:first "automated" ;
+	rdf:rest _:genid13 .
+
+_:genid13 a rdf:List ;
+	rdf:first "manual" ;
+	rdf:rest _:genid12 .
+
+_:genid12 a rdf:List ;
+	rdf:first "semi-automated" ;
+	rdf:rest rdf:nil .
+
+:hasIteractionLevel rdfs:label "has interaction level"@en .
+# 
+# http://bise-eu.info/core-ontology#hasKeyword
+
+:hasKeyword a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:string ;
+	rdfs:label "has keyword"@en .
+# 
+# http://bise-eu.info/core-ontology#hasLocation
+
+:hasLocation a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:anyURI ;
+	rdfs:label "has location"@en .
+# 
+# http://bise-eu.info/core-ontology#hasOpennessLevel
+
+:hasOpennessLevel a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range _:genid15 .
+
+_:genid15 a rdfs:Datatype ;
+	owl:oneOf _:genid18 .
+
+_:genid18 a rdf:List ;
+	rdf:first "commercial" ;
+	rdf:rest _:genid17 .
+
+_:genid17 a rdf:List ;
+	rdf:first "free and not open source" ;
+	rdf:rest _:genid16 .
+
+_:genid16 a rdf:List ;
+	rdf:first "free and open source" ;
+	rdf:rest rdf:nil .
+
+:hasOpennessLevel rdfs:label "has openness level"@en .
+# 
+# http://bise-eu.info/core-ontology#hasProgrammingLanguage
+
+:hasProgrammingLanguage a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range xsd:string ;
+	rdfs:label "has programming language"@en .
+# 
+# http://bise-eu.info/core-ontology#hasReferencePublication
+
+:hasReferencePublication a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range xsd:string ;
+	rdfs:label "has reference publication"@en .
+# 
+# http://bise-eu.info/core-ontology#hasSynonym
+
+:hasSynonym a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A relation between anything and words with similar meaning."@en ;
+	rdfs:label "has synonym" .
+# 
+# http://bise-eu.info/core-ontology#hasTitle
+
+:hasTitle a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Entry ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A textual value representing a title."@en ;
+	rdfs:label "has title" .
+# 
+# http://bise-eu.info/core-ontology#hasUsageExample
+
+:hasUsageExample a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range xsd:string ;
+	rdfs:label "has usage example"@en .
+# 
+# http://bise-eu.info/core-ontology#hasValue
+
+:hasValue a owl:DatatypeProperty ;
+	rdfs:domain :Entry ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "A relation between anything and its actual value."@en ;
+	rdfs:label "has value" .
+# 
+# http://bise-eu.info/core-ontology#isBiologicallyFocused
+
+:isBiologicallyFocused a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range xsd:boolean ;
+	rdfs:label "is biologically focused"@en .
+# 
+# http://bise-eu.info/core-ontology#isCitedWith
+
+:isCitedWith a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasValue ;
+	rdfs:domain :Software ;
+	rdfs:range xsd:string ;
+	rdfs:label "is cited with"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://bise-eu.info/core-ontology#Citation
+
+:Citation a owl:Class ;
+	rdfs:subClassOf :Entry ;
+	rdfs:label "Citation"@en .
+# 
+# http://bise-eu.info/core-ontology#Contributor
+
+:Contributor a owl:Class ;
+	rdfs:subClassOf prov:Person ;
+	rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string .
+# 
+# http://bise-eu.info/core-ontology#Dataset
+
+:Dataset a owl:Class ;
+	rdfs:subClassOf :Entry ;
+	rdfs:label "Dataset"@en .
+# 
+# http://bise-eu.info/core-ontology#Entry
+
+:Entry a owl:Class ;
+	rdfs:subClassOf prov:Entity .
+# 
+# http://bise-eu.info/core-ontology#Library
+
+:Library a owl:Class ;
+	rdfs:subClassOf :Software .
+# 
+# http://bise-eu.info/core-ontology#Plugin
+
+:Plugin a owl:Class ;
+	rdfs:subClassOf :Software .
+# 
+# http://bise-eu.info/core-ontology#ScientificPublication
+
+:ScientificPublication a owl:Class ;
+	rdfs:subClassOf :Entry ;
+	rdfs:label "Scientific publication"@en .
+# 
+# http://bise-eu.info/core-ontology#Software
+
+:Software a owl:Class ;
+	rdfs:subClassOf :Entry ;
+	rdfs:label "Software"@en .
+# 
+# http://bise-eu.info/core-ontology#StandaloneApp
+
+:StandaloneApp a owl:Class ;
+	rdfs:subClassOf :Software .
+# 
+# http://bise-eu.info/core-ontology#Tag
+
+:Tag a owl:Class ;
+	rdfs:subClassOf :Entry .
+# 
+# http://bise-eu.info/core-ontology#TrainingMaterial
+
+:TrainingMaterial rdfs:subClassOf :Entry ;
+	rdfs:label "Training material"@en .
+# 
+# http://bise-eu.info/core-ontology#WebApp
+
+:WebApp a owl:Class ;
+	rdfs:subClassOf :Software .
+# 
+# http://bise-eu.info/core-ontology#Workflow
+
+:Workflow a owl:Class ;
+	rdfs:subClassOf :Software .
+# 
+# http://www.w3.org/ns/prov#Agent
+
+prov:Agent a owl:Class .
+# 
+# http://www.w3.org/ns/prov#Entity
+
+prov:Entity a owl:Class .
+# 
+# http://www.w3.org/ns/prov#Person
+
+prov:Person a owl:Class ;
+	rdfs:subClassOf prov:Agent .
+# 
+# http://www.w3.org/ns/prov#SoftwareAgent
+
+prov:SoftwareAgent a owl:Class ;
+	rdfs:subClassOf prov:Agent .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
