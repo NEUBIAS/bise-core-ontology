@@ -7,461 +7,436 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://bise-eu.info/core-ontology> .
 
-<http://bise-eu.info/core-ontology> a owl:Ontology ;
-	owl:versionIRI <http://bise-eu.info/core-ontology/1.0.0> ;
-	dc:contributor "" ;
-	dcterms:issued "" ;
-	rdfs:comment "BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine."@en ;
-	dcterms:title "" ;
-	dc:creator "" ;
-	dcterms:license "" .
-# 
-# 
-# #################################################################
-# #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# http://bise-eu.info/core-ontology#hasAuthor
-
-:hasAuthor a owl:ObjectProperty ;
-	rdfs:domain :Entry ;
-	rdfs:range prov:Person ;
-	rdfs:comment "'has author' is a relation between a BISE entry and the person who actually created the described tool, dataset, etc."@en ;
-	rdfs:label "has author"@en .
-# 
-# http://bise-eu.info/core-ontology#hasComparison
-
-:hasComparison a owl:ObjectProperty ;
-	rdfs:domain :Software ;
-	rdfs:range :Publication ;
-	rdfs:comment "Has comparison is a relation between a BISE software entry and the publication that describes how the entry performs or behaves compared to other tools."@en ;
-	rdfs:label "has comparison"@en .
-# 
-# http://bise-eu.info/core-ontology#hasEntryCurator
-
-:hasEntryCurator a owl:ObjectProperty ;
-	rdfs:domain :Entry ;
-	rdfs:range :Contributor ;
-	rdfs:comment "'has entry curator' is a relation between a BISE entry and the person responsible for the related BISE content."@en ;
-	rdfs:label "has entry curator"@en .
-# 
-# http://bise-eu.info/core-ontology#hasFormat
-
-:hasFormat a owl:ObjectProperty ;
-	rdfs:domain :Dataset .
-# 
-# http://bise-eu.info/core-ontology#hasFunction
-
-:hasFunction a owl:ObjectProperty ;
-	rdfs:domain :Software ;
-	rdfs:comment "'has function' is a relation between a BISE software and the nature of the performed data processing or analysis. For example, EDAM operations can be used here."@en ;
-	rdfs:label "has function"@en .
-# 
-# http://bise-eu.info/core-ontology#hasReferencePublication
-
-:hasReferencePublication a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty ;
-	rdfs:domain :Entry ;
-	rdfs:range :Publication ;
-	rdfs:comment "Has reference publication is a relation between a BISE software entry and the publication that describes entry (or the related methods) and should be cited."@en ;
-	rdfs:label "has reference publication"@en .
-# 
-# http://bise-eu.info/core-ontology#hasTopic
-
-:hasTopic a owl:ObjectProperty ;
-	rdfs:domain :Entry ;
-	rdfs:comment "'has topic' is a relation between a BISE entry and its application domain. For example, EDAM topics can be used here."@en ;
-	rdfs:label "has topic"@en .
-# 
-# http://bise-eu.info/core-ontology#hasTrainingMaterial
-
-:hasTrainingMaterial a owl:ObjectProperty ;
-	owl:inverseOf :isTrainingMaterialOf ;
-	rdfs:domain :Entry ;
-	rdfs:range :TrainingMaterial ;
-	rdfs:label "has training material"@en .
-# 
-# http://bise-eu.info/core-ontology#hasUsageExample
-
-:hasUsageExample a owl:ObjectProperty ;
-	rdfs:domain :Entry ;
-	rdfs:range :Publication .
-# 
-# http://bise-eu.info/core-ontology#isCompatibleWith
-
-:isCompatibleWith a owl:ObjectProperty ;
-	rdfs:domain :Software ;
-	rdfs:range :Software ;
-	rdfs:comment "'is compatible with' is a relation between two softwares stating that they can be used together."@en ;
-	rdfs:label "is compatible with"@en .
-# 
-# http://bise-eu.info/core-ontology#isTrainingMaterialOf
-
-:isTrainingMaterialOf a owl:ObjectProperty ;
-	rdfs:domain :TrainingMaterial ;
-	rdfs:range :Entry ;
-	rdfs:label "is training material of"@en .
-# 
-# http://bise-eu.info/core-ontology#requires
-
-:requires a owl:ObjectProperty ;
-	rdfs:range :Entry ;
-	rdfs:comment "'requires' is a relation between a software and another required software for the first one to run correctly. For example, an ImageJ plugin requires ImageJ."@en ;
-	rdfs:label "requires"@en .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# http://bise-eu.info/core-ontology#hasBiologicalContext
-
-:hasBiologicalContext a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Dataset ;
-	rdfs:range xsd:string ;
-	rdfs:label "has biological context"@en .
-# 
-# http://bise-eu.info/core-ontology#hasDOI
-
-:hasDOI a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:string ;
-	rdfs:label "has DOI"@en .
-# 
-# http://bise-eu.info/core-ontology#hasDescription
-
-:hasDescription a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:string ;
-	rdfs:comment "A short description of the BISE resource."@en ;
-	rdfs:label "has description" .
-# 
-# http://bise-eu.info/core-ontology#hasDocumentation
-
-:hasDocumentation a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "has documentation"@en .
-# 
-# http://bise-eu.info/core-ontology#hasExecutionPlatform
-
-:hasExecutionPlatform a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Software ;
-	rdfs:range _:genid1 .
-
-_:genid1 a rdfs:Datatype ;
-	owl:oneOf _:genid4 .
-
-_:genid4 a rdf:List ;
-	rdf:first "linux" ;
-	rdf:rest _:genid3 .
-
-_:genid3 a rdf:List ;
-	rdf:first "mac" ;
-	rdf:rest _:genid2 .
-
-_:genid2 a rdf:List ;
-	rdf:first "windows" ;
-	rdf:rest rdf:nil .
-
-:hasExecutionPlatform rdfs:label "has execution platform"@en .
-# 
-# http://bise-eu.info/core-ontology#hasFormat
-
-:hasFormat a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:range xsd:string .
-# 
-# http://bise-eu.info/core-ontology#hasGroundTruth
-
-:hasGroundTruth a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Dataset ;
-	rdfs:range xsd:string ;
-	rdfs:label "has ground truth"@en .
-# 
-# http://bise-eu.info/core-ontology#hasIllustration
-
-:hasIllustration a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:anyURI ;
-	rdfs:comment "'has illustration' is a property of an entry linking to an web accessible graphical illustration."@en ;
-	rdfs:label "has illustration"@en .
-# 
-# http://bise-eu.info/core-ontology#hasImagingDetails
-
-:hasImagingDetails a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Dataset ;
-	rdfs:range xsd:string ;
-	rdfs:label "has imaging details"@en .
-# 
-# http://bise-eu.info/core-ontology#hasIteractionLevel
-
-:hasIteractionLevel a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Software ;
-	rdfs:range _:genid5 .
-
-_:genid5 a rdfs:Datatype ;
-	owl:oneOf _:genid8 .
-
-_:genid8 a rdf:List ;
-	rdf:first "automated" ;
-	rdf:rest _:genid7 .
-
-_:genid7 a rdf:List ;
-	rdf:first "manual" ;
-	rdf:rest _:genid6 .
-
-_:genid6 a rdf:List ;
-	rdf:first "semi-automated" ;
-	rdf:rest rdf:nil .
-
-:hasIteractionLevel rdfs:label "has interaction level"@en .
-# 
-# http://bise-eu.info/core-ontology#hasKeyword
-
-:hasKeyword a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:string ;
-	rdfs:comment "'has suggested tag' is free text aimed at being considered for inclusion in domain ontologies."@en ;
-	rdfs:label "has suggested tag"@en .
-# 
-# http://bise-eu.info/core-ontology#hasLocation
-
-:hasLocation a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:anyURI ;
-	rdfs:comment "'has location' is a link to web resources giving access or description to the tools, datasets, etc."@en ;
-	rdfs:label "has location"@en .
-# 
-# http://bise-eu.info/core-ontology#hasOpennessLevel
-
-:hasOpennessLevel a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range _:genid9 .
-
-_:genid9 a rdfs:Datatype ;
-	owl:oneOf _:genid12 .
-
-_:genid12 a rdf:List ;
-	rdf:first "commercial" ;
-	rdf:rest _:genid11 .
-
-_:genid11 a rdf:List ;
-	rdf:first "for free and not open source" ;
-	rdf:rest _:genid10 .
-
-_:genid10 a rdf:List ;
-	rdf:first "free and open source" ;
-	rdf:rest rdf:nil .
-
-:hasOpennessLevel rdfs:label "has openness level"@en .
-# 
-# http://bise-eu.info/core-ontology#hasProgrammingLanguage
-
-:hasProgrammingLanguage a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Software ;
-	rdfs:range xsd:string ;
-	rdfs:comment "'has programming language' is a text stating a programming language supported by the software or used for its implementation."@en ;
-	rdfs:label "has programming language"@en .
-# 
-# http://bise-eu.info/core-ontology#hasSupportedDimension
-
-:hasSupportedDimension a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Software ;
-	rdfs:range _:genid13 .
-
-_:genid13 a rdfs:Datatype ;
-	owl:oneOf _:genid17 .
-
-_:genid17 a rdf:List ;
-	rdf:first "2D" ;
-	rdf:rest _:genid16 .
-
-_:genid16 a rdf:List ;
-	rdf:first "3D" ;
-	rdf:rest _:genid15 .
-
-_:genid15 a rdf:List ;
-	rdf:first "multi-channel" ;
-	rdf:rest _:genid14 .
-
-_:genid14 a rdf:List ;
-	rdf:first "time-series" ;
-	rdf:rest rdf:nil .
-
-:hasSupportedDimension rdfs:comment "'has supported dimension' is an informative textual value stating the dimension of consumed/analyzed data. Values are limited to \"2D\", \"3D\", \"multi-channel\", and \"time-series\". This tags can be used in combination."@en ;
-	rdfs:label "has supported dimension"@en .
-# 
-# http://bise-eu.info/core-ontology#hasSynonym
-
-:hasSynonym a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:range xsd:string ;
-	rdfs:comment "A relation between anything and words with similar meaning."@en ;
-	rdfs:label "has synonym" .
-# 
-# http://bise-eu.info/core-ontology#hasTitle
-
-:hasTitle a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Entry ;
-	rdfs:range xsd:string ;
-	rdfs:comment "A textual value representing a title."@en ;
-	rdfs:label "has title" .
-# 
-# http://bise-eu.info/core-ontology#hasUsageExample
-
-:hasUsageExample a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Software ;
-	rdfs:range xsd:string .
-# 
-# http://bise-eu.info/core-ontology#hasValue
-
-:hasValue a owl:DatatypeProperty ;
-	rdfs:domain :Entry ;
-	rdfs:range rdfs:Literal ;
-	rdfs:comment "A relation between anything and its actual value."@en ;
-	rdfs:label "has value" .
-# 
-# http://bise-eu.info/core-ontology#isCitedWith
-
-:isCitedWith a owl:DatatypeProperty ;
-	rdfs:subPropertyOf :hasValue ;
-	rdfs:domain :Software ;
-	rdfs:range xsd:string ;
-	rdfs:comment "'has attribution instructions' is a text giving instructions to correctly cite the tool, dataset, etc."@en ;
-	rdfs:label "has attribution instructions"@en .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://bise-eu.info/core-ontology#Contributor
-
-:Contributor a owl:Class ;
-	rdfs:subClassOf prov:Person ;
-	rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string .
-# 
-# http://bise-eu.info/core-ontology#Dataset
-
-:Dataset a owl:Class ;
-	rdfs:subClassOf :Entry ;
-	rdfs:label "Dataset"@en .
-# 
-# http://bise-eu.info/core-ontology#Entry
-
-:Entry a owl:Class ;
-	rdfs:subClassOf prov:Entity .
-# 
-# http://bise-eu.info/core-ontology#Library
-
-:Library a owl:Class ;
-	rdfs:subClassOf :Software .
-# 
-# http://bise-eu.info/core-ontology#Plugin
-
-:Plugin a owl:Class ;
-	rdfs:subClassOf :Software .
-# 
-# http://bise-eu.info/core-ontology#Publication
-
-:Publication a owl:Class ;
-	rdfs:subClassOf :Entry .
-# 
-# http://bise-eu.info/core-ontology#Software
-
-:Software a owl:Class ;
-	rdfs:subClassOf :Entry ;
-	rdfs:label "Software"@en .
-# 
-# http://bise-eu.info/core-ontology#StandaloneApp
-
-:StandaloneApp a owl:Class ;
-	rdfs:subClassOf :Software .
-# 
-# http://bise-eu.info/core-ontology#Tag
-
-:Tag a owl:Class ;
-	rdfs:subClassOf :Entry .
-# 
-# http://bise-eu.info/core-ontology#TrainingMaterial
-
-:TrainingMaterial a owl:Class ;
-	rdfs:subClassOf :Entry ;
-	rdfs:label "Training material"@en .
-# 
-# http://bise-eu.info/core-ontology#WebApp
-
-:WebApp a owl:Class ;
-	rdfs:subClassOf :Software .
-# 
-# http://bise-eu.info/core-ontology#Workflow
-
-:Workflow a owl:Class ;
-	rdfs:subClassOf :Software .
-# 
-# http://www.w3.org/ns/prov#Agent
-
-prov:Agent a owl:Class .
-# 
-# http://www.w3.org/ns/prov#Entity
-
-prov:Entity a owl:Class .
-# 
-# http://www.w3.org/ns/prov#Person
-
-prov:Person a owl:Class ;
-	rdfs:subClassOf prov:Agent .
-# 
-# http://www.w3.org/ns/prov#SoftwareAgent
-
-prov:SoftwareAgent a owl:Class ;
-	rdfs:subClassOf prov:Agent .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
+<http://bise-eu.info/core-ontology> rdf:type owl:Ontology ;
+                                     owl:versionIRI <http://bise-eu.info/core-ontology/1.0.0> ;
+                                     dc:contributor "" ;
+                                     dcterms:issued "" ;
+                                     rdfs:comment "BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine."@en ;
+                                     dcterms:title "" ;
+                                     dc:creator "" ;
+                                     dcterms:license "" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://bise-eu.info/core-ontology#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Entry ;
+           rdfs:range prov:Person ;
+           rdfs:comment "'has author' is a relation between a BISE entry and the person who actually created the described tool, dataset, etc."@en ;
+           rdfs:label "has author"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasComparison
+:hasComparison rdf:type owl:ObjectProperty ;
+               rdfs:domain :Software ;
+               rdfs:range :Publication ;
+               rdfs:comment "Has comparison is a relation between a BISE software entry and the publication that describes how the entry performs or behaves compared to other tools."@en ;
+               rdfs:label "has comparison"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasEntryCurator
+:hasEntryCurator rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Entry ;
+                 rdfs:range :Contributor ;
+                 rdfs:comment "'has entry curator' is a relation between a BISE entry and the person responsible for the related BISE content."@en ;
+                 rdfs:label "has entry curator"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasFormat
+:hasFormat rdf:type owl:ObjectProperty ;
+           rdfs:domain :Dataset .
+
+
+###  http://bise-eu.info/core-ontology#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:domain :Software ;
+             rdfs:comment "'has function' is a relation between a BISE software and the nature of the performed data processing or analysis. For example, EDAM operations can be used here."@en ;
+             rdfs:label "has function"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasReferencePublication
+:hasReferencePublication rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :Entry ;
+                         rdfs:range :Publication ;
+                         rdfs:comment "Has reference publication is a relation between a BISE software entry and the publication that describes entry (or the related methods) and should be cited."@en ;
+                         rdfs:label "has reference publication"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasTopic
+:hasTopic rdf:type owl:ObjectProperty ;
+          rdfs:domain :Entry ;
+          rdfs:comment "'has topic' is a relation between a BISE entry and its application domain. For example, EDAM topics can be used here."@en ;
+          rdfs:label "has topic"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasTrainingMaterial
+:hasTrainingMaterial rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isTrainingMaterialOf ;
+                     rdfs:domain :Entry ;
+                     rdfs:range :TrainingMaterial ;
+                     rdfs:label "has training material"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasUsageExample
+:hasUsageExample rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Entry ,
+                             :Software ;
+                 rdfs:range :Publication .
+
+
+###  http://bise-eu.info/core-ontology#isCompatibleWith
+:isCompatibleWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Software ;
+                  rdfs:range :Software ;
+                  rdfs:comment "'is compatible with' is a relation between two softwares stating that they can be used together."@en ;
+                  rdfs:label "is compatible with"@en .
+
+
+###  http://bise-eu.info/core-ontology#isTrainingMaterialOf
+:isTrainingMaterialOf rdf:type owl:ObjectProperty ;
+                      rdfs:domain :TrainingMaterial ;
+                      rdfs:range :Entry ;
+                      rdfs:label "is training material of"@en .
+
+
+###  http://bise-eu.info/core-ontology#requires
+:requires rdf:type owl:ObjectProperty ;
+          rdfs:range :Entry ;
+          rdfs:comment "'requires' is a relation between a software and another required software for the first one to run correctly. For example, an ImageJ plugin requires ImageJ."@en ;
+          rdfs:label "requires"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://bise-eu.info/core-ontology#hasBiologicalContext
+:hasBiologicalContext rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasValue ;
+                      rdfs:domain :Dataset ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "has biological context"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasDOI
+:hasDOI rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :hasValue ;
+        rdfs:domain :Entry ;
+        rdfs:range xsd:string ;
+        rdfs:label "has DOI"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasValue ;
+                rdfs:domain :Entry ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A short description of the BISE resource."@en ;
+                rdfs:label "has description" .
+
+
+###  http://bise-eu.info/core-ontology#hasDocumentation
+:hasDocumentation rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasValue ;
+                  rdfs:domain :Entry ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:label "has documentation"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasExecutionPlatform
+:hasExecutionPlatform rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasValue ;
+                      rdfs:domain :Software ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first "linux" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "mac" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "windows" ;
+                                                                     rdf:rest rdf:nil
+                                                                   ]
+                                                        ]
+                                             ]
+                                 ] ;
+                      rdfs:label "has execution platform"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasFormat
+:hasFormat rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :hasValue ;
+           rdfs:range xsd:string .
+
+
+###  http://bise-eu.info/core-ontology#hasGroundTruth
+:hasGroundTruth rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasValue ;
+                rdfs:domain :Dataset ;
+                rdfs:range xsd:string ;
+                rdfs:label "has ground truth"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasIllustration
+:hasIllustration rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasValue ;
+                 rdfs:domain :Entry ;
+                 rdfs:range xsd:anyURI ;
+                 rdfs:comment "'has illustration' is a property of an entry linking to an web accessible graphical illustration."@en ;
+                 rdfs:label "has illustration"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasImagingDetails
+:hasImagingDetails rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasValue ;
+                   rdfs:domain :Dataset ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has imaging details"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasIteractionLevel
+:hasIteractionLevel rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasValue ;
+                    rdfs:domain :Software ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "automated" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "manual" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "semi-automated" ;
+                                                                   rdf:rest rdf:nil
+                                                                 ]
+                                                      ]
+                                           ]
+                               ] ;
+                    rdfs:label "has interaction level"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasKeyword
+:hasKeyword rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasValue ;
+            rdfs:domain :Entry ;
+            rdfs:range xsd:string ;
+            rdfs:comment "'has suggested tag' is free text aimed at being considered for inclusion in domain ontologies."@en ;
+            rdfs:label "has suggested tag"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasLocation
+:hasLocation rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :hasValue ;
+             rdfs:domain :Entry ;
+             rdfs:range xsd:anyURI ;
+             rdfs:comment "'has location' is a link to web resources giving access or description to the tools, datasets, etc."@en ;
+             rdfs:label "has location"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasOpennessLevel
+:hasOpennessLevel rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasValue ;
+                  rdfs:domain :Entry ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:oneOf [ rdf:type rdf:List ;
+                                           rdf:first "commercial" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "for free and not open source" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "free and open source" ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+                             ] ;
+                  rdfs:label "has openness level"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasProgrammingLanguage
+:hasProgrammingLanguage rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasValue ;
+                        rdfs:domain :Software ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "'has programming language' is a text stating a programming language supported by the software or used for its implementation."@en ;
+                        rdfs:label "has programming language"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasSupportedDimension
+:hasSupportedDimension rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :hasValue ;
+                       rdfs:domain :Software ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:oneOf [ rdf:type rdf:List ;
+                                                rdf:first "2D" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "3D" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "multi-channel" ;
+                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                 rdf:first "time-series" ;
+                                                                                 rdf:rest rdf:nil
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                  ] ;
+                       rdfs:comment "'has supported dimension' is an informative textual value stating the dimension of consumed/analyzed data. Values are limited to \"2D\", \"3D\", \"multi-channel\", and \"time-series\". This tags can be used in combination."@en ;
+                       rdfs:label "has supported dimension"@en .
+
+
+###  http://bise-eu.info/core-ontology#hasSynonym
+:hasSynonym rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasValue ;
+            rdfs:range xsd:string ;
+            rdfs:comment "A relation between anything and words with similar meaning."@en ;
+            rdfs:label "has synonym" .
+
+
+###  http://bise-eu.info/core-ontology#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :hasValue ;
+          rdfs:domain :Entry ;
+          rdfs:range xsd:string ;
+          rdfs:comment "A textual value representing a title."@en ;
+          rdfs:label "has title" .
+
+
+###  http://bise-eu.info/core-ontology#hasUsageExample
+:hasUsageExample rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasValue ;
+                 rdfs:range xsd:string .
+
+
+###  http://bise-eu.info/core-ontology#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Entry ;
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "A relation between anything and its actual value."@en ;
+          rdfs:label "has value" .
+
+
+###  http://bise-eu.info/core-ontology#isCitedWith
+:isCitedWith rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :hasValue ;
+             rdfs:domain :Software ;
+             rdfs:range xsd:string ;
+             rdfs:comment "'has attribution instructions' is a text giving instructions to correctly cite the tool, dataset, etc."@en ;
+             rdfs:label "has attribution instructions"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://bise-eu.info/core-ontology#Contributor
+:Contributor rdf:type owl:Class ;
+             rdfs:subClassOf prov:Person ;
+             rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string .
+
+
+###  http://bise-eu.info/core-ontology#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf :Entry ;
+         rdfs:label "Dataset"@en .
+
+
+###  http://bise-eu.info/core-ontology#Entry
+:Entry rdf:type owl:Class ;
+       rdfs:subClassOf prov:Entity .
+
+
+###  http://bise-eu.info/core-ontology#Library
+:Library rdf:type owl:Class ;
+         rdfs:subClassOf :Software .
+
+
+###  http://bise-eu.info/core-ontology#Plugin
+:Plugin rdf:type owl:Class ;
+        rdfs:subClassOf :Software .
+
+
+###  http://bise-eu.info/core-ontology#Publication
+:Publication rdf:type owl:Class ;
+             rdfs:subClassOf :Entry .
+
+
+###  http://bise-eu.info/core-ontology#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :Entry ;
+          rdfs:label "Software"@en .
+
+
+###  http://bise-eu.info/core-ontology#StandaloneApp
+:StandaloneApp rdf:type owl:Class ;
+               rdfs:subClassOf :Software .
+
+
+###  http://bise-eu.info/core-ontology#TrainingMaterial
+:TrainingMaterial rdf:type owl:Class ;
+                  rdfs:subClassOf :Entry ;
+                  rdfs:label "Training material"@en .
+
+
+###  http://bise-eu.info/core-ontology#WebApp
+:WebApp rdf:type owl:Class ;
+        rdfs:subClassOf :Software .
+
+
+###  http://bise-eu.info/core-ontology#Workflow
+:Workflow rdf:type owl:Class ;
+          rdfs:subClassOf :Software .
+
+
+###  http://www.w3.org/ns/prov#Agent
+prov:Agent rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Person
+prov:Person rdf:type owl:Class ;
+            rdfs:subClassOf prov:Agent .
+
+
+#################################################################
+#    Annotations
+#################################################################
 
 :hasFormat owl:priorVersion "has format"@en ;
-	rdfs:label "has format"@en ;
-	rdfs:comment "'has format' is a relation between a BISE dataset and a data format. For example, it can be defined in EDAM."@en .
-# 
+           rdfs:label "has format"@en ;
+           rdfs:comment "'has format' is a relation between a BISE dataset and a data format. For example, it can be defined in EDAM."@en .
+
 
 :hasUsageExample rdfs:label "has usage example"@en ;
-	rdfs:comment "'has usage example' is a relation between a BISE entry and the publication that describes how the software, dataset, etc. has been used."@en .
-# 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+                 rdfs:comment "'has usage example' is a relation between a BISE entry and the publication that describes how the software, dataset, etc. has been used."@en .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

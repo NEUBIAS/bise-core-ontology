@@ -44,19 +44,7 @@
         <Class IRI="#Plugin"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entry"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isCompatibleWith"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Publication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAuthor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasReferencePublication"/>
@@ -65,16 +53,16 @@
         <Class IRI="#Workflow"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#requires"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasLocation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#WebApp"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFunction"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="prov:Agent"/>
@@ -83,10 +71,73 @@
         <DataProperty IRI="#hasGroundTruth"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasProgrammingLanguage"/>
+        <ObjectProperty IRI="#hasComparison"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasComparison"/>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKeyword"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUsageExample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrainingMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIllustration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasExecutionPlatform"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contributor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSupportedDimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIteractionLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProgrammingLanguage"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasTitle"/>
@@ -98,16 +149,13 @@
         <Class IRI="#Software"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasUsageExample"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="prov:SoftwareAgent"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasBiologicalContext"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TrainingMaterial"/>
@@ -125,79 +173,25 @@
         <Class IRI="#StandaloneApp"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasKeyword"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasUsageExample"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFormat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTrainingMaterial"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasIllustration"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasDOI"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDocumentation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasExecutionPlatform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tag"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Dataset"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Contributor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasSynonym"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasFormat"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasSupportedDimension"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasEntryCurator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTopic"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasIteractionLevel"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="prov:Entity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="prov:Person"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Library"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Contributor"/>
@@ -232,10 +226,6 @@
         <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tag"/>
-        <Class IRI="#Entry"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#TrainingMaterial"/>
         <Class IRI="#Entry"/>
     </SubClassOf>
@@ -249,10 +239,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="prov:Person"/>
-        <Class abbreviatedIRI="prov:Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="prov:SoftwareAgent"/>
         <Class abbreviatedIRI="prov:Agent"/>
     </SubClassOf>
     <SubObjectPropertyOf>
