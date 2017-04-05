@@ -12,15 +12,16 @@
 <http://bise-eu.info/core-ontology> rdf:type owl:Ontology ;
                                      owl:versionIRI <http://bise-eu.info/core-ontology/1.0.0> ;
                                      dc:date "2017-04-05"@en ;
+                                     dc:contributor "Chong Zhang"@en ;
                                      dcterms:issued "" ;
+                                     dc:contributor "Perrine Paul Gilloteaux"@en ;
                                      rdfs:comment "BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine."@en ;
                                      owl:versionInfo "1.0.0"@en ;
                                      dcterms:title "" ;
-                                     dc:contributor """Alban Gaignard
-Matus Kalas
-Perrine Paul
-Chong Zangh"""@en ;
+                                     dc:contributor "Matus Kalas"@en ,
+                                                    "And all Neubias WG4 members !"@en ;
                                      dc:creator "" ;
+                                     dc:contributor "Alban Gaignard"@en ;
                                      dcterms:license "" .
 
 #################################################################
@@ -382,7 +383,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://bise-eu.info/core-ontology#Contributor
 :Contributor rdf:type owl:Class ;
              rdfs:subClassOf prov:Person ;
-             rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string .
+             rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string ;
+             rdfs:label "Contributor"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Dataset
@@ -393,22 +395,26 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://bise-eu.info/core-ontology#Entry
 :Entry rdf:type owl:Class ;
-       rdfs:subClassOf prov:Entity .
+       rdfs:subClassOf prov:Entity ;
+       rdfs:label "Entry"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Library
 :Library rdf:type owl:Class ;
-         rdfs:subClassOf :Software .
+         rdfs:subClassOf :Software ;
+         rdfs:label "Library"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Plugin
 :Plugin rdf:type owl:Class ;
-        rdfs:subClassOf :Software .
+        rdfs:subClassOf :Software ;
+        rdfs:label "Plugin"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Publication
 :Publication rdf:type owl:Class ;
-             rdfs:subClassOf :Entry .
+             rdfs:subClassOf :Entry ;
+             rdfs:label "Publication"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Software
@@ -419,7 +425,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://bise-eu.info/core-ontology#StandaloneApp
 :StandaloneApp rdf:type owl:Class ;
-               rdfs:subClassOf :Software .
+               rdfs:subClassOf :Software ;
+               rdfs:label "Standalone application"@en .
 
 
 ###  http://bise-eu.info/core-ontology#TrainingMaterial
@@ -430,12 +437,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://bise-eu.info/core-ontology#WebApp
 :WebApp rdf:type owl:Class ;
-        rdfs:subClassOf :Software .
+        rdfs:subClassOf :Software ;
+        rdfs:label "Web application"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Workflow
 :Workflow rdf:type owl:Class ;
-          rdfs:subClassOf :Software .
+          rdfs:subClassOf :Software ;
+          rdfs:label "Workflow"@en .
 
 
 ###  http://www.w3.org/ns/prov#Agent
@@ -443,12 +452,14 @@ prov:Agent rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Entity
-prov:Entity rdf:type owl:Class .
+prov:Entity rdf:type owl:Class ;
+            rdfs:label "Entity"@en .
 
 
 ###  http://www.w3.org/ns/prov#Person
 prov:Person rdf:type owl:Class ;
-            rdfs:subClassOf prov:Agent .
+            rdfs:subClassOf prov:Agent ;
+            rdfs:label "Person"@en .
 
 
 #################################################################
