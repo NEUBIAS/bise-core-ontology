@@ -333,7 +333,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requires"/>
-        <Class IRI="#Entry"/>
+        <Class IRI="#Software"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasBiologicalContext"/>
