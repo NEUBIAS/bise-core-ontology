@@ -229,23 +229,23 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "has imaging details"@en .
 
 
-###  http://bise-eu.info/core-ontology#hasIteractionLevel
-:hasIteractionLevel rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :hasValue ;
-                    rdfs:domain :Software ;
-                    rdfs:range [ rdf:type rdfs:Datatype ;
-                                 owl:oneOf [ rdf:type rdf:List ;
-                                             rdf:first "automated" ;
-                                             rdf:rest [ rdf:type rdf:List ;
-                                                        rdf:first "manual" ;
-                                                        rdf:rest [ rdf:type rdf:List ;
-                                                                   rdf:first "semi-automated" ;
-                                                                   rdf:rest rdf:nil
-                                                                 ]
-                                                      ]
-                                           ]
-                               ] ;
-                    rdfs:label "has interaction level"@en .
+###  http://bise-eu.info/core-ontology#hasInteractionLevel
+:hasInteractionLevel rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :hasValue ;
+                     rdfs:domain :Software ;
+                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                  owl:oneOf [ rdf:type rdf:List ;
+                                              rdf:first "automated" ;
+                                              rdf:rest [ rdf:type rdf:List ;
+                                                         rdf:first "manual" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "semi-automated" ;
+                                                                    rdf:rest rdf:nil
+                                                                  ]
+                                                       ]
+                                            ]
+                                ] ;
+                     rdfs:label "has interaction level"@en .
 
 
 ###  http://bise-eu.info/core-ontology#hasKeyword

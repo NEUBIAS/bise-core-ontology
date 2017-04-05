@@ -80,6 +80,9 @@
         <DataProperty IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasInteractionLevel"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasKeyword"/>
     </Declaration>
     <Declaration>
@@ -111,9 +114,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTopic"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasIteractionLevel"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="prov:Entity"/>
@@ -377,7 +377,7 @@
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasIteractionLevel"/>
+        <DataProperty IRI="#hasInteractionLevel"/>
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -449,7 +449,7 @@
         <Class IRI="#Dataset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasIteractionLevel"/>
+        <DataProperty IRI="#hasInteractionLevel"/>
         <Class IRI="#Software"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -525,7 +525,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasIteractionLevel"/>
+        <DataProperty IRI="#hasInteractionLevel"/>
         <DataOneOf>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">automated</Literal>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">manual</Literal>
@@ -718,7 +718,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasIteractionLevel</IRI>
+        <IRI>#hasInteractionLevel</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has interaction level</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
