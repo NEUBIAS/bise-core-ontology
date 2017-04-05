@@ -80,6 +80,13 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "has entry curator"@en .
 
 
+###  http://bise-eu.info/core-ontology#hasExternalID
+:hasExternalID rdf:type owl:ObjectProperty ;
+               rdfs:domain :Entry ;
+               rdfs:comment "'has external ID' aims at mapping the entry to identifiers provided by external services, in the form of URIs."@en ;
+               rdfs:label "has external ID"@en .
+
+
 ###  http://bise-eu.info/core-ontology#hasFormat
 :hasFormat rdf:type owl:ObjectProperty ;
            rdfs:domain :Dataset .
@@ -207,13 +214,6 @@ dcterms:title rdf:type owl:AnnotationProperty .
                                              ]
                                  ] ;
                       rdfs:label "has execution platform"@en .
-
-
-###  http://bise-eu.info/core-ontology#hasExternalID
-:hasExternalID rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf :hasValue ;
-               rdfs:comment "'has external ID' aims at mapping the entry to identifiers provided by external services."@en ;
-               rdfs:label "has external ID"@en .
 
 
 ###  http://bise-eu.info/core-ontology#hasFormat

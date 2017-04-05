@@ -95,9 +95,6 @@
         <DataProperty IRI="#hasGroundTruth"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasExternalID"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasComparison"/>
     </Declaration>
     <Declaration>
@@ -198,6 +195,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasLicense"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExternalID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasBiologicalTerm"/>
@@ -412,6 +412,10 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Class IRI="#Entry"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExternalID"/>
+        <Class IRI="#Entry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasFormat"/>
         <Class IRI="#Dataset"/>
     </ObjectPropertyDomain>
@@ -501,10 +505,6 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasExecutionPlatform"/>
-        <DataProperty IRI="#hasValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasExternalID"/>
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -886,7 +886,7 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasExternalID</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has external ID&apos; aims at mapping the entry to identifiers provided by external services.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has external ID&apos; aims at mapping the entry to identifiers provided by external services, in the form of URIs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
