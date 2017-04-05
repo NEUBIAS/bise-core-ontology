@@ -50,10 +50,10 @@
         <ObjectProperty IRI="#hasReferencePublication"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Workflow"/>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Class IRI="#Workflow"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
@@ -159,6 +159,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasBiologicalContext"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBiologicalTerm"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TrainingMaterial"/>
@@ -334,6 +337,10 @@
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasBiologicalContext"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBiologicalTerm"/>
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -611,6 +618,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasBiologicalContext</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has biological context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBiologicalTerm</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has biological term&apos; states the common term defining the biological context (e.g. cell type, compartment, taxon, etc.) associated to the tool, dataset, etc. If possible it should reuse a controlled vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasBiologicalTerm</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has biological term</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
