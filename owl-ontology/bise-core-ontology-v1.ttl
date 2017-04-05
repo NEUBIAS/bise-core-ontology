@@ -75,7 +75,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://bise-eu.info/core-ontology#hasEntryCurator
 :hasEntryCurator rdf:type owl:ObjectProperty ;
                  rdfs:domain :Entry ;
-                 rdfs:range :Contributor ;
+                 rdfs:range :RegisteredUser ;
                  rdfs:comment "'has entry curator' is a relation between a BISE entry and the person responsible for the related BISE content."@en ;
                  rdfs:label "has entry curator"@en .
 
@@ -276,6 +276,15 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "has suggested tag"@en .
 
 
+###  http://bise-eu.info/core-ontology#hasLicense
+:hasLicense rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasValue ;
+            rdfs:domain :Entry ;
+            rdfs:range xsd:string ;
+            rdfs:comment "'has license' is a text stating the license name."@en ;
+            rdfs:label "has license"@en .
+
+
 ###  http://bise-eu.info/core-ontology#hasLocation
 :hasLocation rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :hasValue ;
@@ -380,13 +389,6 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://bise-eu.info/core-ontology#Contributor
-:Contributor rdf:type owl:Class ;
-             rdfs:subClassOf prov:Person ;
-             rdfs:comment "A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine."^^xsd:string ;
-             rdfs:label "Contributor"@en .
-
-
 ###  http://bise-eu.info/core-ontology#Dataset
 :Dataset rdf:type owl:Class ;
          rdfs:subClassOf :Entry ;
@@ -415,6 +417,13 @@ dcterms:title rdf:type owl:AnnotationProperty .
 :Publication rdf:type owl:Class ;
              rdfs:subClassOf :Entry ;
              rdfs:label "Publication"@en .
+
+
+###  http://bise-eu.info/core-ontology#RegisteredUser
+:RegisteredUser rdf:type owl:Class ;
+                rdfs:subClassOf prov:Person ;
+                rdfs:comment "A 'Registered user' is a person registered to the BISE Bio-Imaging Search Engine."^^xsd:string ;
+                rdfs:label "Registered user"@en .
 
 
 ###  http://bise-eu.info/core-ontology#Software
@@ -460,6 +469,54 @@ prov:Entity rdf:type owl:Class ;
 prov:Person rdf:type owl:Class ;
             rdfs:subClassOf prov:Agent ;
             rdfs:label "Person"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://bise-eu.info/core-ontology#ImageJ
+:ImageJ rdf:type owl:NamedIndividual ,
+                 :Library ,
+                 :StandaloneApp ;
+        :hasAuthor :WayneRasband ;
+        :hasEntryCurator :dscho ;
+        :hasFunction <http://edamontology.org#Image_processing> ;
+        :hasReferencePublication <http://doi.org/10.1038/nmeth.2089> ;
+        :hasDOI "10.1038/nmeth.2089" ;
+        :hasDescription """BioImage Analysis Tool for all! See <bib>2617</bib>.
+
+ImageJ 1.x <http://imagej.net/index.html>
+
+ImageJ2 <http://imagej.net>""" ;
+        :hasExecutionPlatform "linux" ,
+                              "mac" ,
+                              "windows" ;
+        :hasKeyword "gui" ,
+                    "library" ;
+        :hasLicense "Public Domain" ;
+        :hasLocation "http://imagej.net" ;
+        :hasOpennessLevel "free and open source" ;
+        :hasProgrammingLanguage "Java" .
+
+
+###  http://bise-eu.info/core-ontology#WayneRasband
+:WayneRasband rdf:type owl:NamedIndividual ,
+                       prov:Person .
+
+
+###  http://bise-eu.info/core-ontology#dscho
+:dscho rdf:type owl:NamedIndividual ,
+                :RegisteredUser .
+
+
+###  http://doi.org/10.1038/nmeth.2089
+<http://doi.org/10.1038/nmeth.2089> rdf:type owl:NamedIndividual ,
+                                             :Publication .
+
+
+###  http://edamontology.org#Image_processing
+<http://edamontology.org#Image_processing> rdf:type owl:NamedIndividual .
 
 
 #################################################################
