@@ -74,10 +74,10 @@
         <ObjectProperty IRI="#hasReferencePublication"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Class IRI="#Workflow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Workflow"/>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
@@ -107,6 +107,9 @@
         <DataProperty IRI="#hasInteractionLevel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RegisteredUser"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasKeyword"/>
     </Declaration>
     <Declaration>
@@ -119,6 +122,9 @@
         <ObjectProperty IRI="#hasFormat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#WayneRasband"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasIllustration"/>
     </Declaration>
     <Declaration>
@@ -129,9 +135,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSynonym"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Contributor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSupportedDimension"/>
@@ -164,6 +167,9 @@
         <ObjectProperty IRI="#hasFunction"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://edamontology.org#Image_processing"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasProgrammingLanguage"/>
     </Declaration>
     <Declaration>
@@ -182,16 +188,25 @@
         <ObjectProperty IRI="#hasUsageExample"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://doi.org/10.1038/nmeth.2089"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasBiologicalContext"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dscho"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLicense"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasBiologicalTerm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TrainingMaterial"/>
+        <ObjectProperty IRI="#isTrainingMaterialOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isTrainingMaterialOf"/>
+        <Class IRI="#TrainingMaterial"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isCitedWith"/>
@@ -204,6 +219,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ImageJ"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasDOI"/>
@@ -227,10 +245,6 @@
         <Class IRI="#Library"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Contributor"/>
-        <Class abbreviatedIRI="prov:Person"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Dataset"/>
         <Class IRI="#Entry"/>
     </SubClassOf>
@@ -249,6 +263,10 @@
     <SubClassOf>
         <Class IRI="#Publication"/>
         <Class IRI="#Entry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisteredUser"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Software"/>
@@ -274,6 +292,105 @@
         <Class abbreviatedIRI="prov:Person"/>
         <Class abbreviatedIRI="prov:Agent"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Library"/>
+        <NamedIndividual IRI="#ImageJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StandaloneApp"/>
+        <NamedIndividual IRI="#ImageJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="prov:Person"/>
+        <NamedIndividual IRI="#WayneRasband"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegisteredUser"/>
+        <NamedIndividual IRI="#dscho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Publication"/>
+        <NamedIndividual IRI="http://doi.org/10.1038/nmeth.2089"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <NamedIndividual IRI="#WayneRasband"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEntryCurator"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <NamedIndividual IRI="#dscho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <NamedIndividual IRI="http://edamontology.org#Image_processing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReferencePublication"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <NamedIndividual IRI="http://doi.org/10.1038/nmeth.2089"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDOI"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">10.1038/nmeth.2089</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BioImage Analysis Tool for all! See &lt;bib&gt;2617&lt;/bib&gt;.
+
+ImageJ 1.x &lt;http://imagej.net/index.html&gt;
+
+ImageJ2 &lt;http://imagej.net&gt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasExecutionPlatform"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">linux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasExecutionPlatform"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mac</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasExecutionPlatform"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gui</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">library</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLicense"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Public Domain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://imagej.net</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOpennessLevel"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">free and open source</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProgrammingLanguage"/>
+        <NamedIndividual IRI="#ImageJ"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Java</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasReferencePublication"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -336,7 +453,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEntryCurator"/>
-        <Class IRI="#Contributor"/>
+        <Class IRI="#RegisteredUser"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasReferencePublication"/>
@@ -412,6 +529,10 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasKeyword"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLicense"/>
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -492,6 +613,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasKeyword"/>
+        <Class IRI="#Entry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLicense"/>
         <Class IRI="#Entry"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -575,6 +700,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasLicense"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasLocation"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
@@ -620,16 +749,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Contributor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A contributor is a person actually providing new information to the BISE Bio-Imaging Search Engine.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Contributor</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contributor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Dataset</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dataset</Literal>
@@ -653,6 +772,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Publication</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegisteredUser</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A &apos;Registered user&apos; is a person registered to the BISE Bio-Imaging Search Engine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RegisteredUser</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Registered user</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -823,6 +952,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasKeyword</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has suggested tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLicense</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has license&apos; is a text stating the license name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLicense</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has license</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
