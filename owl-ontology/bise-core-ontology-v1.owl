@@ -424,6 +424,10 @@
         <Class IRI="#Dataset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasBiologicalTerm"/>
+        <Class IRI="#Entry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasDOI"/>
         <Class IRI="#Entry"/>
     </DataPropertyDomain>
@@ -438,6 +442,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#hasExecutionPlatform"/>
         <Class IRI="#Software"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFormat"/>
+        <Class IRI="#Dataset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasGroundTruth"/>
@@ -613,6 +621,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAuthor</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBiologicalContext</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has biological context&apos; states the data acquisition context for a dataset with a textual description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
