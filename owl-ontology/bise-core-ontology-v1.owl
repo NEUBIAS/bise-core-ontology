@@ -71,6 +71,9 @@
         <DataProperty IRI="#hasGroundTruth"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasExternalID"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComparison"/>
     </Declaration>
     <Declaration>
@@ -354,6 +357,10 @@
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasExternalID"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasFormat"/>
         <DataProperty IRI="#hasValue"/>
     </SubDataPropertyOf>
@@ -475,7 +482,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isCitedWith"/>
-        <Class IRI="#Software"/>
+        <Class IRI="#Entry"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasBiologicalContext"/>
@@ -653,6 +660,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasExecutionPlatform</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has execution platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasExternalID</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has external ID&apos; aims at mapping the entry to identifiers provided by external services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasExternalID</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has external ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

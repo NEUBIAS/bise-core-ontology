@@ -191,6 +191,13 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "has execution platform"@en .
 
 
+###  http://bise-eu.info/core-ontology#hasExternalID
+:hasExternalID rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasValue ;
+               rdfs:comment "'has external ID' aims at mapping the entry to identifiers provided by external services."@en ;
+               rdfs:label "has external ID"@en .
+
+
 ###  http://bise-eu.info/core-ontology#hasFormat
 :hasFormat rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :hasValue ;
@@ -344,7 +351,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://bise-eu.info/core-ontology#isCitedWith
 :isCitedWith rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :hasValue ;
-             rdfs:domain :Software ;
+             rdfs:domain :Entry ;
              rdfs:range xsd:string ;
              rdfs:comment "'has attribution instructions' is a text giving instructions to correctly cite the tool, dataset, etc."@en ;
              rdfs:label "has attribution instructions"@en .
