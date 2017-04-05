@@ -289,10 +289,6 @@
         <Class IRI="#Entry"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasUsageExample"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCompatibleWith"/>
         <Class IRI="#Software"/>
     </ObjectPropertyDomain>

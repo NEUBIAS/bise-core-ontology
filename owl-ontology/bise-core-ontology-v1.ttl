@@ -108,8 +108,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://bise-eu.info/core-ontology#hasUsageExample
 :hasUsageExample rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Entry ,
-                             :Software ;
+                 rdfs:domain :Entry ;
                  rdfs:range :Publication .
 
 
