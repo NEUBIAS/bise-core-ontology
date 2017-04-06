@@ -492,8 +492,7 @@ ImageJ2 <http://imagej.net>""" ;
         :hasExecutionPlatform "linux" ,
                               "mac" ,
                               "windows" ;
-        :hasKeyword "gui" ,
-                    "library" ;
+        :hasKeyword "gui" ;
         :hasLicense "Public Domain" ;
         :hasLocation "http://imagej.net" ;
         :hasOpennessLevel "free and open source" ;

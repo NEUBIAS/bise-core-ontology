@@ -41,12 +41,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0.0</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Matus Kalas</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
@@ -367,11 +367,6 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gui</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasKeyword"/>
-        <NamedIndividual IRI="#ImageJ"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">library</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasLicense"/>
         <NamedIndividual IRI="#ImageJ"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Public Domain</Literal>
@@ -590,10 +585,6 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
     <DataPropertyDomain>
         <DataProperty IRI="#hasExecutionPlatform"/>
         <Class IRI="#Software"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasFormat"/>
-        <Class IRI="#Dataset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasGroundTruth"/>
