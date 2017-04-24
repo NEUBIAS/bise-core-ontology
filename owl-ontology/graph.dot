@@ -1,0 +1,92 @@
+digraph G {
+#graph [layout="sfdp", overlap="prism"];
+rankdir=LR
+#graph [layout="neato"];
+
+node [shape=box, fontname = Verdana, fontsize = 10, style="rounded,dashed", color=royalblue, fontcolor=black];
+"An identifier"
+"An (EDAM) format"
+"An (EDAM) function"
+
+node [shape=box, fontname = Verdana, fontsize = 10, style="filled,rounded", color=royalblue, fontcolor=honeydew];
+edge [fontname = Verdana, fontsize = 10];
+graph [outputorder = nodesfirst, fontname = Verdana];
+
+#################################################
+#################################################
+# Class hierarchy
+edge [fontname = Verdana, fontsize = 10];
+"Software" -> "Entry"  [label=" is a "]
+"Dataset" -> "Entry"  [label=" is a "]
+"Publication" -> "Entry"  [label=" is a "]
+"Training material" -> "Entry"  [label=" is a "]
+"Registered user" -> "prov:Person" [label=" is a "]
+subgraph cluster_Software {
+"Library" -> "Software" [label=" is a "]
+"Plugin" -> "Software" [label=" is a "]
+"Web application" -> "Software" [label=" is a "]
+"Standalone application" -> "Software" [label=" is a "]
+"Workflow" -> "Software" [label=" is a "]
+}
+
+#################################################
+#################################################
+# Object properties
+edge [fontname = Verdana, fontsize = 10, color=royalblue2];
+
+subgraph cluster_Software {
+	"Software" -> "Publication"  [label=" has comparison "]
+	"Software" -> "An (EDAM) function"  [label=" has function "]
+	"Software" -> "Software"  [label=" is compatible with "]
+	"Software" -> "Software"  [label=" requires "]
+}
+
+subgraph cluster_Dataset {
+	"Dataset" -> "An (EDAM) format"  [label=" has format "]
+}
+subgraph cluster_Entry {
+	"Publication"
+	"Entry" -> "prov:Person" [label=" has author "]
+	"Entry" -> "Registered user"  [label=" has entry curator "]
+	"Entry" -> "An identifier"  [label=" has external ID "]
+	"Entry" -> "Publication"  [label=" has reference publication "]
+	"Entry" -> "Publication"  [label=" has usage example "]
+	"Entry" -> "Training material"  [label=" has training material "]
+}
+"Training material" -> "Entry"  [label=" is training material of "]
+
+#################################################
+#################################################
+# Data properties
+edge [fontname=Verdana, fontsize = 10, color=aquamarine3];
+node [shape=plaintext, fontname = Verdana, fontsize = 10, style=default, color=royalblue, fontcolor=black];
+subgraph cluster_Entry {
+	"Entry" -> "an attribution" [label=" has attributon instructions "]
+	"Entry" -> "a term" [label=" has biological term "]
+	"Entry" -> "a title" [label=" has title "]
+	"Entry" -> "a description" [label=" has description "]
+	"Entry" -> "a documentation URL" [label=" has description "]
+	"Entry" -> "a usage example"  [label=" has usage example "]
+	"Entry" -> "a digital identifier" [label=" has DOI "]
+	"Entry" -> "an image URL" [label=" has illustration "]
+	"Entry" -> "a license" [label=" has license "]
+	"Entry" -> "a URL" [label=" has location "]
+	"Entry" -> "a description of openness" [label=" has openness level "]
+	"Entry" -> "a tag" [label=" has suggested tag "]
+}
+
+subgraph cluster_Dataset {
+	"Dataset" -> "a bio/experimental context" [label=" has biological context "]
+	"Dataset" -> "a format"  [label=" has format "]
+	"Dataset" -> "a ground truth / gold standard"  [label=" has ground truth "]
+	"Dataset" -> "the acquisition context"  [label=" has imaging details "]
+}
+
+subgraph cluster_Software {
+	"Software" -> "an execution platform" [label=" has execution platform "]
+	"Software" -> "an interaction level"  [label=" has interaction level "]
+	"Software" -> "a programming language"  [label=" has programming language "]
+	"Software" -> "'2D, 3D, multi-channel or time-series''"  [label=" has supported dimension "]
+}
+
+}

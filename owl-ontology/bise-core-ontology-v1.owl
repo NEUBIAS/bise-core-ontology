@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://bise-eu.info/core-ontology"
      versionIRI="http://bise-eu.info/core-ontology/1.0.0">
-    <Prefix name="" IRI="http://bise-eu.info/core-ontology#"/>
+    <Prefix name="" IRI="http://bise-eu.info/core-ontology"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -442,6 +442,10 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <ObjectProperty IRI="#isTrainingMaterialOf"/>
         <Class IRI="#TrainingMaterial"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAuthor"/>
         <Class abbreviatedIRI="prov:Person"/>
@@ -587,6 +591,10 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Class IRI="#Software"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasFormat"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasGroundTruth"/>
         <Class IRI="#Dataset"/>
     </DataPropertyDomain>
@@ -628,6 +636,10 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Entry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasUsageExample"/>
         <Class IRI="#Entry"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -895,11 +907,6 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <IRI>#hasFormat</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has format</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasFunction</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has function&apos; is a relation between a BISE software and the nature of the performed data processing or analysis. For example, EDAM operations can be used here.</Literal>
@@ -982,7 +989,7 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasReferencePublication</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Has reference publication is a relation between a BISE software entry and the publication that describes entry (or the related methods) and should be cited.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has reference publication&apos; is a relation between a BISE software entry and the publication that describes entry (or the related methods) and should be cited.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1030,6 +1037,11 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has topic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTrainingMaterial</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has training material&apos; is a relation between a BISE entry and associated training material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasTrainingMaterial</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has training material</Literal>
@@ -1037,7 +1049,7 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasUsageExample</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has usage example&apos; is a relation between a BISE entry and the publication that describes how the software, dataset, etc. has been used.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;has usage example&apos; is a description of how to use a given BISE entry.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1075,6 +1087,11 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is compatible with</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTrainingMaterialOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&apos;is training material of&apos; is a relation associating a training material to an entry of the  BISE registry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isTrainingMaterialOf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is training material of</Literal>
@@ -1089,19 +1106,9 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <IRI>#requires</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">requires</Literal>
     </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>prov:Entity</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>prov:Person</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
-    </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
