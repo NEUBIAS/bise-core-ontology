@@ -788,6 +788,16 @@ ImageJ2 &lt;http://imagej.net&gt;</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Publication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>#RegisteredUser</IRI>
+        <IRI>https://www.google.fr/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwj719y86r_TAhUKXhoKHW97DRoQjRwIBw&amp;url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FFOAF&amp;psig=AFQjCNEz7QpSLO8Ii-OInK9INEHEyhbyCw&amp;ust=1493217408081681</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>#RegisteredUser</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RegisteredUser</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A &apos;Registered user&apos; is a person registered to the BISE Bio-Imaging Search Engine.</Literal>
