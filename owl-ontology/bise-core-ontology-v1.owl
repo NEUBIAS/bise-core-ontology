@@ -21,6 +21,10 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Some introduction words ...</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core.png</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-04-05</Literal>
     </Annotation>
@@ -51,10 +55,6 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:title"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-documentation/bise-core.png</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>

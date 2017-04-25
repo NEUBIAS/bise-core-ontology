@@ -11,7 +11,8 @@
 
 <http://bise-eu.info/core-ontology> rdf:type owl:Ontology ;
                                      owl:versionIRI <http://bise-eu.info/core-ontology/1.0.0> ;
-                                     dc:description "Some introduction words ..." ;
+                                     dc:description "Some introduction words ..." ,
+                                                    "https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core.png"^^xsd:anyURI ;
                                      dc:date "2017-04-05"@en ;
                                      dc:contributor "Chong Zhang"@en ;
                                      dcterms:issued "" ;
@@ -20,7 +21,6 @@
                                      owl:versionInfo "1.0.0"@en ;
                                      dc:contributor "Matus Kalas"@en ;
                                      dcterms:title "" ;
-                                     dc:description "https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-documentation/bise-core.png"^^xsd:anyURI ;
                                      dc:contributor "And all Neubias WG4 members !"@en ;
                                      dc:creator "" ;
                                      dc:contributor "Alban Gaignard"@en ;
