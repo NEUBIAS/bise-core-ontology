@@ -20,6 +20,7 @@
                                      owl:versionInfo "1.0.0"@en ;
                                      dc:contributor "Matus Kalas"@en ;
                                      dcterms:title "" ;
+                                     dc:description "https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-documentation/bise-core.png"^^xsd:anyURI ;
                                      dc:contributor "And all Neubias WG4 members !"@en ;
                                      dc:creator "" ;
                                      dc:contributor "Alban Gaignard"@en ;
