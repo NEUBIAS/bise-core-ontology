@@ -37,10 +37,6 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Perrine Paul Gilloteaux</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&lt;https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core.png&gt;</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine.</Literal>
     </Annotation>
@@ -59,6 +55,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">And all Neubias WG4 members !</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>https://github.com/NeuBIAS/bise-core-ontology/raw/master/owl-ontology/bise-core.png</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>

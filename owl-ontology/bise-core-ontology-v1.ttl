@@ -16,12 +16,12 @@
                                      dc:contributor "Chong Zhang"@en ;
                                      dcterms:issued "" ;
                                      dc:contributor "Perrine Paul Gilloteaux"@en ;
-                                     dc:description "<https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core.png>" ;
                                      rdfs:comment "BISE core ontology is a controlled vocabulary aimed at describing the content of the BISE Bio-Imaging Search engine."@en ;
                                      owl:versionInfo "1.0.0"@en ;
                                      dc:contributor "Matus Kalas"@en ;
                                      dcterms:title "" ;
                                      dc:contributor "And all Neubias WG4 members !"@en ;
+                                     dc:description <https://github.com/NeuBIAS/bise-core-ontology/raw/master/owl-ontology/bise-core.png> ;
                                      dc:creator "" ;
                                      dc:contributor "Alban Gaignard"@en ;
                                      dcterms:license "" .
