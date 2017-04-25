@@ -17,6 +17,10 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Some introduction words ...</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-04-05</Literal>
     </Annotation>
@@ -129,6 +133,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasExecutionPlatform"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSynonym"/>
