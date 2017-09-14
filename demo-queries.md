@@ -76,7 +76,8 @@ SELECT ?label (count(distinct ?s1) as ?soft_count) WHERE {
         ?edam_class rdfs:label ?label
 }
 GROUP BY ?edam_class ?label
-ORDER BY DESC(?soft_count)```
+ORDER BY DESC(?soft_count)
+```
 ### Results
 ![](fig/counts.png)
 
