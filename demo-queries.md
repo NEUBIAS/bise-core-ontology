@@ -42,6 +42,7 @@ CONSTRUCT {
 ### Intention
 Search all available tools from a given EDAM topic
 ### How
+```
 CONSTRUCT {
       ?ti <http://bise-eu.info/core-ontology#hasTopic> ?label .
 } where {
@@ -55,6 +56,7 @@ CONSTRUCT {
 
  FILTER (?label ~ "microscopy")
 }
+```
 ### Results
 ![](fig/topics.png)
 
