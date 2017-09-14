@@ -8,21 +8,25 @@ This web page briefly illustrates sample queries benefiting from knowledge captu
 Showing softwares and their dependencies. 
 ### How
 ### Results
+![](fig/deps.png)
 
 ## Q2
 ### Intention
 Extract some metrics (sorted counts) based on EDAM terms. e.g. which topic is the most represented in biii.eu ?
 ### How
 ### Results
+![](fig/counts.png)
 
 ## Q3
 ### Intention
 Inferring software author communities based on shared interests (EDAM functions)
 ### How
 ### Results
+![](fig/authors.png)
 
 ## Q4
 ### Intention
 Search all available tools from a given EDAM topic
 ### How
 ### Results
+![](fig/topics.png)
