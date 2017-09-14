@@ -10,7 +10,7 @@ Showing softwares and their dependencies.
 ```
 CONSTRUCT {
     ?s1 <requires> ?d1
-} where {
+} WHERE {
     ?s1 a <http://biii.eu/node/software>
     ?s1 <http://bise-eu.info/core-ontology#requires> ?d1
 }
@@ -20,7 +20,7 @@ CONSTRUCT {
 
 ## Q2
 ### Intention
-Inferring software author communities based on shared interests (EDAM functions)
+Inferring software author communities based on shared interests (EDAM-Bioimaging Operations)
 ### How
 ```
 CONSTRUCT {
@@ -40,8 +40,10 @@ CONSTRUCT {
 
 ## Q3
 ### Intention
-Search all available tools from a given EDAM topic
+Search all available tools from a given EDAM topic. 
 ### How
+We match an EDAM Topic which has a label which contains "microscopy". Then we search in the taxonomy all corresponding subclasses `?c rdfs:subClassOf* ?superClass`, and the softwares annotated with them. Finally, we display for each matched subgraph, an edge between a software label and a topic label.  
+
 ```
 CONSTRUCT {
       ?ti <http://bise-eu.info/core-ontology#hasTopic> ?label .
