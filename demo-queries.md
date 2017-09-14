@@ -79,5 +79,5 @@ GROUP BY ?edam_class ?label
 ORDER BY DESC(?soft_count)
 ```
 ### Results
-![](fig/counts.png)
+![](fig/soft-counts.png)
 
