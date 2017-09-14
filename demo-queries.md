@@ -22,6 +22,7 @@ CONSTRUCT {
 ### Intention
 Inferring software author communities based on shared interests (EDAM-Bioimaging Operations)
 ### How
+we match pairs of softwares with their corresponding authors. As soon as the tools share the same EDAM operation, we make the assumption that authors share similar interets. FInally, we build a graph with edges `<share_same_interests_with>` between authors. 
 ```
 CONSTRUCT {
     ?a1 <share_same_interests_with> ?a2
@@ -40,7 +41,7 @@ CONSTRUCT {
 
 ## Q3
 ### Intention
-Search all available tools from a given EDAM topic. 
+Search all available tools related to an EDAM topic. 
 ### How
 We match an EDAM Topic which has a label which contains "microscopy". Then we search in the taxonomy all corresponding subclasses `?c rdfs:subClassOf* ?superClass`, and the softwares annotated with them. Finally, we display for each matched subgraph, an edge between a software label and a topic label.  
 
@@ -66,16 +67,16 @@ CONSTRUCT {
 ### Intention
 Extract some metrics (sorted counts) based on EDAM terms. e.g. which topic is the most represented in biii.eu ?
 ### How
+
 ```
-SELECT ?edam_class ?label (count(distinct ?label) as ?topic_count) WHERE { 
+SELECT ?label (count(distinct ?s1) as ?soft_count) WHERE { 
        ?s1 a <http://biii.eu/node/software> 
        ?s1 <http://bise-eu.info/core-ontology#hasTopic> ?edam_class
         
         ?edam_class rdfs:label ?label
 }
 GROUP BY ?edam_class ?label
-ORDER BY DESC(?topic_count)
-```
+ORDER BY DESC(?soft_count)```
 ### Results
 ![](fig/counts.png)
 
