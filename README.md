@@ -1,4 +1,8 @@
-# neubias-data-model
+# Bise Core Ontology
 
-This repository hosts the data and scripts related to the core ontology of the BISE BioImaging Search Engine. 
-Mainly, you will find an OWL implementation of the model and some scripts to transform CSV tables from the web tool to RDF ([TARQL](https://tarql.github.io))
+This repository hosts the core ontology of the BISE BioImaging Search Engine. 
+
+## Ontology development process 
+1. Web protégé (online web editor)
+2. Export to an OWL file
+3. Documentation genetartion (LODE)
