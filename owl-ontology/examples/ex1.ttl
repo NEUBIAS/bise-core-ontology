@@ -1,0 +1,7 @@
+<http://biii.eu/node/1019> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Qingzong TSENG" ;
+    dc:title "Find Focused Slices" ;
+    rdfs:comment """\r
+An ImageJ plugin for selecting a plane in focus among multiple slices image stack. The algorithm uses normalized variance. \r
+\r
+A short tutorial is available in the plugin web page (above). """ .
