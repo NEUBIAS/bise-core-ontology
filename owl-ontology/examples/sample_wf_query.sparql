@@ -1,0 +1,13 @@
+PREFIX biii: <http://bise-eu.info/core-ontology#> .
+PREFIX p-plan: <http://purl.org/net/p-plan#> .
+PREFIX edam: <http://purl.obolibrary.org/obo/edam#> .
+
+CONSTRUCT WHERE {
+    ?c p-plan:hasInputVar ?input ; #show components and their inputs
+        biii:hasFunction ?f . #show the associated EDAM operation
+
+    ?v biii:hasEdamData ?in_edam . #show the EDAM data annotation
+
+    ?output p-plan:isOutputVarOf ?c2 ; #show all outputs parameters
+        biii:hasEdamData ?out_edam .   # and their EDAM annotations
+}
