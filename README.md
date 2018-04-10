@@ -3,6 +3,9 @@
 This repository hosts the core ontology of the BISE BioImaging Search Engine. 
 
 ## Ontology development process 
-1. Web protégé (online web editor)
+1. Web protégé (online web editor) : https://webprotege.stanford.edu/#projects/38b3da5d-b5ce-4d59-972c-23fcb700256a 
 2. Export to an OWL file
-3. Documentation genetartion (LODE)
+3. Documentation generation (LODE) : 
+  - http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core-ontology-v1.owl
+  - http://www.essepuntato.it/lode/owlapi/https://raw.githubusercontent.com/NeuBIAS/neubias-data-model/master/owl-ontology/bise-core-ontology-v1.owl
+ 
