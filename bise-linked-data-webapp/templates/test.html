@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Workflow visualization demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+     <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" />
+
+    <!-- For loading external data files -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
+    <script src="{{ url_for('static',filename='js/cytoscape.min.js') }}"></script>
+
+    <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.5.0/cytoscape-dagre.js"></script>
+  </head>
+  <body>
+    <h1>Workflow display demo</h1>
+    <div id="cy"></div>
+    <!-- Load appplication code at the end to ensure DOM is loaded -->
+    <script>
+    var cy = window.cy = cytoscape({
+      container: document.getElementById('cy'),
+
+      boxSelectionEnabled: false,
+      autounselectify: true,
+
+      layout: {
+        name: 'dagre'
+      },
+
+   style: [ // the stylesheet for the graph
+    {
+      selector: 'node',
+      style: {
+        'shape' : 'roundrectangle',
+        'width' : 100,
+        'height' : 60,
+        'text-valign' : 'center',
+        'background-color': '#666',
+        'label': 'data(id)'
+      }
+    },
+
+    {
+      selector: 'edge',
+      style: {
+        'width': 20,
+        'line-color': '#ccc',
+        'target-arrow-color': '#ccc',
+        'target-arrow-shape': 'triangle',
+        'curve-style': 'unbundled-bezier',
+        'source-label': 'data(source_label)',
+        'source-text-offset': 90,
+        'target-label': 'data(target_label)',
+        'target-text-offset': 90,
+        'edge-text-rotation': 'autorotate'
+      }
+    },
+    {
+        "selector": ".autorotate",
+        "style": {
+            "edge-text-rotation": "autorotate"
+        }
+    },
+
+  {
+    "selector": ".background",
+    "style": {
+      "text-background-opacity": 1,
+      "text-background-color": "#ccc",
+      "text-background-shape": "roundrectangle",
+      "text-border-color": "#000",
+      "text-border-width": 1,
+      "text-border-opacity": 1
+    }
+  },
+
+  {
+    "selector": ".outline",
+    "style": {
+      "text-outline-color": "#ccc",
+      "text-outline-width": 3
+    }
+  }
+],
+
+      elements: [
+      {% for node in nodes %}
+        { data: { id: '{{ node.id }}', label: '{{ node.id }}'  } },
+      {% endfor %}
+      {% for edge in edges%}
+        { data: { source: '{{ edge.source }}',
+        'source_label': '{{ edge.source_label }}',
+        target: '{{ edge.target }}',
+        'target_label': '{{ edge.target_label }}',
+        label: 'followedBy', classes: 'autorotate' } },
+        {% endfor %}
+      ]
+    });
+    </script>
+  </body>
+</html>

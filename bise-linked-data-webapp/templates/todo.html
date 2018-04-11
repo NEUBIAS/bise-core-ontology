@@ -1,0 +1,12 @@
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<form action="/new" method="POST">
+  <input type="text" name="name"></input>
+  <input type="text" name="description"></input>
+  <input type="submit"></input>
+</form>
+
+{% for item in items %}
+  <h1> {{ item.name }} </h1>
+  <p> {{ item.description }} <p>
+{% endfor %}
