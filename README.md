@@ -18,5 +18,6 @@ conda install flask rdflib rdflib-jsonld pymongo -c conda-forge
 ```
 ### Launch the web app
 ```
-
+cd bise-linked-data-webapp
+python app.py
 ```
