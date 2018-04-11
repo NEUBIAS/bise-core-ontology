@@ -9,3 +9,9 @@ This repository hosts the core ontology of the BISE BioImaging Search Engine.
   - http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core-ontology-v1.owl
   - http://www.essepuntato.it/lode/owlapi/https://raw.githubusercontent.com/NeuBIAS/neubias-data-model/master/owl-ontology/bise-core-ontology-v1.owl
  
+# Demo web app
+### Virtual environment setup to get python dependencies
+```
+conda install flask rdflib rdflib-jsonld -c conda-forge
+```
+### Launch the web app
