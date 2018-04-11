@@ -33,6 +33,11 @@ print(str(len(g)) + ' triples in Biii data graph')
 
 
 ## Demo Workflow 1
+@app.route('/sparql')
+def sparql():
+    return render_template('sparql.html')
+
+## Demo Workflow 1
 @app.route('/graph')
 def graph():
     # list_of_nodes = [{"label": "node1"},
