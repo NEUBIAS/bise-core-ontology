@@ -56,6 +56,11 @@ def graphQ4():
 
 
 ## Demo Workflow 1
+@app.route('/sparql')
+def sparql():
+    return render_template('sparql.html')
+
+## Demo Workflow 1
 @app.route('/graph')
 def graph():
     # list_of_nodes = [{"label": "node1"},

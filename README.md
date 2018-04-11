@@ -8,6 +8,9 @@ This repository hosts the core ontology of the BISE BioImaging Search Engine.
 3. Documentation generation (LODE) : 
   - http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/NeuBIAS/bise-core-ontology/master/owl-ontology/bise-core-ontology-v1.owl
   - http://www.essepuntato.it/lode/owlapi/https://raw.githubusercontent.com/NeuBIAS/neubias-data-model/master/owl-ontology/bise-core-ontology-v1.owl
+
+# Demo queries
+[demo-queries.md](demo-queries.md)
  
 # Demo web app
 ### Virtual environment setup to get python dependencies
