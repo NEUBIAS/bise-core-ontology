@@ -1,0 +1,73 @@
+@prefix biii: <http://bise-eu.info/core-ontology#> .
+@prefix p-plan: <http://purl.org/net/p-plan#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#@prefix edam: <http://purl.obolibrary.org/obo/edam#> .
+@prefix edam: <http://edamontology.org/> .
+
+
+# 3 steps :
+#    - 2 spot detection in parallel for two input datasets
+#    - 1 registration based on the previous results -> two outputs
+
+
+####################################
+## The full registration workflow
+<http://www.biii.eu/performing-automatic-registration-clem> rdf:type biii:Workflow .
+
+####################################
+## The first spot detection step taking as input an image and producing multiple ROIs
+<http://www.biii.eu/performing-automatic-registration-clem/step_1> rdf:type biii:Component ;
+        biii:isStepOfPlan <http://www.biii.eu/performing-automatic-registration-clem> ;
+        p-plan:hasInputVar <http://www.biii.eu/performing-automatic-registration-clem/sequence_1>  ;
+        biii:hasImplementation <http://www.biii.eu/spot-detector> ;
+        biii:hasFunction edam:operation_Spot_extraction ;
+        biii:hasTopic <http://edamontology.org/topic_3382> .
+
+<http://www.biii.eu/performing-automatic-registration-clem/sequence_1> rdf:type biii:Parameter ;
+        biii:hasEdamData edam:data_Image .
+
+<http://www.biii.eu/performing-automatic-registration-clem/ROI_1> rdf:type biii:Parameter ;
+        biii:hasEdamData edam:format_roi ;
+        p-plan:isOutputVarOf <http://www.biii.eu/performing-automatic-registration-clem/step_1> .
+
+####################################
+## The second spot detection step taking as input another image and producing multiple ROIs
+<http://www.biii.eu/performing-automatic-registration-clem/step_2> rdf:type biii:Component ;
+        biii:isStepOfPlan <http://www.biii.eu/performing-automatic-registration-clem> ;
+        p-plan:hasInputVar <http://www.biii.eu/performing-automatic-registration-clem/sequence_2> ;
+        biii:hasFunction edam:operation_Spot_extraction ;
+        biii:hasTopic <http://edamontology.org/topic_3382> ;
+        biii:hasImplementation <http://www.biii.eu/spot-detector> .
+
+<http://www.biii.eu/performing-automatic-registration-clem/sequence_2> rdf:type biii:Parameter ;
+        biii:hasEdamData edam:data_Image .
+
+<http://www.biii.eu/performing-automatic-registration-clem/ROI_2> rdf:type biii:Parameter ;
+        biii:hasEdamData edam:format_roi ;
+        p-plan:isOutputVarOf <http://www.biii.eu/performing-automatic-registration-clem/step_2> .
+
+####################################
+## The third step registers the two ROIs and apply the transformation to the two images
+<http://www.biii.eu/performing-automatic-registration-clem/step_3> rdf:type biii:Component ;
+        biii:isStepOfPlan <http://www.biii.eu/performing-automatic-registration-clem> ;
+        p-plan:isPreceededBy <http://www.biii.eu/performing-automatic-registration-clem/step_2> ;
+        p-plan:isPreceededBy <http://www.biii.eu/performing-automatic-registration-clem/step_1> ;
+        p-plan:hasInputVar <http://www.biii.eu/performing-automatic-registration-clem/ROI_1> ;
+        p-plan:hasInputVar <http://www.biii.eu/performing-automatic-registration-clem/ROI_2> ;
+        p-plan:hasInputVar <http://www.biii.eu/performing-automatic-registration-clem/sequence_1> ;
+        p-plan:hasInputVar <http://www.biii.eu/performing-automatic-registration-clem/sequence_2> ;
+        biii:hasFunction <http://edamontology.org/operation_Image_registration> ;
+        biii:hasTopic <http://edamontology.org/topic_0611> ;
+        biii:hasTopic <http://edamontology.org/topic__R8Ss4wIFt90wZ1yjFLfXyPM> ;
+        biii:hasTopic <http://edamontology.org/topic_3385> ;
+        biii:hasImplementation <http://www.biii.eu/ec-clem-autofinder> .
+
+<http://www.biii.eu/performing-automatic-registration-clem/registered_image> rdf:type biii:Parameter ;
+        biii:hasEdamData edam:data_Image ;
+        p-plan:isOutputVarOf <http://www.biii.eu/performing-automatic-registration-clem/step_3> .
+
+####################################
+## inverse relation for softwares
+<http://www.biii.eu/spot-detector> biii:isAnImplementationOf <http://www.biii.eu/performing-automatic-registration-clem/step_1> .
+<http://www.biii.eu/spot-detector> biii:isAnImplementationOf <http://www.biii.eu/performing-automatic-registration-clem/step_2> .
+<http://www.biii.eu/spot-detector> biii:isAnImplementationOf <http://www.biii.eu/performing-automatic-registration-clem/step_3> .

@@ -19,10 +19,10 @@ db = client.tododb
 icanDb = client.ican_sandbox
 
 g = ConjunctiveGraph()
-g.parse("/Users/gaignard-a/Documents/Dev/neubias-data-migration/biii-import-tool/edam-biii/neubias-dump-20180129.ttl",
+g.parse("static/data/neubias-dump-20180129.ttl",
         format="turtle")
-g.parse("/Users/gaignard-a/Documents/Dev/neubias-data-migration/biii-import-tool/edam-biii/EDAM-bioimaging_alpha03.owl")
-g.parse("/Users/gaignard-a/Documents/Dev/neubias-data-migration/biii-import-tool/edam-biii/sample_biii_workflow.ttl",
+g.parse("static/data/EDAM-bioimaging_alpha03.owl")
+g.parse("static/data/sample_biii_workflow.ttl",
         format="turtle")
 
 print(str(len(g)) + ' triples in Biii data graph')
