@@ -31,6 +31,29 @@ print(str(len(g)) + ' triples in Biii data graph')
 # for name in ['Jane', 'Bob', 'Dan']:
 #     print(my_template.substitute(person_name=name))
 
+@app.route('/graphQ4')
+def graphQ4():
+    tbl = []
+    qres = g.query(
+        """       
+	SELECT ?label (count(distinct ?s1) as ?soft_count) 
+	WHERE { 
+	    ?s1 a <http://biii.eu/node/software> .
+	    ?s1 biii:hasTopic ?edam_class .
+	    ?edam_class rdfs:label ?label .
+	}
+	GROUP BY ?edam_class ?label
+ 
+	ORDER BY DESC(?soft_count)
+
+        """, initNs=ns)
+
+    for row in qres:
+        tbl.append({"name": row['label'],"count":row['soft_count']})
+
+    return render_template('testQ4.html', tbl=tbl)
+
+
 
 ## Demo Workflow 1
 @app.route('/graph')
