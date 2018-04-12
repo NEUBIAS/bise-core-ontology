@@ -113,6 +113,7 @@ Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Componen
 
 <http://biii.eu/node/1023> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ignacio Arganda-Carreras, David Legland " ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
     nb:requires <http://biii.eu/node/1016>,
         <http://biii.eu/node/17>,
         <http://biii.eu/node/332>,
@@ -128,6 +129,7 @@ Image pre-processing: some pre-processing is included in the plugin to facilitat
 
 <http://biii.eu/node/1024> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ignacio Arganda-Carreras, David Legland " ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
     nb:requires <http://biii.eu/node/1016>,
         <http://biii.eu/node/826> ;
     dc:title "Marker-controlled Watershed" ;
@@ -198,9 +200,11 @@ A video tutorial is available (be careful of sounds, the video automatically sta
 
 <http://biii.eu/node/1031> a <http://biii.eu/node/software> ;
     nb:hasAuthor "D. Sage, F.R. Neumann, F. Hediger, S.M. Gasser, M. Unser" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
     nb:requires <http://biii.eu/node/726> ;
     dc:title "Spot detector based on a 3D LoG filter" ;
-    rdfs:comment "Quote: \"It applies a LoG (Laplacian of Gaussian or Mexican Hat) filter to a 2D image or to 3D volume. Here, we have a fast implementation. It is a perfect tool to enhance spots, like spherical particles, in noisy images. This module is easy to tune, only by selecting the standard deviations in X, Y and Z directions.\"" .
+    rdfs:comment """<p>Quote: "It applies a LoG (Laplacian of Gaussian or Mexican Hat) filter to a 2D image or to 3D volume. Here, we have a fast implementation. It is a perfect tool to enhance spots, like spherical particles, in noisy images. This module is easy to tune, only by selecting the standard deviations in X, Y and Z directions."</p>\r
+""" .
 
 <http://biii.eu/node/1032> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Chen Chen, François Waharte,  Perrine Paul-Gilloteaux" ;
@@ -335,20 +339,7 @@ Reference: 2528\r
     nb:hasAuthor "Thorsten Wagner, Pascal Behnel" ;
     nb:hasReferencePublication <http://10.5201/ipol10.5201/ipol.201110.5201/ipol.2011.bcm_nlm> ;
     dc:title "ImageJ Plugin for Non-Local-Means Filtering" ;
-    rdfs:comment """A more modern approach for denoising / smoothening before segmentation, works like Gaussian blurring but preserves edges and boundaries. Listed in Fiji update sites. \r
-\r
-## Algorithm\r
-\r
-Algorithm description is in [this page](http://www.ipol.im/pub/art/2011/bcm_nlm/) 2612.\r
-\r
-## Example usage\r
-\r
-Localization of Membrane bound protein in Arabidopsis meristem was analyzed using the non-local-mean filter for refining its position 2613. \r
-\r
-## impression\r
-\r
-It's effect is somewhere between Gaussian blurring and anistropic diffusion.  \r
-\r
+    rdfs:comment """<p>A more modern approach for denoising / smoothening before segmentation, works like Gaussian blurring but preserves edges and boundaries. Listed in Fiji update sites. ## Algorithm Algorithm description is in [this page](http://www.ipol.im/pub/art/2011/bcm_nlm/) 2612. ## Example usage Localization of Membrane bound protein in Arabidopsis meristem was analyzed using the non-local-mean filter for refining its position 2613. ## impression It's effect is somewhere between Gaussian blurring and anistropic diffusion.</p>\r
 """ .
 
 <http://biii.eu/node/1046> a <http://biii.eu/node/software> ;
@@ -456,54 +447,30 @@ The file has implemented both point to point and point to plane as well as a cou
 
 <http://biii.eu/node/1057> a <http://biii.eu/node/software> ;
     nb:hasAuthor "David Legland, Ignacio Arganda-Carreras" ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations>,
+        <http://edamontology.org/operation_Shape_features> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-04/fourScreens.png" ;
     nb:hasReferencePublication <http://10.1093/bioinformatics/btw413> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/1016>,
         <http://biii.eu/node/332>,
+        <http://biii.eu/node/38>,
         <http://biii.eu/node/826> ;
     dc:title "MorphoLibJ" ;
-    rdfs:comment """A plugin for ImageJ with funcionalities for image processing such as filtering, reconstructing, segmenting, etc. based on Mathematical morphology.\r
+    rdfs:comment """<p>MorphoLibJ is a library of plugin for ImageJ with functionalities for image processing such as filtering, reconstructing, segmenting, etc... Tools are based on Mathematical morphology with more rigorous mathematical approach than in the standard tools of ImageJ.&nbsp;&nbsp;</p>\r
 \r
-Plugin/API\r
+<p>Programming language: JAVA</p>\r
 \r
-Programming language: JAVA\r
+<p>Among features:</p>\r
 \r
-Processes:\r
+<p>* Morphological operations :&nbsp;&nbsp;Dilation, Erosion,&nbsp;Opening,&nbsp;&nbsp;Closing , Top hat (white and black), Morphological gradient (aka Beucher Gradient), Morphological&nbsp;Laplacian, Morphological reconstruction, Maxima/Minima , Extended Maxima/Minima -Watershed (classic or controlled) -Image overlay -Image labelling -Geodesic diameter -Region Adjacency Graph -Granulometry curves, morphological image analysis.</p>\r
 \r
--Morphlogical operations\r
-\r
-* Dilation\r
-* Erosion\r
-* Opening\r
-* Closing\r
-* Top hat (white and black)\r
-* Gradient\r
-* Laplacian\r
-\r
--Morphological reconstruction\r
-\r
--Maxima/Minima\r
-\r
--Extended Maxima/Minima\r
-\r
--Watershed (classic or controlled)\r
-\r
--Image overlay\r
-\r
--Image labelling \r
-\r
--Geodesic diameter \r
-\r
--Region Adjacency Graph\r
-\r
--Granulonetry curves\r
-\r
-User skill : Life scientist, developers, analysts\r
-\r
-\r
- 2656""" .
+<p>User skill : Life scientist, developers, analysts</p>\r
+""" .
 
 <http://biii.eu/node/1058> a <http://biii.eu/node/software> ;
     nb:hasAuthor "David Legland" ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
     dc:title "Grayscale granulometry" ;
     rdfs:comment """This imageJ/Fiji plugin provides an analysis of the granulometry inside an image by mathematical morphology. It has sevral option for the structuring element to be used, and the size domain to be tested.\r
 The output will be both a curve of the remaining content of the image against the growing size of the structuring element, and the corresponding results table that could be then exported. \r
@@ -865,11 +832,8 @@ This image set belongs to the Broad Bioimage Benchmark Collection (BBBC). The BB
 <http://biii.eu/node/1095> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ojala T, Pietikäinen M & Mäenpää T " ;
     dc:title "Local BInary Pattern (general code)" ;
-    rdfs:comment """Matlab implementation (2014) of Local Binary Pattern. Used for texture image analysis.\r
-\r
-Good explanation here:\r
-\r
-http://www.ee.oulu.fi/research/imag/mvg/files/pdf/ICCV2009_tutorial.pdf""" .
+    rdfs:comment """<p>Matlab implementation (2014) of Local Binary Pattern. Used for texture image analysis with insensitivity to local average value. Good explanation here: <a href="http://www.ee.oulu.fi/research/imag/mvg/files/pdf/ICCV2009_tutorial.pdf">http://www.ee.oulu.fi/research/imag/mvg/files/pdf/ICCV2009_tutorial.pdf</a></p>
+""" .
 
 <http://biii.eu/node/1096> a <http://biii.eu/node/software> ;
     dc:title "Dendritic Spine Classification using Shape and Appearance Features based on Two-Photon Microscopy" .
@@ -1058,27 +1022,24 @@ Avizo is packaged in different Editions, with optional eXtension modules. Each A
 """ .
 
 <http://biii.eu/node/1118> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Armen Stepanyants",
-        "Paarth Chothani",
-        "Vivek Mehta" ;
+    nb:hasAuthor "Chothani, Paarth ",
+        "Mehta, Vivek ",
+        "Stepanyants, Armen" ;
     nb:hasFunction <http://edamontology.org/operation_Image_enhancement>,
         <http://edamontology.org/operation_Neuron_image_analysis>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/NeuralCircuitTracer.PNG" ;
     nb:hasReferencePublication <http://link.springer.com/10.1007/s12021-011-9121-2>,
         "Automated Tracing of Neurites from Light Microscopy Stacks of Images " ;
-    nb:hasTopic <http://edamontology.org/topic__R9Cmje2ZUXyDW6aQAvFhwSM> ;
+    nb:hasTopic <http://edamontology.org/topic__R9Cmje2ZUXyDW6aQAvFhwSM>,
+        <http://edamontology.org/topic__RBKlmE9DGTZwEwxw0juThGg> ;
     nb:requires <http://biii.eu/node/1117> ;
     dc:title "Neural Circuit Tracer" ;
     rdfs:comment """<p>Neural Circuit Tracer (NCTracer) is open source software for automated and manual tracing of neurites from light microscopy stacks of images. NCTracer has more than one workflow available for neuron tracing.&nbsp;</p>\r
 \r
 <p><br />\r
-"The Neural Circuit Tracer is open source software built using Java (Sun Microsystems) and Matlab (MathWorks,<br />\r
-Inc., Natick MA). It is based on the core of ImageJ (http://rsbweb.nih.gov/ij) and the graphic user interface has been<br />\r
-developed by using Java Swings. The software combines anumber of functionalities of ImageJ with several newly<br />\r
-developed functions for automated and manual tracing of neurites. The Neural Circuit Tracer is designed in a way<br />\r
-that will allow the users to add any plug-ins developed for ImageJ. More importantly, functions written in MatLab and<br />\r
-converted into Java with Matlab JA toolbox can also be added to the Neural Circuit Tracer."&nbsp;</p>\r
+"The Neural Circuit Tracer is open source software built using Java (Sun Microsystems) and Matlab (MathWorks, Inc., Natick MA). It is based on the core of ImageJ (http://rsbweb.nih.gov/ij) and the graphic user interface has been developed by using Java Swings. The software combines anumber of functionalities of ImageJ with several newly developed functions for automated and manual tracing of neurites. The Neural Circuit Tracer is designed in a way<br />\r
+that will allow the users to add any plug-ins developed for ImageJ. More importantly, functions written in MatLab and converted into Java with Matlab JA toolbox can also be added to the Neural Circuit Tracer."&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/1119> a <http://biii.eu/node/software> ;
@@ -2202,6 +2163,42 @@ accompanying file LICENSE for details.\r
     rdfs:comment """<p>CaPTk is a software platform for analysis of radiographic cancer images, currently focusing on brain, breast, and lung cancer. CaPTk integrates advanced, validated tools performing various aspects of medical image analysis, that have been developed in the context of active clinical research studies and collaborations toward addressing real clinical needs. With emphasis given in its use as a very lightweight and efficient viewer, and with no prerequisites for substantial computational background, CaPTk aims to facilitate the swift translation of advanced computational algorithms into routine clinical quantification, analysis, decision making, and reporting workflow. Its long-term goal is&nbsp;providing widely used technology that leverages the value of advanced imaging analytics in cancer prediction, diagnosis and prognosis, as well as in better understanding the biological mechanisms of cancer development.</p>\r
 """ .
 
+<http://biii.eu/node/1278> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Marius Staring",
+        "Stefan Klein" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation__RCPVGO34XrwrJasQ5yWBg9k>,
+        <http://edamontology.org/operation__RLtOI0poPsYRHzgXbAcr2E> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-04/elastixLogo.gif" ;
+    nb:hasReferencePublication <http://dx.doi.org/10.1109/TMI.2009.2035616>,
+        <https://www.frontiersin.org/articles/10.3389/fninf.2013.00050/full>,
+        "10.1109/TMI.2009.2035616",
+        "10.3389/fninf.2013.00050" ;
+    dc:title "elastix" ;
+    rdfs:comment """<p><strong>Elastix </strong>is a toolbox for rigid and nonrigid registration of (medical) images.</p>\r
+\r
+<p>Elastix is based on the ITK library, and provides additional algorithms for image registration.&nbsp;</p>\r
+\r
+<p>The software can be run as a single-line command, making it easy to include in larger scripts or workflows. The user needs to edit a configuration file that contains all relevant parameters for registration: transformation model, metric used to comapre images, optimization algorithm, mutliscale pyramidal representation of images...</p>\r
+\r
+<p>Nowadays elastix is accompanied by <a href="http://www.biii.eu/simpleelastix">SimpleElastix</a>,&nbsp;making it available in other languages like C++, Python, Java, R, Ruby, C# and Lua.</p>\r
+""" .
+
+<http://biii.eu/node/1280> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "contact team: compucell3d.iu@gmail.com",
+        "http://www.indiana.edu/~bioc/jglazier/" ;
+    nb:hasFunction <http://edamontology.org/operation_3441>,
+        <http://edamontology.org/operation__R9FvNkpDIaqZQhLVlPsHisj> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-04/CC3D_somitogenesismodels.jpg" ;
+    nb:hasReferencePublication <https://www.sciencedirect.com/science/article/pii/B9780123884039000138>,
+        "https://doi.org/10.1016/B978-0-12-388403-9.00013-8" ;
+    nb:hasTopic <http://edamontology.org/topic__R96toeNl9iMp8oqv9augU84> ;
+    dc:title "CompuCell3D" ;
+    rdfs:comment """<p>CompuCell3D is a flexible scriptable modeling environment, which allows the rapid construction of sharable Virtual Tissue in-silico simulations of a wide variety of multi-scale, multi-cellular problems including angiogenesis, bacterial colonies, cancer, developmental biology, evolution, the immune system, tissue engineering, toxicology and even non-cellular soft materials. CompuCell3D models have been used to solve basic biological problems, to develop medical therapies, to assess modes of action of toxicants and to design engineered tissues. CompuCell3D intuitive and make Virtual Tissue modeling accessible to users without extensive software development or programming experience.</p>\r
+\r
+<p>It uses Cellular Potts Model to model cell behavior.</p>\r
+""" .
+
 <http://biii.eu/node/129> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Maria Anna Rapsomaniki, Panagiotis Kotsantis, Ioanna-Eleni Symeonidou, Nickolaos-Nikiforos Giakoumakis, Stavros Taraviras and Zoi Lygerou" ;
     dc:title "easyFRAP" ;
@@ -2561,13 +2558,15 @@ Using the coordinates recorded in the Result window, each frame is shifted back 
 
 <http://biii.eu/node/173> a <http://biii.eu/node/software> ;
     nb:hasAuthor "A Great Guy" ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
+    nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/726> ;
     dc:title "Centromere Recognition and Quantification" ;
-    rdfs:comment """Particle detection is based on "Analyze Particles" in ImageJ. It probably could also be used in spot detection, not limited to centromere. \r
+    rdfs:comment """<p>Particle detection is based on "Analyze Particles" in ImageJ. It probably could also be used in spot detection, not limited to centromere.</p>\r
 \r
->This macro is described in Bodor et al. (2012) Analysis of Protein Turnover by Quantitative SNAP-Based Pulse-Chase Imaging. Current Protocols in Cell Biology, UNIT 8.8. The macro recognizes centromere or kinetochore foci in Delta Vision or TIFF images and determines their centroid position. Fluorescent intensities are then measured for each centromere by placing a small box around the centroid position of the centromere. The peak intensity value within the box is corrected for local background by subtraction of the minimum pixel value. This process results in an accurate measurement of large numbers of centromere or kinetochore-specific signals.""" .
+<p>&gt;This macro is described in Bodor et al. (2012) Analysis of Protein Turnover by Quantitative SNAP-Based Pulse-Chase Imaging. Current Protocols in Cell Biology, UNIT 8.8. The macro recognizes centromere or kinetochore foci in Delta Vision or TIFF images and determines their centroid position. Fluorescent intensities are then measured for each centromere by placing a small box around the centroid position of the centromere. The peak intensity value within the box is corrected for local background by subtraction of the minimum pixel value. This process results in an accurate measurement of large numbers of centromere or kinetochore-specific signals.</p>\r
+""" .
 
 <http://biii.eu/node/174> a <http://biii.eu/node/software> ;
     nb:hasAuthor "[Fabrice Duprat](https://www.ipmc.cnrs.fr/~duprat/ipmcgb.htm#debut)" ;
@@ -3254,13 +3253,11 @@ Requires Bio-Formats plugin""" .
 
 <http://biii.eu/node/237> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fabrice de Chaumont" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
     nb:requires <http://biii.eu/node/8> ;
     dc:title "Batch spot detection with custom output" ;
-    rdfs:comment """Download the protocol,use and modify in Icy.\r
-It permits to detect spot with wavelet spot detector block.\r
-\r
-Input : loop on a folder \r
-Outputs: excel, binary, and detection screenshot""" .
+    rdfs:comment """<p>Download the protocol,use and modify in Icy. It permits to detect spot with wavelet spot detector block. Input : loop on a folder Outputs: excel, binary, and detection screenshot</p>\r
+""" .
 
 <http://biii.eu/node/238> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Christophe Leterrier" ;
@@ -3456,10 +3453,11 @@ The workflow was used in 2455.""" .
 
 <http://biii.eu/node/258> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Juergen Reymann" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
     nb:requires <http://biii.eu/node/71> ;
     dc:title "2D spots counting using KNIME" ;
-    rdfs:comment """These two KNIME workflow solutions are similar: first one detects nuclei and spots inside the nuclei without taking care of surrounding regions, i.e. mitochondria. The second one provides the full\r
-solution including spots in mitochondria.""" .
+    rdfs:comment """<p>These two KNIME workflow solutions are similar: first one detects nuclei and spots inside the nuclei without taking care of surrounding regions, i.e. mitochondria. The second one provides the full solution including spots in mitochondria.</p>\r
+""" .
 
 <http://biii.eu/node/259> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Vilppu Tuominen & Jorma Isola" ;
@@ -3830,9 +3828,11 @@ fluorescently labeled proteins, across multiple cells. ADAPT can detect and morp
 
 <http://biii.eu/node/300> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Robert Bemis" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
     nb:requires <http://biii.eu/node/101> ;
     dc:title "DNA MicroArray Image Processing Case Study" ;
-    rdfs:comment "In this case study, MATLAB, the Image Processing and Signal Processing toolboxes were used to determine the green intensities from a small portion of a microarray image containing 4,800 spots. A 10x10 pattern of spots was detected by averaging rows and columns to produce horizontal and vertical profiles. Periodicity was determined automatically by autocorrelation and used to form an optimal length filter for morphological background removal. A rectangular grid of bounding boxes was defined. Each spot was individually addressed and segmented by thresholding to form a mask. The mask was used to isolate each spot from surrounding background. Individual spot intensity was determined by integrating pixel intensities. Finally, integrated intensities were tabulated and saved to a data file for subsequent statistical analysis to determine which genes matter most." .
+    rdfs:comment """<p>In this case study, MATLAB, the Image Processing and Signal Processing toolboxes were used to determine the green intensities from a small portion of a microarray image containing 4,800 spots. A 10x10 pattern of spots was detected by averaging rows and columns to produce horizontal and vertical profiles. Periodicity was determined automatically by autocorrelation and used to form an optimal length filter for morphological background removal. A rectangular grid of bounding boxes was defined. Each spot was individually addressed and segmented by thresholding to form a mask. The mask was used to isolate each spot from surrounding background. Individual spot intensity was determined by integrating pixel intensities. Finally, integrated intensities were tabulated and saved to a data file for subsequent statistical analysis to determine which genes matter most.</p>\r
+""" .
 
 <http://biii.eu/node/301> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Kota Miura" ;
@@ -3994,6 +3994,7 @@ Here is how to proceed, using MorphoLibJ:\r
 
 <http://biii.eu/node/311> a <http://biii.eu/node/software> ;
     nb:hasAuthor "David Legland" ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
     nb:requires <http://biii.eu/node/101>,
         <http://biii.eu/node/38> ;
     dc:title "classification of hemp fibers based on morphological features" ;
@@ -5441,10 +5442,11 @@ The incessant development of improved microscopy imaging techniques, as well as 
     dc:title "NuclearQuant" .
 
 <http://biii.eu/node/63> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Fuhui Long ",
-        "Gene Myers",
-        "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)" ;
-    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
+    nb:hasAuthor "Long, Fuhui",
+        "Myers, Gene",
+        "Peng, Hanchuan  (http://orcid.org/0000-0002-3478-3942)" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_thresholding>,
+        <http://edamontology.org/operation_Neuron_image_analysis>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/APP.PNG" ;
     nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btr237>,
@@ -5454,7 +5456,7 @@ The incessant development of improved microscopy imaging techniques, as well as 
     dc:title "APP (All-path pruning)" ;
     rdfs:comment """<p>"We have developed an automatic graph algorithm, called the all-path pruning (APP), to trace the 3D structure of a neuron. To avoid potential mis-tracing of some parts of a neuron, an APP first produces an initial over-reconstruction, by tracing the optimal geodesic shortest path from the seed location to every possible destination voxel/pixel location in the image. Since the initial reconstruction contains all the possible paths and thus could contain redundant structural components (SC), we simplify the entire reconstruction without compromising its connectedness by pruning the redundant structural elements, using a new maximal- covering minimal-redundant (MCMR) subgraph algorithm. We show that MCMR has a linear computational complexity and will converge. We examined the performance of our method using challenging 3D neuronal image datasets of model organisms (e.g. fruit fly)"</p>\r
 \r
-<p>This plugin can be used with default parameters or user-defined parameters (Fully or Semi-automated)</p>\r
+<p>This plugin can be used with default parameters or user-defined parameters.</p>\r
 """ .
 
 <http://biii.eu/node/630> a <http://biii.eu/node/software> ;
@@ -5556,11 +5558,12 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
     dc:title "SciJava" .
 
 <http://biii.eu/node/65> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Brian Long",
-        "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)",
-        "Xiaoxiao Liu",
-        "Zhi Zhou" ;
-    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
+    nb:hasAuthor "Liu,, Xiaoxiao",
+        "Long, Brian",
+        "Peng, Hanchuan  (http://orcid.org/0000-0002-3478-3942)",
+        "Zhou, Zhi" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_thresholding>,
+        <http://edamontology.org/operation_Neuron_image_analysis>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/tremap.PNG" ;
     nb:hasReferencePublication <https://doi.org/10.1007/s12021-015-9278-1>,
@@ -5570,7 +5573,7 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
     dc:title "TReMAP" ;
     rdfs:comment """<p>"we present a new fully automated 3D reconstruction algorithm, called TReMAP, short for Tracing, Reverse Mapping and Assembling of 2D Projections. Instead of tracing a 3D image directly in the 3D space as seen in majority of the tracing methods, we first trace the 2D projection trees in 2Dplanes, followed by reverse-mapping the resulting 2D tracing results back into the 3D space as 3D curves; then we use a minimal spanning tree (MST) method to assemble all the 3D curves to generate the final 3D reconstruction. Because we simplify a 3D reconstruction problem into 2D, the computational costs are reduced dramatically."&nbsp;</p>\r
 \r
-<p>Suitable for high throughput neuron image analysis (image sizes &gt;10GB). This plugin can be used with default parameters or user-defined parameters (Fully or semi-automated)</p>\r
+<p>Suitable for high throughput neuron image analysis (image sizes &gt;10GB). This plugin can be used with default parameters or user-defined parameters.</p>\r
 """ .
 
 <http://biii.eu/node/650> a <http://biii.eu/node/software> ;
@@ -5619,13 +5622,12 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
     dc:title "Multi Otsu Threshold" .
 
 <http://biii.eu/node/66> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Dagan Feng",
-        "Donghao Zhang",
-        "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)",
-        "Sidong Liu",
-        "Siqi Liu" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_enhancement>,
-        <http://edamontology.org/operation_Neuron_image_analysis>,
+    nb:hasAuthor "Feng, Dagan ",
+        "Liu, Sidong ",
+        "Liu, Siqi",
+        "Peng, Hanchuan  (http://orcid.org/0000-0002-3478-3942)",
+        "Zhang, Donghao " ;
+    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/tracingplot.png" ;
     nb:hasReferencePublication <https://doi.org/10.1007/s12021-016-9302-0>,
@@ -5636,7 +5638,7 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
     dc:title "Rivulet" ;
     rdfs:comment """<p>"we propose a novel automatic 3D neuron reconstruction algorithm, named Rivulet, which is based on the multi-stencils fast-marching and iterative back-tracking. The proposed Rivulet algorithm is capable of tracing discontinuous areas without being interrupted by densely distributed noises."&nbsp;</p>\r
 \r
-<p>This plugin can be used with default parameters or with user-defined parameters (Fully or semi-automated)</p>\r
+<p>This plugin can be used with default parameters or with user-defined parameters.</p>\r
 \r
 <p>Example image obtained from Rivulet Wiki website (https://github.com/RivuletStudio/Rivulet-Neuron-Tracing-Toolbox/wiki)&nbsp;</p>\r
 """ .
@@ -8145,29 +8147,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
         <http://biii.eu/node/618> ;
     dc:title "Arrow" .
 
-<http://biii.eu/node/71> a <http://biii.eu/node/software> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/knime.png" ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/321>,
-        <http://biii.eu/node/326>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/463>,
-        <http://biii.eu/node/469>,
-        <http://biii.eu/node/502>,
-        <http://biii.eu/node/711>,
-        <http://biii.eu/node/713>,
-        <http://biii.eu/node/716>,
-        <http://biii.eu/node/744>,
-        <http://biii.eu/node/750>,
-        <http://biii.eu/node/751>,
-        <http://biii.eu/node/754>,
-        <http://biii.eu/node/77>,
-        <http://biii.eu/node/80>,
-        <http://biii.eu/node/896> ;
-    dc:title "KNIME Image Processing and Analysis" ;
-    rdfs:comment """<p>KNIME is a user-friendly graphical workbench for the entire analysis process: data access, data transformation, initial investigation, powerful predictive analytics, visualisation and reporting. Its an open integration platform and provides over 1000 modules (nodes), including those of the KNIME community and its extensive partner network. One of these extensions adds the ability for image analysis allowing to process, segment and further analyze images which can easily be used in combination with the other extensions, potentially from other fields.</p>\r
-""" .
-
 <http://biii.eu/node/833> a <http://biii.eu/node/software> ;
     nb:requires <http://biii.eu/node/17>,
         <http://biii.eu/node/38> ;
@@ -8218,6 +8197,29 @@ Examples of available categories of operators : filtering, edge detection, mathe
         <http://biii.eu/node/601> ;
     dc:title "TrakEM2" ;
     rdfs:comment """<p>TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation (Fiji comes with TrakEM2). It supports arbitrary-sized datasets.&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/71> a <http://biii.eu/node/software> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/knime.png" ;
+    nb:requires <http://biii.eu/node/17>,
+        <http://biii.eu/node/321>,
+        <http://biii.eu/node/326>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/463>,
+        <http://biii.eu/node/469>,
+        <http://biii.eu/node/502>,
+        <http://biii.eu/node/711>,
+        <http://biii.eu/node/713>,
+        <http://biii.eu/node/716>,
+        <http://biii.eu/node/744>,
+        <http://biii.eu/node/750>,
+        <http://biii.eu/node/751>,
+        <http://biii.eu/node/754>,
+        <http://biii.eu/node/77>,
+        <http://biii.eu/node/80>,
+        <http://biii.eu/node/896> ;
+    dc:title "KNIME Image Processing and Analysis" ;
+    rdfs:comment """<p>KNIME is a user-friendly graphical workbench for the entire analysis process: data access, data transformation, initial investigation, powerful predictive analytics, visualisation and reporting. Its an open integration platform and provides over 1000 modules (nodes), including those of the KNIME community and its extensive partner network. One of these extensions adds the ability for image analysis allowing to process, segment and further analyze images which can easily be used in combination with the other extensions, potentially from other fields.</p>\r
 """ .
 
 <http://biii.eu/node/728> a <http://biii.eu/node/software> ;
@@ -8571,12 +8573,26 @@ Limitations:\r
     dc:title "Projection" .
 
 <http://biii.eu/node/92> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Image_thresholding> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/itk.jpg" ;
     nb:requires <http://biii.eu/node/1016>,
         <http://biii.eu/node/517>,
         <http://biii.eu/node/826> ;
     dc:title "ITK" ;
-    rdfs:comment """<p>ITK is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis. Developed through extreme programming methodologies, ITK employs leading-edge algorithms for registering and segmenting multidimensional data. It is widely used and contributed in the medical imaging field. Strengths Highly optimized C++, well commented Consistently updated (new) algorithms many tools and softwares are built upon it connected with VTK Insight Journal (open code and sample data) Extensive list of examples &amp; tutorials Limitations yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
+    rdfs:comment """<p>ITK is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis.</p>\r
+\r
+<p>Developed through extreme programming methodologies, ITK employs leading-edge algorithms for registering and segmenting multidimensional data. It is widely used and contributed in the medical imaging field.</p>\r
+\r
+<h3>Strengths</h3>\r
+\r
+<p>Highly optimized C++, well commented Consistently updated (new) algorithms many tools and softwares are built upon it connected with VTK Insight Journal (open code and sample data) Extensive list of examples &amp; tutorials</p>\r
+\r
+<h3>Limitations</h3>\r
+\r
+<p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
 """ .
 
 <http://biii.eu/node/971> a <http://biii.eu/node/software> ;
@@ -8609,6 +8625,11 @@ Limitations:\r
         <http://biii.eu/node/86> ;
     dc:title "channel" .
 
+<http://biii.eu/node/726> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:requires <http://biii.eu/node/71> ;
+    dc:title "Spot Detection" .
+
 <http://biii.eu/node/79> a <http://biii.eu/node/software> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/FIJI.png" ;
     dc:title "Fiji" ;
@@ -8625,10 +8646,6 @@ Limitations:\r
     nb:requires <http://biii.eu/node/671>,
         <http://biii.eu/node/8> ;
     dc:title "Histogram" .
-
-<http://biii.eu/node/726> a <http://biii.eu/node/software> ;
-    nb:requires <http://biii.eu/node/726> ;
-    dc:title "Spot Detection" .
 
 <http://biii.eu/node/88> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Hamprecht Fred ",
