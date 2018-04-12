@@ -31,20 +31,51 @@ print(str(len(g)) + ' triples in Biii data graph')
 # for name in ['Jane', 'Bob', 'Dan']:
 #     print(my_template.substitute(person_name=name))
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 ## Demo Workflow 1
 @app.route('/sparql')
 def sparql():
     return render_template('sparql.html')
 
+@app.route('/demo_query_3')
+def demoQ3():
+    query = """
+    CONSTRUCT {
+      ?ti <http://bise-eu.info/core-ontology#hasTopic> ?label 
+    } WHERE {
+        ?x a <http://biii.eu/node/software> .
+        ?x <http://bise-eu.info/core-ontology#hasAuthor> ?a .
+        ?x <http://dcterms/title> ?ti .
+        ?x <http://bise-eu.info/core-ontology#hasTopic> ?c .
+
+        ?c rdfs:subClassOf* ?superClass .
+        ?superClass rdfs:label ?label .
+
+        FILTER (regex(?label, "microscopy"))
+    } 
+    """
+
+    qres = g.query(query)
+
+    list_of_nodes = []
+    list_of_edges = []
+
+    for row in qres:
+        list_of_nodes.append({"id": row[0], "type" :"software"})
+        list_of_nodes.append({"id": row[2], "type" : "topic"})
+        list_of_edges.append({"source": row[0], "target": row[2], "edge_label": row[1]})
+
+    # print(list_of_nodes)
+    # print(list_of_edges)
+    return render_template('demo.html', nodes=list_of_nodes, edges=list_of_edges)
+
 ## Demo Workflow 1
 @app.route('/graph')
 def graph():
-    # list_of_nodes = [{"label": "node1"},
-    #          {"label": "node2"},
-    #          {"label": "node3"}]
-    # list_of_edges = [{"source": "node1", "target": "node2"},
-    #                  {"source": "node1", "target": "node3"}]
+
     list_of_nodes = []
     list_of_edges = []
 
@@ -80,7 +111,7 @@ def graph():
 
     return render_template('test.html', nodes=list_of_nodes, edges=list_of_edges)
 
-@app.route('/')
+@app.route('/welcome')
 def welcome():
     qres = g.query(
         """

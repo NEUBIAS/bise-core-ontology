@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <title>Query editing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="css/uikit.min.css" />-->
+    <script src="{{ url_for('static',filename='js/uikit.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/uikit-icons.min.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/uikit.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css') }}">
+
+    <link href='//cdn.jsdelivr.net/yasgui/2.5.0/yasgui.min.css' rel='stylesheet' type='text/css'/>
+    <style>
+      /** uncomment this if you'd like to hide the endpoint selector
+      .yasgui .endpointText {display:none !important;}
+      **/
+    </style>
+
+<body>
+
+<div class="uk-container uk-container-small">
+    <h1>My SPARQL query</h1>
+    <div id='yasgui'></div>
+</div>
+
+<!-- YASGUI JS section-->
+<script src='//cdn.jsdelivr.net/yasgui/2.5.0/yasgui.min.js'></script>
+<script type="text/javascript">
+	    var yasgui = YASGUI(document.getElementById("yasgui"), {
+        //Uncomment below to change the default endpoint
+        //Note: If you've already opened the YASGUI page before, you should first clear your
+        //local-storage cache before you will see the changes taking effect
+        //yasqe:{sparql:{endpoint:'bla'}}
+      });
+
+      console.log(yasqe.getValue())
+
+</script>
+
+</body>
+</html>

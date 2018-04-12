@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neubias linked data demos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="css/uikit.min.css" />-->
+    <script src="{{ url_for('static',filename='js/uikit.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/uikit-icons.min.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/uikit.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css') }}">
+</head>
+
+<body>
+<div uk-grid>
+
+    <div class="uk-width-1-6@m">
+        {% block nav %}
+        {% endblock %}
+    </div>
+
+    <div class="uk-width-expand@m">
+        {% block body %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

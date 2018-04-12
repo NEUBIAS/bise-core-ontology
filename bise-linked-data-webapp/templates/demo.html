@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+{% include 'nav.html' %}
+{% endblock %}
+
+{% block body %}
+
+<div class="uk-margin"></div>
+<div class="uk-container uk-container-small">
+
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" />
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
+    <script src="{{ url_for('static',filename='js/cytoscape.min.js') }}"></script>
+
+    <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.5.0/cytoscape-dagre.js"></script>
+
+    <script src="http://marvl.infotech.monash.edu/webcola/cola.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-cola@2.2.3/cytoscape-cola.min.js"></script>
+
+    <h1>Workflow display demo</h1>
+    <div id="cy"></div>
+    <!-- Load appplication code at the end to ensure DOM is loaded -->
+    <script>
+    var cy = window.cy = cytoscape({
+      container: document.getElementById('cy'),
+
+      boxSelectionEnabled: false,
+      autounselectify: true,
+
+      layout: {
+        name: 'cola',
+        idealEdgeLength: 200,
+        nodeOverlap: 10,
+        refresh: 40,
+        fit: true,
+        padding: 30,
+        randomize: true,
+        componentSpacing: 10000,
+        nodeRepulsion: 100000,
+        edgeElasticity: 2000,
+        nestingFactor: 0,
+        gravity: 10,
+        numIter: 1000,
+        initialTemp: 200,
+        coolingFactor: 0.2,
+        minTemp: 1.0
+      },
+
+   style: [ // the stylesheet for the graph
+    {
+      selector: 'node',
+      style: {
+        'shape' : 'ellipse',
+        'width' : '20',
+        'text-wrap': 'wrap',
+        'text-valign' : 'center',
+        'border-width' : 5,
+        'border-color' : '#fff',
+        'background-color': '#666',
+        'label': 'data(id)'
+        }
+    },
+    {
+      selector: 'edge',
+      style: {
+        'width': 3,
+        'line-color': '#ccc',
+        'target-arrow-color': '#ccc',
+        'target-arrow-shape': 'triangle',
+        'curve-style': 'unbundled-bezier',
+        'label': 'data(edge_label)',
+        'edge-text-rotation': 'autorotate'
+      }
+    },
+    {
+        "selector": ".autorotate",
+        "style": {
+            "edge-text-rotation": "autorotate"
+        }
+    },
+
+  {
+    "selector": ".background",
+    "style": {
+      "text-background-opacity": 1,
+      "text-background-color": "#ccc",
+      "text-background-shape": "roundrectangle",
+      "text-border-color": "#000",
+      "text-border-width": 1,
+      "text-border-opacity": 1
+    }
+  },
+
+  {
+    "selector": ".outline",
+    "style": {
+      "text-outline-color": "#ccc",
+      "text-outline-width": 3
+    }
+  }
+],
+
+      elements: [
+      {% for node in nodes %}
+        { data: { id: '{{ node.id }}', label: '{{ node.id }}'  } },
+      {% endfor %}
+      {% for edge in edges%}
+        { data: { source: '{{ edge.source }}',
+        'source_label': '{{ edge.source_label }}',
+        target: '{{ edge.target }}',
+        'target_label': '{{ edge.target_label }}',
+        label: 'followedBy', classes: 'autorotate' } },
+        {% endfor %}
+      ]
+    });
+
+    <!--{% for node in nodes %}-->
+    <!--    console.log('{{ node.id }}')    -->
+    <!--{% endfor %}-->
+    </script>
+</div>
+
+{% endblock %}
