@@ -2199,6 +2199,23 @@ accompanying file LICENSE for details.\r
 <p>It uses Cellular Potts Model to model cell behavior.</p>\r
 """ .
 
+<http://biii.eu/node/1282> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Anindya Gupta" ;
+    nb:hasFunction <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
+    nb:hasTopic <http://edamontology.org/topic__R7LElbFkBgKS401YKsVtNck> ;
+    dc:title "Denoising of Transmission Electron Microscopy (TEM) images" ;
+    rdfs:comment """<p>Transmission Electron Microscopy (TEM) is an imaging technique providing nm resolution. It is often used to&nbsp;analyze structural details in biological samples. Analysis of TEM images is negatively affected by a number of imaging factors, such as sample preparation artefacts, non-optimal microscope alignment and focusing, electrons interacting with and modifying the sample, and motion.&nbsp;The imaging artefacts can be reduced by decreasing the electron dose&nbsp;and acquisition time. However, this results in images with more noise and increases the need for denoising. This tool is a Convolutional Neural Network (CNN) based denoising method suited for TEM images. More detail description can be found in B. Bajic, A. Suveer, A. Gupta, I.Pepic, J. Lindblad, N. Sladoje, and I.M. Sintorn, "Denoising of Short Exposure Transmission Electron Microscopy Images for Ultrastructural Enhancement", 15th IEEE International Symposium on Biomedical Imaging (ISBI), 2018.</p>\r
+""" .
+
+<http://biii.eu/node/1283> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Anindya Gupta" ;
+    nb:hasFunction <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-04/logo_0.png" ;
+    nb:hasTopic <http://edamontology.org/topic__R7LElbFkBgKS401YKsVtNck> ;
+    dc:title "Denoising of Transmission Electron Microscopy (TEM) images" ;
+    rdfs:comment """<p>Transmission Electron Microscopy (TEM) is an imaging technique providing nm resolution. It is often used to&nbsp;analyze structural details in biological samples. Analysis of TEM images is negatively affected by a number of imaging factors, such as sample preparation artefacts, non-optimal microscope alignment and focusing, electrons interacting with and modifying the sample, and motion.&nbsp;The imaging artefacts can be reduced by decreasing the electron dose&nbsp;and acquisition time. However, this results in images with more noise and increases the need for denoising. This tool is a Convolutional Neural Network (CNN) based denoising method suited for TEM images. More detail description can be found in B. Bajic, A. Suveer, A. Gupta, I.Pepic, J. Lindblad, N. Sladoje, and I.M. Sintorn, "Denoising of Short Exposure Transmission Electron Microscopy Images for Ultrastructural Enhancement", 15th IEEE International Symposium on Biomedical Imaging (ISBI), 2018.</p>\r
+""" .
+
 <http://biii.eu/node/129> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Maria Anna Rapsomaniki, Panagiotis Kotsantis, Ioanna-Eleni Symeonidou, Nickolaos-Nikiforos Giakoumakis, Stavros Taraviras and Zoi Lygerou" ;
     dc:title "easyFRAP" ;
