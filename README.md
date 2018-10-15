@@ -17,7 +17,8 @@ This repository hosts the core ontology of the BISE BioImaging Search Engine.
 ```
 conda create --name bise-ld-webapp
 source activate bise-ld-webapp
-conda install flask rdflib rdflib-jsonld pymongo -c conda-forge
+conda install flask rdflib pymongo -c conda-forge
+conda install rdflib-jsonld -c bioconda
 ```
 ### Launch the web app
 ```
