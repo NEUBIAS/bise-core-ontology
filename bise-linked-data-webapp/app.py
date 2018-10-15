@@ -39,15 +39,15 @@ def index():
 def graphQ4():
     tbl = []
     qres = g.query(
-        """       
-	SELECT ?label (count(distinct ?s1) as ?soft_count) 
-	WHERE { 
+        """
+	SELECT ?label (count(distinct ?s1) as ?soft_count)
+	WHERE {
 	    ?s1 a <http://biii.eu/node/software> .
 	    ?s1 biii:hasTopic ?edam_class .
 	    ?edam_class rdfs:label ?label .
 	}
 	GROUP BY ?edam_class ?label
- 
+
 	ORDER BY DESC(?soft_count)
 
         """, initNs=ns)
@@ -59,7 +59,7 @@ def graphQ4():
 
 
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
 
 ## Demo Workflow 1
@@ -87,8 +87,8 @@ def graph():
             ?c2 biii:hasFunction ?f2 .
             ?f2 rdfs:label ?f2_label .
 
-            ?c1 biii:hasImplementation ?s1 .    
-            ?c1 biii:hasFunction ?f1 .  
+            ?c1 biii:hasImplementation ?s1 .
+            ?c1 biii:hasFunction ?f1 .
             ?f1 rdfs:label ?f1_label .
         }
         """, initNs=ns)
@@ -121,8 +121,8 @@ def welcome():
             ?c2 biii:hasFunction ?f2 .
             ?f2 rdfs:label ?f2_label .
 
-            ?c1 biii:hasImplementation ?s1 .    
-            ?c1 biii:hasFunction ?f1 .  
+            ?c1 biii:hasImplementation ?s1 .
+            ?c1 biii:hasFunction ?f1 .
             ?f1 rdfs:label ?f1_label .
         }
         """, initNs=ns)
