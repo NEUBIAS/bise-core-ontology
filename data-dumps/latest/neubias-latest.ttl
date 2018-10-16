@@ -1489,9 +1489,9 @@ See installation Instructions on the website.\r
     dc:title "OpenCV / Machine Learning" .
 
 <http://biii.eu/node/1165> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)",
-        "Jinzhu Yang",
-        "Paloma T. Gonzalez-Bellido" ;
+    nb:hasAuthor "Gonzalez-Bellido, Paloma T. ",
+        "Peng, Hanchuan (http://orcid.org/0000-0002-3478-3942)",
+        "Yang, Jinzhu " ;
     nb:hasFunction <http://edamontology.org/operation_Adaptative_thresholding>,
         <http://edamontology.org/operation_Distance_transform>,
         <http://edamontology.org/operation_Image_enhancement>,
@@ -3007,7 +3007,9 @@ In microscopy, Labview can be used efficiently to perform any kind of instrument
 """ .
 
 <http://biii.eu/node/145> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "L. Feng, T. Zhao, and J. Kim" ;
+    nb:hasAuthor "Feng, Linqing",
+        "Kim, Jinhyun",
+        "Zhao, Ting" ;
     nb:hasFunction <http://edamontology.org/operation_3096>,
         <http://edamontology.org/operation_Neuron_image_analysis>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
@@ -3015,11 +3017,9 @@ In microscopy, Labview can be used efficiently to perform any kind of instrument
     nb:hasReferencePublication <http://10.1523/ENEURO.0049-14.2014> ;
     nb:requires <http://biii.eu/node/601> ;
     dc:title "neuTube (or NeuTu)" ;
-    rdfs:comment """<p>neuTube&nbsp;is an&nbsp;open source software for reconstructing neurons from fluorescence microscope images. It has a nice interactive system. It has 3D viewer, which can be clicked in 3D and perform neuron tracing semi-automatically. It can automatic recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages.</p>\r
+    rdfs:comment """<p>neuTube is a collection of neuron reconstruction tools from fluorescence microscope images. It has an interactive system with a 3D viewer, which can be clicked in 3D and perform neuron tracing automatically and semi-automatically. It can automatically recognize branching points as junctions. Traced neurons can be exported to swc format, which could be imported by various software packages. neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation. In addition, neuTube can be used as a plugin in Vaa3D.</p>\r
 \r
-<p>neuTube has Win and Mac OS standalone executable builds and may also be installed by manual compilation. In addition, neuTube can be used as a plugin in Vaa3D.</p>\r
-\r
-<p>Source Code available at: https://github.com/janelia-flyem/NeuTu</p>\r
+<p>&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/146> a <http://biii.eu/node/software> ;
@@ -6849,10 +6849,8 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
         "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
     nb:hasTopic <http://edamontology.org/topic__R9Cmje2ZUXyDW6aQAvFhwSM> ;
     nb:requires <http://biii.eu/node/62> ;
-    dc:title "APP2 (All-path pruning 2)" ;
-    rdfs:comment """<p>"Results: We developed all-path-pruning 2.0 (APP2) for 3D neuron tracing. The most important idea is to prune an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. To further enhance the robustness of APP2, we compute the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional dis- tance transform. We also design a fast-marching algorithm-based method to compute the initial reconstruction trees without pre-com- puting a large graph. Thismethod allows us to trace large images.We bench-tested APP2 on ~700 3D microscopic images and found that APP2 can generate more satisfactory results in most cases than sev- eral previous methods."</p>\r
-\r
-<p>This method can be used with default parameters or user-defined parameters (Fully or semi-automated)</p>\r
+    dc:title "APP2" ;
+    rdfs:comment """<p>All-path-pruning 2.0 (APP2) is a component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm-based method to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters.</p>\r
 """ .
 
 <http://biii.eu/node/640> a <http://biii.eu/node/software> ;
