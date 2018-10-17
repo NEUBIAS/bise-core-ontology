@@ -11,6 +11,25 @@ This repository hosts the core ontology of the BISE BioImaging Search Engine.
 
 # Demo queries
 [demo-queries.md](demo-queries.md)
+
+# Demo notebook
+### Getting python dependencies
+With Conda :
+```
+conda create --name bise-ld-webapp
+source activate bise-ld-webapp
+conda install rdflib jupyter -c conda-forge
+```
+Or with pip :
+```
+pip install rdflib
+pip install jupyter
+```
+### Launching the notebook
+```
+jupyter-notebook
+```
+
  
 # Demo web app
 ### Virtual environment setup to get python dependencies
