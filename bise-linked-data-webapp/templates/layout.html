@@ -5,24 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" href="css/uikit.min.css" />-->
-    <script src="{{ url_for('static',filename='js/uikit.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/uikit-icons.min.js') }}"></script>
+    <!--<script src="{{ url_for('static',filename='js/uikit.min.js') }}"></script>-->
+    <!--<script src="{{ url_for('static',filename='js/uikit-icons.min.js') }}"></script>-->
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/uikit.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css') }}">
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/uikit.min.css') }}">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bulma.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css')}}">
 </head>
 
 <body>
-<div uk-grid>
+<div class="columns">
 
-    <div class="uk-width-1-6@m">
+    <div class="column is-one-quarter">
+        <section class="section">
+            <!--<div class="container">-->
         {% block nav %}
         {% endblock %}
+            <!--</div>-->
+        </section>
     </div>
 
-    <div class="uk-width-expand@m">
+    <div class="column">
+        <section class="section">
+            <!--<div class="container">-->
         {% block body %}
         {% endblock %}
+            <!--</div>-->
+        </section>
     </div>
 </div>
 </body>

@@ -1,5 +1,6 @@
 import csv
 from flask import Flask, redirect, url_for, request, render_template
+import random
 from pymongo import MongoClient
 
 from string import Template
@@ -8,32 +9,210 @@ from rdflib import ConjunctiveGraph
 
 app = Flask(__name__)
 
-# client = MongoClient(os.environ['DB_PORT_27017_TCP_ADDR'], 27017)
-
-ns = {"biii": "http://bise-eu.info/core-ontology#",
+ns = {"nb": "http://bise-eu.info/core-ontology#",
+      "dc": "http://dcterms/",
       "p-plan": "http://purl.org/net/p-plan#",
       "edam": "http://purl.obolibrary.org/obo/edam#"}
 
-client = MongoClient(host=['localhost:27017'])
-db = client.tododb
-icanDb = client.ican_sandbox
-
 g = ConjunctiveGraph()
-g.parse("static/data/neubias-dump-20180129.ttl",
-        format="turtle")
+#g.parse("bise-linked-data-webapp/static/data/neubias-dump-20180129.ttl", format="turtle")
+g.parse("../data-dumps/latest/neubias-latest.ttl", format="turtle")
 g.parse("static/data/EDAM-bioimaging_alpha03.owl")
-g.parse("static/data/sample_biii_workflow.ttl",
-        format="turtle")
-
 print(str(len(g)) + ' triples in Biii data graph')
-
-# my_template = Template("Hello, ${person_name}, how are you?")
-# for name in ['Jane', 'Bob', 'Dan']:
-#     print(my_template.substitute(person_name=name))
 
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/curation_needs_demo')
+def curation_needs_demo():
+
+    # NO PUBLICATION
+    q_no_publication = """
+    SELECT (count(?title) as ?nb_soft) WHERE {
+        ?s rdf:type <http://biii.eu/node/software> .
+        ?s dc:title ?title .
+        FILTER NOT EXISTS {?s nb:hasReferencePublication ?publication} .
+    }
+    """
+    q_no_publication_entries = """
+    SELECT ?s ?title WHERE {
+        ?s rdf:type <http://biii.eu/node/software> .
+        ?s dc:title ?title .
+        FILTER NOT EXISTS {?s nb:hasReferencePublication ?publication} .
+    }
+    """
+    results = g.query(q_no_publication, initNs=ns)
+    count_no_pub = 0
+    for r in results:
+        print(r)
+        count_no_pub = str(r["nb_soft"])
+
+    results = g.query(q_no_publication_entries, initNs=ns)
+    no_pub = []
+    for r in results:
+        no_pub.append({"title": r["title"], "url": r["s"]})
+    if len(no_pub) > 5:
+        no_pub = random.sample(no_pub, 10)
+
+    # NO EDAM TOPIC OR FUNCTION
+    q_no_edam = """
+        SELECT (count(?title) as ?nb_soft) WHERE {
+            ?s rdf:type <http://biii.eu/node/software> .
+            ?s dc:title ?title .
+            FILTER NOT EXISTS {?s nb:hasTopic ?topic} .
+            FILTER NOT EXISTS {?s nb:hasFunction ?operation} .
+        }
+        """
+    results = g.query(q_no_edam, initNs=ns)
+    count_no_edam = 0
+    for r in results:
+        count_no_edam = str(r["nb_soft"])
+
+    q_no_edam_entries = """
+        SELECT ?s ?title WHERE {
+            ?s rdf:type <http://biii.eu/node/software> .
+            ?s dc:title ?title .
+            FILTER NOT EXISTS {?s nb:hasTopic ?topic} .
+            FILTER NOT EXISTS {?s nb:hasFunction ?operation} .
+        }
+        """
+    results = g.query(q_no_edam_entries, initNs=ns)
+    no_edam = []
+    for r in results:
+        no_edam.append({"title": r["title"], "url": r["s"]})
+    if len(no_edam) > 5:
+        no_edam = random.sample(no_edam, 10)
+
+    return render_template('demo_curation_needs.html',
+                           count_no_pub=count_no_pub,
+                           count_no_edam=count_no_edam,
+                           missing_publication = no_pub,
+                           missing_edam=no_edam)
+
+
+@app.route('/comulis_demo')
+def comulis_demo():
+    q_segmentation = """
+    SELECT DISTINCT ?soft ?title 
+        (group_concat(?function_label;separator="|") as ?operations)
+        (group_concat(?topic_label;separator="|") as ?topics) 
+        WHERE { 
+        ?soft a <http://biii.eu/node/software> .
+        ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function .
+        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_segmentation> . 
+        ?edam_function rdfs:label ?function_label .
+        ?soft dc:title ?title .
+        
+        OPTIONAL {
+            ?soft <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
+            ?edam_topic rdfs:label ?topic_label .
+        }
+    }
+    GROUP BY ?soft
+    ORDER BY ?title
+    """
+
+    q_registration = """
+    SELECT DISTINCT ?soft ?title 
+        (group_concat(?function_label;separator="|") as ?operations)
+        (group_concat(?topic_label;separator="|") as ?topics) 
+    WHERE { 
+        ?soft a <http://biii.eu/node/software> .
+        ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function . 
+        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_registration> . 
+        ?edam_function rdfs:label ?function_label . 
+        ?soft dc:title ?title .
+        
+        OPTIONAL {
+            ?soft <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
+            ?edam_topic rdfs:label ?topic_label .
+        }
+    }
+    GROUP BY ?soft
+    ORDER BY ?title
+    """
+
+    q_visualisation = """
+    SELECT DISTINCT ?soft ?title 
+        (group_concat(?function_label;separator="|") as ?operations)
+        (group_concat(?topic_label;separator="|") as ?topics)
+    WHERE { 
+        ?soft a <http://biii.eu/node/software> .
+        ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function .
+        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_visualisation> . 
+        ?edam_function rdfs:label ?function_label .
+
+        ?soft dc:title ?title .
+        
+        OPTIONAL {
+            ?soft <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
+            ?edam_topic rdfs:label ?topic_label .
+        }
+    }
+    GROUP BY ?soft
+    ORDER BY ?title
+    """
+
+    seg_entries = []
+    results = g.query(q_segmentation, initNs=ns)
+    for r in results:
+        title = str(r["title"])
+        url = str(r["soft"])
+        operations = list(set(str(r["operations"]).split("|")))
+        operations = filter(None, operations)
+        topics = list(set(str(r["topics"]).split("|")))
+        topics = filter(None, topics)
+        seg_entries.append({"title":title, "url":url, "operations":operations, "topics":topics})
+
+    reg_entries = []
+    results = g.query(q_registration, initNs=ns)
+    for r in results:
+        title = str(r["title"])
+        url = str(r["soft"])
+        operations = list(set(str(r["operations"]).split("|")))
+        operations = filter(None, operations)
+        topics = list(set(str(r["topics"]).split("|")))
+        topics = filter(None, topics)
+        reg_entries.append({"title": title, "url": url, "operations": operations, "topics": topics})
+
+    vis_entries = []
+    results = g.query(q_visualisation, initNs=ns)
+    for r in results:
+        title = str(r["title"])
+        url = str(r["soft"])
+        operations = list(set(str(r["operations"]).split("|")))
+        operations = filter(None, operations)
+        topics = list(set(str(r["topics"]).split("|")))
+        topics = filter(None, topics)
+        vis_entries.append({"title": title, "url": url, "operations": operations, "topics": topics})
+
+    return render_template('demo_comulis.html', seg_entries=seg_entries, reg_entries=reg_entries, vis_entries=vis_entries)
+
+@app.route('/topic_map_demo')
+def topic_map_demo():
+    query = """
+        SELECT ?topic_label ?operation_label WHERE {
+             ?x a <http://biii.eu/node/software> .
+             ?x <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
+             ?x <http://bise-eu.info/core-ontology#hasFunction> ?edam_operation .
+             ?x <http://dcterms/title> ?title .
+             
+             ?edam_topic rdfs:label ?topic_label .
+             ?edam_operation rdfs:label ?operation_label .
+        } 
+        """
+
+    list_of_nodes = []
+    list_of_edges = []
+    qres = g.query(query)
+    for row in qres:
+        #print(row["topic_label"] + " <-> "  + row["operation_label"])
+        list_of_nodes.append({"id": row["topic_label"], "type": "topic"})
+        list_of_nodes.append({"id": row["operation_label"], "type": "operation"})
+        list_of_edges.append({"source": row["topic_label"], "target": row["operation_label"]})
+
+    return render_template('demo_topic_map.html', nodes=list_of_nodes, edges=list_of_edges)
 
 @app.route('/graphQ4')
 def graphQ4():
@@ -57,10 +236,36 @@ def graphQ4():
 
     return render_template('testQ4.html', tbl=tbl)
 
+@app.route('/demo_query_3')
+def demoQ3():
+    query = """
+    CONSTRUCT {
+       ?ti <http://bise-eu.info/core-ontology#hasTopic> ?label 
+    } WHERE {
+         ?x a <http://biii.eu/node/software> .
+         ?x <http://bise-eu.info/core-ontology#hasAuthor> ?a .
+         ?x <http://dcterms/title> ?ti .
+         ?x <http://bise-eu.info/core-ontology#hasTopic> ?c .
+ 
+         ?c rdfs:subClassOf* ?superClass .
+         ?superClass rdfs:label ?label .
+ 
+         FILTER (regex(?label, "microscopy"))
+    } 
+    """
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+    qres = g.query(query)
+
+    list_of_nodes = []
+    list_of_edges = []
+    for row in qres:
+        list_of_nodes.append({"id": row[0], "type" :"software"})
+        list_of_nodes.append({"id": row[2], "type" : "topic"})
+        list_of_edges.append({"source": row[0], "target": row[2], "edge_label": row[1]})
+
+    # print(list_of_nodes)
+    # print(list_of_edges)
+    return render_template('demo_d3.html', nodes=list_of_nodes, edges=list_of_edges)
 
 ## Demo Workflow 1
 @app.route('/sparql')
