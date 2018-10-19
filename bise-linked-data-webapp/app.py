@@ -1,9 +1,6 @@
 import csv
 from flask import Flask, redirect, url_for, request, render_template
 import random
-from pymongo import MongoClient
-
-from string import Template
 
 from rdflib import ConjunctiveGraph
 
