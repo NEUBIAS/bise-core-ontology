@@ -13,7 +13,7 @@ ns = {"nb": "http://bise-eu.info/core-ontology#",
 
 g = ConjunctiveGraph()
 #g.parse("bise-linked-data-webapp/static/data/neubias-dump-20180129.ttl", format="turtle")
-g.parse("../data-dumps/latest/neubias-latest.ttl", format="turtle")
+g.parse("static/data/neubias-latest.ttl", format="turtle")
 g.parse("static/data/EDAM-bioimaging_alpha03.owl")
 print(str(len(g)) + ' triples in Biii data graph')
 
@@ -185,6 +185,10 @@ def comulis_demo():
         vis_entries.append({"title": title, "url": url, "operations": operations, "topics": topics})
 
     return render_template('demo_comulis.html', seg_entries=seg_entries, reg_entries=reg_entries, vis_entries=vis_entries)
+
+@app.route('/cy')
+def cy():
+    return render_template('test_cy.html')
 
 @app.route('/topic_map_demo')
 def topic_map_demo():

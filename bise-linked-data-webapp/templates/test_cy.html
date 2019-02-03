@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neubias linked data demos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bulma.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css')}}">
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
+    <script src="{{ url_for('static',filename='js/cytoscape.min.js') }}"></script>
+
+    <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.5.0/cytoscape-dagre.js"></script>
+    <!--<script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cola/1.6.0/cola.js"></script>-->
+    <!--<script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cola/1.6.0/cytoscape-cola.js"></script>-->
+
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+<div class="columns">
+    <div class="column is-one-quarter">
+        <section class="section">
+            <p>Column 1</p>
+        </section>
+    </div>
+
+    <div class="column">
+
+        <section class="section">
+                <p>Cytocsape</p>
+                <div id="cy-container">
+                    <div id="cy"></div>
+                </div>
+
+        </section>
+    </div>
+</div>
+
+    <script>
+
+    //var win = window ;
+
+    //win.resize(function() {
+    //    resize();
+    //});
+
+    //function resize() {
+    //    console.log(window.height(), window.innerHeight());
+    //    $("#cy-container").height(window.innerHeight() - 130);
+    //    cy.resize();
+    //}
+
+    var colors2 = ["#8dd3c7","#bc80bd","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#ffed6f"] ;
+    console.log('CY') ;
+    var cy = window.cy = cytoscape({
+
+        container: document.getElementById('cy'),
+        minZoom: 0.1,
+        maxZoom: 100,
+        wheelSensitivity: 0.1,
+
+      boxSelectionEnabled: false,
+      autounselectify: true,
+
+      //layout: {
+      //  name: 'cose',
+      //  idealEdgeLength: 300,
+      //  nodeOverlap: 20,
+      //  refresh: 20,
+      //  fit: true,
+      //  padding: 30,
+      //  randomize: true,
+      //  componentSpacing: 1000,
+      //  nodeRepulsion: 400000,
+      //  edgeElasticity: 1000,
+      //  nestingFactor: 5,
+      //  gravity: 80,
+      //  numIter: 2000,
+      //  initialTemp: 200,
+      //  coolingFactor: 0.95,
+      //  minTemp: 1.0
+      //},
+      //layout: {
+      //  name: 'cola',
+      //  infinite: false,
+      //  padding: 200,
+      //  fit: true
+      //},
+      layout: {
+        name: 'concentric',
+        concentric: function( node ){
+          //return node.degree()
+           if (node.data('type') == "topic") {return 2 } else {return 1}
+        },
+        levelWidth: function( nodes ){
+          return 1;
+        }
+      },
+
+   style: [ // the stylesheet for the graph
+    {
+      selector: 'node',
+      style: {
+        'shape' : 'ellipse',
+        'width' : 200,
+        'height' : 200,
+        'text-valign' : 'center',
+        'background-color': function( ele ){ console.log(ele) ; if (ele.data('type') == "topic") {return colors2[0] } else {return colors2[1]} },
+        //'background-color': function( ele ){ return colors2[1] },
+        'label': 'data(id)'
+      }
+    },
+
+    {
+      selector: 'edge',
+      style: {
+        'width': 5,
+        'line-color': '#ccc',
+        'curve-style': 'unbundled-bezier'
+      }
+    },
+    {
+        "selector": ".autorotate",
+        "style": {
+            "edge-text-rotation": "autorotate"
+        }
+    },
+
+  {
+    "selector": ".background",
+    "style": {
+      "text-background-opacity": 1,
+      "text-background-color": "#ccc",
+      "text-background-shape": "roundrectangle",
+      "text-border-color": "#000",
+      "text-border-width": 1,
+      "text-border-opacity": 1
+    }
+  },
+
+  {
+    "selector": ".outline",
+    "style": {
+      "text-outline-color": "#ccc",
+      "text-outline-width": 3
+    }
+  }
+],
+      elements: [
+
+        { data: { id: 'N1', label: 'N1', type: 'topic'  } },
+        { data: { id: 'N2', label: 'N2', type: 'machin'  } },
+
+        { data: { source: 'N1',
+        target: 'N2',
+        classes: 'autorotate' } },
+
+      ]
+    });
+    </script>
+
+</body>
+</html>
+            <!--</div>-->
