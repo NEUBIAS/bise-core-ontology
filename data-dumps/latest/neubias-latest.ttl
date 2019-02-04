@@ -4032,12 +4032,15 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
 
 <http://biii.eu/node/1423> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ola Friman" ;
+    nb:hasFunction <http://edamontology.org/operation_2945>,
+        <http://edamontology.org/operation_Shape_features> ;
     nb:requires <http://biii.eu/node/1421> ;
     dc:title "MeVisLab XMarkerShortestPath module (Dijsktra shortest path)" .
 
 <http://biii.eu/node/1424> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Cordelières Fabrice P ",
         "Matthews Cédric" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/metroloJ.png" ;
     nb:hasLocation <http://imagejdocu.tudor.lu/doku.php%3Fid%3Dplugin:analysis:metroloj:start> ;
     nb:hasReferencePublication <http://imagejdocu.tudor.lu/lib/exe/fetch.php%3Fmedia%3Dplugin:analysis:metroloj:matthews_cordelieres_-_imagej_user_developer_conference_-_2010.pdf>,
         "MetroloJ: an ImageJ plugin to help monitor microscopes’ health." ;
@@ -4086,6 +4089,7 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
 <http://biii.eu/node/1429> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Atsushi Matsuda" ;
     nb:hasFunction <http://edamontology.org/operation__RDr8xcZEa4L3mZsslmhhee8> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/Chromagnon.jpg" ;
     nb:hasLocation <https://github.com/macronucleus/Chromagnon/releases>,
         "Chromagnon packages" ;
     nb:hasReferencePublication <https://www.nature.com/articles/s41598-018-25922-7>,
@@ -4155,6 +4159,9 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
 \r
 <p>CRImage provides functionality to process and analyze images, in particular to classify cells in biological images. Furthermore, in the context of tumor images, it provides functionality to calculate tumour cellularity.</p>\r
 """ .
+
+<http://biii.eu/node/1432> a <http://biii.eu/node/software> ;
+    dc:title "3D vessel segmentation of synchrotron phase contrast tomography" .
 
 <http://biii.eu/node/144> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Mike Heilemann",
@@ -7705,6 +7712,7 @@ There are two implementations of Tschumperle/ R. Deriche filter ("anisotropic di
     nb:hasAuthor "Perrine Paul Gilloteaux orcid.org/0000-0003-3903-4841" ;
     nb:hasFunction <http://edamontology.org/operation_2928>,
         <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation_Spot_extraction>,
         <http://edamontology.org/operation__R9Vc5BV3ZMcLHEL6WEceXbY>,
         <http://edamontology.org/operation__RLtOI0poPsYRHzgXbAcr2E> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-05/Captureillustrativeworkflo.JPG" ;
@@ -7715,7 +7723,7 @@ There are two implementations of Tschumperle/ R. Deriche filter ("anisotropic di
     dc:title "performing automatic registration for CLEM" ;
     rdfs:comment """<p>This is an example workflow of how to perform automatic registration by</p>\r
 \r
-<p>- first detecting spots in both image using wavelet segmentation (with different scale according to the image scale)</p>\r
+<p>- first detecting spots in both images using wavelet segmentation (with different scale according to the image scale)</p>\r
 \r
 <p>- second using Ec-Clem autofinder to register both images</p>\r
 \r
@@ -9452,9 +9460,10 @@ Previously (?) known as [3D ImageJ Suite](http://imagejdocu.tudor.lu/doku.php?id
 """ .
 
 <http://biii.eu/node/795> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation____Contrast_enhancement> ;
     nb:hasLocation <http://fiji.sc/Enhance_Local_Contrast_%28CLAHE%29> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/787> ;
     dc:title "Enhance Local Contrast (CLAHE)" .
 
@@ -10545,6 +10554,8 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
     nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
         <http://edamontology.org/operation_Interactive_segmentation> ;
     nb:hasLocation <http://klimt.iwr.uni-heidelberg.de/> ;
+    nb:hasTopic <http://edamontology.org/topic_3474>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/88> ;
     dc:title "ilastik - Carving" ;
     rdfs:comment """<p>Semi-automated segmentation of 3D objects (e.g. neurons) based on user-provided seeds</p>\r
@@ -11526,12 +11537,15 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
 
 <http://biii.eu/node/670> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ignacio Arganda-Carreras " ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations>,
+        <http://edamontology.org/operation_Skeletonization> ;
     nb:hasLocation <http://fiji.sc/Skeletonize3D> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/1050>,
-        <http://biii.eu/node/17>,
         <http://biii.eu/node/38> ;
     dc:title "Skeletonize3D" ;
-    rdfs:comment "For post-processing analysis, use [Analyze Skeleton](http://biii.info/node/1976) plugin written by the same author. " .
+    rdfs:comment """<p>For post-processing analysis, use [Analyze Skeleton](http://biii.info/node/1976) plugin written by the same author.</p>\r
+""" .
 
 <http://biii.eu/node/680> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Matlab%20exporter> ;
@@ -11633,9 +11647,11 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     rdfs:comment "This segmentation method performs a N-class thresholding based on a K-Means classification of the image histogram, then extracts objects in a bottom-up manner using user-defined minimum and maximum object sizes. Very useful to detect clustered objects in fluorescence microscopy." .
 
 <http://biii.eu/node/784> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation_Shape_features> ;
     nb:hasLocation <http://fiji.sc/Local_Thickness> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/710>,
         <http://biii.eu/node/784> ;
     dc:title "Local Thickness" .
