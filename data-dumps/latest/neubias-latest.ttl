@@ -652,12 +652,6 @@ The file has implemented both point to point and point to plane as well as a cou
     dc:title "2D-3D distributed parallel region competition segmentation" ;
     rdfs:comment "This is the source code and data page of a distributed parallel algorithm 2683 for segmentation of large fluorescence microscopy images. " .
 
-<http://biii.eu/node/1065> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://bigwww.epfl.ch/deconvolution/deconvolutionlab2/> ;
-    dc:created "2016-10-07T19:21:10"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:05"^^xsd:dateTime ;
-    dc:title "DeconvolutionLab2" .
-
 <http://biii.eu/node/1066> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jean-Francois Gilles",
         "Thomas Boudier" ;
@@ -931,18 +925,19 @@ Online example at http://colormine.org/color-converter\r
 """ .
 
 <http://biii.eu/node/1089> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Ball Graeme",
-        "Schermelleh  Lothar   orcid.org/0000-0002-1612-9699" ;
+    nb:hasAuthor "Ball, Graeme orcid.org/0000-0002-6526-2306",
+        "Schermelleh, Lothar   orcid.org/0000-0002-1612-9699" ;
     nb:hasFunction <http://edamontology.org/operation_3443> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/simcheck2_0.jpg" ;
     nb:hasLocation <http://www.micron.ox.ac.uk/software/SIMCheck.php> ;
     nb:hasReferencePublication <https://www.nature.com/articles/srep15915>,
         "10.1038/srep15915" ;
     nb:hasTopic <http://edamontology.org/topic__RC91JqkkQnsmvg8zuG6Td7q> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2017-02-13T13:24:29"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:23"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:18:48"^^xsd:dateTime ;
     dc:title "SIMcheck" ;
-    rdfs:comment """<p>an open source ImageJ plugin suite for super-resolution structured illumination microscopy data quality control</p>\r
+    rdfs:comment """<p>SIMcheck is an ImageJ plugin suite&nbsp;for assessing the quality and reliability of Structured Illumination Microscopy (SIM) data. The quality of the raw data, the quality of the reconstruction and the calibration of the microscope can be tested.&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/109> a <http://biii.eu/node/software> ;
@@ -1041,19 +1036,6 @@ processing.  Briefly, the tools include:\r
   - Display routines for images and pyramids.  These include several\r
     auto-scaling options, rounding to integer zoom factors to avoid \r
     resampling artifacts, and useful labeling (dimensions and gray-range).""" .
-
-<http://biii.eu/node/1094> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-13T13:32:46"^^xsd:dateTime ;
-    dc:modified "2017-09-12T16:41:52"^^xsd:dateTime ;
-    dc:title " BBBC002v1" ;
-    rdfs:comment """Five different samples of Drosophila melanogaster Kc167 cells were stained with Hoechst 33342, a DNA stain. The last sample (labeled nodsRNA) is of wild-type cells. Each of the other four samples (labeled 48, 340, Anillin, and mad2) has a different gene knocked down by RNAi. The sample preparation is described in more detail by [Carpenter et al. (Genome Biology, 2006)](http://genomebiology.biomedcentral.com/articles/10.1186/gb-2006-7-10-r100)\r
-\r
-\r
- There are 10 fields of view of each sample, for a total of 50 fields of view. The images were acquired on a Zeiss Axiovert 200M microscope. The images provided here are a single channel, DNA. The image size is 512 x 512 pixels. The images are provided as 8-bit TIFF files.\r
-\r
-This image set belongs to the Broad Bioimage Benchmark Collection (BBBC). The BBBC resource is described in the following publication: Ljosa V, Sokolnicki KL, Carpenter AE (2012). Anno tated high-throughput microscopy image sets for validation. Nature Methods 9(7):637 / doi. PMID: 22743765 PMCID: PMC3627348. Available at [http://dx.doi.org/10.1038/nmeth.2083](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2083.html)\r
-\r
-""" .
 
 <http://biii.eu/node/1095> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ojala T, Pietikäinen M & Mäenpää T " ;
@@ -2879,23 +2861,24 @@ accompanying file LICENSE for details.\r
 """ .
 
 <http://biii.eu/node/1291> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Florian Jug",
-        "Martin Weigert",
-        "Uwe Schmidt" ;
+    nb:hasAuthor "Jug, Florian orcid.org/0000-0002-8499-5812",
+        "Schmidt, Uwe orcid.org/0000-0003-1649-2057",
+        "Weigert, Martin " ;
     nb:hasFunction <http://edamontology.org/operation_Image_deconvolution>,
         <http://edamontology.org/operation_Image_reconstruction>,
         <http://edamontology.org/operation_Projection>,
         <http://edamontology.org/operation__RBPObKBKIMwjdLygBOlvojW>,
         <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/Capturecare.PNG" ;
-    nb:hasLocation <https://github.com/CSBDeep/CSBDeep/wiki/CSBDeep-in-Fiji> ;
-    nb:hasReferencePublication <https://www.biorxiv.org/content/early/2018/01/23/236463.1>,
+    nb:hasLocation <https://github.com/CSBDeep/CSBDeep/wiki/CSBDeep-in-Fiji>,
+        "CSBDeep in Fiji" ;
+    nb:hasReferencePublication <https://doi.org/10.1038/s41592-018-0216-7>,
         "Content-Aware Image Restoration: Pushing the Limits of Fluorescence Microscopy" ;
     nb:hasTopic <http://edamontology.org/topic_3385>,
         <http://edamontology.org/topic_Light-sheet_microscopy> ;
     nb:requires <http://biii.eu/node/79> ;
     dc:created "2018-05-07T18:11:35"^^xsd:dateTime ;
-    dc:modified "2018-10-17T16:04:17"^^xsd:dateTime ;
+    dc:modified "2019-02-05T15:48:20"^^xsd:dateTime ;
     dc:title "CSBDeep, a toolbox for Content-aware Image Restoration (CARE) in Fiji" ;
     rdfs:comment """<p>Deep learning for fluorescence image restoration (denoising, deconvolution). Requires training on your data set but the procedure is described.</p>\r
 """ .
@@ -4157,6 +4140,7 @@ See  """ .
 <http://biii.eu/node/1397> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Culley Siân orcid.org/0000-0003-2112-0143",
         "Henriques Ricardo orcid.org/0000-0002-2043-5234" ;
+    nb:hasFunction <http://edamontology.org/operation_3443> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-12/3362739443-squirrel%20logo.png" ;
     nb:hasLocation <https://github.com/HenriquesLab/NanoJ-Core>,
         "https://github.com/HenriquesLab/NanoJ-Core" ;
@@ -4165,9 +4149,10 @@ See  """ .
     nb:hasTopic <http://edamontology.org/topic_Statistics>,
         <http://edamontology.org/topic_Super-resolution_microscopy>,
         <http://edamontology.org/topic__R8oQpUEjKZjNQCTB4x3JQuJ> ;
-    nb:requires <http://biii.eu/node/38> ;
+    nb:requires <http://biii.eu/node/1443>,
+        <http://biii.eu/node/38> ;
     dc:created "2018-12-09T18:41:11"^^xsd:dateTime ;
-    dc:modified "2018-12-11T01:54:54"^^xsd:dateTime ;
+    dc:modified "2019-02-06T10:24:40"^^xsd:dateTime ;
     dc:title "SQUIRREL" ;
     rdfs:comment """<p>NanoJ-SQUIRREL (Super-resolution Quantitative Image Rating and Reporting of Error Locations) is a software package designed for assessing and mapping errors and artefacts within super-resolution images. This is achieved through quantitative comparison with a reference image of the same structure (typically a widefield, TIRF or confocal image). SQUIRREL produces quantitative maps of image quality and resolution as well as global image quality metrics.</p>\r
 """ .
@@ -4222,14 +4207,15 @@ For Image processing and analysis, Labview offers the integrated "NI Vision" too
 In microscopy, Labview can be used efficiently to perform any kind of instrument control, and in particular "Feedback Microscopy" (also called intelligent microscopy, etc...) where the live analysis of a captured image will update the target of the microscope to make it understand where to image efficiently. """ .
 
 <http://biii.eu/node/1400> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Benjamin Schmid" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_visualisation> ;
+    nb:hasAuthor "Schmid, Benjamin" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_visualisation>,
+        <http://edamontology.org/operation_Volume_rendering> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-12/3Dscript_.png" ;
     nb:hasLocation <https://github.com/bene51/3Dscript>,
-        "https://github.com/bene51/3Dscript" ;
+        "Benjamin Schmid 3Dscript Github repository" ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2018-12-09T19:45:53"^^xsd:dateTime ;
-    dc:modified "2018-12-11T02:10:43"^^xsd:dateTime ;
+    dc:modified "2019-02-06T23:33:00"^^xsd:dateTime ;
     dc:title "3Dscript" ;
     rdfs:comment """<p>3Dscript is a plugin for Fiji/ImageJ for creating 3D and 4D animations of microscope data. In contrast to existing 3D visualization packages, animations are not keyframe-based, but are described by a natural language-based syntax.</p>\r
 """ .
@@ -4364,24 +4350,29 @@ Uses Gaussian-Mexican hat convolution for preprocessing. """ .
 """ .
 
 <http://biii.eu/node/1411> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Daniel Sage" ;
+    nb:hasAuthor "Donati, Lauréne ",
+        "Fortun, Denis ",
+        "Guiet, Romain ",
+        "Sage, Daniel ",
+        "Schmit, Guillaume ",
+        "Seitz, Arne ",
+        "Soulez, Ferréol ",
+        "Unser, Michael",
+        "Vonesch, Cédric" ;
     nb:hasFunction <http://edamontology.org/operation_Image_deconvolution> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-12/screenshot2.png" ;
-    nb:hasLocation <http://bigwww.epfl.ch/deconvolution/deconvolutionlab2/> ;
+    nb:hasLocation <http://bigwww.epfl.ch/deconvolution/deconvolutionlab2/>,
+        "DeconvolutionLab2 at Bioimedical Imaging Group @ EPFL" ;
     nb:hasReferencePublication <https://doi.org/10.1016/j.ymeth.2016.12.015>,
         "DeconvolutionLab2: An open-source software for deconvolution microscopy" ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2018-12-20T19:09:36"^^xsd:dateTime ;
-    dc:modified "2018-12-20T19:13:48"^^xsd:dateTime ;
+    dc:modified "2019-02-05T13:28:50"^^xsd:dateTime ;
     dc:title "DeconvolutionLab2" ;
-    rdfs:comment """The successor of DeconvolutionLab\r
+    rdfs:comment """DeconvolutionLab2 includes a friendly user interface to run the following deconvolution algortihms: Regularized Inverse Filter, Tikhonov Inverse Filter, Naive Inverse Filter, Richardson-Lucy, Richardson-Lucy Total Variation, Landweber (Linear Least Squares), Non-negative Least Squares, Bounded-Variable Least Squares, Van Cittert, Tikhonov-Miller, Iterative Constraint Tikhonov-Miller, FISTA, ISTA.\r
 \r
->DeconvolutionLab2 is freely accessible and open-source for 3D deconvolution microscopy; it can be linked to well-known imaging software platforms, ImageJ, Fiji, ICY, Matlab, and it runs as a stand-alone application.\r
-\r
->The backbone of our software architecture is a library that contains the number-crunching elements of the deconvolution task. It includes the tool for a complete validation pipeline. Inquisitive minds inclined to peruse the code will find it fosters the understanding of deconvolution.\r
-\r
->At this stage, DeconvolutionLab2 includes a friendly user interface to run the following algortihms: Regularized Inverse Filter, Tikhonov Inverse Filter, Naive Inverse Filter, Richardson-Lucy, Richardson-Lucy Total Variation, Landweber (Linear Least Squares), Non-negative Least Squares, Bounded-Variable Least Squares, Van Cittert, Tikhonov-Miller, Iterative Constraint Tikhonov-Miller, FISTA, ISTA.\r
+The backbone of our software architecture is a library that contains the number-crunching elements of the deconvolution task. It includes the tool for a complete validation pipeline. Inquisitive minds inclined to peruse the code will find it fosters the understanding of deconvolution.\r
 \r
 """ .
 
@@ -4591,7 +4582,7 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
     nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2019-01-30T10:17:11"^^xsd:dateTime ;
-    dc:modified "2019-02-04T12:17:32"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:17:21"^^xsd:dateTime ;
     dc:title "MetroloJ" ;
     rdfs:comment """<p>This plugin allows measuring relevant parameters which helps testing, following and comparing microscopes performances. This is achieved by extracting four indicators out of standardized images, acquired from standardized samples: the estimation of the detector sensitivity, the evaluation of the field illumination homogeneity, the system resolution, and finally the characterization of its spectral registration.</p>\r
 """ .
@@ -4601,15 +4592,16 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
         "Laurent Gelman" ;
     nb:hasFunction <http://edamontology.org/operation_3443>,
         <http://edamontology.org/operation_Image_visualisation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/MIPs.jpg" ;
     nb:hasReferencePublication <https://www.imaging-git.com/science/light-microscopy/routine-assessment-fluorescence-microscope-performance>,
         "Published in Imaging and Microscopy" ;
     nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
     nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/79> ;
     dc:created "2019-02-03T10:43:56"^^xsd:dateTime ;
-    dc:modified "2019-02-03T19:24:31"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:16:55"^^xsd:dateTime ;
     dc:title "MIPs for PSFs" ;
-    rdfs:comment """<p>The macro generates orthogonal projections from bead images along the lateral and axial dimensions which are displayed using a customized look-up-table to color code intensities. A Gaussian curve is fit to the intensity profile of a fluorescent bead image and full-with-at-half-maximum (FWHM) values are extracted.&nbsp;</p>\r
+    rdfs:comment """<p>The macro generates orthogonal projections from bead images along the lateral and axial dimensions which are displayed using a customized look-up-table to color code intensities. A Gaussian curve is fit to the intensity profile of a fluorescent bead image and full-with-at-half-maximum (FWHM) values are extracted, and listed next to theoretical values for comparison.&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/1427> a <http://biii.eu/node/software> ;
@@ -4622,20 +4614,21 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
     nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2019-02-03T11:33:33"^^xsd:dateTime ;
-    dc:modified "2019-02-03T19:23:57"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:16:16"^^xsd:dateTime ;
     dc:title "ConfocalCheck" ;
-    rdfs:comment """<p>assess the performance of the lasers, the objective lenses and other key components required for optimum confocal operation.</p>\r
+    rdfs:comment """<p>Assess the performance of the lasers, the objective lenses and other key components required for optimum confocal operation.</p>\r
 """ .
 
 <http://biii.eu/node/1428> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Argolight" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/DAybook2.jpg" ;
     nb:hasLocation <http://argolight.com/products/daybook-2/>,
         "Daybook2" ;
     nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
     dc:created "2019-02-03T12:29:24"^^xsd:dateTime ;
-    dc:modified "2019-02-03T12:35:27"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:17:51"^^xsd:dateTime ;
     dc:title "Daybook2" ;
-    rdfs:comment """<p>Microscope performance tests</p>\r
+    rdfs:comment """<p>Daybook 2 is the analysis software linked to argoligth slides. It tests the performance of microscopes on various levels: illumination homogeneity, field distortion, lateral resolving power, stage drift, chromatic aberrations, intensity response... It&nbsp;works with various file formats but requires the use of an argolight test slide.&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/1429> a <http://biii.eu/node/software> ;
@@ -4648,7 +4641,7 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
         "Matsuda et. al. Scientific Reports 2018" ;
     nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
     dc:created "2019-02-03T13:44:43"^^xsd:dateTime ;
-    dc:modified "2019-02-04T09:33:25"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:08:43"^^xsd:dateTime ;
     dc:title "Chromagnon" ;
     rdfs:comment """<p>Image correction software for chromatic shifts in fluorescence microscopy</p>\r
 """ .
@@ -4725,6 +4718,77 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
     dc:modified "2019-02-04T11:45:02"^^xsd:dateTime ;
     dc:title "3D vessel segmentation of synchrotron phase contrast tomography" .
 
+<http://biii.eu/node/1433> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Herbert,  Sébastien, ORCID:",
+        " Tinevez, Jean-Yves, ORCID: 0000-0002-0998-4718" ;
+    nb:hasReferencePublication <http://jcb.rupress.org/content/%20204/2/231> ;
+    dc:created "2019-02-04T23:57:15"^^xsd:dateTime ;
+    dc:modified "2019-02-05T11:37:42"^^xsd:dateTime ;
+    dc:title "The NEMO dots assembly: Single-particle tracking and analysis" ;
+    rdfs:comment """<p>This workflow presents single-particle tracking in Fiji using Track-Mate, and track motility analysis in MATLAB using @msdanalyzer.&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1435> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Herbert,  Sébastien, ORCID:",
+        " Tinevez, Jean-Yves, ORCID: 0000-0002-0998-4718" ;
+    dc:created "2019-02-05T11:05:35"^^xsd:dateTime ;
+    dc:modified "2019-02-05T11:36:21"^^xsd:dateTime ;
+    dc:title "Motility analysis with mean-square displacement" ;
+    rdfs:comment """<p>Tracking&nbsp;tools, such as TrackMate, produce tracks and their role stops there. However, tracks are just an intermediate data structure in the workflow. Their subsequent&nbsp;analysis produces the numbers upon which scientific conclusions are made. The&nbsp;track analysis is most often specific to the scientific&nbsp;question to be addressed, and therefore tracking tools remain generic and seldom include&nbsp;specialized analysis modules. Another toolset is required for track analysis;&nbsp;this workflow&nbsp;focuses&nbsp;on using MATLAB.</p>\r
+""" .
+
+<http://biii.eu/node/1436> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paul-Gilloteaux, Perrine ORCID: 0000-0002-4822-165X",
+        "Schorb, Martin ORCID: 0000-0003-4910-1868" ;
+    nb:hasReferencePublication <https://doi.org/10.1126/science.aaa9555>,
+        "Ori Avinoam, Martin Schorb, Carsten J. Beese, John A. G. Briggs, and Marko Kaksonen. Endocytic sites mature by continuous bending and remodeling of the clathrin coat. Science (New York, N.Y.), 348(6241):1369– 1372, June 2015. ISSN 1095-9203" ;
+    dc:created "2019-02-05T11:50:19"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:26:43"^^xsd:dateTime ;
+    dc:title "Resolving the process of Clathrin mediated endocytosis using Correlative Light & Electron Microscopy (CLEM)" ;
+    rdfs:comment """<p>Multimodal image&nbsp;registration&nbsp;based on manual selection of matching pairs of&nbsp;landmarks. This&nbsp;image registration workflow is based<br />\r
+on MATLAB’s image processing toolbox using the identification of sites&nbsp;of clathrin-mediated endocytosis by correlative light electron microscopy&nbsp;(CLEM) as an example.</p>\r
+""" .
+
+<http://biii.eu/node/1437> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Schmid, Michael" ;
+    nb:hasFunction <http://edamontology.org/operation_Watershed> ;
+    nb:hasLocation <https://imagej.nih.gov/ij/developer/source/ij/plugin/filter/EDM.java.html>,
+        "Package ij.plugin.filter class EDM" ;
+    nb:hasReferencePublication <http://dx.doi.org/10.1016/1049-9660%2892%2990008-Q>,
+        "F. Leymarie, M. D. Levine, in: CVGIP Image Understanding, vol. 55 (1992), pp 84-94" ;
+    dc:created "2019-02-05T14:22:12"^^xsd:dateTime ;
+    dc:modified "2019-02-05T14:34:42"^^xsd:dateTime ;
+    dc:title "Watershed (ImageJ ij-1.52i)" ;
+    rdfs:comment """<p>Performs watershed algotirhm with ij-1.52i.jar. legacy:ij.plugin.filter.EDM("watershed").</p>\r
+""" .
+
+<http://biii.eu/node/1438> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Bäcker, Volker",
+        "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Watershed> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-ImageJ/blob/master/macro.ijm>,
+        "Neubias BIAFLOWS workflow of nuclei segmentation with ImageJ " ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-05T13:49:19"^^xsd:dateTime ;
+    dc:modified "2019-02-05T15:26:37"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation 2D (ImageJ)" ;
+    rdfs:comment """<p>The macro will segment nuclei and separate clustered nuclei using a binary watershed. As a result an index-mask image is written for each input image.</p>\r
+""" .
+
+<http://biii.eu/node/1439> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Rasband, Waine" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_smoothing>,
+        <http://edamontology.org/operation___Image_convolution> ;
+    nb:hasLocation <https://imagej.nih.gov/ij/plugins/gaussian-blur-3d/index.html>,
+        "Gaussian Blur 3D ImageJ java code" ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-05T14:50:28"^^xsd:dateTime ;
+    dc:modified "2019-02-05T14:53:38"^^xsd:dateTime ;
+    dc:title "Gaussian Blur 3D (ImageJ)" ;
+    rdfs:comment """<p>Performs 3D Gaussian blurring.</p>\r
+""" .
+
 <http://biii.eu/node/144> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Mike Heilemann",
         "Sebastian Malkush" ;
@@ -4738,6 +4802,70 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
     dc:modified "2018-10-19T15:27:42"^^xsd:dateTime ;
     dc:title "Lama: The LocAlization Microscopy Analyzer" ;
     rdfs:comment """<p>LocAlization Microscopy Analyzer (LAMA) is a software tool that contains several well-established data post processing algorithms for single-molecule localization microscopy (SMLM) data. LAMA has implemented algorithms for cluster analysis, colocalization analysis, localization precision estimation and image registration. LAMA works with a graphical user interface (GUI), and accepts simple input data formats as supported by various single- molecule localization software tools.</p>\r
+""" .
+
+<http://biii.eu/node/1440> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Boudier, Thomas",
+        "Ollion, Jean" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasLocation <http://imagejdocu.tudor.lu/doku.php%3Fid%3Dplugin:stacks:3d_ij_suite:start%23download>,
+        "3D ImageJ Suite webpage" ;
+    dc:created "2019-02-05T14:55:55"^^xsd:dateTime ;
+    dc:modified "2019-02-05T15:01:16"^^xsd:dateTime ;
+    dc:title "3D ImageJ Suite" ;
+    rdfs:comment """<p>This suite provides plugins to enhance 3D capabilities of ImageJ.</p>\r
+""" .
+
+<http://biii.eu/node/1441> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Image_smoothing>,
+        <http://edamontology.org/operation_Watershed> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation3D-ImageJ/blob/master/IJNuclei3DSegmentation.ijm>,
+        "Neubias BIAFLOWS workflow of nuclei segmentation 3D with ImageJ" ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-05T15:38:45"^^xsd:dateTime ;
+    dc:modified "2019-02-05T15:42:26"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation 3D (ImageJ)" ;
+    rdfs:comment """<p>The macro will segment nuclei and separate clustered nuclei in a 3D image using a binary watershed. As a result an index-mask image is written for each input image.</p>\r
+""" .
+
+<http://biii.eu/node/1442> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Cox Susan",
+        "Marsh Richard" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_processing>,
+        <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/Capture.PNG" ;
+    nb:hasLocation <https://static-content.springer.com/esm/art%253A10.1038%252Fs41592-018-0072-5/MediaObjects/41592_2018_72_MOESM3_ESM.zip>,
+        "Dowload Hawk" ;
+    nb:hasReferencePublication <https://doi.org/10.1038/s41592-018-0072-5>,
+        "Nature Methods 2018" ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
+        <http://edamontology.org/topic_Super-resolution_microscopy> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-06T09:45:27"^^xsd:dateTime ;
+    dc:modified "2019-02-06T10:14:08"^^xsd:dateTime ;
+    dc:title "HAWK" ;
+    rdfs:comment """<p>Preprocessing step for high-density analysis methods in super resolution localisation microscopy: it aims at correcting artefacts due to these approaches with based on Haar Wavelet Kernel Analysis.</p>\r
+""" .
+
+<http://biii.eu/node/1444> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Hjelmare, Martin",
+        "Mueller, Florian",
+        "Ouyang, Wei  " ;
+    nb:hasFunction <http://edamontology.org/operation_2423>,
+        <http://edamontology.org/operation_2990>,
+        <http://edamontology.org/operation__RyCFuPLOeGxpcGjYbWcWWD> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/imjoy-logo-black.png" ;
+    nb:hasLocation <https://imjoy.io/%23/>,
+        "ImJoy webapp website" ;
+    dc:created "2019-02-06T23:37:52"^^xsd:dateTime ;
+    dc:modified "2019-02-06T23:48:18"^^xsd:dateTime ;
+    dc:title "ImJoy" ;
+    rdfs:comment """<p>ImJoy is a plugin powered hybrid computing platform for deploying deep learning applications such as advanced image analysis tools. ImJoy runs on mobile and desktop environment cross different operating systems, plugins can run in the browser, localhost, remote and cloud servers.With ImJoy, delivering Deep Learning tools to the end users is simple and easy thanks to its flexible plugin system and shareable plugin URL. Developers can easily add rich and interactive web interfaces to existing Python code.</p>\r
+\r
+<p>&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/145> a <http://biii.eu/node/software> ;
@@ -5681,9 +5809,10 @@ The authors implemented the workflow in Matlab, but do not provide a ready-to-us
 
 <http://biii.eu/node/204> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sébastien Tosi" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/320px-Imagej2-icon.png" ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2014-12-08T15:28:48"^^xsd:dateTime ;
-    dc:modified "2018-05-15T00:47:51"^^xsd:dateTime ;
+    dc:modified "2019-02-05T10:29:51"^^xsd:dateTime ;
     dc:title "(Z,T) Hyperstack Stitcher" ;
     rdfs:comment """<p>This macro builds a stitched image from a muti-position 3D + time hyperstack. The XY positions of the montage should be coded as channels in the input hyperstack. Channel ordering can be configured in the dialog box to adapt to Column/Row and Meander/Comb configurations: The images should appear in this order when browsing the hyperstack with the channel slider. Fine stitching is supported (requires sufficient overlap between the views). The XY displacements of each field of view for stitching are computed for a single reference (Z,T) slice (user configurable) and applied to all slices (Z and T).</p>\r
 """ .
@@ -5700,7 +5829,7 @@ The authors implemented the workflow in Matlab, but do not provide a ready-to-us
     nb:hasTopic <http://edamontology.org/topic__RwTXNChEQ9hv7IpvHjQGin> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2017-09-12T10:16:47"^^xsd:dateTime ;
-    dc:modified "2018-08-17T14:58:18"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:11:30"^^xsd:dateTime ;
     dc:title "FigureJ" ;
     rdfs:comment """<p>This plugin achieves easy creation of image figures for publications, reports, projects.</p>\r
 \r
@@ -5733,9 +5862,10 @@ The authors implemented the workflow in Matlab, but do not provide a ready-to-us
 
 <http://biii.eu/node/207> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sébastien Tosi" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/320px-Imagej2-icon_0.png" ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2014-12-08T15:32:02"^^xsd:dateTime ;
-    dc:modified "2018-05-15T00:48:22"^^xsd:dateTime ;
+    dc:modified "2019-02-05T10:31:12"^^xsd:dateTime ;
     dc:title "(Z,T,C) Stitcher" ;
     rdfs:comment """<p>This macro can stitch a (Z,T,C) data set with virtually no limit on the number of Z slices and time frames. The input to the macro is a folder with the raw tiff images (one image per file) as typically exported by motorized microscopes. These files must all be stores in the same folder and the file naming should ideally comply to OME-TIFF. The macro is however quite flexible: Only --X, --Y and --Z fields with user defined number of digits are compulsory. --T, --C and --L fields with user defined number of digits are necessary for multiple time frames / channels data sets. A compatible data set is provided as a .zip archive. Before processing it unzip it to a given location. The stitching is performed in a reference Z slice (and in a specific reference time frame and channel). The same displacements are applied to all the Z slices, time frames and channels. Before starting the batch processing a montage with the original images of the selected Z slice / time frame / channel is displayed together with the stitched image in this stack. If you are not satisfied with the result you can select another reference. The stitching is then performed time frame by time frame and slice by slice and the stitched images are exported to a single user defined output folder. The macro can also process a data set with multiple channels, the stitching is then computed once on a reference channel and then applied to the other channels.</p>\r
 """ .
@@ -5806,11 +5936,16 @@ Use of components Skeletonize and Tubeness Filter\r
 
 <http://biii.eu/node/212> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Julie Nikolaisen, Linn I. H. Nilsson, Ina K. N. Pettersen, Peter H. G. M. Willems, James B. Lorens, Werner J. H. Koopman, Karl J. Tronstad " ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/IP.jpeg" ;
+    nb:hasReferencePublication <https://journals.plos.org/plosone/article%3Fid%3D10.1371/journal.pone.0101365%23s2>,
+        "Publication" ;
+    nb:hasTopic <http://edamontology.org/topic__Rn8MnorStmqIkNlAVZWBc0> ;
     nb:requires <http://biii.eu/node/118> ;
     dc:created "2014-12-08T15:39:57"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:04:30"^^xsd:dateTime ;
+    dc:modified "2019-02-05T10:52:22"^^xsd:dateTime ;
     dc:title "2D and 3D mitochondrial shape analysis and network properties" ;
-    rdfs:comment "The original paper [publication 1] describes a method to analyze mitochondrial morphology in 2D and 3D and is based on previous work of the authors [publication 2]." .
+    rdfs:comment """<p>The original paper [publication 1] describes a method to analyze mitochondrial morphology in 2D and 3D and is based on previous work of the authors [publication 2].</p>\r
+""" .
 
 <http://biii.eu/node/213> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sébastien Tosi" ;
@@ -6298,12 +6433,15 @@ Requires Bio-Formats plugin\r
     nb:hasFunction <http://edamontology.org/operation_Active_contours>,
         <http://edamontology.org/operation_Cell_segmentation>,
         <http://edamontology.org/operation_Cell_tracking> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/boa_plugins.png" ;
+    nb:hasLocation <https://warwick.ac.uk/fac/sci/dcs/people/till_bretschneider/quimp/>,
+        "Home Page" ;
     nb:hasReferencePublication <https://doi.org/10.1051/mmnp/20105102>,
         "Tyson et al (2010) High Resolution Tracking of Cell Membrane Dynamics in Moving Cells: an Electrifying Approach" ;
     nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/61> ;
     dc:created "2014-12-09T11:02:20"^^xsd:dateTime ;
-    dc:modified "2018-05-26T00:23:03"^^xsd:dateTime ;
+    dc:modified "2019-02-05T10:55:57"^^xsd:dateTime ;
     dc:title "2D cell tracking and analysis of morphological dynamics" ;
     rdfs:comment """The QuimP software from Bretschneider group is deployed as ImageJ plugin and includes model-based cell segmentation, cell outline tracking and quantification of the spatially resolved speed of protrusions and retractions. The algorithm to calculate morphological dynamics is faster compared to other approaches (e.g. [Machacek and Danuser, 2006](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1367294/)). The reference paper describes the workflow for these analyses. \r
 """ .
@@ -6655,11 +6793,12 @@ The function may also be useful to understand the functioning of the color decon
     nb:hasAuthor "Christian \"Tischi\" Tischer" ;
     nb:hasFunction <http://edamontology.org/operation_Image_colocalization>,
         <http://edamontology.org/operation___Colocalisation_analysis> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/cp_logo.png" ;
     nb:hasLocation <https://github.com/tischi/ImageAnalysisWorkflows/tree/master/CellProfiler_2D_Coloc_PerCell>,
         "2-D colocalisation in cells using CellProfiler" ;
     nb:requires <http://biii.eu/node/31> ;
     dc:created "2014-12-09T13:49:48"^^xsd:dateTime ;
-    dc:modified "2018-11-16T09:46:57"^^xsd:dateTime ;
+    dc:modified "2019-02-05T10:39:29"^^xsd:dateTime ;
     dc:title "2-D Colocalisation in Cells" ;
     rdfs:comment """<p>The workflow computes cell-based colocalisation of two stainings in 2-D images. Both pixel- and object-based readouts are provided and some pros and cons are discussed. Please read here for more information:</p>\r
 \r
@@ -8472,12 +8611,13 @@ This plugin is bundled with the Fijij package. """ .
     dc:title "Upload Sample Image" .
 
 <http://biii.eu/node/440> a <http://biii.eu/node/software> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/3DActiveMeshes64.png" ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/3D_Active_Meshes> ;
     nb:requires <http://biii.eu/node/517>,
         <http://biii.eu/node/658>,
         <http://biii.eu/node/8> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:03:59"^^xsd:dateTime ;
+    dc:modified "2019-02-05T12:26:45"^^xsd:dateTime ;
     dc:title "3D Active Meshes" .
 
 <http://biii.eu/node/441> a <http://biii.eu/node/software> ;
@@ -13439,6 +13579,21 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2019-01-30T11:02:45"^^xsd:dateTime ;
     dc:title "MeVisLab" .
 
+<http://biii.eu/node/1443> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_processing> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/Capture_0.PNG" ;
+    nb:hasLocation <https://github.com/HenriquesLab/NanoJ-Core>,
+        "NanoJ GitHUB" ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
+        <http://edamontology.org/topic_Super-resolution_microscopy> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-06T10:24:40"^^xsd:dateTime ;
+    dc:modified "2019-02-06T10:37:58"^^xsd:dateTime ;
+    dc:title "NanoJ" ;
+    rdfs:comment """<p>Set of Tools for super resolution microscopy</p>\r
+""" .
+
 <http://biii.eu/node/153> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Andrey P ",
         "Maurin Y" ;
@@ -14543,8 +14698,8 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:title "combine" .
 
 <http://biii.eu/node/1057> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "David Legland",
-        "Ignacio Arganda-Carreras" ;
+    nb:hasAuthor "Arganda-Carreras, Ignacio",
+        "Legland, David" ;
     nb:hasFunction <http://edamontology.org/operation_Cell_counting>,
         <http://edamontology.org/operation_Cell_segmentation>,
         <http://edamontology.org/operation_Feature_extraction>,
@@ -14559,19 +14714,17 @@ Several options for curve fitting are available. Results can be saved back in OM
         <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2016-10-01T18:31:47"^^xsd:dateTime ;
-    dc:modified "2018-08-07T15:54:08"^^xsd:dateTime ;
+    dc:modified "2019-02-05T15:19:04"^^xsd:dateTime ;
     dc:title "MorphoLibJ" ;
-    rdfs:comment """<p>MorphoLibJ is a library of plugin for ImageJ with functionalities for image processing such as filtering, reconstructing, segmenting, etc... Tools are based on Mathematical morphology with more rigorous mathematical approach than in the standard tools of ImageJ in particular for surface (or perimeter) measurements which are usually based on voxel counting.&nbsp;&nbsp;</p>
-
-<p><a href="http://imagej.net/MorphoLibJ#Measurements">http://imagej.net/MorphoLibJ#Measurements</a></p>
-
-<p>Programming language: JAVA</p>
-
-<p>Among features:</p>
-
-<p>* Morphological operations :&nbsp;&nbsp;Dilation, Erosion,&nbsp;Opening,&nbsp;&nbsp;Closing , Top hat (white and black), Morphological gradient (aka Beucher Gradient), Morphological&nbsp;Laplacian, Morphological reconstruction, Maxima/Minima , Extended Maxima/Minima -Watershed (classic or controlled) -Image overlay -Image labelling -Geodesic diameter -Region Adjacency Graph -Granulometry curves, morphological image analysis.</p>
-
-<p>User skill : Life scientist, developers, analysts</p>
+    rdfs:comment """<p>MorphoLibJ is a library of plugin for ImageJ with functionalities for image processing such as filtering, reconstructing, segmenting, etc... Tools are based on Mathematical morphology with more rigorous mathematical approach than in the standard tools of ImageJ in particular for surface (or perimeter) measurements which are usually based on voxel counting.&nbsp;&nbsp;</p>\r
+\r
+<p><a href="http://imagej.net/MorphoLibJ#Measurements">http://imagej.net/MorphoLibJ#Measurements</a></p>\r
+\r
+<p>Among the features:</p>\r
+\r
+<p>Morphological operations :&nbsp;&nbsp;Dilation, Erosion,&nbsp;Opening,&nbsp;&nbsp;Closing , Top hat (white and black), Morphological gradient (aka Beucher Gradient), Morphological&nbsp;Laplacian, Morphological reconstruction, Maxima/Minima , Extended Maxima/Minima -Watershed (classic or controlled) -Image overlay -Image labelling -Geodesic diameter -Region Adjacency Graph -Granulometry curves, morphological image analysis.</p>\r
+\r
+<p>&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/1075> a <http://biii.eu/node/software> ;
@@ -14722,11 +14875,30 @@ The built-in vectors are :</p>\r
 """ .
 
 <http://biii.eu/node/389> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://bigwww.epfl.ch/algorithms/psfgenerator> ;
+    nb:hasAuthor "Aguet, François",
+        "Kirshner, Hagai",
+        "Sage, Daniel",
+        "Unser, Michael" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/splash.002.png" ;
+    nb:hasLocation <http://bigwww.epfl.ch/algorithms/psfgenerator/>,
+        "PSF Generator at Bioimedical Imaging Group @ EPFL" ;
+    nb:hasReferencePublication <https://doi.org/10.1111/j.1365-2818.2012.03675.x>,
+        <https://infoscience.epfl.ch/record/163617>,
+        "3‐D PSF fitting for fluorescence microscopy: implementation and localization application",
+        "Comparison of Deconvolution Software in 3D Microscopy" ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:03:05"^^xsd:dateTime ;
-    dc:title "PSF Generator" .
+    dc:modified "2019-02-05T13:45:31"^^xsd:dateTime ;
+    dc:title "PSF Generator" ;
+    rdfs:comment """<p>PSF Generator is a software package that allows one to generate and visualize various 3D models of a microscope PSF. The current version has more than fifteen different models.</p>\r
+\r
+<p>3D diffractive models: scalar-based diffraction model Born &amp; Wolf, scalar-based diffraction model with 3 layers Gibson &amp; Lanni, and vectorial-based model Richards &amp; Wolf, and Variable Refractive Index Gibson &amp; Lanni model.</p>\r
+\r
+<p>Defocussing a 2D lateral function with 1D axial function: the available lateral functions are: "Gaussian", "Lorentz", "Cardinale-Sine", "Cosine", "Circular-Pupil", "Astigmatism", "Oriented-Gaussian", "Double-Helix".</p>\r
+\r
+<p>Optical Transfer Function generated in the Fourier domain: Koehler simulation, defocus simulation.</p>\r
+""" .
 
 <http://biii.eu/node/471> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Sholl_Analysis> ;
