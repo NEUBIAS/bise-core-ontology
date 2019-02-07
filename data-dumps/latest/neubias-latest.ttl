@@ -4138,8 +4138,8 @@ See  """ .
 """ .
 
 <http://biii.eu/node/1397> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Culley Siân orcid.org/0000-0003-2112-0143",
-        "Henriques Ricardo orcid.org/0000-0002-2043-5234" ;
+    nb:hasAuthor "Culley, Siân orcid.org/0000-0003-2112-0143",
+        "Henriques, Ricardo orcid.org/0000-0002-2043-5234" ;
     nb:hasFunction <http://edamontology.org/operation_3443> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-12/3362739443-squirrel%20logo.png" ;
     nb:hasLocation <https://github.com/HenriquesLab/NanoJ-Core>,
@@ -4152,7 +4152,7 @@ See  """ .
     nb:requires <http://biii.eu/node/1443>,
         <http://biii.eu/node/38> ;
     dc:created "2018-12-09T18:41:11"^^xsd:dateTime ;
-    dc:modified "2019-02-06T10:24:40"^^xsd:dateTime ;
+    dc:modified "2019-02-07T00:17:43"^^xsd:dateTime ;
     dc:title "SQUIRREL" ;
     rdfs:comment """<p>NanoJ-SQUIRREL (Super-resolution Quantitative Image Rating and Reporting of Error Locations) is a software package designed for assessing and mapping errors and artefacts within super-resolution images. This is achieved through quantitative comparison with a reference image of the same structure (typically a widefield, TIRF or confocal image). SQUIRREL produces quantitative maps of image quality and resolution as well as global image quality metrics.</p>\r
 """ .
@@ -4866,6 +4866,18 @@ on MATLAB’s image processing toolbox using the identification of sites&nbsp;of
     rdfs:comment """<p>ImJoy is a plugin powered hybrid computing platform for deploying deep learning applications such as advanced image analysis tools. ImJoy runs on mobile and desktop environment cross different operating systems, plugins can run in the browser, localhost, remote and cloud servers.With ImJoy, delivering Deep Learning tools to the end users is simple and easy thanks to its flexible plugin system and shareable plugin URL. Developers can easily add rich and interactive web interfaces to existing Python code.</p>\r
 \r
 <p>&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1445> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Louveaux, Marion orcid.org/0000-0002-1794-3748",
+        "Rochette, Sébastien orcid.org/0000-0002-1565-9313" ;
+    nb:hasFunction <http://edamontology.org/operation_2945> ;
+    nb:hasLocation <https://github.com/marionlouveaux/mamut2r>,
+        "Marion Louveaux mamut2r Github repository" ;
+    dc:created "2019-02-06T23:59:02"^^xsd:dateTime ;
+    dc:modified "2019-02-07T00:12:19"^^xsd:dateTime ;
+    dc:title "mamut2r" ;
+    rdfs:comment """<p>The goal of mamut2r is to imports data coming from .xml files generated with the Fiji MaMuT plugin for lineage and tracking of biological objects. {mamut2r} also allows to create lineage plots.</p>\r
 """ .
 
 <http://biii.eu/node/145> a <http://biii.eu/node/software> ;
