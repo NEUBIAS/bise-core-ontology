@@ -10761,13 +10761,6 @@ An ImageJ plugin for evaluate intra-nuclear 3D cross-distances between fluoresce
     dc:modified "2017-09-12T11:20:16"^^xsd:dateTime ;
     dc:title "Image Writer" .
 
-<http://biii.eu/node/709> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.unil.ch/cig/page16989.html> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:07:50"^^xsd:dateTime ;
-    dc:title "PixFRET" .
-
 <http://biii.eu/node/712> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/ROI%20Tagger> ;
     nb:requires <http://biii.eu/node/8> ;
