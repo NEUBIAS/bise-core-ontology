@@ -4880,6 +4880,16 @@ on MATLAB’s image processing toolbox using the identification of sites&nbsp;of
     rdfs:comment """<p>The goal of mamut2r is to imports data coming from .xml files generated with the Fiji MaMuT plugin for lineage and tracking of biological objects. {mamut2r} also allows to create lineage plots.</p>\r
 """ .
 
+<http://biii.eu/node/1447> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Erick Martins Ratamero orcid.org/0000-0002-7545-3675" ;
+    nb:hasLocation <https://github.com/erickmartins/auto_qc>,
+        "AutoQC" ;
+    dc:created "2019-02-14T16:06:51"^^xsd:dateTime ;
+    dc:modified "2019-02-14T16:14:23"^^xsd:dateTime ;
+    dc:title "autoQC" ;
+    rdfs:comment """<p>autoQC encapsulates a number of routines for performing microscope quality controls. From a few input images, it generates computer-friendly (i.e. CSV) data with numerical parameters for quality measures (resolution, field of view illumination, chromatic shift, stage reproducibility).</p>\r
+""" .
+
 <http://biii.eu/node/145> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Feng, Linqing",
         "Kim, Jinhyun",
