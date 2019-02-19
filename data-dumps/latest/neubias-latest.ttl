@@ -4909,6 +4909,51 @@ on MATLAB’s image processing toolbox using the identification of sites&nbsp;of
 <p>&nbsp;</p>\r
 """ .
 
+<http://biii.eu/node/1450> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Atlan, Michael https://scholar.google.fr/citations?user=e_K90MoAAAAJ&hl=en" ;
+    nb:hasFunction <http://edamontology.org/operation_3429>,
+        <http://edamontology.org/operation_Image_reconstruction>,
+        <http://edamontology.org/operation__RDFFD5jBfUw74a3vJeBAGB1> ;
+    nb:hasLocation <https://ftp.espci.fr/incoming/Atlan/holovibes/installer/> ;
+    nb:hasReferencePublication <https://www.osapublishing.org/abstract.cfm%3Furi%3DDH-2018-DM5F.4> ;
+    nb:hasTopic <http://edamontology.org/topic_3385>,
+        <http://edamontology.org/topic_Microscopy>,
+        <http://edamontology.org/topic_Widefield_microscopy>,
+        <http://edamontology.org/topic__RtBCcu7zJiS0phrbR2HzAI> ;
+    nb:requires <http://biii.eu/node/1449> ;
+    dc:created "2019-02-19T13:47:48"^^xsd:dateTime ;
+    dc:modified "2019-02-19T16:43:55"^^xsd:dateTime ;
+    dc:title "Holovibes" ;
+    rdfs:comment """<p>Holovibes is a free software dedicated to the calculation of holograms in real-time. Input interferogram data can be grabbed from a digital camera or loaded from files recorded beforehand. Massive amounts of data can be handled robustly at high throughput, saved to disk, and visualized in real-time without any risk of frame dropping thanks to the use of several configurable input and output memory buffers.</p>\r
+\r
+<h3>Main features</h3>\r
+\r
+<p>Image acquisition from several digital cameras or from data files<br />\r
+Choice of hologram rendering method<br />\r
+Blazing-fast hologram rendering<br />\r
+Real-time computation of spectrograms<br />\r
+Hologram autofocus<br />\r
+Image and video post-processing<br />\r
+High throughput saving to disc of massive datasets<br />\r
+Batch recording and communication with remote instruments via GPIB</p>\r
+\r
+<h3>Requirements</h3>\r
+\r
+<p>A PC with at least 8 GB of RAM<br />\r
+Microsoft Windows 7/10 64-bit operating system<br />\r
+A NVidia graphics card (GeForce GTX 700+ series)<br />\r
+NVidia CUDA 9<br />\r
+A supported digital camera, or raw interferogram files</p>\r
+\r
+<h3>Use case examples</h3>\r
+\r
+<p><a href="https://youtu.be/Ay2b1aP8_HQ">Holographic microscopy</a><br />\r
+<a href="https://youtu.be/mqlxnT32n9k">Holographic OCT</a><br />\r
+<a href="https://youtu.be/LYtISSHNcoo">Holographic vibrometry</a><br />\r
+<a href="https://youtu.be/RhVPXBnPhXc">Holographic angiography</a><br />\r
+<a href="https://youtu.be/kGPWyUIM1OA">Holographic plethysmography</a></p>\r
+""" .
+
 <http://biii.eu/node/146> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Max Planck Institute for Medical Research in Heidelberg, Germany" ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/knossos.png" ;
@@ -13608,6 +13653,11 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:title "NanoJ" ;
     rdfs:comment """<p>Set of Tools for super resolution microscopy</p>\r
 """ .
+
+<http://biii.eu/node/1449> a <http://biii.eu/node/software> ;
+    dc:created "2019-02-19T16:43:55"^^xsd:dateTime ;
+    dc:modified "2019-02-19T16:43:55"^^xsd:dateTime ;
+    dc:title "NVidia CUDA 9" .
 
 <http://biii.eu/node/153> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Andrey P ",
