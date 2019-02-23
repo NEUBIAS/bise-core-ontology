@@ -4954,6 +4954,23 @@ A supported digital camera, or raw interferogram files</p>\r
 <a href="https://youtu.be/kGPWyUIM1OA">Holographic plethysmography</a></p>\r
 """ .
 
+<http://biii.eu/node/1452> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Abraham, A.V, Ram, S., Chao, J, Ward, E. S, Ober, R. J." ;
+    nb:hasFunction <http://edamontology.org/operation__R9FvNkpDIaqZQhLVlPsHisj>,
+        <http://edamontology.org/operation__RDFFD5jBfUw74a3vJeBAGB1> ;
+    nb:hasLocation <http://www.wardoberlab.com/software/fandplimittool/>,
+        "FandPLimitTool Webpage" ;
+    nb:hasReferencePublication <https://www.osapublishing.org/oe/abstract.cfm%3Furi%3Doe-17-26-23352>,
+        "Reference Publication" ;
+    nb:hasTopic <http://edamontology.org/topic__R8oQpUEjKZjNQCTB4x3JQuJ> ;
+    dc:created "2019-02-23T20:48:30"^^xsd:dateTime ;
+    dc:modified "2019-02-23T20:48:30"^^xsd:dateTime ;
+    dc:title "FandPLimitTool" ;
+    rdfs:comment """<h3>Software&nbsp;for computing single molecule localization accuracies and resolution measures</h3>\r
+\r
+<p>The FandPLimitTool&nbsp;is a GUI based software module that allows users to calculate the limits to the accuracy with which parameters can be estimated from single molecule imaging data. The software supports calculation of limits for the 2D/3D location estimation problem and the 2D/3D distance-estimation/resolution problem. The location estimation problem is concerned with the task of determining the position of a single molecule and the distance-estimation/resolution problem is concerned with the task of determining the distance of separation between two single molecules. The user can calculate limits for a variety of imaging scenarios.</p>\r
+""" .
+
 <http://biii.eu/node/146> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Max Planck Institute for Medical Research in Heidelberg, Germany" ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/knossos.png" ;
