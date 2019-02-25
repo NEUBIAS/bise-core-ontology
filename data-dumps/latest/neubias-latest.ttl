@@ -4971,6 +4971,72 @@ A supported digital camera, or raw interferogram files</p>\r
 <p>The FandPLimitTool&nbsp;is a GUI based software module that allows users to calculate the limits to the accuracy with which parameters can be estimated from single molecule imaging data. The software supports calculation of limits for the 2D/3D location estimation problem and the 2D/3D distance-estimation/resolution problem. The location estimation problem is concerned with the task of determining the position of a single molecule and the distance-estimation/resolution problem is concerned with the task of determining the distance of separation between two single molecules. The user can calculate limits for a variety of imaging scenarios.</p>\r
 """ .
 
+<http://biii.eu/node/1453> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_smoothing>,
+        <http://edamontology.org/operation_Skeletonization>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_FilamentTracing3D-ImageJ>,
+        "Neubias BIAFLOWS workflow of Filament Tracing 3D with ImageJ" ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-25T12:49:12"^^xsd:dateTime ;
+    dc:modified "2019-02-25T13:02:31"^^xsd:dateTime ;
+    dc:title "Filament Tracing (ImageJ)" .
+
+<http://biii.eu/node/1454> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Image_thresholding> ;
+    nb:hasLocation <https://imagej.nih.gov/ij/developer/source/>,
+        "Threshold.java source code, go to ij.plugin package and Thresholder java file" ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-25T13:04:49"^^xsd:dateTime ;
+    dc:modified "2019-02-25T14:53:19"^^xsd:dateTime ;
+    dc:title "Thresholder (ImageJ)" .
+
+<http://biii.eu/node/1456> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Bäcker, Volker",
+        "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection-IJ/blob/master/IJSpotDetection.ijm>,
+        "Neubias BIAFLOWS workflow of Spot Detection with ImageJ" ;
+    nb:requires <http://biii.eu/node/1038>,
+        <http://biii.eu/node/1042>,
+        <http://biii.eu/node/1455>,
+        <http://biii.eu/node/38> ;
+    dc:created "2019-02-25T15:00:16"^^xsd:dateTime ;
+    dc:modified "2019-02-25T15:24:56"^^xsd:dateTime ;
+    dc:title "Spot detection (ImageJ)" ;
+    rdfs:comment """<p>This workflow detects spots from a 2D image by using straightforward set of ImageJ components. It receives the Laplacian Radius and the Noise tolerance as input.</p>\r
+""" .
+
+<http://biii.eu/node/1457> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Schindelin, Johannes",
+        "Schmid, Benjamin" ;
+    nb:hasFunction <http://edamontology.org/operation___Image_convolution> ;
+    nb:hasLocation <https://github.com/fiji/VIB>,
+        "VIB Protocol repository at Github" ;
+    nb:requires <http://biii.eu/node/903> ;
+    dc:created "2019-02-25T17:12:56"^^xsd:dateTime ;
+    dc:modified "2019-02-25T17:22:30"^^xsd:dateTime ;
+    dc:title "Minimum (3D) Filter" ;
+    rdfs:comment """<p>This component convolves the image with minimum filter. Each voxel is set to the minimum value of its neighborhood. The neighborhood is defined by a kernel, which has a diameter of 3 voxels.</p>\r
+""" .
+
+<http://biii.eu/node/1458> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Bäcker, Volker",
+        "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection3D-IJ/blob/master/IJSpotDetection3D.ijm>,
+        "Neubias BIAFLOWS workflow of Spot Detection 3D with ImageJ" ;
+    nb:requires <http://biii.eu/node/1038>,
+        <http://biii.eu/node/1070>,
+        <http://biii.eu/node/38> ;
+    dc:created "2019-02-25T15:46:28"^^xsd:dateTime ;
+    dc:modified "2019-02-25T17:30:27"^^xsd:dateTime ;
+    dc:title "Spot Detection 3D (ImageJ)" ;
+    rdfs:comment """<p>This workflow detects spots from a 3D image by using straightforward set of ImageJ components. It receives the Laplacian Radius and the Threshold&nbsp; value s input.</p>\r
+""" .
+
 <http://biii.eu/node/146> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Max Planck Institute for Medical Research in Heidelberg, Germany" ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/knossos.png" ;
@@ -12240,15 +12306,6 @@ Limitations:\r
     dc:modified "2017-09-13T12:10:46"^^xsd:dateTime ;
     dc:title "Strahler Analysis" .
 
-<http://biii.eu/node/903> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/VIB_Protocol> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/923> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:10:47"^^xsd:dateTime ;
-    dc:title "VIB Protocol" .
-
 <http://biii.eu/node/904> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Volume_Calculator> ;
     nb:requires <http://biii.eu/node/17>,
@@ -12944,16 +13001,6 @@ In Aphelion, the tool is in Segmentation->Threshold->AphImgMomentThreshold\r
 \r
 The original paper is 2449""" .
 
-<http://biii.eu/node/1038> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Erik Meijering" ;
-    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
-    nb:hasLocation <http://imagescience.org/meijering/software/featurej/laplacian/> ;
-    dc:created "2014-12-19T23:07:55"^^xsd:dateTime ;
-    dc:modified "2018-09-21T15:43:26"^^xsd:dateTime ;
-    dc:title "FeatureJ Laplacian" ;
-    rdfs:comment """<p>An often used Laplacian filter for enhancing signals at object boundaries and dots. It works with XY, XYZ, XYZ-T, XYZ-T-Ch1, XYZT-C1-C2 images. Distributed as a part of ImageJ plugin [FeatureJ](http://imagescience.org/meijering/software/featurej/), and included in Fiji. The second URL above is the link to its Javadoc. (imagescience.feature.Laplacian). A primer for using this class in Jython script is in [CMCI Jython/Fiji cookbook: FeatureJ](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#laplacian)</p>\r
-""" .
-
 <http://biii.eu/node/1040> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Erik Meijering" ;
     nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
@@ -12969,15 +13016,6 @@ The original paper is 2449""" .
     dc:title "MTrackJ" ;
     rdfs:comment """<p>Manual Tracking GUI. Many shortcut keys, and after being experienced, manual tracking can efficiently done. Post-editing capability to delete segments, merge and splitting tracks is quite useful.</p>\r
 """ .
-
-<http://biii.eu/node/1042> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Michael Schmid" ;
-    nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-29.html%23toc-Subsection-29.4> ;
-    nb:requires <http://biii.eu/node/1016>,
-        <http://biii.eu/node/826> ;
-    dc:created "2015-01-04T00:12:52"^^xsd:dateTime ;
-    dc:modified "2018-10-18T10:43:32"^^xsd:dateTime ;
-    dc:title "Find Maxima" .
 
 <http://biii.eu/node/1050> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Wayne Rasband" ;
@@ -13004,18 +13042,6 @@ The Plugin can display a plot of the FRC curve, along with the LOESS smoothed ve
 \r
 2654\r
 2655""" .
-
-<http://biii.eu/node/1070> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
-    nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-30.html%23toc-Subsection-30.2> ;
-    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
-    nb:requires <http://biii.eu/node/38>,
-        <http://biii.eu/node/79> ;
-    dc:created "2016-10-24T15:46:16"^^xsd:dateTime ;
-    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
-    dc:title "Analyze Particles" ;
-    rdfs:comment """<p>An object detection function in ImageJ. [Analyze &gt; Analyze Particles...]. It could simply be used for counting number of cells, but could also do more complex stuffs. ## Jython Snippet Here is a snippet of how to use Particle Analysis in Jython script.</p>\r
-""" .
 
 <http://biii.eu/node/1072> a <http://biii.eu/node/software> ;
     nb:hasAuthor "orcid.org/0000-0003-0229-5722" ;
@@ -13676,6 +13702,17 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2019-02-19T16:43:55"^^xsd:dateTime ;
     dc:title "NVidia CUDA 9" .
 
+<http://biii.eu/node/1455> a <http://biii.eu/node/software> ;
+    nb:hasLocation <https://imagej.nih.gov/ij/developer/source/>,
+        "ImageJ source code (go to ij.Macro package then Functions java file) " ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-25T15:18:27"^^xsd:dateTime ;
+    dc:modified "2019-02-25T15:38:03"^^xsd:dateTime ;
+    dc:title "ImageJ Built-in Macro Functions" ;
+    rdfs:comment """<p>A set of ImageJ Built-in Macro Functions used to perform operations on the ImageJ platform.</p>\r
+""" .
+
 <http://biii.eu/node/153> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Andrey P ",
         "Maurin Y" ;
@@ -14246,6 +14283,15 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2017-09-13T12:10:42"^^xsd:dateTime ;
     dc:title "Retinex" .
 
+<http://biii.eu/node/903> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://fiji.sc/VIB_Protocol> ;
+    nb:requires <http://biii.eu/node/17>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/923> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:10:47"^^xsd:dateTime ;
+    dc:title "VIB Protocol" .
+
 <http://biii.eu/node/920> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Maximum_Entropy_Threshold> ;
     nb:requires <http://biii.eu/node/125>,
@@ -14390,6 +14436,27 @@ Pedro Almada wrote a plugin to save the current orthogonal views as montage. \r
 \r
 \r
 \r
+""" .
+
+<http://biii.eu/node/1042> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Michael Schmid" ;
+    nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-29.html%23toc-Subsection-29.4> ;
+    nb:requires <http://biii.eu/node/1016>,
+        <http://biii.eu/node/826> ;
+    dc:created "2015-01-04T00:12:52"^^xsd:dateTime ;
+    dc:modified "2018-10-18T10:43:32"^^xsd:dateTime ;
+    dc:title "Find Maxima" .
+
+<http://biii.eu/node/1070> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
+    nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-30.html%23toc-Subsection-30.2> ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/79> ;
+    dc:created "2016-10-24T15:46:16"^^xsd:dateTime ;
+    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
+    dc:title "Analyze Particles" ;
+    rdfs:comment """<p>An object detection function in ImageJ. [Analyze &gt; Analyze Particles...]. It could simply be used for counting number of cells, but could also do more complex stuffs. ## Jython Snippet Here is a snippet of how to use Particle Analysis in Jython script.</p>\r
 """ .
 
 <http://biii.eu/node/1185> a <http://biii.eu/node/software> ;
@@ -14778,6 +14845,16 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:11:50"^^xsd:dateTime ;
     dc:title "combine" .
+
+<http://biii.eu/node/1038> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Erik Meijering" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasLocation <http://imagescience.org/meijering/software/featurej/laplacian/> ;
+    dc:created "2014-12-19T23:07:55"^^xsd:dateTime ;
+    dc:modified "2018-09-21T15:43:26"^^xsd:dateTime ;
+    dc:title "FeatureJ Laplacian" ;
+    rdfs:comment """<p>An often used Laplacian filter for enhancing signals at object boundaries and dots. It works with XY, XYZ, XYZ-T, XYZ-T-Ch1, XYZT-C1-C2 images. Distributed as a part of ImageJ plugin [FeatureJ](http://imagescience.org/meijering/software/featurej/), and included in Fiji. The second URL above is the link to its Javadoc. (imagescience.feature.Laplacian). A primer for using this class in Jython script is in [CMCI Jython/Fiji cookbook: FeatureJ](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#laplacian)</p>\r
+""" .
 
 <http://biii.eu/node/1057> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Arganda-Carreras, Ignacio",
