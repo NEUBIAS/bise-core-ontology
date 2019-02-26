@@ -4980,7 +4980,7 @@ A supported digital camera, or raw interferogram files</p>\r
         "Neubias BIAFLOWS workflow of Filament Tracing 3D with ImageJ" ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2019-02-25T12:49:12"^^xsd:dateTime ;
-    dc:modified "2019-02-25T13:02:31"^^xsd:dateTime ;
+    dc:modified "2019-02-26T15:34:51"^^xsd:dateTime ;
     dc:title "Filament Tracing (ImageJ)" .
 
 <http://biii.eu/node/1454> a <http://biii.eu/node/software> ;
@@ -5017,8 +5017,8 @@ A supported digital camera, or raw interferogram files</p>\r
         "VIB Protocol repository at Github" ;
     nb:requires <http://biii.eu/node/903> ;
     dc:created "2019-02-25T17:12:56"^^xsd:dateTime ;
-    dc:modified "2019-02-25T17:22:30"^^xsd:dateTime ;
-    dc:title "Minimum (3D) Filter" ;
+    dc:modified "2019-02-26T16:06:54"^^xsd:dateTime ;
+    dc:title "Minimum (3D) Filter VIB Protocol" ;
     rdfs:comment """<p>This component convolves the image with minimum filter. Each voxel is set to the minimum value of its neighborhood. The neighborhood is defined by a kernel, which has a diameter of 3 voxels.</p>\r
 """ .
 
@@ -5037,6 +5037,11 @@ A supported digital camera, or raw interferogram files</p>\r
     rdfs:comment """<p>This workflow detects spots from a 3D image by using straightforward set of ImageJ components. It receives the Laplacian Radius and the Threshold&nbsp; value s input.</p>\r
 """ .
 
+<http://biii.eu/node/1459> a <http://biii.eu/node/software> ;
+    dc:created "2019-02-26T11:52:23"^^xsd:dateTime ;
+    dc:modified "2019-02-26T11:52:23"^^xsd:dateTime ;
+    dc:title "icy " .
+
 <http://biii.eu/node/146> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Max Planck Institute for Medical Research in Heidelberg, Germany" ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/knossos.png" ;
@@ -5046,6 +5051,95 @@ A supported digital camera, or raw interferogram files</p>\r
     dc:title "KNOSSOS - 3D image visualization and annotation tool" ;
     rdfs:comment """<p>It is a tool to visualize and annotate volume image data of electron microscopy. Users can annotate objects (e.g. neurons) and skeleton structures. It provides the ability to overlaying the image data with user annotations, representing the spatial structure and the connectivity of labeled objects, and displaying a three dimensional model of it. It can be extended by plugins written in python. A similar, web-based implementation is being developed at webknossos.info. Example datasets are also available.</p>\r
 """ .
+
+<http://biii.eu/node/1460> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Dufour, Alexandre" ;
+    nb:hasFunction <http://edamontology.org/operation_2945> ;
+    nb:hasLocation <https://github.com/DrDaleks/ROI-Measures>,
+        "ROI-Measures from Alexandre Dufour's Github repositoty " ;
+    nb:requires <http://biii.eu/node/82> ;
+    dc:created "2019-02-26T12:29:59"^^xsd:dateTime ;
+    dc:modified "2019-02-26T12:37:59"^^xsd:dateTime ;
+    dc:title "ROI Measure " ;
+    rdfs:comment """<p>ROI measurement plug-in for Icy.</p>\r
+""" .
+
+<http://biii.eu/node/1461> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Marrée, Raphael " ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection-Icy/blob/master/protocol.protocol>,
+        "Neubias BIAFLOWS workflow of Spot Detection with Icy protocol" ;
+    dc:created "2019-02-26T11:57:51"^^xsd:dateTime ;
+    dc:modified "2019-02-26T12:38:39"^^xsd:dateTime ;
+    dc:title "Spot Detection (Icy)" .
+
+<http://biii.eu/node/1462> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Adaptative_thresholding>,
+        <http://edamontology.org/operation_Image_smoothing>,
+        <http://edamontology.org/operation_Watershed>,
+        <http://edamontology.org/operation__RBNng13hEB0CJD5VzSKqrfB> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-Python/blob/master/script.py>,
+        "Neubias BIAFLOWS workflow of nuclei segmentation with Python" ;
+    nb:requires <http://biii.eu/node/128>,
+        <http://biii.eu/node/1286>,
+        <http://biii.eu/node/1288> ;
+    dc:created "2019-02-26T12:44:29"^^xsd:dateTime ;
+    dc:modified "2019-02-26T13:03:19"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation (Python)" ;
+    rdfs:comment """<p>This workflow processes images of cells with discernible nuclei and outputs a binary mask containing where nuclei are detected.</p>\r
+""" .
+
+<http://biii.eu/node/1463> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Schindelin, Johannes",
+        "Schmid, Benjamin" ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations>,
+        <http://edamontology.org/operation___Image_convolution> ;
+    nb:hasLocation <https://github.com/fiji/VIB>,
+        "VIB Protocol repository at Github" ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/903> ;
+    dc:created "2019-02-26T16:06:14"^^xsd:dateTime ;
+    dc:modified "2019-02-26T16:10:01"^^xsd:dateTime ;
+    dc:title "Maximum (3D) VIB Protocol" ;
+    rdfs:comment """<p>This component convolves the image with maximum filter. Each voxel is set to the maximum value of its neighborhood. The neighborhood is defined by a kernel, which has a diameter of 3 voxels.</p>\r
+""" .
+
+<http://biii.eu/node/1464> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Boudier, Thomas" ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasLocation <https://github.com/mcib3d/mcib3d-core/blob/master/src/main/java/mcib3d/image3d/legacy/IntImage3D.java>,
+        "mcib3d Github repository linking to Fill Holes method" ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/781> ;
+    dc:created "2019-02-26T16:15:10"^^xsd:dateTime ;
+    dc:modified "2019-02-26T16:21:31"^^xsd:dateTime ;
+    dc:title "3D Fill holes (mcib3d)" ;
+    rdfs:comment """<p>Runs fill holes operation on 3D images.</p>\r
+""" .
+
+<http://biii.eu/node/1465> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Chessel, Anatole",
+        "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Edge_detection>,
+        <http://edamontology.org/operation_Neuron_image_analysis>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NeuronTracing_ImageJ/blob/master/macro.ijm>,
+        "Neubias BIAFLOWS workflow of Neuron Tracing 3D with ImageJ" ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-26T15:39:23"^^xsd:dateTime ;
+    dc:modified "2019-02-26T16:53:31"^^xsd:dateTime ;
+    dc:title "Neuron Tracing 3D (ImageJ) " .
+
+<http://biii.eu/node/1466> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Bäcker, Volker " ;
+    nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiTracking-ImageJ/blob/master/NucleiTracking.ijm>,
+        "Neubias BIAFLOWS workflow of nuclei tracking with ImageJ" ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-26T16:30:06"^^xsd:dateTime ;
+    dc:modified "2019-02-26T17:47:27"^^xsd:dateTime ;
+    dc:title "Nuclei Tracking (ImageJ)" .
 
 <http://biii.eu/node/147> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Marcel Müller" ;
@@ -11350,17 +11444,6 @@ Results are exported into Excel readable files.\r
     dc:modified "2017-09-13T12:08:46"^^xsd:dateTime ;
     dc:title "RodCellJ" .
 
-<http://biii.eu/node/781> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Thomas Boudier" ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/mcib3d%20library> ;
-    nb:requires <http://biii.eu/node/411>,
-        <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:08:47"^^xsd:dateTime ;
-    dc:title "mcib3d library" ;
-    rdfs:comment """Plugins for 3D Image processing and Analyisis in ImageJ.\r
-Previously (?) known as [3D ImageJ Suite](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_ij_suite:start).""" .
-
 <http://biii.eu/node/782> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Microscope_Live_3D> ;
     nb:requires <http://biii.eu/node/116>,
@@ -12033,12 +12116,16 @@ Weakness:\r
     dc:title "Track Processor Flow" .
 
 <http://biii.eu/node/872> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Wavelet%20Spot%20Detector%20Block> ;
+    nb:hasAuthor "de Chaumont, Fabrice" ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Wavelet%20Spot%20Detector%20Block>,
+        "Wavelet Spot Detector Block page on Icy" ;
     nb:requires <http://biii.eu/node/726>,
-        <http://biii.eu/node/8> ;
+        <http://biii.eu/node/82> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:10:19"^^xsd:dateTime ;
-    dc:title "Wavelet Spot Detector Block" .
+    dc:modified "2019-02-26T11:55:05"^^xsd:dateTime ;
+    dc:title "Wavelet Spot Detector Block" ;
+    rdfs:comment """<p>Wavelet Spot Detector for Blocks, to integrate in Icy protocols.</p>\r
+""" .
 
 <http://biii.eu/node/873> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://bigwww.epfl.ch/algorithms/mltldeconvolution/> ;
@@ -14206,6 +14293,17 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:title "HK-Means" ;
     rdfs:comment "This segmentation method performs a N-class thresholding based on a K-Means classification of the image histogram, then extracts objects in a bottom-up manner using user-defined minimum and maximum object sizes. Very useful to detect clustered objects in fluorescence microscopy." .
 
+<http://biii.eu/node/781> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Thomas Boudier" ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/mcib3d%20library> ;
+    nb:requires <http://biii.eu/node/411>,
+        <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:08:47"^^xsd:dateTime ;
+    dc:title "mcib3d library" ;
+    rdfs:comment """Plugins for 3D Image processing and Analyisis in ImageJ.\r
+Previously (?) known as [3D ImageJ Suite](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_ij_suite:start).""" .
+
 <http://biii.eu/node/784> a <http://biii.eu/node/software> ;
     nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
         <http://edamontology.org/operation_Shape_features> ;
@@ -14232,24 +14330,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:09:27"^^xsd:dateTime ;
     dc:title "Connected Components" .
-
-<http://biii.eu/node/82> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Dallongeville Stephane ",
-        "de Chaumont Fabrice / orcid.org/0000-0001-7613-7204" ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Icy.png" ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/> ;
-    nb:hasReferencePublication <http://dx.doi.org/10.1038/nmeth.2075> ;
-    dc:created "2013-10-15T20:19:13"^^xsd:dateTime ;
-    dc:modified "2018-06-11T15:13:34"^^xsd:dateTime ;
-    dc:title "Icy" ;
-    rdfs:comment """<p>Reproducing an experiment doesnt stop at the bench when images are concerned. Icy is an open source bioimaging software package that aims to provide a framework for authors to share, and others to reproduce, research once the sample hits the microscope. Icy was released in April 2011 and is being developed at the Quantitative Image Analysis Unit at the Pasteur Institute in France by Jean-Christophe Olivo-Marin and his team. The goal is to provide standardized software architecture, with a visual programming framework and online repository of plugins and protocols, brought together with sophisticated content-management and communication systems for such extended reproducible research. Icy provides intuitive user interfaces for graphical protocol development for image acquisition, analysis and storage that are easy to use for biologists and developers alike. Developers should find that Icys EzPlug API library, versioning, and auditing tools make creating a custom plugin from most any source easy. Users will find the automatic error reporting, central repository and on-line community hub great for storing and sharing plugins and protocols. Icy is even developing a cloud-computing framework to address the scalability issues of high-content screening. As of this writing there are 207 plug-ins 50 scripts and 14 protocols available for download, including those for microscope control, particle tracking, three dimensional segmentation, and even spot detection using wavelets.</p>\r
-\r
-<p>Published in Nature Methods (Nat Methods 9(7):690-6 (2012)). Icy can be downloaded at http://icy.bioimageanalysis.org/ Strength: Open-source. Centralized repository of 205 plugins, 50 scripts and 14 protocols</p>\r
-\r
-<p>&nbsp;</p>\r
-\r
-<p>Rate and comment plugins 5D Search and install features directly from Icy Graphical programming with protocols Write scripts in javascript or python Automatic bug reports Native ImageJ integration 100% compatible Native Micro-Manager integration Share your plugins and protocols online Can run headless Intuitive user interface Online management of plugins Connect Icy to Matlab Interactive widgets Build your graphical interface with EzPlug Use the power of your graphic card with OpenCL Loaded with 20 up-to date libs Weaknesses No tutorial for plugins writing..yet See here: http://icy.bioimageanalysis.org/index.php?display=devDoc http://icy.bioimageanalysis.org/index.php?display=detailTag&amp;tagId=29 and here: http://icy.bioimageanalysis.org/index.php?display=startDevWithIcy and also here: http://icy.bioimageanalysis.org/index.php?display=startDevWithIcy Image size limited to 2GigaByte per single 2D channel (means that an image of 40.000x40.000 can be handle by Icy. Still big !) Still you can have a stack of 100000x40Kx40kxUnlimited number of channel if you have RAM. Will be improved</p>\r
-""" .
 
 <http://biii.eu/node/829> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Matlab%20importer> ;
@@ -14282,15 +14362,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:10:42"^^xsd:dateTime ;
     dc:title "Retinex" .
-
-<http://biii.eu/node/903> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/VIB_Protocol> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/923> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:10:47"^^xsd:dateTime ;
-    dc:title "VIB Protocol" .
 
 <http://biii.eu/node/920> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Maximum_Entropy_Threshold> ;
@@ -14763,6 +14834,15 @@ Mahotas and all packages on which it relies are open-source.\r
 \r
 """ .
 
+<http://biii.eu/node/903> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://fiji.sc/VIB_Protocol> ;
+    nb:requires <http://biii.eu/node/17>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/923> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:10:47"^^xsd:dateTime ;
+    dc:title "VIB Protocol" .
+
 <http://biii.eu/node/915> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://bigwww.epfl.ch/thevenaz/turboreg/> ;
     nb:requires <http://biii.eu/node/17>,
@@ -14916,19 +14996,6 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:modified "2018-01-30T12:34:23"^^xsd:dateTime ;
     dc:title "BigDataViewer" ;
     rdfs:comment """<p>The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences. BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.</p>\r
-""" .
-
-<http://biii.eu/node/128> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu and the scikit-image contributors. " ;
-    nb:hasFunction <http://edamontology.org/operation_2945>,
-        <http://edamontology.org/operation_Image_processing> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/logo.png" ;
-    nb:hasLocation <http://scikit-image.org/> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    dc:created "2014-12-09T11:33:32"^^xsd:dateTime ;
-    dc:modified "2018-12-17T02:00:14"^^xsd:dateTime ;
-    dc:title "scikit-image" ;
-    rdfs:comment """<p>Image processing library for Python &gt;The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to provide a versatile set of image processing routines. It is written in the Python language. This SciKit is developed by the SciPy community. All contributions are most welcome!</p>\r
 """ .
 
 <http://biii.eu/node/130> a <http://biii.eu/node/software> ;
@@ -15107,6 +15174,24 @@ The built-in vectors are :</p>\r
 </blockquote>\r
 """ .
 
+<http://biii.eu/node/82> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Dallongeville, Stephane ",
+        "de Chaumont, Fabrice orcid.org/0000-0001-7613-7204" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Icy.png" ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/> ;
+    nb:hasReferencePublication <http://dx.doi.org/10.1038/nmeth.2075> ;
+    dc:created "2013-10-15T20:19:13"^^xsd:dateTime ;
+    dc:modified "2019-02-26T11:53:53"^^xsd:dateTime ;
+    dc:title "Icy" ;
+    rdfs:comment """<p>Reproducing an experiment doesnt stop at the bench when images are concerned. Icy is an open source bioimaging software package that aims to provide a framework for authors to share, and others to reproduce, research once the sample hits the microscope. Icy was released in April 2011 and is being developed at the Quantitative Image Analysis Unit at the Pasteur Institute in France by Jean-Christophe Olivo-Marin and his team. The goal is to provide standardized software architecture, with a visual programming framework and online repository of plugins and protocols, brought together with sophisticated content-management and communication systems for such extended reproducible research. Icy provides intuitive user interfaces for graphical protocol development for image acquisition, analysis and storage that are easy to use for biologists and developers alike. Developers should find that Icys EzPlug API library, versioning, and auditing tools make creating a custom plugin from most any source easy. Users will find the automatic error reporting, central repository and on-line community hub great for storing and sharing plugins and protocols. Icy is even developing a cloud-computing framework to address the scalability issues of high-content screening. As of this writing there are 207 plug-ins 50 scripts and 14 protocols available for download, including those for microscope control, particle tracking, three dimensional segmentation, and even spot detection using wavelets.</p>\r
+\r
+<p>Published in Nature Methods (Nat Methods 9(7):690-6 (2012)). Icy can be downloaded at http://icy.bioimageanalysis.org/ Strength: Open-source. Centralized repository of 205 plugins, 50 scripts and 14 protocols</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Rate and comment plugins 5D Search and install features directly from Icy Graphical programming with protocols Write scripts in javascript or python Automatic bug reports Native ImageJ integration 100% compatible Native Micro-Manager integration Share your plugins and protocols online Can run headless Intuitive user interface Online management of plugins Connect Icy to Matlab Interactive widgets Build your graphical interface with EzPlug Use the power of your graphic card with OpenCL Loaded with 20 up-to date libs Weaknesses No tutorial for plugins writing..yet See here: http://icy.bioimageanalysis.org/index.php?display=devDoc http://icy.bioimageanalysis.org/index.php?display=detailTag&amp;tagId=29 and here: http://icy.bioimageanalysis.org/index.php?display=startDevWithIcy and also here: http://icy.bioimageanalysis.org/index.php?display=startDevWithIcy Image size limited to 2GigaByte per single 2D channel (means that an image of 40.000x40.000 can be handle by Icy. Still big !) Still you can have a stack of 100000x40Kx40kxUnlimited number of channel if you have RAM. Will be improved</p>\r
+""" .
+
 <http://biii.eu/node/975> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
     nb:requires <http://biii.eu/node/332>,
@@ -15138,10 +15223,18 @@ The built-in vectors are :</p>\r
     dc:title "Volocity" ;
     rdfs:comment "-" .
 
-<http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
-    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:title "scipy" .
+<http://biii.eu/node/128> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu and the scikit-image contributors. " ;
+    nb:hasFunction <http://edamontology.org/operation_2945>,
+        <http://edamontology.org/operation_Image_processing> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/logo.png" ;
+    nb:hasLocation <http://scikit-image.org/> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    dc:created "2014-12-09T11:33:32"^^xsd:dateTime ;
+    dc:modified "2018-12-17T02:00:14"^^xsd:dateTime ;
+    dc:title "scikit-image" ;
+    rdfs:comment """<p>Image processing library for Python &gt;The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to provide a versatile set of image processing routines. It is written in the Python language. This SciKit is developed by the SciPy community. All contributions are most welcome!</p>\r
+""" .
 
 <http://biii.eu/node/211> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Cellprofiler team" ;
@@ -15227,6 +15320,11 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:modified "2017-09-13T12:12:18"^^xsd:dateTime ;
     dc:title "rotate" .
 
+<http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
+    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:title "scipy" .
+
 <http://biii.eu/node/60> a <http://biii.eu/node/software> ;
     dc:created "2017-09-11T13:00:50"^^xsd:dateTime ;
     dc:modified "2017-09-11T13:00:50"^^xsd:dateTime ;
@@ -15284,11 +15382,6 @@ V.Foe and G.Odell, . 26 July 2001""" .
     rdfs:comment """<p>ImgLib2 is a generic, multi-dimensional data processing library allowing for processing algorithms to be defined in a data-type, dimension, and container independent manner. Due to its interface-based design, it is easy to write adapters to virtually all existing data containers. It is the basis of KNIME, ImageJ2 and a couple of Fiji plugins.</p>\r
 """ .
 
-<http://biii.eu/node/1288> a <http://biii.eu/node/software> ;
-    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:title "numpy" .
-
 <http://biii.eu/node/239> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Timothée Lecomte" ;
     nb:requires <http://biii.eu/node/239>,
@@ -15323,6 +15416,11 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:created "2017-09-13T10:53:00"^^xsd:dateTime ;
     dc:modified "2017-09-13T10:53:00"^^xsd:dateTime ;
     dc:title "KNIME" .
+
+<http://biii.eu/node/1288> a <http://biii.eu/node/software> ;
+    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:title "numpy" .
 
 <http://biii.eu/node/463> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://processing.org/> ;
