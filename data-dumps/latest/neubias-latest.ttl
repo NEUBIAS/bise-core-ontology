@@ -3767,7 +3767,7 @@ simpletracker.m is - as the name says - a simple implementation of a tracking al
     dc:title "ImageJ/FIJI" .
 
 <http://biii.eu/node/1367> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Waithe dominic orcid.org/0000-0003-2685-4226" ;
+    nb:hasAuthor "Waithe, Dominic orcid.org/0000-0003-2685-4226" ;
     nb:hasFunction <http://edamontology.org/operation_3443>,
         <http://edamontology.org/operation_Object_detection> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-10/Screenshot%202018-10-17%20at%2018.45.32.png" ;
@@ -3779,11 +3779,9 @@ simpletracker.m is - as the name says - a simple implementation of a tracking al
         <http://biii.eu/node/1368>,
         <http://biii.eu/node/1369> ;
     dc:created "2018-10-17T19:47:03"^^xsd:dateTime ;
-    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
+    dc:modified "2019-02-28T13:26:51"^^xsd:dateTime ;
     dc:title "Find Maxima (Python)" ;
-    rdfs:comment """<p>&nbsp;</p>\r
-\r
-<p>Maxima finding algorithm recreated from implementation in Fiji(ImageJ)</p>\r
+    rdfs:comment """<p>Maxima finding algorithm recreated from implementation in Fiji(ImageJ)</p>\r
 \r
 <p>This is a re-implementation of the java plugin written by Michael Schmid and Wayne Rasband for ImageJ. The original java code source can be found in:&nbsp;<a href="https://imagej.nih.gov/ij/developer/source/ij/plugin/filter/MaximumFinder.java.html">https://imagej.nih.gov/ij/developer/source/ij/plugin/filter/MaximumFinder.java.html</a>&nbsp;</p>\r
 \r
@@ -5151,6 +5149,23 @@ A supported digital camera, or raw interferogram files</p>\r
     dc:modified "2019-02-27T18:22:59"^^xsd:dateTime ;
     dc:title "Nuclei Segmentation (CellProfiler)" ;
     rdfs:comment """<p>This workflow processes a group of images containing cells with discernible nuclei and segments the nuclei and outputs a binary mask that show where nuclei were detected. It was developed as a test workflow for Neubias BIAFLOWS Benchmarking tool.</p>\r
+""" .
+
+<http://biii.eu/node/1469> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Hamarneh, Ghassan",
+        "Jassi, Preet" ;
+    nb:hasFunction <http://edamontology.org/operation__RDFFD5jBfUw74a3vJeBAGB1> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/vascusynth_dataset.png" ;
+    nb:hasLocation <http://vascusynth.cs.sfu.ca/>,
+        "VascuSynth website" ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.compmedimag.2010.06.002>,
+        "VascuSynth: Simulating Vascular Trees for Generating Volumetric Image data with Ground Truth Segmentation and Tree Analysis" ;
+    nb:requires <http://biii.eu/node/1468>,
+        <http://biii.eu/node/92> ;
+    dc:created "2019-02-28T09:44:33"^^xsd:dateTime ;
+    dc:modified "2019-02-28T10:00:21"^^xsd:dateTime ;
+    dc:title "VascuSynth " ;
+    rdfs:comment """<p>VascuSynth is an ITK-based synthetic image generator. It synthesizes volumetric images of vascular trees and generates a .gxl file of the ground-truth tree structure. VascuSynth receives a number of .txt configuration files and is capable of generating both ground truth ('ideal') images and images with added noise. The user is capable of choosing from a set simple noise additions and artefacts.</p>\r
 """ .
 
 <http://biii.eu/node/147> a <http://biii.eu/node/software> ;
@@ -13812,6 +13827,11 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     rdfs:comment """<p>A set of ImageJ Built-in Macro Functions used to perform operations on the ImageJ platform.</p>\r
 """ .
 
+<http://biii.eu/node/1468> a <http://biii.eu/node/software> ;
+    dc:created "2019-02-28T10:00:21"^^xsd:dateTime ;
+    dc:modified "2019-02-28T10:00:21"^^xsd:dateTime ;
+    dc:title "CMake" .
+
 <http://biii.eu/node/153> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Andrey P ",
         "Maurin Y" ;
@@ -15716,6 +15736,30 @@ Bioformats could also be used as stand alone application from command line. See 
     dc:modified "2017-09-13T12:09:00"^^xsd:dateTime ;
     dc:title "Projection" .
 
+<http://biii.eu/node/971> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:requires <http://biii.eu/node/332>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:11:49"^^xsd:dateTime ;
+    dc:title "closing" .
+
+<http://biii.eu/node/998> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:requires <http://biii.eu/node/332>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:12:10"^^xsd:dateTime ;
+    dc:title "opening" .
+
+<http://biii.eu/node/726> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
+    nb:requires <http://biii.eu/node/71> ;
+    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
+    dc:modified "2018-04-11T12:56:48"^^xsd:dateTime ;
+    dc:title "Spot Detection" .
+
 <http://biii.eu/node/92> a <http://biii.eu/node/software> ;
     nb:hasFunction <http://edamontology.org/operation_3443>,
         <http://edamontology.org/operation_Image_registration>,
@@ -15741,30 +15785,6 @@ Bioformats could also be used as stand alone application from command line. See 
 \r
 <p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
 """ .
-
-<http://biii.eu/node/971> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:49"^^xsd:dateTime ;
-    dc:title "closing" .
-
-<http://biii.eu/node/998> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:10"^^xsd:dateTime ;
-    dc:title "opening" .
-
-<http://biii.eu/node/726> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
-    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
-    nb:requires <http://biii.eu/node/71> ;
-    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2018-04-11T12:56:48"^^xsd:dateTime ;
-    dc:title "Spot Detection" .
 
 <http://biii.eu/node/671> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Histogram> ;
