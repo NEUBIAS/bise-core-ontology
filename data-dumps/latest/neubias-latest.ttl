@@ -5142,11 +5142,12 @@ A supported digital camera, or raw interferogram files</p>\r
 <http://biii.eu/node/1467> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Paavolainen, Lassi" ;
     nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/BIAFLOW_nucseg.png" ;
     nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-CellProfiler/blob/master/CP_detect_nuclei.cppipe>,
         "Neubias BIAFLOWS workflow of nuclei segmentation with CellProfiler pipeline" ;
     nb:requires <http://biii.eu/node/31> ;
     dc:created "2019-02-27T14:58:26"^^xsd:dateTime ;
-    dc:modified "2019-02-27T18:22:59"^^xsd:dateTime ;
+    dc:modified "2019-03-07T18:32:13"^^xsd:dateTime ;
     dc:title "Nuclei Segmentation (CellProfiler)" ;
     rdfs:comment """<p>This workflow processes a group of images containing cells with discernible nuclei and segments the nuclei and outputs a binary mask that show where nuclei were detected. It was developed as a test workflow for Neubias BIAFLOWS Benchmarking tool.</p>\r
 """ .
