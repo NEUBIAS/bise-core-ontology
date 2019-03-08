@@ -709,11 +709,14 @@ The file has implemented both point to point and point to plane as well as a cou
 OpenMOLE (Open MOdeL Experiment) is a workflow engine designed to leverage the computing power of distributed execution environments for naturally parallel processes. A process is told naturally parallel if the same computation runs many times for a set of different inputs, such as model experiment or data processing It is free software distributed under the AGPLv3 free software license.""" .
 
 <http://biii.eu/node/1071> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Wayne Rasband, Michael Schmid" ;
+    nb:hasAuthor "Michael Schmid",
+        "Wayne Rasband" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/voronoi.png" ;
     nb:hasLocation <https://github.com/imagej/imagej1/blob/master/ij/plugin/filter/EDM.java> ;
-    nb:requires <http://biii.eu/node/286> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2016-10-24T15:46:16"^^xsd:dateTime ;
-    dc:modified "2017-09-21T12:03:04"^^xsd:dateTime ;
+    dc:modified "2019-03-08T02:02:56"^^xsd:dateTime ;
     dc:title "Voronoi ImageJ" ;
     rdfs:comment """<p>A resident function in ImageJ, located in the menu as <strong>[Process &gt; Binary &gt; Voronoi]</strong>.</p>\r
 \r
@@ -1063,24 +1066,10 @@ There are 15 images. The images were acquired using a Nikon Eclipse TE200 micros
     nb:hasAuthor "Loïc Rollus, Raphaël Marée" ;
     nb:hasLocation <https://github.com/loic911/CBIRetrieval/wiki> ;
     dc:created "2017-02-13T15:15:04"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:11"^^xsd:dateTime ;
+    dc:modified "2019-03-08T03:14:58"^^xsd:dateTime ;
     dc:title "CBIRetrieval" ;
-    rdfs:comment """This is a Java content-based image retrieval software components. It can be runned independantly or connected to a Cytomine server.\r
-\r
-Content-based image retrieval (CBIR), also known as query by image content (QBIC) and content-based visual information retrieval (CBVIR) is the application of computer vision techniques to the image retrieval problem, that is, the problem of searching for digital images in large databases. Content-based" means that the search algorithm analyzes the contents of the image rather than the metadata such as keywords, tags, or descriptions associated with the image. The term "content" in this context might refer to colors, shapes, textures, or any other information that can be derived from the image itself.\r
-\r
-The CBIRetrieval library is:\r
-Incremental: You can add new images all over the time.\r
-Scalable: Run as many server as you want. Client performs search on all servers.\r
-Flexible: Run as a simple app (command line) or use the JAR in your own JVM app/server (java import)\r
-Opensource/Free: Apache 2.0\r
-\r
-CBIRetrieval is  a java library for CBIR,\r
-CBIRest is a server with a REST HTTP API with CBIRetrieval embedded. If you want to connect a software/webapp with a CBIR engine, you should use CBIRest.\r
-\r
-This is a fast multi-threaded and noSQL implementation of the algorithm published in: Incremental Indexing and Distributed Image Search using Shared Randomized Vocabularies\r
-Marée, Raphaël; Denis, Philippe; Wehenkel, Louis; Geurts, Pierre,in ACM Proceedings MIR 2010 (2010, March).\r
-It was applied on histology images and radiology images.""" .
+    rdfs:comment """<p>This is a Java content-based image retrieval software components. It can be runned independantly or connected to a Cytomine server. Content-based image retrieval (CBIR), also known as query by image content (QBIC) and content-based visual information retrieval (CBVIR) is the application of computer vision techniques to the image retrieval problem, that is, the problem of searching for digital images in large databases. Content-based" means that the search algorithm analyzes the contents of the image rather than the metadata such as keywords, tags, or descriptions associated with the image. The term "content" in this context might refer to colors, shapes, textures, or any other information that can be derived from the image itself. The CBIRetrieval library is: Incremental: You can add new images all over the time. Scalable: Run as many server as you want. Client performs search on all servers. Flexible: Run as a simple app (command line) or use the JAR in your own JVM app/server (java import) Opensource/Free: Apache 2.0 CBIRetrieval is a java library for CBIR, CBIRest is a server with a REST HTTP API with CBIRetrieval embedded. If you want to connect a software/webapp with a CBIR engine, you should use CBIRest. This is a fast multi-threaded and noSQL implementation of the algorithm published in: Incremental Indexing and Distributed Image Search using Shared Randomized Vocabularies Marée, Raphaël; Denis, Philippe; Wehenkel, Louis; Geurts, Pierre,in ACM Proceedings MIR 2010 (2010, March). It was applied on histology images and radiology images.</p>\r
+""" .
 
 <http://biii.eu/node/11> a <http://biii.eu/node/software> ;
     dc:created "2017-01-26T18:05:15"^^xsd:dateTime ;
@@ -1264,11 +1253,6 @@ Avizo is packaged in different Editions, with optional eXtension modules. Each A
     dc:title "Clustered cell nuclei" ;
     rdfs:comment """<p>One of the principal challenges in counting or segmenting cells or cell nuclei is dealing with clustered objects. To help assess algorithms' performance in this regard, synthetic 3D image sets of HL60 cell line are provided consisting of four subsets with increasing degree of clustering. Each subset is also provided in two diferent levels of quality: high SNR and low SNR.Ground truth is available as well. The datasets are part of [Masaryk University Cell Image Collection (MUCIC)](http://cbia.fi.muni.cz/datasets/) as well [Broad Bioimage Benchmark Collection (BBBC)](https://data.broadinstitute.org/bbbc/) - entry BBBC024.</p>\r
 """ .
-
-<http://biii.eu/node/1112> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-14T10:54:48"^^xsd:dateTime ;
-    dc:modified "2017-09-12T19:59:47"^^xsd:dateTime ;
-    dc:title "Cellquant" .
 
 <http://biii.eu/node/1113> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Matuszewski, D. J., Wählby, C., Puigvert, J. C., Sintorn, I.-M." ;
@@ -5185,6 +5169,67 @@ A supported digital camera, or raw interferogram files</p>\r
 <p>&nbsp;</p>\r
 """ .
 
+<http://biii.eu/node/1470> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jiri Borovec" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/imag-disk-20_gmm.jpg" ;
+    nb:hasLocation <https://borda.github.io/pyImSegm/> ;
+    nb:hasReferencePublication <http://doi.org/10.1007/978-3-319-67389-9_3>,
+        <http://doi.org/10.1117/1.JEI.26.6.061610>,
+        <http://doi.org/10.1117/1.JEI.26.6.061611>,
+        " Detection and Localization of Drosophila Egg Chambers in Microscopy Images. ",
+        "Region growing using superpixels with learned shape prior.",
+        "Supervised and unsupervised segmentation using superpixels, model estimation, and Graph Cut." ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1312> ;
+    dc:created "2019-03-08T11:11:52"^^xsd:dateTime ;
+    dc:modified "2019-03-08T13:06:05"^^xsd:dateTime ;
+    dc:title "pyImSegm" ;
+    rdfs:comment """<p>Collection of several basic standard image segmentation methods focusing on medical imaging. In particular, the key block/applications are&nbsp;(un)supervised image segmentation using superpixels, object centre detection and region growing with a shape prior. Besides the open-source code, there is also a few sample images.</p>\r
+\r
+<p>&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1471> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jiri Borovec" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/JSLIC-Lena-ROIs.jpg" ;
+    nb:hasLocation <https://imagej.net/CMP-BIA_tools> ;
+    nb:hasReferencePublication <https://www.researchgate.net/publication/262916451_jSLIC_superpixels_in_ImageJ>,
+        "jSLIC: superpixels in ImageJ" ;
+    nb:hasTopic <http://edamontology.org/topic_3382> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-03-08T11:19:38"^^xsd:dateTime ;
+    dc:modified "2019-03-08T13:06:47"^^xsd:dateTime ;
+    dc:title "jSLIC" ;
+    rdfs:comment "jSLIC superpixels - is a segmentation method for clustering similar regions - superpixels - in the given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range (0,1)" .
+
+<http://biii.eu/node/1473> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jiri Borovec" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_registration> ;
+    nb:hasLocation <https://borda.github.io/BIRL> ;
+    nb:hasReferencePublication <https://doi.org/10.1109/ICIP.2018.8451040>,
+        "Benchmarking of image registration methods for differently stained histological slides." ;
+    dc:created "2019-03-08T11:37:07"^^xsd:dateTime ;
+    dc:modified "2019-03-08T13:12:04"^^xsd:dateTime ;
+    dc:title "BIRL" .
+
+<http://biii.eu/node/1474> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jiri Borovec" ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation_Shape_features> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/atlas_gc_00_nb_lbs_9_rgb.png" ;
+    nb:hasLocation <https://borda.github.io/pyBPDL> ;
+    nb:hasReferencePublication <http://doi.org/10.1007/978-3-319-54427-4_40>,
+        "Binary Pattern Dictionary Learning for Gene Expression Representation in Drosophila Imaginal Discs." ;
+    nb:requires <http://biii.eu/node/1312> ;
+    dc:created "2019-03-08T11:47:14"^^xsd:dateTime ;
+    dc:modified "2019-03-08T13:10:46"^^xsd:dateTime ;
+    dc:title "pyBPDL" ;
+    rdfs:comment """<p>The Binary Pattern Dictionary Learning (BPDL) package is suitable for image analysis&nbsp;on a set/sequence of images to determine an atlas of a compact region. In particular,&nbsp;the application can be maping&nbsp;gene activation accross many samples, brain activations in a time domain, etc.</p>\r
+""" .
+
 <http://biii.eu/node/148> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fliegel Karel ",
         "Hagen Guy M. ",
@@ -8956,6 +9001,21 @@ This plugin is bundled with the Fijij package. """ .
     dc:modified "2017-09-13T12:04:15"^^xsd:dateTime ;
     dc:title "Dynamic Reslice" .
 
+<http://biii.eu/node/450> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Verena Kaynig" ;
+    nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/distortionCorrection.png" ;
+    nb:hasLocation <http://fiji.sc/Distortion_Correction> ;
+    nb:hasReferencePublication <http://dx.doi.org/10.1016%252Fj.jsb.2010.04.012> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/79> ;
+    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
+    dc:modified "2019-03-08T02:29:27"^^xsd:dateTime ;
+    dc:title "Distortion Correction" ;
+    rdfs:comment """This plugin comes with Fiji\r
+\r
+>This plugin can be used to estimate nonlinear distortions induced by the image acquisition process[1] . It does not require special calibration samples, but needs sufficient overlapping image areas with preferably high contrast. For further information on how to best arrange calibration images please see the documentation.""" .
+
 <http://biii.eu/node/451> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Compaction_profiler> ;
     nb:requires <http://biii.eu/node/728>,
@@ -8965,13 +9025,16 @@ This plugin is bundled with the Fijij package. """ .
     dc:title "Compaction Profiler" .
 
 <http://biii.eu/node/452> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Bob Dougherty" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/psf.png" ;
     nb:hasLocation <http://fiji.sc/Diffraction_PSF_3D> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/389> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:17"^^xsd:dateTime ;
-    dc:title "Diffraction PSF 3D" .
+    dc:modified "2019-03-08T02:17:44"^^xsd:dateTime ;
+    dc:title "Diffraction PSF 3D" ;
+    rdfs:comment """>This plugin generates theoretical PSFs, assuming they arise only from diffraction.\r
+""" .
 
 <http://biii.eu/node/453> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Kang Li" ;
@@ -9434,14 +9497,19 @@ There are two implementations of Tschumperle/ R. Deriche filter ("anisotropic di
     dc:title "ImarisSpots" .
 
 <http://biii.eu/node/514> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Delaunay_Voronoi> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/710>,
-        <http://biii.eu/node/783> ;
+    nb:hasAuthor "Johannes Schindelin",
+        "L. Paul Chew" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/Delaunay-dialog.png" ;
+    nb:hasReferencePublication <https://github.com/fiji/VIB/blob/VIB_-3.0.2/src/main/java/Delaunay_Voronoi.java>,
+        "Source code" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:19"^^xsd:dateTime ;
-    dc:title "Delaunay Voronoi" .
+    dc:modified "2019-03-08T01:55:40"^^xsd:dateTime ;
+    dc:title "Delaunay Voronoi" ;
+    rdfs:comment """>Plugin to perform Delaunay Triangulation, or draw the Voronoi Diagram for a given point ROI.\r
+\r
+This plugin comes with Fiji. """ .
 
 <http://biii.eu/node/518> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Johannes Schindelin" ;
@@ -11549,18 +11617,19 @@ Results are exported into Excel readable files.\r
 
 <http://biii.eu/node/794> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Longair Mark, Ferreira Tiago" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/320px-SimpleNeuriteTracer2.png" ;
     nb:hasLocation <http://fiji.sc/Simple_Neurite_Tracer> ;
     nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btr390>,
         "Longair MH, Baker DA, Armstrong JD. Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes. Bioinformatics 2011" ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/286>,
-        <http://biii.eu/node/321>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/601> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:08:56"^^xsd:dateTime ;
+    dc:modified "2019-03-08T03:08:03"^^xsd:dateTime ;
     dc:title "Simple Neurite Tracer" ;
     rdfs:comment """<p>Plugin designed to allow easy&nbsp;semi-automatic tracing of neurons or other filament-like structures (e.g., microtubules, blood vessels) through either 2D images or 3D image stacks. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.</p>\r
+\r
+<p>This plugin comes with Fiji.</p>\r
 """ .
 
 <http://biii.eu/node/795> a <http://biii.eu/node/software> ;
@@ -13986,15 +14055,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
 <p>&nbsp;</p>\r
 """ .
 
-<http://biii.eu/node/450> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Distortion_Correction> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/450> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:16"^^xsd:dateTime ;
-    dc:title "Distortion Correction" .
-
 <http://biii.eu/node/464> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://developer.imagej.net/> ;
     nb:requires <http://biii.eu/node/38> ;
@@ -14336,6 +14396,16 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:title "mcib3d library" ;
     rdfs:comment """Plugins for 3D Image processing and Analyisis in ImageJ.\r
 Previously (?) known as [3D ImageJ Suite](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_ij_suite:start).""" .
+
+<http://biii.eu/node/783> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://fiji.sc/Grid> ;
+    nb:requires <http://biii.eu/node/17>,
+        <http://biii.eu/node/321>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/783> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:08:49"^^xsd:dateTime ;
+    dc:title "Grid" .
 
 <http://biii.eu/node/784> a <http://biii.eu/node/software> ;
     nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
@@ -14717,6 +14787,32 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:modified "2018-05-09T21:57:52"^^xsd:dateTime ;
     dc:title "Adaptive Thresholding (EBImage)" .
 
+<http://biii.eu/node/389> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Aguet, François",
+        "Kirshner, Hagai",
+        "Sage, Daniel",
+        "Unser, Michael" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/splash.002.png" ;
+    nb:hasLocation <http://bigwww.epfl.ch/algorithms/psfgenerator/>,
+        "PSF Generator at Bioimedical Imaging Group @ EPFL" ;
+    nb:hasReferencePublication <https://doi.org/10.1111/j.1365-2818.2012.03675.x>,
+        <https://infoscience.epfl.ch/record/163617>,
+        "3‐D PSF fitting for fluorescence microscopy: implementation and localization application",
+        "Comparison of Deconvolution Software in 3D Microscopy" ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
+    dc:modified "2019-02-05T13:45:31"^^xsd:dateTime ;
+    dc:title "PSF Generator" ;
+    rdfs:comment """<p>PSF Generator is a software package that allows one to generate and visualize various 3D models of a microscope PSF. The current version has more than fifteen different models.</p>\r
+\r
+<p>3D diffractive models: scalar-based diffraction model Born &amp; Wolf, scalar-based diffraction model with 3 layers Gibson &amp; Lanni, and vectorial-based model Richards &amp; Wolf, and Variable Refractive Index Gibson &amp; Lanni model.</p>\r
+\r
+<p>Defocussing a 2D lateral function with 1D axial function: the available lateral functions are: "Gaussian", "Lorentz", "Cardinale-Sine", "Cosine", "Circular-Pupil", "Astigmatism", "Oriented-Gaussian", "Double-Helix".</p>\r
+\r
+<p>Optical Transfer Function generated in the Fourier domain: Koehler simulation, defocus simulation.</p>\r
+""" .
+
 <http://biii.eu/node/410> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Edge_Detection> ;
     nb:requires <http://biii.eu/node/8> ;
@@ -14800,16 +14896,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:08:26"^^xsd:dateTime ;
     dc:title "CLAHE" .
-
-<http://biii.eu/node/783> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Grid> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/321>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/783> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:08:49"^^xsd:dateTime ;
-    dc:title "Grid" .
 
 <http://biii.eu/node/833> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Volume_Viewer> ;
@@ -14986,7 +15072,7 @@ Several options for curve fitting are available. Results can be saved back in OM
         <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2016-10-01T18:31:47"^^xsd:dateTime ;
-    dc:modified "2019-02-05T15:19:04"^^xsd:dateTime ;
+    dc:modified "2019-03-08T02:58:35"^^xsd:dateTime ;
     dc:title "MorphoLibJ" ;
     rdfs:comment """<p>MorphoLibJ is a library of plugin for ImageJ with functionalities for image processing such as filtering, reconstructing, segmenting, etc... Tools are based on Mathematical morphology with more rigorous mathematical approach than in the standard tools of ImageJ in particular for surface (or perimeter) measurements which are usually based on voxel counting.&nbsp;&nbsp;</p>\r
 \r
@@ -15131,32 +15217,6 @@ The built-in vectors are :</p>\r
 	<li>Values interactively determined from rectangular ROIs</li>\r
 </ul>\r
 </blockquote>\r
-""" .
-
-<http://biii.eu/node/389> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Aguet, François",
-        "Kirshner, Hagai",
-        "Sage, Daniel",
-        "Unser, Michael" ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/splash.002.png" ;
-    nb:hasLocation <http://bigwww.epfl.ch/algorithms/psfgenerator/>,
-        "PSF Generator at Bioimedical Imaging Group @ EPFL" ;
-    nb:hasReferencePublication <https://doi.org/10.1111/j.1365-2818.2012.03675.x>,
-        <https://infoscience.epfl.ch/record/163617>,
-        "3‐D PSF fitting for fluorescence microscopy: implementation and localization application",
-        "Comparison of Deconvolution Software in 3D Microscopy" ;
-    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2019-02-05T13:45:31"^^xsd:dateTime ;
-    dc:title "PSF Generator" ;
-    rdfs:comment """<p>PSF Generator is a software package that allows one to generate and visualize various 3D models of a microscope PSF. The current version has more than fifteen different models.</p>\r
-\r
-<p>3D diffractive models: scalar-based diffraction model Born &amp; Wolf, scalar-based diffraction model with 3 layers Gibson &amp; Lanni, and vectorial-based model Richards &amp; Wolf, and Variable Refractive Index Gibson &amp; Lanni model.</p>\r
-\r
-<p>Defocussing a 2D lateral function with 1D axial function: the available lateral functions are: "Gaussian", "Lorentz", "Cardinale-Sine", "Cosine", "Circular-Pupil", "Astigmatism", "Oriented-Gaussian", "Double-Helix".</p>\r
-\r
-<p>Optical Transfer Function generated in the Fourier domain: Koehler simulation, defocus simulation.</p>\r
 """ .
 
 <http://biii.eu/node/471> a <http://biii.eu/node/software> ;
@@ -15389,6 +15449,13 @@ V.Foe and G.Odell, . 26 July 2001""" .
     rdfs:comment """<p>KNIME is a user-friendly graphical workbench for the entire analysis process: data access, data transformation, initial investigation, powerful predictive analytics, visualisation and reporting. Its an open integration platform and provides over 1000 modules (nodes), including those of the KNIME community and its extensive partner network. One of these extensions adds the ability for image analysis allowing to process, segment and further analyze images which can easily be used in combination with the other extensions, potentially from other fields.</p>\r
 """ .
 
+<http://biii.eu/node/710> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
+    nb:requires <http://biii.eu/node/710> ;
+    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:07:51"^^xsd:dateTime ;
+    dc:title "Distance Map" .
+
 <http://biii.eu/node/727> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://tech.knime.org/community/image-processing> ;
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
@@ -15437,13 +15504,6 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:title "Feature Extraction" ;
     rdfs:comment """<p>Automatic finding of image features are very convenient for registering two images to align them in proper orientation. Two image plugins are implemented for extracting image features and are placed as menu items at: [Plugins &gt; Feature Extraction &gt; Extract SIFT Correspondences] and [Plugins &gt; Feature Extraction &gt; Extract MOPS Correspondences] For more details, see the linked page in Fiji wiki. For details about SIFT algorithm, see 2569. For more details about MOPS algorithm, see 2570.</p>\r
 """ .
-
-<http://biii.eu/node/710> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
-    nb:requires <http://biii.eu/node/710> ;
-    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:07:51"^^xsd:dateTime ;
-    dc:title "Distance Map" .
 
 <http://biii.eu/node/1130> a <http://biii.eu/node/software> ;
     dc:created "2017-09-13T10:53:00"^^xsd:dateTime ;
@@ -15680,11 +15740,6 @@ Inter-language support:\r
     dc:modified "2017-09-13T12:11:48"^^xsd:dateTime ;
     dc:title "channel" .
 
-<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
-    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:title "Python" .
-
 <http://biii.eu/node/469> a <http://biii.eu/node/software> ;
     nb:hasAuthor "The OME Consortium, http://www.openmicroscopy.org/site/about/who-ome" ;
     nb:hasLocation <http://www.openmicroscopy.org/site/products/bio-formats> ;
@@ -15787,6 +15842,11 @@ Bioformats could also be used as stand alone application from command line. See 
 <p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
 """ .
 
+<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
+    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:title "Python" .
+
 <http://biii.eu/node/671> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Histogram> ;
     nb:requires <http://biii.eu/node/671>,
@@ -15887,6 +15947,20 @@ Limitations:\r
     dc:modified "2017-09-13T12:11:54"^^xsd:dateTime ;
     dc:title "display" .
 
+<http://biii.eu/node/601> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Benjamin Schmid" ;
+    nb:hasLocation <http://fiji.sc/3D_Viewer> ;
+    nb:hasReferencePublication <http://10.1186/1471-2105-11-274> ;
+    nb:requires <http://biii.eu/node/1020>,
+        <http://biii.eu/node/17>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/601>,
+        <http://biii.eu/node/977> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:06:40"^^xsd:dateTime ;
+    dc:title "3D Viewer" ;
+    rdfs:comment "Paper to be cited for this plugin: 2598" .
+
 <http://biii.eu/node/116> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://valelab.ucsf.edu/%7EMM/MMwiki/> ;
     nb:requires <http://biii.eu/node/38> ;
@@ -15906,20 +15980,6 @@ Limitations:\r
     dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:01:58"^^xsd:dateTime ;
     dc:title "Morphological Operations" .
-
-<http://biii.eu/node/601> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Benjamin Schmid" ;
-    nb:hasLocation <http://fiji.sc/3D_Viewer> ;
-    nb:hasReferencePublication <http://10.1186/1471-2105-11-274> ;
-    nb:requires <http://biii.eu/node/1020>,
-        <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/601>,
-        <http://biii.eu/node/977> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:06:40"^^xsd:dateTime ;
-    dc:title "3D Viewer" ;
-    rdfs:comment "Paper to be cited for this plugin: 2598" .
 
 <http://biii.eu/node/81> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Laszlo Marak, Hugues Talbot, Michel Couprie" ;
