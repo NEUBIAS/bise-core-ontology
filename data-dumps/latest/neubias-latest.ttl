@@ -5207,12 +5207,27 @@ A supported digital camera, or raw interferogram files</p>\r
 <http://biii.eu/node/1473> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jiri Borovec" ;
     nb:hasFunction <http://edamontology.org/operation_Image_registration> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/registration_visual_landmarks.jpg" ;
     nb:hasLocation <https://borda.github.io/BIRL> ;
     nb:hasReferencePublication <https://doi.org/10.1109/ICIP.2018.8451040>,
         "Benchmarking of image registration methods for differently stained histological slides." ;
     dc:created "2019-03-08T11:37:07"^^xsd:dateTime ;
-    dc:modified "2019-03-08T13:12:04"^^xsd:dateTime ;
-    dc:title "BIRL" .
+    dc:modified "2019-03-09T09:52:44"^^xsd:dateTime ;
+    dc:title "BIRL: Benchmark on Image Registration methods with Landmark validation" ;
+    rdfs:comment """<p>The project introduces a cross-platform framework for comparison&nbsp;of image registration methods&nbsp;with&nbsp;landmark validation (registration precision is measured by user landmarks). The project contains a set of sample images with related landmark annotations and experimental evaluation of state-of-the-art image registration methods.</p>\r
+\r
+<p>Some key features of the framework:</p>\r
+\r
+<ul>\r
+	<li><strong>automatic</strong>&nbsp;execution of image registration of a sequence of image pairs</li>\r
+	<li>integrated&nbsp;<strong>evaluation</strong>&nbsp;of registration performances using Target Registration Error (TRE)</li>\r
+	<li>integrated&nbsp;<strong>visualization</strong>&nbsp;of performed registration</li>\r
+	<li>running several image registration experiment in&nbsp;<strong>parallel</strong></li>\r
+	<li><strong>resuming</strong>&nbsp;unfinished sequence of registration benchmark</li>\r
+	<li>handling around dataset and&nbsp;<strong>creating own experiments</strong></li>\r
+	<li>rerun evaluation and visualisation for finished experiments</li>\r
+</ul>\r
+""" .
 
 <http://biii.eu/node/1474> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jiri Borovec" ;
@@ -5225,7 +5240,7 @@ A supported digital camera, or raw interferogram files</p>\r
         "Binary Pattern Dictionary Learning for Gene Expression Representation in Drosophila Imaginal Discs." ;
     nb:requires <http://biii.eu/node/1312> ;
     dc:created "2019-03-08T11:47:14"^^xsd:dateTime ;
-    dc:modified "2019-03-08T13:10:46"^^xsd:dateTime ;
+    dc:modified "2019-03-09T09:22:09"^^xsd:dateTime ;
     dc:title "pyBPDL" ;
     rdfs:comment """<p>The Binary Pattern Dictionary Learning (BPDL) package is suitable for image analysis&nbsp;on a set/sequence of images to determine an atlas of a compact region. In particular,&nbsp;the application can be maping&nbsp;gene activation accross many samples, brain activations in a time domain, etc.</p>\r
 """ .
@@ -8960,12 +8975,23 @@ This plugin is bundled with the Fijij package. """ .
 """ .
 
 <http://biii.eu/node/443> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Ricard Delgado-Gonzalo" ;
+    nb:hasFunction <http://edamontology.org/operation_Active_contours>,
+        <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/esnake.png" ;
     nb:hasLocation <http://bigwww.epfl.ch/algorithms/esnake/> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.cagd.2011.10.005>,
+        <https://doi.org/10.1016/j.irbm.2013.04.002>,
+        <https://doi.org/10.1109/TIP.2011.2169975>,
+        "Exponential splines and minimal-support bases for curve representation",
+        "Snakes with an Ellipse-Reproducing Property",
+        "Spline-based framework for interactive segmentation in biomedical imaging" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:02"^^xsd:dateTime ;
-    dc:title "E-Snake" .
+    dc:modified "2019-03-09T03:50:09"^^xsd:dateTime ;
+    dc:title "E-Snake" ;
+    rdfs:comment ">This software implements an active contour (a.k.a. snake) segmentation method using exponential splines as basis functions to represent the outline of the shape. While the snake is versatile enough to provide a good approximation of any closed curve in the plane, its most important feature is that it perfectly reproduces circular and elliptical shapes. These features are very appropriate to delineate cross sections of cylindrical-like conduits and to outline blob-like objects." .
 
 <http://biii.eu/node/445> a <http://biii.eu/node/software> ;
     nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
@@ -8993,13 +9019,18 @@ This plugin is bundled with the Fijij package. """ .
     dc:title "Celsius to fahrenheit" .
 
 <http://biii.eu/node/449> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Dynamic_Reslice> ;
-    nb:requires <http://biii.eu/node/1020>,
-        <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:hasAuthor "Albert Cardona",
+        "Jean-Yves Tinevez" ;
+    nb:hasFunction <http://edamontology.org/operation_0337> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/dynamicRescice.png" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:15"^^xsd:dateTime ;
-    dc:title "Dynamic Reslice" .
+    dc:modified "2019-03-09T03:12:43"^^xsd:dateTime ;
+    dc:title "Dynamic Reslice" ;
+    rdfs:comment """> a dynamic version of the Reslice command.\r
+\r
+Bundled with Fiji. """ .
 
 <http://biii.eu/node/450> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Verena Kaynig" ;
@@ -9636,12 +9667,25 @@ All routines are local, with the exception of the routine to call, named `affine
     dc:title "Stochastic Denoising" .
 
 <http://biii.eu/node/529> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Elastic_Alignment_and_Montage> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:hasAuthor "Stephan Saalfeld" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation_Image_stitching> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/elasticAlignMontage.jpg" ;
+    nb:hasLocation <http://fiji.sc/Elastic_Alignment_and_Montage>,
+        "Bundled with Fiji" ;
+    nb:hasReferencePublication <https://doi.org/10.1038/nmeth.2072>,
+        "S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) \"Elastic volume reconstruction from series of ultra-thin microscopy sections, Nature Methods, 9(7), 717-720" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:35"^^xsd:dateTime ;
-    dc:title "Elastic Alignment and Montage" .
+    dc:modified "2019-03-10T03:38:44"^^xsd:dateTime ;
+    dc:title "Elastic Alignment and Montage" ;
+    rdfs:comment """This plugin has two components: \r
+\r
+- Elastic Montage\r
+  - montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation\r
+- Elastic Stack Alignment\r
+  - alignment of deformed section series from serially sectioned volumes""" .
 
 <http://biii.eu/node/53> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jan Ellinger" ;
@@ -10758,13 +10802,23 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
     dc:title "Landmark Correspondences" .
 
 <http://biii.eu/node/666> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/FlowJ> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/239>,
-        <http://biii.eu/node/38> ;
+    nb:hasAuthor "Jean-Yves Tinevez",
+        "Michael Abràmoff" ;
+    nb:hasFunction <http://edamontology.org/operation_Optical_flow_analysis> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/quiver.gif" ;
+    nb:hasLocation <http://bij.isi.uu.nl/flowj.htm> ;
+    nb:hasReferencePublication <https://doi.org/10.1109/42.887614>,
+        "IEEE Transactions in Medical Imaging , M.D. Abràmoff, W.J. Niessen and M.A. Viergever: Objective Quantification of the Motion of Soft Tissues. IEEE TMI. 2000;  19 (10): 986-995." ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:07:24"^^xsd:dateTime ;
-    dc:title "FlowJ" .
+    dc:modified "2019-03-10T03:57:52"^^xsd:dateTime ;
+    dc:title "FlowJ" ;
+    rdfs:comment """FlowJ is a collection of popular 2D optical flow algorithms, Lucas and Kanade, Uras, Fleet and Jepson, and Singh, in Java.\r
+\r
+Bundled with Fiji, but can also be simply installed to ImageJ as well.\r
+""" .
 
 <http://biii.eu/node/667> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://tech.knime.org/community/image-processing> ;
@@ -10963,12 +11017,6 @@ CIDRE: An Illumination Correction Method for Optical Microscopy, Nature Methods 
     dc:title "hIPNAT" ;
     rdfs:comment """<p>hIPNAT (<strong>h</strong>IPNAT: <strong>I</strong>mage <strong>P</strong>rocessing for <strong>N</strong>euro<strong>A</strong>natomy and <strong>T</strong>ree-like structures) is a set of tools for the analysis of images of neurons and other tree-like morphologies. It is written for ImageJ, the <em>de facto</em> standard in scientific image processing. It is available through the ImageJ <a href="https://imagej.net/Neuroanatomy">Neuroanatomy update site</a>.</p>\r
 """ .
-
-<http://biii.eu/node/690> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.cellprofiler.org/CPmanual/EnhanceOrSuppressFeatures.html> ;
-    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
-    dc:modified "2017-09-12T11:03:53"^^xsd:dateTime ;
-    dc:title "EnhanceOrSuppressFeatures" .
 
 <http://biii.eu/node/691> a <http://biii.eu/node/software> ;
     dc:created "2017-09-12T11:09:41"^^xsd:dateTime ;
@@ -11447,10 +11495,9 @@ Results are exported into Excel readable files.\r
 
 <http://biii.eu/node/767> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Crop_5D> ;
-    nb:requires <http://biii.eu/node/8>,
-        <http://biii.eu/node/835> ;
+    nb:requires <http://biii.eu/node/835> ;
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:08:35"^^xsd:dateTime ;
+    dc:modified "2019-03-09T03:14:51"^^xsd:dateTime ;
     dc:title "Crop 5D" .
 
 <http://biii.eu/node/768> a <http://biii.eu/node/software> ;
@@ -11549,12 +11596,16 @@ Results are exported into Excel readable files.\r
     dc:title "Microscope Live 3D" .
 
 <http://biii.eu/node/785> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Delayed_Snapshot> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:hasAuthor "Albert Cardona" ;
+    nb:hasLocation <http://fiji.sc/Delayed_Snapshot>,
+        "Bundled with Fiji" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:08:50"^^xsd:dateTime ;
-    dc:title "Delayed Snapshot" .
+    dc:modified "2019-03-10T03:44:25"^^xsd:dateTime ;
+    dc:title "Delayed Snapshot" ;
+    rdfs:comment "A Jython scripting example (but is included as a menu item in Fiji) for screen capturing with certain time delay. " .
 
 <http://biii.eu/node/786> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Feature_Detector> ;
@@ -13156,6 +13207,25 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
     dc:modified "2017-09-13T12:12:24"^^xsd:dateTime ;
     dc:title "untile" .
 
+<http://biii.eu/node/1020> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-28.html%23toc-Subsubsection-28.6.10> ;
+    dc:created "2013-11-08T19:03:38"^^xsd:dateTime ;
+    dc:modified "2017-09-12T20:05:33"^^xsd:dateTime ;
+    dc:title "Orthogonal Views" ;
+    rdfs:comment """A menu item in ImageJ that allows you to inspect a 3D stack with orthogonal views (XY, XZ, YZ planes). Slicing plane could be interactively moved by dragging crosses. \r
+\r
+Pedro Almada wrote a plugin to save the current orthogonal views as montage. \r
+\r
+## ImageJ Macro Usages\r
+\r
+[Save orthogonal views | OrthoSaver](http://uic.igc.gulbenkian.pt/macros/OrthoSaver.ijm)\r
+\r
+>ImageJ's orthogonal viewer for 3D stacks doesn't let you easily save the current orthogonal view. This macro, once installed, lets users create a montage with the currently open orthogonal views and selection guides. To use it, open an image z-stack and open the orthogonal viewer. With the mouse, choose which are the sections of interest to you and without moving the mouse, press F2. You'll get a montage of the currently selected orthogonal view.\r
+\r
+\r
+\r
+""" .
+
 <http://biii.eu/node/1022> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jérôme Mutterer " ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/image.jpg" ;
@@ -14180,6 +14250,13 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2017-09-13T12:06:10"^^xsd:dateTime ;
     dc:title "Scale Bar" .
 
+<http://biii.eu/node/590> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://fiji.sc/File_Import> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2019-03-10T03:45:54"^^xsd:dateTime ;
+    dc:title "File Import" .
+
 <http://biii.eu/node/593> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Fast_Fourier_Transform> ;
     nb:requires <http://biii.eu/node/8> ;
@@ -14593,25 +14670,6 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
     dc:modified "2017-09-13T12:12:22"^^xsd:dateTime ;
     dc:title "tile" .
 
-<http://biii.eu/node/1020> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-28.html%23toc-Subsubsection-28.6.10> ;
-    dc:created "2013-11-08T19:03:38"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:05:33"^^xsd:dateTime ;
-    dc:title "Orthogonal Views" ;
-    rdfs:comment """A menu item in ImageJ that allows you to inspect a 3D stack with orthogonal views (XY, XZ, YZ planes). Slicing plane could be interactively moved by dragging crosses. \r
-\r
-Pedro Almada wrote a plugin to save the current orthogonal views as montage. \r
-\r
-## ImageJ Macro Usages\r
-\r
-[Save orthogonal views | OrthoSaver](http://uic.igc.gulbenkian.pt/macros/OrthoSaver.ijm)\r
-\r
->ImageJ's orthogonal viewer for 3D stacks doesn't let you easily save the current orthogonal view. This macro, once installed, lets users create a montage with the currently open orthogonal views and selection guides. To use it, open an image z-stack and open the orthogonal viewer. With the mouse, choose which are the sections of interest to you and without moving the mouse, press F2. You'll get a montage of the currently selected orthogonal view.\r
-\r
-\r
-\r
-""" .
-
 <http://biii.eu/node/1042> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Michael Schmid" ;
     nb:hasLocation <http://rsbweb.nih.gov/ij/docs/guide/146-29.html%23toc-Subsection-29.4> ;
@@ -14863,16 +14921,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:06:11"^^xsd:dateTime ;
     dc:title "Protractor" .
-
-<http://biii.eu/node/590> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/File_Import> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/469>,
-        <http://biii.eu/node/590> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:06:32"^^xsd:dateTime ;
-    dc:title "File Import" .
 
 <http://biii.eu/node/658> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Level_Sets> ;
@@ -15418,6 +15466,16 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
     dc:title "scipy" .
 
+<http://biii.eu/node/239> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Timothée Lecomte" ;
+    nb:requires <http://biii.eu/node/239>,
+        <http://biii.eu/node/8> ;
+    dc:created "2014-12-09T10:48:34"^^xsd:dateTime ;
+    dc:modified "2018-05-15T01:06:06"^^xsd:dateTime ;
+    dc:title "Optical Flow" ;
+    rdfs:comment """<p>This protocol computes the optical flow of a 2D+T sequence. The results are displayed with flow arrows painted on top of the original sequence, and also with two additional sequences for the norm of the flow and a color-coded presentation of the flow following the Middlebury convention.</p>\r
+""" .
+
 <http://biii.eu/node/60> a <http://biii.eu/node/software> ;
     dc:created "2017-09-11T13:00:50"^^xsd:dateTime ;
     dc:modified "2017-09-11T13:00:50"^^xsd:dateTime ;
@@ -15482,16 +15540,6 @@ V.Foe and G.Odell, . 26 July 2001""" .
     rdfs:comment """<p>ImgLib2 is a generic, multi-dimensional data processing library allowing for processing algorithms to be defined in a data-type, dimension, and container independent manner. Due to its interface-based design, it is easy to write adapters to virtually all existing data containers. It is the basis of KNIME, ImageJ2 and a couple of Fiji plugins.</p>\r
 """ .
 
-<http://biii.eu/node/239> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Timothée Lecomte" ;
-    nb:requires <http://biii.eu/node/239>,
-        <http://biii.eu/node/8> ;
-    dc:created "2014-12-09T10:48:34"^^xsd:dateTime ;
-    dc:modified "2018-05-15T01:06:06"^^xsd:dateTime ;
-    dc:title "Optical Flow" ;
-    rdfs:comment """<p>This protocol computes the optical flow of a 2D+T sequence. The results are displayed with flow arrows painted on top of the original sequence, and also with two additional sequences for the norm of the flow and a color-coded presentation of the flow following the Middlebury convention.</p>\r
-""" .
-
 <http://biii.eu/node/474> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Stephan Saalfeld" ;
     nb:hasLocation <http://fiji.sc/Feature_Extraction> ;
@@ -15520,6 +15568,25 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
     dc:modified "2017-09-12T10:50:45"^^xsd:dateTime ;
     dc:title "Processing" .
+
+<http://biii.eu/node/469> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "The OME Consortium, http://www.openmicroscopy.org/site/about/who-ome" ;
+    nb:hasLocation <http://www.openmicroscopy.org/site/products/bio-formats> ;
+    nb:requires <http://biii.eu/node/17>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:04:34"^^xsd:dateTime ;
+    dc:title "Bio-Formats" ;
+    rdfs:comment """Bio-Formats is a standalone Java library for reading and writing life sciences image file formats. It is capable of parsing both pixels and metadata for a large number of formats, as well as writing to several formats.\r
+\r
+The primary goal of Bio-Formats is to facilitate the exchange of microscopy data between different software packages and organizations. It achieves this by converting proprietary microscopy data into an open standard called the OME Data Model, particularly into the OME-TIFF file format.\r
+\r
+### Command Line Tools\r
+\r
+Bioformats could also be used as stand alone application from command line. See [Bioformats command line tools introduction.](http://www.openmicroscopy.org/site/support/bio-formats5/users/comlinetools/) \r
+\r
+""" .
 
 <http://biii.eu/node/73> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ullrich Koethe and many contributors" ;
@@ -15739,25 +15806,6 @@ Inter-language support:\r
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:11:48"^^xsd:dateTime ;
     dc:title "channel" .
-
-<http://biii.eu/node/469> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "The OME Consortium, http://www.openmicroscopy.org/site/about/who-ome" ;
-    nb:hasLocation <http://www.openmicroscopy.org/site/products/bio-formats> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:34"^^xsd:dateTime ;
-    dc:title "Bio-Formats" ;
-    rdfs:comment """Bio-Formats is a standalone Java library for reading and writing life sciences image file formats. It is capable of parsing both pixels and metadata for a large number of formats, as well as writing to several formats.\r
-\r
-The primary goal of Bio-Formats is to facilitate the exchange of microscopy data between different software packages and organizations. It achieves this by converting proprietary microscopy data into an open standard called the OME Data Model, particularly into the OME-TIFF file format.\r
-\r
-### Command Line Tools\r
-\r
-Bioformats could also be used as stand alone application from command line. See [Bioformats command line tools introduction.](http://www.openmicroscopy.org/site/support/bio-formats5/users/comlinetools/) \r
-\r
-""" .
 
 <http://biii.eu/node/62> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fuhui Long",
@@ -16102,15 +16150,6 @@ Strengths: \r
     dc:modified "2017-09-13T12:09:32"^^xsd:dateTime ;
     dc:title "Watershed" .
 
-<http://biii.eu/node/79> a <http://biii.eu/node/software> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/FIJI.png" ;
-    nb:hasLocation <http://fiji.sc/> ;
-    dc:created "2013-10-15T20:05:47"^^xsd:dateTime ;
-    dc:modified "2018-10-19T09:01:17"^^xsd:dateTime ;
-    dc:title "Fiji" ;
-    rdfs:comment """<p>Fiji is just ImageJ: a distribution of ImageJ (and ImageJ2) together with Java, Java 3D and a lot of plugins organized into a coherent menu structure. The main focus of Fiji is to assist research in life sciences. It is a free, open-source, community-driven project.</p>\r
-""" .
-
 <http://biii.eu/node/101> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Mathworks" ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/matlab.jpg" ;
@@ -16121,6 +16160,15 @@ Strengths: \r
     dc:modified "2017-09-13T12:12:58"^^xsd:dateTime ;
     dc:title "MATLAB" ;
     rdfs:comment """<p>MATLAB is famous, so this page is only for being the landing page for components and workflows.</p>\r
+""" .
+
+<http://biii.eu/node/79> a <http://biii.eu/node/software> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/FIJI.png" ;
+    nb:hasLocation <http://fiji.sc/> ;
+    dc:created "2013-10-15T20:05:47"^^xsd:dateTime ;
+    dc:modified "2018-10-19T09:01:17"^^xsd:dateTime ;
+    dc:title "Fiji" ;
+    rdfs:comment """<p>Fiji is just ImageJ: a distribution of ImageJ (and ImageJ2) together with Java, Java 3D and a lot of plugins organized into a coherent menu structure. The main focus of Fiji is to assist research in life sciences. It is a free, open-source, community-driven project.</p>\r
 """ .
 
 <http://biii.eu/node/31> a <http://biii.eu/node/software> ;
