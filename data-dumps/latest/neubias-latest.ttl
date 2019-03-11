@@ -1652,10 +1652,13 @@ Foundation."*\r
     nb:hasLocation <https://www.ffmpeg.org/>,
         "FFmpeg website" ;
     dc:created "2017-09-13T17:43:54"^^xsd:dateTime ;
-    dc:modified "2017-09-13T17:44:07"^^xsd:dateTime ;
+    dc:modified "2019-03-11T17:34:20"^^xsd:dateTime ;
     dc:title "FFmpeg" ;
-    rdfs:comment """<p>A complete, cross-platform solution to record, convert and stream audio and video.</p>\r
-""" .
+    rdfs:comment """A complete, cross-platform solution to record, convert and stream audio and video.\r
+\r
+An ImageJ plugin is available for using FFMPEG in ImageJ. Add its update sites ([see the listing here](https://imagej.github.io/list-of-update-sites/))\r
+\r
+For handling video files in ImageJ/Fiji, [see also here](https://imagej.net/Video).""" .
 
 <http://biii.eu/node/1147> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Antoine Basset",
@@ -5018,11 +5021,6 @@ A supported digital camera, or raw interferogram files</p>\r
     dc:title "Spot Detection 3D (ImageJ)" ;
     rdfs:comment """<p>This workflow detects spots from a 3D image by using straightforward set of ImageJ components. It receives the Laplacian Radius and the Threshold&nbsp; value s input.</p>\r
 """ .
-
-<http://biii.eu/node/1459> a <http://biii.eu/node/software> ;
-    dc:created "2019-02-26T11:52:23"^^xsd:dateTime ;
-    dc:modified "2019-02-26T11:52:23"^^xsd:dateTime ;
-    dc:title "icy " .
 
 <http://biii.eu/node/146> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Max Planck Institute for Medical Research in Heidelberg, Germany" ;
@@ -9118,13 +9116,17 @@ See also this [tweet](https://twitter.com/christlet/status/1004402506485719040)"
     dc:title "3D OrthoViewer" .
 
 <http://biii.eu/node/457> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Dynamic_ROI_Profiler> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/733> ;
+    nb:hasAuthor "Albert Cardona" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/dynamicROIprofile.png" ;
+    nb:hasLocation <http://fiji.sc/Dynamic_ROI_Profiler>,
+        "Bundled with Fiji" ;
+    nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:23"^^xsd:dateTime ;
-    dc:title "Dynamic ROI Profiler" .
+    dc:modified "2019-03-11T16:57:20"^^xsd:dateTime ;
+    dc:title "Dynamic ROI Profiler" ;
+    rdfs:comment """GUI tool, to view intensity profile dynamically as the position of ROI is changed by mouse-dragging a ROI. In more recent ImageJ, the native plot-profile window is  equipped with "Live" mode, so this plugin function became a part of ImageJ. \r
+\r
+This plugin is a good scripting example using Clojure (see [source code](https://github.com/fiji/fiji/blob/master/plugins/Analyze/Dynamic_ROI_Profiler.clj)). """ .
 
 <http://biii.eu/node/458> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://bigwww.epfl.ch/sage/soft/spottracker/> ;
@@ -9350,6 +9352,14 @@ There are two implementations of Tschumperle/ R. Deriche filter ("anisotropic di
     dc:modified "2017-09-13T12:04:52"^^xsd:dateTime ;
     dc:title "Painting" .
 
+<http://biii.eu/node/489> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://bigwww.epfl.ch/thevenaz/interpolation/> ;
+    nb:requires <http://biii.eu/node/17>,
+        <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:04:53"^^xsd:dateTime ;
+    dc:title "Spline Interpolation" .
+
 <http://biii.eu/node/490> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://tech.knime.org/community/image-processing> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
@@ -9555,6 +9565,13 @@ This plugin comes with Fiji. """ .
     rdfs:comment """<p>Manually selecting line ROIs and align two images.&nbsp;</p>\r
 """ .
 
+<http://biii.eu/node/519> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://fiji.sc/Extended_Depth_of_Field> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2019-03-11T17:11:01"^^xsd:dateTime ;
+    dc:title "Extended Depth of Field" .
+
 <http://biii.eu/node/52> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Dimitrios Vavylonis",
         "Ting Xu ",
@@ -9657,6 +9674,13 @@ All routines are local, with the exception of the routine to call, named `affine
 \r
 <p>No javadoc&nbsp;accessible, but can be downloaded from the webpage.&nbsp;</p>\r
 """ .
+
+<http://biii.eu/node/527> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Flying%20Camera> ;
+    nb:requires <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2019-03-11T17:07:34"^^xsd:dateTime ;
+    dc:title "Flying Camera" .
 
 <http://biii.eu/node/528> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Stochastic_Denoising> ;
@@ -9885,12 +9909,11 @@ All routines are local, with the exception of the routine to call, named `affine
     dc:title "Save as animated gif" .
 
 <http://biii.eu/node/557> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
     nb:hasLocation <http://www.cellprofiler.org/CPmanual/ExpandOrShrinkObjects.html> ;
-    nb:requires <http://biii.eu/node/31>,
-        <http://biii.eu/node/975>,
-        <http://biii.eu/node/979> ;
+    nb:requires <http://biii.eu/node/31> ;
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:06:01"^^xsd:dateTime ;
+    dc:modified "2019-03-11T17:06:31"^^xsd:dateTime ;
     dc:title "ExpandOrShrinkObjects" .
 
 <http://biii.eu/node/558> a <http://biii.eu/node/software> ;
@@ -10813,7 +10836,7 @@ This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/
     nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2019-03-10T03:57:52"^^xsd:dateTime ;
+    dc:modified "2019-03-11T02:02:25"^^xsd:dateTime ;
     dc:title "FlowJ" ;
     rdfs:comment """FlowJ is a collection of popular 2D optical flow algorithms, Lucas and Kanade, Uras, Fleet and Jepson, and Singh, in Java.\r
 \r
@@ -14140,14 +14163,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2018-12-20T18:34:42"^^xsd:dateTime ;
     dc:title "Clojure (ICY)" .
 
-<http://biii.eu/node/489> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://bigwww.epfl.ch/thevenaz/interpolation/> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:53"^^xsd:dateTime ;
-    dc:title "Spline Interpolation" .
-
 <http://biii.eu/node/49> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fabrice de Chaumont http://orcid.org/0000-0001-7613-7204" ;
     nb:hasFunction <http://edamontology.org/operation_Cell_segmentation>,
@@ -14206,24 +14221,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
 - Largest Hessian\r
 - Smallest Hessian\r
 - Hessian Orientation""" .
-
-<http://biii.eu/node/519> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://fiji.sc/Extended_Depth_of_Field> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/519>,
-        <http://biii.eu/node/798> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:24"^^xsd:dateTime ;
-    dc:title "Extended Depth of Field" .
-
-<http://biii.eu/node/527> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Flying%20Camera> ;
-    nb:requires <http://biii.eu/node/527>,
-        <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:32"^^xsd:dateTime ;
-    dc:title "Flying Camera" .
 
 <http://biii.eu/node/532> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Otsu_Thresholding> ;
@@ -14381,6 +14378,13 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:07:56"^^xsd:dateTime ;
     dc:title "Sobel Filter" .
+
+<http://biii.eu/node/733> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Intensity%20Profile> ;
+    nb:requires <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:08:07"^^xsd:dateTime ;
+    dc:title "Intensity Profile" .
 
 <http://biii.eu/node/736> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Workbooks> ;
@@ -14906,6 +14910,13 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:modified "2017-09-13T12:04:48"^^xsd:dateTime ;
     dc:title "Tile" .
 
+<http://biii.eu/node/502> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
+    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2018-05-14T21:48:35"^^xsd:dateTime ;
+    dc:title "KNIME Anisotropic Diffusion " .
+
 <http://biii.eu/node/544> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
     nb:requires <http://biii.eu/node/8>,
@@ -14930,13 +14941,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:07:17"^^xsd:dateTime ;
     dc:title "Level Sets" .
-
-<http://biii.eu/node/733> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Intensity%20Profile> ;
-    nb:requires <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:08:07"^^xsd:dateTime ;
-    dc:title "Intensity Profile" .
 
 <http://biii.eu/node/759> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://tech.knime.org/community/image-processing> ;
@@ -15092,6 +15096,22 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:11:50"^^xsd:dateTime ;
     dc:title "combine" .
+
+<http://biii.eu/node/975> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:requires <http://biii.eu/node/332>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:11:52"^^xsd:dateTime ;
+    dc:title "dilate" .
+
+<http://biii.eu/node/979> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:requires <http://biii.eu/node/332>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:11:55"^^xsd:dateTime ;
+    dc:title "erode" .
 
 <http://biii.eu/node/1038> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Erik Meijering" ;
@@ -15284,13 +15304,6 @@ The built-in vectors are :</p>\r
     dc:modified "2017-09-13T12:04:54"^^xsd:dateTime ;
     dc:title "Invert" .
 
-<http://biii.eu/node/502> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
-    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2018-05-14T21:48:35"^^xsd:dateTime ;
-    dc:title "KNIME Anisotropic Diffusion " .
-
 <http://biii.eu/node/51> a <http://biii.eu/node/software> ;
     dc:created "2017-05-15T11:12:59"^^xsd:dateTime ;
     dc:modified "2017-05-15T11:12:59"^^xsd:dateTime ;
@@ -15332,22 +15345,6 @@ The built-in vectors are :</p>\r
 \r
 <p>Rate and comment plugins 5D Search and install features directly from Icy Graphical programming with protocols Write scripts in javascript or python Automatic bug reports Native ImageJ integration 100% compatible Native Micro-Manager integration Share your plugins and protocols online Can run headless Intuitive user interface Online management of plugins Connect Icy to Matlab Interactive widgets Build your graphical interface with EzPlug Use the power of your graphic card with OpenCL Loaded with 20 up-to date libs Weaknesses No tutorial for plugins writing..yet See here: http://icy.bioimageanalysis.org/index.php?display=devDoc http://icy.bioimageanalysis.org/index.php?display=detailTag&amp;tagId=29 and here: http://icy.bioimageanalysis.org/index.php?display=startDevWithIcy and also here: http://icy.bioimageanalysis.org/index.php?display=startDevWithIcy Image size limited to 2GigaByte per single 2D channel (means that an image of 40.000x40.000 can be handle by Icy. Still big !) Still you can have a stack of 100000x40Kx40kxUnlimited number of channel if you have RAM. Will be improved</p>\r
 """ .
-
-<http://biii.eu/node/975> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:52"^^xsd:dateTime ;
-    dc:title "dilate" .
-
-<http://biii.eu/node/979> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:55"^^xsd:dateTime ;
-    dc:title "erode" .
 
 <http://biii.eu/node/983> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -15590,214 +15587,63 @@ Bioformats could also be used as stand alone application from command line. See 
 
 <http://biii.eu/node/73> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Ullrich Koethe and many contributors" ;
-    nb:hasLocation <http://hci.iwr.uni-heidelberg.de/vigra/> ;
-    nb:requires <http://biii.eu/node/1016>,
-        <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/489>,
-        <http://biii.eu/node/502>,
-        <http://biii.eu/node/826> ;
+    nb:hasFunction <http://edamontology.org/operation_2990>,
+        <http://edamontology.org/operation_Geometrical_transform>,
+        <http://edamontology.org/operation_Morphological_operations>,
+        <http://edamontology.org/operation_Texture_extraction>,
+        <http://edamontology.org/operation___Image_convolution> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/vigra.png" ;
+    nb:hasLocation <https://ukoethe.github.io/vigra/> ;
+    nb:hasTopic <http://edamontology.org/topic_3474>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     dc:created "2013-10-11T16:51:29"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:07"^^xsd:dateTime ;
+    dc:modified "2019-03-11T01:52:03"^^xsd:dateTime ;
     dc:title "VIGRA" ;
-    rdfs:comment """VIGRA is a free C++ and Python library that provides fundamental image processing and analysis algorithms. Its generic architecture allows it to be used in many different application contexts and ecosystems. It is designed as an intelligent library (using the C++ template mechanism) which allows users to write code at a fairly high level of abstraction and optimizes away the abstraction overhead upon compilation. It can therefore work efficiently on very large data and forms the basis of ilastik and CellCognition.\r
+    rdfs:comment """VIGRA is a free C++ and Python library that provides fundamental image processing and analysis algorithms. Its generic architecture allows it to be used in many different application contexts and ecosystems. It is designed as an intelligent library (using the C++ template mechanism) which allows users to write code at a fairly high level of abstraction and optimizes away the abstraction overhead upon compilation. It can therefore work efficiently on very large data and forms the basis of [ilastik](https://www.ilastik.org/) and [CellCognition](https://cellcognition-project.org/). \r
 \r
-Strengths: open source, high quality algorithms, unlimited array dimension, arbitrary pixel types and number of channels, high speed, well tested, very flexible, easy-to-use Python bindings, support for many common file formats (including HDF5)\r
+**Strengths**: open source, high quality algorithms, unlimited array dimension, arbitrary pixel types and number of channels, high speed, well tested, very flexible, easy-to-use Python bindings, support for many common file formats (including HDF5) \r
 \r
-Limitations: no GUI, C++ not suitable for everyone, BioFormats not supported, parallelization requires external control\r
+**Limitations**: no GUI, C++ not suitable for everyone, BioFormats not supported, parallelization requires external control \r
 \r
-Images and Multi-dimensional Arrays:\r
+**Images and Multi-dimensional Arrays**: templated image data structures for arbitrary pixel types, fixed-size vectors multi-dimensional arrays for arbitrary high dimensions pre-instantiated images with many different scalar and vector valued pixel types (byte, short, int, float, double, complex, RGB, RGBA etc.) 2-dimensional image iterators, multi-dimensional iterators for arbitrary high dimensions, adapters for various image and array subsets \r
 \r
-    \r
-        templated image data structures for arbitrary pixel types,\r
-        fixed-size vectors\r
-    \r
-    \r
-        multi-dimensional arrays for arbitrary high dimensions\r
-    \r
-    \r
-        pre-instantiated images with many different scalar and vector valued pixel types\r
-        (byte, short, int, float, double, complex, RGB, RGBA etc.)\r
-    \r
-    \r
-        2-dimensional image iterators, multi-dimensional iterators for arbitrary high dimensions, adapters for various image and array subsets\r
-    \r
-    \r
-        input/output of many image file formats: Windows BMP, GIF, JPEG, PNG, PNM, Sun Raster, \r
-        TIFF (including 32bit integer, float, and double pixel types and multi-page TIFF), \r
-        Khoros VIFF, HDR (high dynamic range), Andor SIF, OpenEXR\r
-    \r
-    \r
-        input/output of images with transparency (alpha channel) into suitable file formats.\r
-    \r
-    \r
-        comprehensive support for HDF5 (input/output of arrays in arbitrary dimensions)\r
-    \r
-    \r
-        continuous reconstruction of discrete images using splines: Just create\r
-        a SplineImageView of the desired order and access interpolated values and \r
-        derivative at any real-valued coordinate.\r
-    \r
+**input/output of many image file formats**: Windows BMP, GIF, JPEG, PNG, PNM, Sun Raster, TIFF (including 32bit integer, float, and double pixel types and multi-page TIFF), Khoros VIFF, HDR (high dynamic range), Andor SIF, OpenEXR input/output of images with transparency (alpha channel) into suitable file formats. comprehensive support for HDF5 (input/output of arrays in arbitrary dimensions) \r
 \r
-Image Processing:\r
+**continuous reconstruction of discrete images using splines**: Just create a SplineImageView of the desired order and access interpolated values and derivative at any real-valued coordinate. \r
 \r
-    \r
-        STL-style image processing algorithms with functors (e.g. arithmetic and algebraic\r
-        operations, gamma correction, contrast adaptation, thresholding), arbitrary regions \r
-        of interest using mask images\r
-    \r
-    \r
-        image resizing using resampling, linear interpolation, spline interpolation etc.\r
-    \r
-    \r
-        geometric transformations: rotation, mirroring, arbitrary affine transformations\r
-    \r
-    \r
-        automated functor creation using expression templates\r
-    \r
-    \r
-        color space conversions: RGB, sRGB, R'G'B', XYZ, L*a*b*, L*u*v*, Y'PbPr, Y'CbCr, Y'IQ, and Y'UV\r
-    \r
-    \r
-        real and complex Fourier transforms in arbitrary dimensions, \r
-        cosine and sine transform (via fftw)\r
-    \r
-    \r
-        noise normalization according to F&ouml;rstner\r
-    \r
-    \r
-        computation of the camera magnitude transfer function (MTF) via the\r
-        slanted edge technique (ISO standard 12233)\r
-    \r
+**Image Processing**: STL-style image processing algorithms with functors (e.g. arithmetic and algebraic operations, gamma correction, contrast adaptation, thresholding), arbitrary regions of interest using mask images image resizing using resampling, linear interpolation, spline interpolation etc. \r
 \r
-Filters:\r
+**geometric transformations**: rotation, mirroring, arbitrary affine transformations automated functor creation using expression templates \r
 \r
-    \r
-        2-dimensional and separable convolution, Gaussian filters and their derivatives, \r
-        Laplacian of Gaussian, sharpening etc.\r
-    \r
-    \r
-        separable convolution and FFT-based convolution for arbitrary dimensional data\r
-    \r
-    \r
-        resampling convolution (input and output image have different size)\r
-    \r
-    \r
-        recursive filters (1st and 2nd order), exponential filters\r
-    \r
-    \r
-        non-linear diffusion (adaptive filters), hourglass filter\r
-    \r
-    \r
-        total-variation filtering and denoising (standard, higer-order, and adaptive methods)\r
-    \r
-    \r
-        tensor image processing: structure tensor, boundary tensor, gradient energy tensor,\r
-        linear and non-linear tensor smoothing, eigenvalue calculation etc. (2D and 3D)\r
-    \r
-    \r
-        distance transform (Manhattan, Euclidean, Checker Board norms, 2D and 3D)\r
-    \r
-    \r
-        morphological filters and median  (2D and 3D)\r
-    \r
-    \r
-        Loy/Zelinsky symmetry transform \r
-    \r
-    \r
-        Gabor filters\r
-    \r
+**color space conversions:** RGB, sRGB, R'G'B', XYZ, L*a*b*, L*u*v*, Y'PbPr, Y'CbCr, Y'IQ, and Y'UV real and complex Fourier transforms in arbitrary dimensions, cosine and sine transform (via fftw) noise normalization according to Förstner computation of the camera magnitude transfer function (MTF) via the slanted edge technique (ISO standard 12233) \r
 \r
-Segmentation:\r
+**Filters:** 2-dimensional and separable convolution, Gaussian filters and their derivatives, Laplacian of Gaussian, sharpening etc. separable convolution and FFT-based convolution for arbitrary dimensional data resampling convolution (input and output image have different size) recursive filters (1st and 2nd order), exponential filters non-linear diffusion (adaptive filters), hourglass filter total-variation filtering and denoising (standard, higer-order, and adaptive methods) \r
 \r
-    \r
-        edge detectors: Canny, zero crossings, Shen-Castan, boundary tensor\r
-    \r
-    \r
-        corner detectors: corner response function, Beaudet, Rohr and F&ouml;rstner corner detectors\r
-        tensor based corner and junction operators\r
-    \r
-    \r
-        region growing: seeded region growing, watershed algorithm\r
-    \r
+**tensor image processing:** structure tensor, boundary tensor, gradient energy tensor, linear and non-linear tensor smoothing, eigenvalue calculation etc. (2D and 3D) distance transform (Manhattan, Euclidean, Checker Board norms, 2D and 3D) morphological filters and median (2D and 3D) Loy/Zelinsky symmetry transform Gabor filters \r
 \r
-Image Analysis:\r
+**Segmentation:** edge detectors: Canny, zero crossings, Shen-Castan, boundary tensor corner detectors: corner response function, Beaudet, Rohr and Förstner corner detectors tensor based corner and junction operators \r
 \r
-    \r
-        connected components labeling (2D and 3D)\r
-    \r
-    \r
-        detection of local minima/maxima (including plateaus, 2D and 3D)\r
-    \r
-    \r
-        tensor-basesd image analysis (2D and 3D)\r
-    \r
-    \r
-        powerful incremental computation of region and object statistics\r
-    \r
+**region growing:** seeded region growing, watershed algorithm \r
 \r
-3-dimensional Image Processing and Analysis:\r
+**Image Analysis:** connected components labeling (2D and 3D) detection of local minima/maxima (including plateaus, 2D and 3D) tensor-basesd image analysis (2D and 3D) powerful incremental computation of region and object statistics \r
 \r
-    \r
-        point-wise transformations, projections and expansions in arbitrary high dimensions \r
-    \r
-    \r
-        all functors (e.g. regions statistics) readily apply to higher dimensional data as well \r
-    \r
-    \r
-        separable convolution and FFT-based convolution filters, resizing, morphology, and Euclidean distance transform for arbitrary dimensional arrays (not just 3D)\r
-    \r
-    \r
-        connected components labeling, seeded region growing, watershed algorithm for volume data\r
-    \r
+**3-dimensional Image Processing and Analysis:** point-wise transformations, projections and expansions in arbitrary high dimensions all functors (e.g. regions statistics) readily apply to higher dimensional data as well separable convolution and FFT-based convolution filters, resizing, morphology, and Euclidean distance transform for arbitrary dimensional arrays (not just 3D) connected components labeling, seeded region growing, watershed algorithm for volume data \r
 \r
-Machine Learning:\r
+**Machine Learning:** random forest classifier with various tree building strategies variable importance, feature selection (based on random forest) unsupervised decomposition: PCA (principle component analysis) and pLSA (probabilistic latent semantic analysis) \r
 \r
-    \r
-        random forest classifier with various tree building strategies\r
-    \r
-    \r
-        variable importance, feature selection (based on random forest)\r
-    \r
-    \r
-        unsupervised decomposition: PCA (principle component analysis) and \r
-        pLSA (probabilistic latent semantic analysis)\r
-    \r
+**Mathematical Tools:** special functions (error function, splines of arbitrary order, integer square root, chi square distribution, elliptic integrals) random number generation rational and fixed point numbers quaternions polynomials and polynomial root finding matrix classes, linear algebra, solution of linear systems, eigen system computation, singular value decomposition \r
 \r
-Mathematical Tools:\r
+**optimization:** linear least squares, ridge regression, L1-constrained least squares (LASSO, non-negative LASSO, least angle regression), quadratic programming \r
 \r
-    \r
-        special functions (error function, splines of arbitrary order, integer square root, chi square distribution, elliptic integrals)\r
-    \r
-    \r
-        random number generation\r
-    \r
-    \r
-        rational and fixed point numbers\r
-    \r
-    \r
-        quaternions\r
-    \r
-    \r
-        polynomials and polynomial root finding\r
-    \r
-    \r
-        matrix classes, linear algebra, solution of linear systems, eigen system computation, singular value decomposition\r
-    \r
-    \r
-        optimization: linear least squares, ridge regression, L1-constrained least squares (LASSO, non-negative LASSO, least angle regression), quadratic programming\r
-    \r
-\r
-Inter-language support:\r
-\r
-    \r
-        Python bindings in both directions (use Python arrays in C++, call VIGRA functions from Python)\r
-    \r
-    \r
-        Matlab bindings of some functions\r
-    \r
-\r
-""" .
+**Inter-language support:** Python bindings in both directions (use Python arrays in C++, call VIGRA functions from Python) Matlab bindings of some functions""" .
+
+<http://biii.eu/node/798> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Projection> ;
+    nb:requires <http://biii.eu/node/798>,
+        <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:09:00"^^xsd:dateTime ;
+    dc:title "Projection" .
 
 <http://biii.eu/node/970> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -15831,14 +15677,6 @@ Inter-language support:\r
 \r
 <p>&nbsp;</p>\r
 """ .
-
-<http://biii.eu/node/798> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Projection> ;
-    nb:requires <http://biii.eu/node/798>,
-        <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:09:00"^^xsd:dateTime ;
-    dc:title "Projection" .
 
 <http://biii.eu/node/971> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -16110,6 +15948,24 @@ As of now, the annotations are saved when the sequence is closed, but you have t
 <p>The full script is downloadable near the bottom of the article.&nbsp;</p>\r
 """ .
 
+<http://biii.eu/node/1016> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:requires <http://biii.eu/node/286>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:12:25"^^xsd:dateTime ;
+    dc:title "watershed" .
+
+<http://biii.eu/node/826> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://bigwww.epfl.ch/sage/soft/watershed/> ;
+    nb:requires <http://biii.eu/node/1016>,
+        <http://biii.eu/node/17>,
+        <http://biii.eu/node/38>,
+        <http://biii.eu/node/826> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:09:32"^^xsd:dateTime ;
+    dc:title "Watershed" .
+
 <http://biii.eu/node/87> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Bitplane" ;
     nb:hasLocation <http://www.bitplane.com/> ;
@@ -16131,24 +15987,6 @@ Strengths: \r
 - interactive editing of objects to correct errors during automatic detection\r
 - large data visualization (hundreds of GB)\r
 """ .
-
-<http://biii.eu/node/1016> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:requires <http://biii.eu/node/286>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:25"^^xsd:dateTime ;
-    dc:title "watershed" .
-
-<http://biii.eu/node/826> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://bigwww.epfl.ch/sage/soft/watershed/> ;
-    nb:requires <http://biii.eu/node/1016>,
-        <http://biii.eu/node/17>,
-        <http://biii.eu/node/38>,
-        <http://biii.eu/node/826> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:09:32"^^xsd:dateTime ;
-    dc:title "Watershed" .
 
 <http://biii.eu/node/101> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Mathworks" ;
