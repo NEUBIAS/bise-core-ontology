@@ -12,7 +12,7 @@ This repository hosts the core ontology of the BISE BioImaging Search Engine.
 # Demo queries
 [demo-queries.md](demo-queries.md)
 
-# Demo notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeuBIAS/bise-core-ontology.git/master?filepath=advanced-queries-demo.ipynb)
+# Demo notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeuBIAS/bise-core-ontology/master?filepath=advanced-queries-demo.ipynb)
 
 ### Getting python dependencies
 With Conda :
