@@ -5255,6 +5255,37 @@ A supported digital camera, or raw interferogram files</p>\r
     dc:title "ContourLines" ;
     rdfs:comment "> ImageJ/FIJI plugin generating contour lines with equal spacing on top of an image (using overlay)." .
 
+<http://biii.eu/node/1477> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Mormont, Romain" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_smoothing>,
+        <http://edamontology.org/operation_Pixel_classification> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_PixCla-UNet-GlaS/tree/v1.3.0>,
+        "Neubias BIAFLOWS workflow of pixel classification with UNet" ;
+    nb:requires <http://biii.eu/node/1476>,
+        <http://biii.eu/node/1478> ;
+    dc:created "2019-03-15T00:38:32"^^xsd:dateTime ;
+    dc:modified "2019-03-15T01:26:18"^^xsd:dateTime ;
+    dc:title "Pixel classification for GlaS challenge with UNet" ;
+    rdfs:comment """<p>This workflow segments glands from H&amp;E stained histopathological images<br />\r
+from the Gland Segmentation Challenge (GlaS2015) using deep learning (UNet).<br />\r
+UNet implementation largely inspired from PyTorch-UNet by Milesial.&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1479> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Vandaele, Rémy" ;
+    nb:hasFunction <http://edamontology.org/operation__RDggamr21qZlMqkQmyOdC7l> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LandmarkDetect-ML-MSET-Train>,
+        "Neubias BIAFLOWS workflow of landmark detection with MSET models (Training)" ;
+    nb:hasReferencePublication <http://doi.org/10.1038/s41598-017-18993-5>,
+        "Landmark detection in 2D bioimages for geometric morphometrics: a multi-resolution tree-based approach" ;
+    nb:requires <http://biii.eu/node/1376>,
+        <http://biii.eu/node/1413> ;
+    dc:created "2019-03-15T01:48:02"^^xsd:dateTime ;
+    dc:modified "2019-03-15T02:04:31"^^xsd:dateTime ;
+    dc:title "Landmark detection MSET models training" ;
+    rdfs:comment """<p>This workflow trains MSET landmark detection models from a dataset of annotated images.</p>\r
+""" .
+
 <http://biii.eu/node/148> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fliegel Karel ",
         "Hagen Guy M. ",
@@ -5273,6 +5304,138 @@ A supported digital camera, or raw interferogram files</p>\r
     dc:modified "2018-11-26T09:30:04"^^xsd:dateTime ;
     dc:title "SIMToolbox" ;
     rdfs:comment """<p>SIMToolbox: a MATLAB toolbox for structured illumination microscopy SIMToolbox is an open-source, modular set of functions for MATLAB designed for processing data acquired by structured illumination microscopy. Both optical sectioning and super-resolution applications are supported. The software is also capable of maximum a posteriori probability image estimation (MAP-SIM), an alternative method for reconstruction of structured illumination images. MAP-SIM can potentially reduce reconstruction artifacts, which commonly occur due to refractive index mismatch within the sample and to imperfections in the illumination. 2665</p>\r
+""" .
+
+<http://biii.eu/node/1480> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Vandaele, Rémy" ;
+    nb:hasFunction <http://edamontology.org/operation__RDggamr21qZlMqkQmyOdC7l> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LandmarkDetect-ML-MSET-Pred/blob/master/run.py>,
+        "Neubias BIAFLOWS workflow of landmark detection with MSET models (Prediction)" ;
+    nb:hasReferencePublication <http://doi.org/10.1038/s41598-017-18993-5>,
+        "Landmark detection in 2D bioimages for geometric morphometrics: a multi-resolution tree-based approach" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1312>,
+        <http://biii.eu/node/1376> ;
+    dc:created "2019-03-15T02:00:11"^^xsd:dateTime ;
+    dc:modified "2019-03-15T02:03:42"^^xsd:dateTime ;
+    dc:title "Landmark detection MSET models prediction" ;
+    rdfs:comment """<p>This workflow predict landmark positions on images by using MSET landmark detection models.</p>\r
+""" .
+
+<http://biii.eu/node/1481> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Vandaele, Rémy" ;
+    nb:hasFunction <http://edamontology.org/operation__RDggamr21qZlMqkQmyOdC7l> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LandmarkDetect-ML-LC-Train>,
+        "Neubias BIAFLOWS workflow of landmark detection with LC models (Training)" ;
+    nb:hasReferencePublication <https://doi.org/10.1109/TPAMI.2014.2382106>,
+        "Robust and Accurate Shape Model Matching Using Random Forest Regression-Voting" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1376>,
+        <http://biii.eu/node/1413> ;
+    dc:created "2019-03-15T02:04:59"^^xsd:dateTime ;
+    dc:modified "2019-03-15T02:15:59"^^xsd:dateTime ;
+    dc:title "Landmark detection LC models training" ;
+    rdfs:comment """<p>This workflow trains LC landmark detection models from a dataset of annotated images.</p>\r
+""" .
+
+<http://biii.eu/node/1482> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Vandaele, Rémy" ;
+    nb:hasFunction <http://edamontology.org/operation__RDggamr21qZlMqkQmyOdC7l> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LandmarkDetect-ML-LC-Pred>,
+        "Neubias BIAFLOWS workflow of landmark detection with LC models (Prediction)" ;
+    nb:hasReferencePublication <https://doi.org/10.1109/TPAMI.2014.2382106>,
+        "Robust and Accurate Shape Model Matching Using Random Forest Regression-Voting" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1376>,
+        <http://biii.eu/node/1413> ;
+    dc:created "2019-03-15T02:19:31"^^xsd:dateTime ;
+    dc:modified "2019-03-15T03:24:27"^^xsd:dateTime ;
+    dc:title "Landmark detection LC models prediction" ;
+    rdfs:comment """<p>This workflow predict landmark positions on images by using LC landmark detection models.</p>\r
+""" .
+
+<http://biii.eu/node/1484> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Vandaele, Rémy" ;
+    nb:hasFunction <http://edamontology.org/operation__RDggamr21qZlMqkQmyOdC7l> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LandmarkDetect-ML-DMBL-Train/>,
+        "Neubias BIAFLOWS workflow of landmark detection with DMBL models (Training)" ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.media.2013.02.004>,
+        "Global localization of 3D anatomical structures by pre-filtered Hough Forests and discrete optimization" ;
+    nb:hasTopic <http://edamontology.org/topic__RxfmHE99gOkUOOML5krfsJ> ;
+    nb:requires <http://biii.eu/node/1376>,
+        <http://biii.eu/node/1413>,
+        <http://biii.eu/node/1483> ;
+    dc:created "2019-03-15T02:35:42"^^xsd:dateTime ;
+    dc:modified "2019-03-15T03:17:57"^^xsd:dateTime ;
+    dc:title "Landmark detection DMBL model training" ;
+    rdfs:comment """<p>This workflow trains DMBL landmark detection models from a dataset of annotated images.</p>\r
+""" .
+
+<http://biii.eu/node/1485> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Vandaele, Rémy" ;
+    nb:hasFunction <http://edamontology.org/operation__RDggamr21qZlMqkQmyOdC7l> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LandmarkDetect-ML-DMBL-Pred>,
+        "Neubias BIAFLOWS workflow of landmark detection with DMBL models (Prediction)" ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.media.2013.02.004>,
+        "Global localization of 3D anatomical structures by pre-filtered Hough Forests and discrete optimization" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1376>,
+        <http://biii.eu/node/1413>,
+        <http://biii.eu/node/1483> ;
+    dc:created "2019-03-15T03:19:12"^^xsd:dateTime ;
+    dc:modified "2019-03-15T03:24:00"^^xsd:dateTime ;
+    dc:title "Landmark detection DMBL model prediction" ;
+    rdfs:comment """<p>This workflow predict landmark positions on images by using DMBL landmark detection models.</p>\r
+""" .
+
+<http://biii.eu/node/1486> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Matterport, Inc. " ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation__RBNng13hEB0CJD5VzSKqrfB> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/project_usiigaci2.gif" ;
+    nb:hasLocation <https://github.com/matterport/Mask_RCNN>,
+        "Mask-RCNN Github repository" ;
+    nb:hasTopic <http://edamontology.org/topic__RtBCcu7zJiS0phrbR2HzAI> ;
+    nb:requires <http://biii.eu/node/1201>,
+        <http://biii.eu/node/1202>,
+        <http://biii.eu/node/1413> ;
+    dc:created "2019-03-15T12:31:40"^^xsd:dateTime ;
+    dc:modified "2019-03-15T12:40:04"^^xsd:dateTime ;
+    dc:title "Mask-RCNN" ;
+    rdfs:comment """<blockquote>\r
+<p>This is an implementation of Mask R-CNN on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.</p>\r
+</blockquote>\r
+""" .
+
+<http://biii.eu/node/1487> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paavolainen, Lassi" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation__RBNng13hEB0CJD5VzSKqrfB> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-MaskRCNN>,
+        "Neubias BIAFLOWS workflow of Nuclei Segmentation with Mask-RCNN" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    dc:created "2019-03-15T12:20:26"^^xsd:dateTime ;
+    dc:modified "2019-03-15T12:45:16"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation (Mask-RCNN)" ;
+    rdfs:comment """<p>NEUBIAS-WG5 workflow for nuclei segmentation using Mask-RCNN. The workflow uses Matterport Mask-RCNN.&nbsp;Keras implementation. The model was trained with Kaggle 2018 Data Science Bowl images.</p>\r
+""" .
+
+<http://biii.eu/node/1488> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paavolainen, Lassi" ;
+    nb:hasFunction <http://edamontology.org/operation_Pixel_classification> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-ilastik>,
+        "Neubias BIAFLOWS workflow of Nuclei Segmentation with Ilastik and Python" ;
+    nb:hasReferencePublication <https://doi.org/10.1109/ISBI.2011.5872394>,
+        "Ilastik: Interactive learning and segmentation toolkit" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/128>,
+        <http://biii.eu/node/1286>,
+        <http://biii.eu/node/1288>,
+        <http://biii.eu/node/88> ;
+    dc:created "2019-03-15T15:26:04"^^xsd:dateTime ;
+    dc:modified "2019-03-15T15:39:19"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation (ilastik)" ;
+    rdfs:comment """<p>NEUBIAS-WG5 workflow for nuclei segmentation using ilastik v1.3.2 and Python post-processing.</p>\r
 """ .
 
 <http://biii.eu/node/149> a <http://biii.eu/node/software> ;
@@ -13516,11 +13679,6 @@ The command line tools primarily provide the following functionality: registrati
 <p>The purpose of Luigi is to address all the plumbing typically associated with long-running batch processes. You want to chain many tasks, automate them, and failures <em>will</em> happen. These tasks can be anything, but are typically long running things like <a href="http://hadoop.apache.org/">Hadoop</a> jobs, dumping data to/from databases, running machine learning algorithms, or anything else.</p>\r
 """ .
 
-<http://biii.eu/node/1202> a <http://biii.eu/node/software> ;
-    dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:modified "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:title "Keras" .
-
 <http://biii.eu/node/1206> a <http://biii.eu/node/software> ;
     dc:created "2018-01-30T17:32:31"^^xsd:dateTime ;
     dc:modified "2018-01-30T17:37:22"^^xsd:dateTime ;
@@ -13866,23 +14024,6 @@ crude Anscombe transform applied to data to stabilize the variance\r
 <p>Link: <a href="https://clouard.users.greyc.fr/Pandore/programmes/en/index_operatorsP0.html">Operator Index</a></p>\r
 """ .
 
-<http://biii.eu/node/1376> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation_2423>,
-        <http://edamontology.org/operation_2945>,
-        <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-10/scikit-learn-logo-small.png" ;
-    nb:hasLocation <http://scikit-learn.org/stable/install.html> ;
-    nb:hasReferencePublication <http://www.jmlr.org/papers/v12/pedregosa11a.html> ;
-    nb:hasTopic <http://edamontology.org/topic_3474> ;
-    nb:requires <http://biii.eu/node/1288>,
-        <http://biii.eu/node/1312>,
-        <http://biii.eu/node/1317> ;
-    dc:created "2018-10-18T12:29:30"^^xsd:dateTime ;
-    dc:modified "2018-10-19T11:34:17"^^xsd:dateTime ;
-    dc:title "scikit-learn (sklearn)" ;
-    rdfs:comment """<p>Scikit-learn (sklearn) is a python library used for machine learning. sklearn contains simple and efficient tools for data mining and data analysis. Modules and functions&nbsp;include those for classification, regression, clustering, dimensionality reduction, model selection and data preprocessing. Many people&nbsp;have contributed to sklearn (<a href="http://scikit-learn.org/stable/about.html#people">list of&nbsp;authors</a>)</p>\r
-""" .
-
 <http://biii.eu/node/1377> a <http://biii.eu/node/software> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/Screen%20Shot%202019-02-03%20at%2019.08.51.png" ;
     nb:hasLocation <https://www.jetbrains.com/idea/download/>,
@@ -13949,11 +14090,6 @@ crude Anscombe transform applied to data to stabilize the variance\r
 MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They focus on the analysis of biomedical images acquired by various types of microscopes."</p>\r
 """ .
 
-<http://biii.eu/node/1413> a <http://biii.eu/node/software> ;
-    dc:created "2019-01-02T18:15:39"^^xsd:dateTime ;
-    dc:modified "2019-01-02T18:15:39"^^xsd:dateTime ;
-    dc:title "Python 3.6" .
-
 <http://biii.eu/node/1421> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fraunhofer MEVIS" ;
     nb:hasFunction <http://edamontology.org/operation_0337>,
@@ -14006,6 +14142,30 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:created "2019-02-28T10:00:21"^^xsd:dateTime ;
     dc:modified "2019-02-28T10:00:21"^^xsd:dateTime ;
     dc:title "CMake" .
+
+<http://biii.eu/node/1476> a <http://biii.eu/node/software> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/PyTorch-logo.jpg" ;
+    nb:hasLocation <https://pytorch.org/>,
+        "PyTorch website" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1312> ;
+    dc:created "2019-03-15T00:47:49"^^xsd:dateTime ;
+    dc:modified "2019-03-15T00:52:55"^^xsd:dateTime ;
+    dc:title "PyTorch" ;
+    rdfs:comment """<p><strong>PyTorch</strong>&nbsp;is an&nbsp;open-source&nbsp;machine learning&nbsp;library&nbsp;for&nbsp;Python, based on&nbsp;Torch,&nbsp;used for applications such as&nbsp;natural language processing.</p>\r
+""" .
+
+<http://biii.eu/node/1478> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Beyer, Lucas" ;
+    nb:hasLocation <https://github.com/lucasb-eyer/pydensecrf>,
+        "pydensecrf GitHub repository" ;
+    nb:hasReferencePublication <http://www.philkr.net/2011/12/01/nips/>,
+        "Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials" ;
+    dc:created "2019-03-15T01:16:06"^^xsd:dateTime ;
+    dc:modified "2019-03-15T01:24:51"^^xsd:dateTime ;
+    dc:title "pydensecrf" ;
+    rdfs:comment """<p>This is a (Cython-based) Python wrapper for&nbsp;Philipp Krähenbühl's Fully-Connected CRFs&nbsp;(version 2).</p>\r
+""" .
 
 <http://biii.eu/node/153> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Andrey P ",
@@ -14738,22 +14898,10 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
 <p>Source:&nbsp;https://en.wikipedia.org/wiki/OpenCL</p>\r
 """ .
 
-<http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation_Image_classification>,
-        <http://edamontology.org/operation_Image_enhancement>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Object_detection> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-08/CaptureTF.PNG" ;
-    nb:hasLocation <https://www.tensorflow.org/install/>,
-        "Multiplatform links to python packages" ;
-    nb:hasTopic <http://edamontology.org/topic_3474> ;
+<http://biii.eu/node/1202> a <http://biii.eu/node/software> ;
     dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
-    dc:title "Tensorflow" ;
-    rdfs:comment """<p>"An open source machine learning framework for everyone "</p>\r
-\r
-<p>TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</p>\r
-""" .
+    dc:modified "2018-01-30T17:00:37"^^xsd:dateTime ;
+    dc:title "Keras" .
 
 <http://biii.eu/node/125> a <http://biii.eu/node/software> ;
     nb:hasAuthor "ADCIS" ;
@@ -14835,6 +14983,20 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2018-10-18T10:44:52"^^xsd:dateTime ;
     dc:modified "2018-10-18T10:44:52"^^xsd:dateTime ;
     dc:title "Jupyter notebook" .
+
+<http://biii.eu/node/1483> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Kavalerov, Ilya " ;
+    nb:hasLocation <https://github.com/ilyakava/sumproduct/>,
+        "sumproduct GitHub repository" ;
+    nb:hasReferencePublication <http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php%3Fn%3DBrml.HomePage>,
+        "Bayesian Reasoning and Machine Learning" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1312> ;
+    dc:created "2019-03-15T02:54:49"^^xsd:dateTime ;
+    dc:modified "2019-03-15T03:09:13"^^xsd:dateTime ;
+    dc:title "sumproduct" ;
+    rdfs:comment """<p>An implementation of Belief Propagation for factor graphs, also known as the sum-product algorithm</p>\r
+""" .
 
 <http://biii.eu/node/330> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jean-Yves Tinevez" ;
@@ -15197,6 +15359,23 @@ Several options for curve fitting are available. Results can be saved back in OM
     rdfs:comment """<p>The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences. BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.</p>\r
 """ .
 
+<http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_classification>,
+        <http://edamontology.org/operation_Image_enhancement>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Object_detection> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-08/CaptureTF.PNG" ;
+    nb:hasLocation <https://www.tensorflow.org/install/>,
+        "Multiplatform links to python packages" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
+    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
+    dc:title "Tensorflow" ;
+    rdfs:comment """<p>"An open source machine learning framework for everyone "</p>\r
+\r
+<p>TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</p>\r
+""" .
+
 <http://biii.eu/node/130> a <http://biii.eu/node/software> ;
     nb:hasAuthor "André Lampe",
         "Sarah Aufmkolk",
@@ -15373,19 +15552,6 @@ The built-in vectors are :</p>\r
     dc:title "Volocity" ;
     rdfs:comment "-" .
 
-<http://biii.eu/node/128> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu and the scikit-image contributors. " ;
-    nb:hasFunction <http://edamontology.org/operation_2945>,
-        <http://edamontology.org/operation_Image_processing> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/logo.png" ;
-    nb:hasLocation <http://scikit-image.org/> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    dc:created "2014-12-09T11:33:32"^^xsd:dateTime ;
-    dc:modified "2018-12-17T02:00:14"^^xsd:dateTime ;
-    dc:title "scikit-image" ;
-    rdfs:comment """<p>Image processing library for Python &gt;The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to provide a versatile set of image processing routines. It is written in the Python language. This SciKit is developed by the SciPy community. All contributions are most welcome!</p>\r
-""" .
-
 <http://biii.eu/node/211> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Cellprofiler team" ;
     nb:hasFunction <http://edamontology.org/operation_Cell_tracking> ;
@@ -15470,10 +15636,18 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:modified "2017-09-13T12:12:18"^^xsd:dateTime ;
     dc:title "rotate" .
 
-<http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
-    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:title "scipy" .
+<http://biii.eu/node/128> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu and the scikit-image contributors. " ;
+    nb:hasFunction <http://edamontology.org/operation_2945>,
+        <http://edamontology.org/operation_Image_processing> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/logo.png" ;
+    nb:hasLocation <http://scikit-image.org/> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    dc:created "2014-12-09T11:33:32"^^xsd:dateTime ;
+    dc:modified "2018-12-17T02:00:14"^^xsd:dateTime ;
+    dc:title "scikit-image" ;
+    rdfs:comment """<p>Image processing library for Python &gt;The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to provide a versatile set of image processing routines. It is written in the Python language. This SciKit is developed by the SciPy community. All contributions are most welcome!</p>\r
+""" .
 
 <http://biii.eu/node/239> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Timothée Lecomte" ;
@@ -15549,6 +15723,11 @@ V.Foe and G.Odell, . 26 July 2001""" .
     rdfs:comment """<p>ImgLib2 is a generic, multi-dimensional data processing library allowing for processing algorithms to be defined in a data-type, dimension, and container independent manner. Due to its interface-based design, it is easy to write adapters to virtually all existing data containers. It is the basis of KNIME, ImageJ2 and a couple of Fiji plugins.</p>\r
 """ .
 
+<http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
+    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:title "scipy" .
+
 <http://biii.eu/node/474> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Stephan Saalfeld" ;
     nb:hasLocation <http://fiji.sc/Feature_Extraction> ;
@@ -15567,10 +15746,27 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:modified "2017-09-13T10:53:00"^^xsd:dateTime ;
     dc:title "KNIME" .
 
-<http://biii.eu/node/1288> a <http://biii.eu/node/software> ;
-    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:title "numpy" .
+<http://biii.eu/node/1376> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_2423>,
+        <http://edamontology.org/operation_2945>,
+        <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-10/scikit-learn-logo-small.png" ;
+    nb:hasLocation <http://scikit-learn.org/stable/install.html> ;
+    nb:hasReferencePublication <http://www.jmlr.org/papers/v12/pedregosa11a.html> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:requires <http://biii.eu/node/1288>,
+        <http://biii.eu/node/1312>,
+        <http://biii.eu/node/1317> ;
+    dc:created "2018-10-18T12:29:30"^^xsd:dateTime ;
+    dc:modified "2018-10-19T11:34:17"^^xsd:dateTime ;
+    dc:title "scikit-learn (sklearn)" ;
+    rdfs:comment """<p>Scikit-learn (sklearn) is a python library used for machine learning. sklearn contains simple and efficient tools for data mining and data analysis. Modules and functions&nbsp;include those for classification, regression, clustering, dimensionality reduction, model selection and data preprocessing. Many people&nbsp;have contributed to sklearn (<a href="http://scikit-learn.org/stable/about.html#people">list of&nbsp;authors</a>)</p>\r
+""" .
+
+<http://biii.eu/node/1413> a <http://biii.eu/node/software> ;
+    dc:created "2019-01-02T18:15:39"^^xsd:dateTime ;
+    dc:modified "2019-01-02T18:15:39"^^xsd:dateTime ;
+    dc:title "Python 3.6" .
 
 <http://biii.eu/node/463> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://processing.org/> ;
@@ -15665,6 +15861,11 @@ Bioformats could also be used as stand alone application from command line. See 
     dc:modified "2017-09-13T12:11:48"^^xsd:dateTime ;
     dc:title "channel" .
 
+<http://biii.eu/node/1288> a <http://biii.eu/node/software> ;
+    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:title "numpy" .
+
 <http://biii.eu/node/62> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fuhui Long",
         "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)",
@@ -15740,11 +15941,6 @@ Bioformats could also be used as stand alone application from command line. See 
 <p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
 """ .
 
-<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
-    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:title "Python" .
-
 <http://biii.eu/node/671> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Histogram> ;
     nb:requires <http://biii.eu/node/671>,
@@ -15752,6 +15948,34 @@ Bioformats could also be used as stand alone application from command line. See 
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:07:27"^^xsd:dateTime ;
     dc:title "Histogram" .
+
+<http://biii.eu/node/89> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.mathworks.com/products/image/index.html> ;
+    nb:requires <http://biii.eu/node/101> ;
+    dc:created "2013-10-15T20:36:52"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:12:40"^^xsd:dateTime ;
+    dc:title "Matlab Image Processing Toolbox" ;
+    rdfs:comment """The Matlab image processing toolbox extends the Matlab core functionality with general purpose image processing capabilities. This ranges from image access (read / write), common filters (convolution, morphology, order based, Wiener, feature extraction, image enhancement, ...), image transformation (rotation, affine transformation, ...) to segmentation algorithms (thresholding, watershed, region growing). There is also an extensive list of functions to deal with binary or label mask and perform for instance connected particle analysis or morphological operations.\r
+\r
+Strengths:\r
+- Most functions extend to nD\r
+- optimized functions (muti-threaded for some)\r
+- Matlab community (Matlab central)\r
+- relatively low entry-threshold for functionality\r
+- Tutorials & Webinars\r
+\r
+Limitations:\r
+- no embedded visualization of nD Microscopy data\r
+""" .
+
+<http://biii.eu/node/517> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Active_Contours> ;
+    nb:requires <http://biii.eu/node/286>,
+        <http://biii.eu/node/517>,
+        <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:05:22"^^xsd:dateTime ;
+    dc:title "Active Contours" .
 
 <http://biii.eu/node/88> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Hamprecht Fred ",
@@ -15802,34 +16026,6 @@ Bioformats could also be used as stand alone application from command line. See 
 <p>Supported Formats: hdf5, tiff, jpeg, png, bmp, pnm, gif, hdr, exr, sif</p>\r
 """ .
 
-<http://biii.eu/node/89> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.mathworks.com/products/image/index.html> ;
-    nb:requires <http://biii.eu/node/101> ;
-    dc:created "2013-10-15T20:36:52"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:40"^^xsd:dateTime ;
-    dc:title "Matlab Image Processing Toolbox" ;
-    rdfs:comment """The Matlab image processing toolbox extends the Matlab core functionality with general purpose image processing capabilities. This ranges from image access (read / write), common filters (convolution, morphology, order based, Wiener, feature extraction, image enhancement, ...), image transformation (rotation, affine transformation, ...) to segmentation algorithms (thresholding, watershed, region growing). There is also an extensive list of functions to deal with binary or label mask and perform for instance connected particle analysis or morphological operations.\r
-\r
-Strengths:\r
-- Most functions extend to nD\r
-- optimized functions (muti-threaded for some)\r
-- Matlab community (Matlab central)\r
-- relatively low entry-threshold for functionality\r
-- Tutorials & Webinars\r
-\r
-Limitations:\r
-- no embedded visualization of nD Microscopy data\r
-""" .
-
-<http://biii.eu/node/517> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Active_Contours> ;
-    nb:requires <http://biii.eu/node/286>,
-        <http://biii.eu/node/517>,
-        <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:22"^^xsd:dateTime ;
-    dc:title "Active Contours" .
-
 <http://biii.eu/node/108> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://opencv.org/> ;
     nb:requires <http://biii.eu/node/211> ;
@@ -15844,6 +16040,11 @@ Limitations:\r
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:11:54"^^xsd:dateTime ;
     dc:title "display" .
+
+<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
+    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:title "Python" .
 
 <http://biii.eu/node/601> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Benjamin Schmid" ;
