@@ -5438,6 +5438,33 @@ UNet implementation largely inspired from PyTorch-UNet by Milesial.&nbsp;</p>\r
     rdfs:comment """<p>NEUBIAS-WG5 workflow for nuclei segmentation using ilastik v1.3.2 and Python post-processing.</p>\r
 """ .
 
+<http://biii.eu/node/1489> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Heath Patterson orcid.org/0000-0002-0064-1583" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation__R9EjejimBB0tmnQRmZt0RhA> ;
+    nb:hasLocation <https://github.com/NHPatterson/regToolboxMSRC> ;
+    nb:hasReferencePublication <https://pubs.acs.org/doi/10.1021/acs.analchem.8b02884>,
+        <https://pubs.acs.org/doi/10.1021/acs.analchem.8b02885>,
+        "Advanced Registration and Analysis of MALDI Imaging Mass Spectrometry Measurements through Autofluorescence Microscopy",
+        "Next Generation Histology-directed Imaging Mass Spectrometry Driven by Autofluorescence Microscopy" ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
+    dc:created "2019-03-20T13:16:56"^^xsd:dateTime ;
+    dc:modified "2019-03-20T13:26:44"^^xsd:dateTime ;
+    dc:title "MSRC Registration Toolbox" ;
+    rdfs:comment """<p>This python toolbox performs registration between 2-D microscopy images from the same tissue section or serial sections in several ways to achieve imaging mass spectrometry (IMS) experimental goals.</p>\r
+\r
+<p>This code supports the following works and enables others to perform the workflows outlined in the following works, please cite them if you use this toolbox:</p>\r
+\r
+<ul>\r
+	<li>\r
+	<p><em>Advanced Registration and Analysis of MALDI Imaging Mass Spectrometry Measurements through Autofluorescence Microscopy</em>,&nbsp;<a href="https://pubs.acs.org/doi/10.1021/acs.analchem.8b02884">10.1021/acs.analchem.8b02884</a></p>\r
+	</li>\r
+	<li>\r
+	<p><em>Next Generation Histology-directed Imaging Mass Spectrometry Driven by Autofluorescence Microscopy</em>,&nbsp;<a href="https://pubs.acs.org/doi/10.1021/acs.analchem.8b02885">10.1021/acs.analchem.8b02885</a></p>\r
+	</li>\r
+</ul>\r
+""" .
+
 <http://biii.eu/node/149> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Adrien Ducret, Yves Brun, Ellen Quardokus" ;
     nb:hasLocation <http://www.indiana.edu/%7Emicrobej/index.html> ;
@@ -9755,13 +9782,13 @@ This plugin comes with Fiji. """ .
         <http://edamontology.org/operation_Active_contours>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-05/microtubule.png" ;
-    nb:hasLocation <http://www.cse.lehigh.edu/%7Eidealab/soax/downloads.html>,
+    nb:hasLocation <http://athena.physics.lehigh.edu/soax/>,
         "Dowload Soax software" ;
     nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
         <http://edamontology.org/topic__Rn8MnorStmqIkNlAVZWBc0> ;
     nb:requires <http://biii.eu/node/517> ;
     dc:created "2017-05-15T11:02:48"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:16:57"^^xsd:dateTime ;
+    dc:modified "2019-03-20T16:50:33"^^xsd:dateTime ;
     dc:title "SOAX" ;
     rdfs:comment """<p>SOAX is an open source software tool to extract the centerlines, junctions and filament lengths of biopolymer networks in 2D and 3D images. It facilitates quantitative, reproducible and objective analysis of the image data. The underlying method of SOAX uses multiple Stretching Open Active Contours (SOACs) that are automatically initialized at image intensity ridges and then stretch along the centerlines of filaments in the network. SOACs can merge, stop at junctions, and reconfigure with others to allow smooth crossing at junctions of filaments.</p>\r
 \r
