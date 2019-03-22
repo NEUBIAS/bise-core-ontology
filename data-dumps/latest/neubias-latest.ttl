@@ -5473,6 +5473,19 @@ UNet implementation largely inspired from PyTorch-UNet by Milesial.&nbsp;</p>\r
     dc:title "MicrobeJ" ;
     rdfs:comment "This is an ImageJ plugin to analyze bacterial cells.  It provides a user-friendly interface and a powerful suite of detection, analysis and data presentation tools. It works with individual phase or fluorescence images as well as stacks, hyperstacks, and folders of any of these types. Even large image sets are analyzed rapidly generating raw tabular data that can either be saved or copied as is, or have additional statistical analysis performed and graphically represented directly from within MicrobeJ, making it an all-in-one image analysis solution." .
 
+<http://biii.eu/node/1490> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Alan Moses",
+        "Alex Lu" ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/beer_goggles_logo_v1.png" ;
+    nb:hasLocation <https://github.com/alexxijielu/yeast_segmentation> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/1312> ;
+    dc:created "2019-03-22T18:07:48"^^xsd:dateTime ;
+    dc:modified "2019-03-22T18:13:24"^^xsd:dateTime ;
+    dc:title "YeastSpotter" ;
+    rdfs:comment ">Code to segment yeast cells using a pre-trained mask-rcnn model. We've tested this with yeast cells imaged in fluorescent images and brightfield images, and gotten good results with both modalities. This code implements an user-friendly script that hides all of the messy implementation details and parameters. Simply put all of your images to be segmented into the same directory, and then plug and go." .
+
 <http://biii.eu/node/150> a <http://biii.eu/node/software> ;
     nb:hasAuthor "M. Ovesný, P. K?íek, J. Borkovec, Z. vindrych, G. M. Hagen" ;
     nb:hasLocation <http://zitmen.github.io/thunderstorm/> ;
@@ -16068,11 +16081,6 @@ Limitations:\r
     dc:modified "2017-09-13T12:11:54"^^xsd:dateTime ;
     dc:title "display" .
 
-<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
-    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:title "Python" .
-
 <http://biii.eu/node/601> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Benjamin Schmid" ;
     nb:hasLocation <http://fiji.sc/3D_Viewer> ;
@@ -16094,6 +16102,11 @@ Limitations:\r
     dc:modified "2017-09-13T12:13:11"^^xsd:dateTime ;
     dc:title "Micro-Manager" ;
     rdfs:comment "-" .
+
+<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
+    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:title "Python" .
 
 <http://biii.eu/node/332> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
