@@ -5486,6 +5486,46 @@ UNet implementation largely inspired from PyTorch-UNet by Milesial.&nbsp;</p>\r
     dc:title "YeastSpotter" ;
     rdfs:comment ">Code to segment yeast cells using a pre-trained mask-rcnn model. We've tested this with yeast cells imaged in fluorescent images and brightfield images, and gotten good results with both modalities. This code implements an user-friendly script that hides all of the messy implementation details and parameters. Simply put all of your images to be segmented into the same directory, and then plug and go." .
 
+<http://biii.eu/node/1492> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Christopher Schmied",
+        "Pavel Tomancak",
+        "Peter Steinbach",
+        "Stephan Preibisch",
+        "Tobias Pietzsch" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_deconvolution>,
+        <http://edamontology.org/operation_Image_processing>,
+        <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation__RBPObKBKIMwjdLygBOlvojW>,
+        <http://edamontology.org/operation__RBh3vNecu5XlIPh3kbMM4Cq> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/AutomatedMultiview.jpg" ;
+    nb:hasLocation <https://github.com/mpicbg-scicomp/snakemake-workflows/tree/master/spim_registration>,
+        "https://github.com/mpicbg-scicomp/snakemake-workflows/tree/master/spim_registration" ;
+    nb:hasReferencePublication <https://academic.oup.com/bioinformatics/article/32/7/1112/1744153>,
+        "https://academic.oup.com/bioinformatics/article/32/7/1112/1744153" ;
+    nb:hasTopic <http://edamontology.org/topic_Light-sheet_microscopy> ;
+    nb:requires <http://biii.eu/node/1491>,
+        <http://biii.eu/node/79> ;
+    dc:created "2019-03-25T17:00:02"^^xsd:dateTime ;
+    dc:modified "2019-03-25T17:23:49"^^xsd:dateTime ;
+    dc:title "Automated workflow for parallel Multiview Reconstruction" ;
+    rdfs:comment """<p>Automated workflow for performing multiview reconstruction of large multiview, multichannel, multiillumination time-lapse SPIM data&nbsp;on a high performance computing (HPC) cluster or on a single workstation.&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1493> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Abdel Aziz Taha" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/visceral-logo.png" ;
+    nb:hasLocation <https://github.com/Visceral-Project/EvaluateSegmentation>,
+        "https://github.com/Visceral-Project/EvaluateSegmentation" ;
+    nb:hasReferencePublication <https://bmcmedimaging.biomedcentral.com/track/pdf/10.1186/s12880-015-0068-x>,
+        "https://bmcmedimaging.biomedcentral.com/track/pdf/10.1186/s12880-015-0068-x" ;
+    nb:requires <http://biii.eu/node/1468>,
+        <http://biii.eu/node/92> ;
+    dc:created "2019-03-25T17:34:49"^^xsd:dateTime ;
+    dc:modified "2019-03-25T17:39:43"^^xsd:dateTime ;
+    dc:title "EvaluateSegmentation Tool" ;
+    rdfs:comment """<p>A command line tool that allows to quantitatively compare two volumes of binary segmentations. Implements 22 different metrics for comparing segmentations such as Dice Coefficient, Hausdorff Distance and average Distance.&nbsp;</p>\r
+""" .
+
 <http://biii.eu/node/150> a <http://biii.eu/node/software> ;
     nb:hasAuthor "M. Ovesný, P. K?íek, J. Borkovec, Z. vindrych, G. M. Hagen" ;
     nb:hasLocation <http://zitmen.github.io/thunderstorm/> ;
@@ -6354,10 +6394,15 @@ The authors implemented the workflow in Matlab, but do not provide a ready-to-us
 
 <http://biii.eu/node/204> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sébastien Tosi" ;
+    nb:hasFunction <http://edamontology.org/operation_2928>,
+        <http://edamontology.org/operation_Image_stitching> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/320px-Imagej2-icon.png" ;
+    nb:hasLocation <https://sites.google.com/a/irbbarcelona.org/adm/image-j-fiji/ZTHyperStackStitcher.ijm%3Fattredirects%3D0%26d%3D1>,
+        "Download" ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2014-12-08T15:28:48"^^xsd:dateTime ;
-    dc:modified "2019-02-05T10:29:51"^^xsd:dateTime ;
+    dc:modified "2019-03-25T17:04:13"^^xsd:dateTime ;
     dc:title "(Z,T) Hyperstack Stitcher" ;
     rdfs:comment """<p>This macro builds a stitched image from a muti-position 3D + time hyperstack. The XY positions of the montage should be coded as channels in the input hyperstack. Channel ordering can be configured in the dialog box to adapt to Column/Row and Meander/Comb configurations: The images should appear in this order when browsing the hyperstack with the channel slider. Fine stitching is supported (requires sufficient overlap between the views). The XY displacements of each field of view for stitching are computed for a single reference (Z,T) slice (user configurable) and applied to all slices (Z and T).</p>\r
 """ .
@@ -6407,10 +6452,14 @@ The authors implemented the workflow in Matlab, but do not provide a ready-to-us
 
 <http://biii.eu/node/207> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sébastien Tosi" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_stitching> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/320px-Imagej2-icon_0.png" ;
+    nb:hasLocation <https://sites.google.com/a/irbbarcelona.org/adm/image-j-fiji/ZTC_Stitcher.ijm%3Fattredirects%3D0%26d%3D1>,
+        "Download" ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2014-12-08T15:32:02"^^xsd:dateTime ;
-    dc:modified "2019-02-05T10:31:12"^^xsd:dateTime ;
+    dc:modified "2019-03-25T17:06:00"^^xsd:dateTime ;
     dc:title "(Z,T,C) Stitcher" ;
     rdfs:comment """<p>This macro can stitch a (Z,T,C) data set with virtually no limit on the number of Z slices and time frames. The input to the macro is a folder with the raw tiff images (one image per file) as typically exported by motorized microscopes. These files must all be stores in the same folder and the file naming should ideally comply to OME-TIFF. The macro is however quite flexible: Only --X, --Y and --Z fields with user defined number of digits are compulsory. --T, --C and --L fields with user defined number of digits are necessary for multiple time frames / channels data sets. A compatible data set is provided as a .zip archive. Before processing it unzip it to a given location. The stitching is performed in a reference Z slice (and in a specific reference time frame and channel). The same displacements are applied to all the Z slices, time frames and channels. Before starting the batch processing a montage with the original images of the selected Z slice / time frame / channel is displayed together with the stitched image in this stack. If you are not satisfied with the result you can select another reference. The stitching is then performed time frame by time frame and slice by slice and the stitched images are exported to a single user defined output folder. The macro can also process a data set with multiple channels, the stitching is then computed once on a reference channel and then applied to the other channels.</p>\r
 """ .
@@ -14070,11 +14119,13 @@ crude Anscombe transform applied to data to stabilize the variance\r
         "Download" ;
     nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     dc:created "2018-10-18T15:17:55"^^xsd:dateTime ;
-    dc:modified "2019-02-03T19:24:18"^^xsd:dateTime ;
+    dc:modified "2019-03-25T16:56:44"^^xsd:dateTime ;
     dc:title "IntelliJ IDEA" ;
     rdfs:comment """<p>IDE for JVM</p>\r
 \r
 <p>Every aspect of IntelliJ IDEA is specifically designed to maximize developer productivity. Together, the powerful static code analysis and ergonomic design make development not only productive but also an enjoyable experience.</p>\r
+\r
+<p>It can be seen as an alternative to Eclipse for example for java based development. It exists in both a commercial and a free and open source version.</p>\r
 """ .
 
 <http://biii.eu/node/1386> a <http://biii.eu/node/software> ;
@@ -14178,11 +14229,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     rdfs:comment """<p>A set of ImageJ Built-in Macro Functions used to perform operations on the ImageJ platform.</p>\r
 """ .
 
-<http://biii.eu/node/1468> a <http://biii.eu/node/software> ;
-    dc:created "2019-02-28T10:00:21"^^xsd:dateTime ;
-    dc:modified "2019-02-28T10:00:21"^^xsd:dateTime ;
-    dc:title "CMake" .
-
 <http://biii.eu/node/1476> a <http://biii.eu/node/software> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/PyTorch-logo.jpg" ;
     nb:hasLocation <https://pytorch.org/>,
@@ -14205,6 +14251,20 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2019-03-15T01:24:51"^^xsd:dateTime ;
     dc:title "pydensecrf" ;
     rdfs:comment """<p>This is a (Cython-based) Python wrapper for&nbsp;Philipp Krähenbühl's Fully-Connected CRFs&nbsp;(version 2).</p>\r
+""" .
+
+<http://biii.eu/node/1491> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Johannes Köster",
+        "Sven Rahmann" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/snakemake_logo.png" ;
+    nb:hasLocation <https://bitbucket.org/snakemake/snakemake.git>,
+        "https://bitbucket.org/snakemake/snakemake.git" ;
+    nb:hasReferencePublication <https://academic.oup.com/bioinformatics/article/28/19/2520/290322>,
+        "https://academic.oup.com/bioinformatics/article/28/19/2520/290322" ;
+    dc:created "2019-03-25T17:08:14"^^xsd:dateTime ;
+    dc:modified "2019-03-25T17:29:23"^^xsd:dateTime ;
+    dc:title "Snakemake" ;
+    rdfs:comment """<p>A Python based workflow management software that allows to create workflows that seamlessly scale from a single workstation to a high performance computing cluster or cloud environments.&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/153> a <http://biii.eu/node/software> ;
@@ -15023,6 +15083,11 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2018-10-18T10:44:52"^^xsd:dateTime ;
     dc:modified "2018-10-18T10:44:52"^^xsd:dateTime ;
     dc:title "Jupyter notebook" .
+
+<http://biii.eu/node/1468> a <http://biii.eu/node/software> ;
+    dc:created "2019-02-28T10:00:21"^^xsd:dateTime ;
+    dc:modified "2019-02-28T10:00:21"^^xsd:dateTime ;
+    dc:title "CMake" .
 
 <http://biii.eu/node/1483> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Kavalerov, Ilya " ;
@@ -15955,32 +16020,6 @@ Bioformats could also be used as stand alone application from command line. See 
     dc:modified "2018-04-11T12:56:48"^^xsd:dateTime ;
     dc:title "Spot Detection" .
 
-<http://biii.eu/node/92> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation_3443>,
-        <http://edamontology.org/operation_Image_registration>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Image_thresholding> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/itk.jpg" ;
-    nb:hasLocation <http://itk.org/> ;
-    nb:requires <http://biii.eu/node/1016>,
-        <http://biii.eu/node/517>,
-        <http://biii.eu/node/826> ;
-    dc:created "2013-10-15T20:47:12"^^xsd:dateTime ;
-    dc:modified "2018-04-11T18:08:21"^^xsd:dateTime ;
-    dc:title "ITK" ;
-    rdfs:comment """<p>ITK is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis.</p>\r
-\r
-<p>Developed through extreme programming methodologies, ITK employs leading-edge algorithms for registering and segmenting multidimensional data. It is widely used and contributed in the medical imaging field.</p>\r
-\r
-<h3>Strengths</h3>\r
-\r
-<p>Highly optimized C++, well commented Consistently updated (new) algorithms many tools and softwares are built upon it connected with VTK Insight Journal (open code and sample data) Extensive list of examples &amp; tutorials</p>\r
-\r
-<h3>Limitations</h3>\r
-\r
-<p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
-""" .
-
 <http://biii.eu/node/671> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Histogram> ;
     nb:requires <http://biii.eu/node/671>,
@@ -16006,6 +16045,32 @@ Strengths:\r
 \r
 Limitations:\r
 - no embedded visualization of nD Microscopy data\r
+""" .
+
+<http://biii.eu/node/92> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Image_thresholding> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/itk.jpg" ;
+    nb:hasLocation <http://itk.org/> ;
+    nb:requires <http://biii.eu/node/1016>,
+        <http://biii.eu/node/517>,
+        <http://biii.eu/node/826> ;
+    dc:created "2013-10-15T20:47:12"^^xsd:dateTime ;
+    dc:modified "2018-04-11T18:08:21"^^xsd:dateTime ;
+    dc:title "ITK" ;
+    rdfs:comment """<p>ITK is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis.</p>\r
+\r
+<p>Developed through extreme programming methodologies, ITK employs leading-edge algorithms for registering and segmenting multidimensional data. It is widely used and contributed in the medical imaging field.</p>\r
+\r
+<h3>Strengths</h3>\r
+\r
+<p>Highly optimized C++, well commented Consistently updated (new) algorithms many tools and softwares are built upon it connected with VTK Insight Journal (open code and sample data) Extensive list of examples &amp; tutorials</p>\r
+\r
+<h3>Limitations</h3>\r
+\r
+<p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
 """ .
 
 <http://biii.eu/node/517> a <http://biii.eu/node/software> ;
