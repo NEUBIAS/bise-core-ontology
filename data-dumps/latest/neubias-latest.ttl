@@ -5526,6 +5526,22 @@ UNet implementation largely inspired from PyTorch-UNet by Milesial.&nbsp;</p>\r
     rdfs:comment """<p>A command line tool that allows to quantitatively compare two volumes of binary segmentations. Implements 22 different metrics for comparing segmentations such as Dice Coefficient, Hausdorff Distance and average Distance.&nbsp;</p>\r
 """ .
 
+<http://biii.eu/node/1496> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Halavatyi Aliaksandr",
+        "Heriche Jean-Karim orcid.org/0000-0001-6867-9425",
+        "Meechan Kimberly orcid.org/0000-0003-4939-4170",
+        "Tischer Christian " ;
+    nb:hasFunction <http://edamontology.org/operation_0337> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/image_data_explorer_screenshot.png" ;
+    nb:hasLocation <https://git.embl.de/meechan/image-data-explorer>,
+        "Repository" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    dc:created "2019-03-29T08:47:38"^^xsd:dateTime ;
+    dc:modified "2019-03-29T09:10:07"^^xsd:dateTime ;
+    dc:title "Image Data Explorer" ;
+    rdfs:comment """<p>The Image Data Explorer is a Shiny app that allows the interactive visualization of images and ROIs associated with data points shown in a scatter plot. It is useful for exploring the relationships between images/ROIs and associated data represented in tabular format.</p>\r
+""" .
+
 <http://biii.eu/node/150> a <http://biii.eu/node/software> ;
     nb:hasAuthor "M. Ovesný, P. K?íek, J. Borkovec, Z. vindrych, G. M. Hagen" ;
     nb:hasLocation <http://zitmen.github.io/thunderstorm/> ;
