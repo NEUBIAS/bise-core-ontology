@@ -5537,7 +5537,7 @@ UNet implementation largely inspired from PyTorch-UNet by Milesial.&nbsp;</p>\r
         "Repository" ;
     nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     dc:created "2019-03-29T08:47:38"^^xsd:dateTime ;
-    dc:modified "2019-03-29T09:10:07"^^xsd:dateTime ;
+    dc:modified "2019-04-01T09:59:34"^^xsd:dateTime ;
     dc:title "Image Data Explorer" ;
     rdfs:comment """<p>The Image Data Explorer is a Shiny app that allows the interactive visualization of images and ROIs associated with data points shown in a scatter plot. It is useful for exploring the relationships between images/ROIs and associated data represented in tabular format.</p>\r
 """ .
