@@ -11387,13 +11387,6 @@ An ImageJ plugin for evaluate intra-nuclear 3D cross-distances between fluoresce
     dc:modified "2017-09-13T12:07:45"^^xsd:dateTime ;
     dc:title "ISBI Tracking Challenge Batch Scoring" .
 
-<http://biii.eu/node/700> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Blob_Detector> ;
-    nb:requires <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:07:46"^^xsd:dateTime ;
-    dc:title "Blob Detector" .
-
 <http://biii.eu/node/701> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://fiji.sc/Find_Dimension_of_Raw_Image> ;
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
