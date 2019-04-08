@@ -5589,6 +5589,24 @@ arivis Vision4D main functionality:\r
     rdfs:comment """<p>SuReSim (Super Resolution Simulation) is an open-source simulation software for Single Molecule Localization Microscopy (SMLM). The workflow of the SuReSim algorithm starts from a ground truth structure and lets the user choose to either directly simulate 3D localizations or to create simulated *.tiff-stacks that the user can analyze with any given SMLM reconstruction software. A 3D structure of any geometry, either taken from electron microscopy, designed de-novo from assumptions or known structural facts, is fluorophore-labeled in silico. A defined set of parameters is used to calculate and visualize the 3D localizations of the corresponding labels. The software package is accompanied with a library of model structures that can be imported and simulated. Users manual with tutorial provided.</p>\r
 """ .
 
+<http://biii.eu/node/1527> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Broad Institute Imaging Platform" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_classification> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-04/Capture.JPG" ;
+    nb:hasLocation <https://cellprofiler.org/releases/>,
+        "CellProfilerAnalyst download" ;
+    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btw390>,
+        "CellProfiler Analyst: interactive data exploration, analysis and classification of large biological image sets" ;
+    nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
+        <http://edamontology.org/topic_Statistics> ;
+    dc:created "2019-04-08T12:26:56"^^xsd:dateTime ;
+    dc:modified "2019-04-08T12:34:44"^^xsd:dateTime ;
+    dc:title "CellProfiler Analyst CPA" ;
+    rdfs:comment """<p><span>CellProfiler Analyst (CPA) allows interactive exploration and analysis of data, particularly from high-throughput, image-based experiments. Included is a supervised machine learning system which can be trained to recognize complicated and subtle phenotypes, for automatic scoring of millions of cells. CPA provides tools for exploring and analyzing multidimensional data, particularly data from high-throughput, image-based experiments analyzed by its companion image analysis software, CellProfiler.</span></p>\r
+""" .
+
 <http://biii.eu/node/154> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Marcel Leutenegger" ;
     nb:hasLocation <https://documents.epfl.ch/users/l/le/leuteneg/www/BalancedSOFI/index.html> ;
@@ -5607,6 +5625,25 @@ arivis Vision4D main functionality:\r
     dc:modified "2017-09-13T15:17:26"^^xsd:dateTime ;
     dc:title "Clus-Doc" ;
     rdfs:comment """<p>Clus-Doc is a software that quantifies both the spatial distribution of a protein as well as its colocalization status. It may be used to quantify signaling activity and protein colocalization at the level of individual proteins.</p>\r
+""" .
+
+<http://biii.eu/node/1553> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Butler Richard" ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_tracking>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-04/Capture_0.JPG" ;
+    nb:hasLocation <https://github.com/gurdon-institute/Filopodyan/releases>,
+        "Download" ;
+    nb:hasReferencePublication <http://jcb.rupress.org/content/216/10/3405>,
+        "Filopodyan: An open-source pipeline for the analysis of filopodia in JCB 2017" ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/79> ;
+    dc:created "2019-04-08T14:28:50"^^xsd:dateTime ;
+    dc:modified "2019-04-08T14:35:59"^^xsd:dateTime ;
+    dc:title "Filopodyan" ;
+    rdfs:comment """<p><span>Fiji plugin for detecting, tracking and quantifying filopodia</span></p>\r
 """ .
 
 <http://biii.eu/node/156> a <http://biii.eu/node/software> ;
