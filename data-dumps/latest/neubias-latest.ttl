@@ -5602,7 +5602,7 @@ arivis Vision4D main functionality:\r
     nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
         <http://edamontology.org/topic_Statistics> ;
     dc:created "2019-04-08T12:26:56"^^xsd:dateTime ;
-    dc:modified "2019-04-08T12:34:44"^^xsd:dateTime ;
+    dc:modified "2019-04-14T16:10:45"^^xsd:dateTime ;
     dc:title "CellProfiler Analyst CPA" ;
     rdfs:comment """<p><span>CellProfiler Analyst (CPA) allows interactive exploration and analysis of data, particularly from high-throughput, image-based experiments. Included is a supervised machine learning system which can be trained to recognize complicated and subtle phenotypes, for automatic scoring of millions of cells. CPA provides tools for exploring and analyzing multidimensional data, particularly data from high-throughput, image-based experiments analyzed by its companion image analysis software, CellProfiler.</span></p>\r
 """ .
@@ -5645,6 +5645,26 @@ arivis Vision4D main functionality:\r
     dc:title "Filopodyan" ;
     rdfs:comment """<p><span>Fiji plugin for detecting, tracking and quantifying filopodia</span></p>\r
 """ .
+
+<http://biii.eu/node/1555> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "David Baddeley" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation__R8EfungVXA0oQM2Ac7YY5eu> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-04/pymeLogo.png" ;
+    nb:hasLocation <http://python-microscopy.org/doc/Installation/InstallationWithAnaconda.html>,
+        "Installation via Anaconda" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/1323> ;
+    dc:created "2019-04-14T15:58:16"^^xsd:dateTime ;
+    dc:modified "2019-04-14T16:08:38"^^xsd:dateTime ;
+    dc:title "PYME" ;
+    rdfs:comment """>The PYthon Microscopy Environment is an open-source package providing image acquisition and data analysis functionality for a number of microscopy applications, but with a particular emphasis on single molecule localisation microscopy (PALM/STORM/PAINT etc ...). The package is multi platform, running on Windows, Linux, and OSX.\r
+\r
+It comes with 3 main modules:\r
+\r
+-  PYMEAcquire - Instrument control and simulation\r
+-  dh5view - Image Data Analysis and Viewing\r
+- VisGUI - Visualising Localization Data Sets""" .
 
 <http://biii.eu/node/156> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.wardoberlab.com/software/miatool/> ;
@@ -14015,11 +14035,6 @@ MountainsMap is mainly offered as embedded or optional OEM analysis software by 
     dc:modified "2018-05-31T21:58:47"^^xsd:dateTime ;
     dc:title "ImageMagick" .
 
-<http://biii.eu/node/1323> a <http://biii.eu/node/software> ;
-    dc:created "2018-06-04T15:13:43"^^xsd:dateTime ;
-    dc:modified "2018-06-04T15:13:43"^^xsd:dateTime ;
-    dc:title "Python 2.7" .
-
 <http://biii.eu/node/1324> a <http://biii.eu/node/software> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-06/chainer_red_h.png" ;
     nb:requires <http://biii.eu/node/1312> ;
@@ -15124,6 +15139,11 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2018-05-31T21:58:47"^^xsd:dateTime ;
     dc:modified "2018-05-31T21:58:47"^^xsd:dateTime ;
     dc:title "Libtiff" .
+
+<http://biii.eu/node/1323> a <http://biii.eu/node/software> ;
+    dc:created "2018-06-04T15:13:43"^^xsd:dateTime ;
+    dc:modified "2018-06-04T15:13:43"^^xsd:dateTime ;
+    dc:title "Python 2.7" .
 
 <http://biii.eu/node/1369> a <http://biii.eu/node/software> ;
     dc:created "2018-10-18T10:44:52"^^xsd:dateTime ;
