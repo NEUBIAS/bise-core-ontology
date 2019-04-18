@@ -5666,6 +5666,21 @@ It comes with 3 main modules:\r
 -  dh5view - Image Data Analysis and Viewing\r
 - VisGUI - Visualising Localization Data Sets""" .
 
+<http://biii.eu/node/1556> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Clemens F. Kaminski",
+        "Marcus Fantham" ;
+    nb:hasFunction <http://edamontology.org/operation_0337> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-04/fpbScreenshot_0.png" ;
+    nb:hasLocation <https://fpb.ceb.cam.ac.uk/downloads/> ;
+    nb:hasReferencePublication <https://doi.org/10.1038/nphoton.2016.273>,
+        "Fantham, Marcus, and Clemens F. Kaminski. “A New Online Tool for Visualization of Volumetric Data.” Nature Photonics 11, no. 2 (February 2017): 69. https://doi.org/10.1038/nphoton.2016.273." ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    dc:created "2019-04-18T14:46:49"^^xsd:dateTime ;
+    dc:modified "2019-04-18T15:24:20"^^xsd:dateTime ;
+    dc:title "FPBioimage" ;
+    rdfs:comment """>FPBioimage is a volumetric visualization tool which runs in all modern web browsers. Try the tool yourself at our example site [here](https://fpb.ceb.cam.ac.uk/).\r
+""" .
+
 <http://biii.eu/node/156> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.wardoberlab.com/software/miatool/> ;
     nb:requires <http://biii.eu/node/286> ;
