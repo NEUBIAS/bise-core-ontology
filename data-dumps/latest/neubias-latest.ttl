@@ -5641,7 +5641,7 @@ arivis Vision4D main functionality:\r
     nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/79> ;
     dc:created "2019-04-08T14:28:50"^^xsd:dateTime ;
-    dc:modified "2019-04-08T14:35:59"^^xsd:dateTime ;
+    dc:modified "2019-04-19T17:01:19"^^xsd:dateTime ;
     dc:title "Filopodyan" ;
     rdfs:comment """<p><span>Fiji plugin for detecting, tracking and quantifying filopodia</span></p>\r
 """ .
@@ -14930,7 +14930,7 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
     nb:requires <http://biii.eu/node/469>,
         <http://biii.eu/node/89> ;
     dc:created "2013-10-21T13:52:50"^^xsd:dateTime ;
-    dc:modified "2019-01-11T15:18:39"^^xsd:dateTime ;
+    dc:modified "2019-04-19T17:00:26"^^xsd:dateTime ;
     dc:title "u-track" ;
     rdfs:comment """<p>u-track is a multiple-particle tracking Matlab software that is designed to (1) track dense particle fields, (2) close gaps in particle trajectories resulting from detection failure, and (3) capture particle merging and splitting events resulting from occlusion or genuine aggregation and dissociation events. Its core is based on formulating correspondence problems as linear assignment problems and searching for a globally optimal solution.</p>\r
 \r
