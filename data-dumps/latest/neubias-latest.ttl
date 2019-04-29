@@ -5681,6 +5681,27 @@ It comes with 3 main modules:\r
     rdfs:comment """>FPBioimage is a volumetric visualization tool which runs in all modern web browsers. Try the tool yourself at our example site [here](https://fpb.ceb.cam.ac.uk/).\r
 """ .
 
+<http://biii.eu/node/1557> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Gehrig Jochen",
+        "Thomas Laurent orcid.org/0000-0001-7686-3249" ;
+    nb:hasFunction <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB> ;
+    nb:hasLocation <https://github.com/LauLauThom/MultiTemplateMatching/>,
+        "GitHub repo" ;
+    nb:hasReferencePublication <https://www.biorxiv.org/content/10.1101/619338v1>,
+        "Preprint" ;
+    nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/79> ;
+    dc:created "2019-04-29T11:45:55"^^xsd:dateTime ;
+    dc:modified "2019-04-29T11:52:07"^^xsd:dateTime ;
+    dc:title "Multi-Template matching" ;
+    rdfs:comment """<p>Multi-template matching can be used to localize multiple objects using one or a set of template images.</p>\r
+\r
+<p>Contrary to previous implementations that allow to use only one template, here a set of templates can be used or the initial template(s) can be transformed by rotation/flipping.</p>\r
+\r
+<p>Multiple objects&nbsp;detection without redundant detections is possible thanks to a Non-Maxima Supression&nbsp;relying on the degree of overlap between detections.</p>\r
+""" .
+
 <http://biii.eu/node/156> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.wardoberlab.com/software/miatool/> ;
     nb:requires <http://biii.eu/node/286> ;
