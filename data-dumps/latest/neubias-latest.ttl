@@ -4584,7 +4584,7 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
     nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/79> ;
     dc:created "2019-02-03T10:43:56"^^xsd:dateTime ;
-    dc:modified "2019-02-05T12:16:55"^^xsd:dateTime ;
+    dc:modified "2019-05-01T22:33:52"^^xsd:dateTime ;
     dc:title "MIPs for PSFs" ;
     rdfs:comment """<p>The macro generates orthogonal projections from bead images along the lateral and axial dimensions which are displayed using a customized look-up-table to color code intensities. A Gaussian curve is fit to the intensity profile of a fluorescent bead image and full-with-at-half-maximum (FWHM) values are extracted, and listed next to theoretical values for comparison.&nbsp;</p>\r
 """ .
