@@ -5710,6 +5710,23 @@ It comes with 3 main modules:\r
     dc:title "MIATool" ;
     rdfs:comment "The Microscopy Image Analysis Tool (MIATool) is a software application designed for the viewing and processing of N-dimensional array of images. At its core is an image viewer which allows the traversal of an N-dimensional array of images. Besides the standard display as pixels of varying intensity values, options are available to view the images as mesh or contour plots. The current version of MIATool supports four different image editing tools which can be used to process the images displayed in the viewer. The intensity adjustment tool provides different ways to modify the pixel intensity values, and the crop tool allows trimming of the images to retain only the portion that is of interest. The two remaining tools - the segmentation tool and the label tool - can be used for manual image segmentation and image labeling." .
 
+<http://biii.eu/node/1560> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Carpentier Gilles" ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Illumination_correction> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-05/Captureproteinarray.JPG" ;
+    nb:hasLocation <http://rsb.info.nih.gov/ij/macros/toolsets/Protein%2520Array%2520Analyzer.txt>,
+        "Macro link (toolset)" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-05-17T15:49:31"^^xsd:dateTime ;
+    dc:modified "2019-05-17T15:55:52"^^xsd:dateTime ;
+    dc:title "Protein Array Analyzer for ImageJ" ;
+    rdfs:comment """<p><span>Protein array is used to analyze protein expressions by screening simultaneously several protein-molecule interactions such as protein-protein and protein-DNA interactions. In most cases, the detection of interactions leads to an image containing numerous lines of spots that will be analyzed by comparing tables of intensity values. To describe the observed different patterns of expression, users generally show histograms with the original associated images</span><span>&nbsp;[<a href="http://image.bio.methods.free.fr/ImageJ/?Protein-Array-Analyzer-for-ImageJ&amp;lang=en#nb1">1</a>]</span><span>. The “Protein Array Analyzer” gives a friendly way to exploit this type of analysis, thus allowing quantification, image modeling and comparative analysis of patterns. </span></p>\r
+\r
+<p><span>The Protein Array Analyzer, which was programmed in ImageJ’s macro language, is an extention of the Dot Blot Analyzer,</span><span>&nbsp;[<a href="http://image.bio.methods.free.fr/ImageJ/?Protein-Array-Analyzer-for-ImageJ&amp;lang=en#nb2">2</a>]</span><span>,</span><span>&nbsp;[<a href="http://image.bio.methods.free.fr/ImageJ/?Protein-Array-Analyzer-for-ImageJ&amp;lang=en#nb3">3</a>]</span><span> a graphically interfaced tool that greatly simplifying analysis of dot arrays.</span></p>\r
+""" .
+
 <http://biii.eu/node/157> a <http://biii.eu/node/software> ;
     nb:hasAuthor "A. Mazouchi, JN. Milstein " ;
     nb:hasLocation <http://www.mybiosoftware.com/focal-cluster-analysis-for-super-resolved-microscopy.html> ;
