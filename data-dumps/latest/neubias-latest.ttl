@@ -5727,6 +5727,40 @@ It comes with 3 main modules:\r
 <p><span>The Protein Array Analyzer, which was programmed in ImageJ’s macro language, is an extention of the Dot Blot Analyzer,</span><span>&nbsp;[<a href="http://image.bio.methods.free.fr/ImageJ/?Protein-Array-Analyzer-for-ImageJ&amp;lang=en#nb2">2</a>]</span><span>,</span><span>&nbsp;[<a href="http://image.bio.methods.free.fr/ImageJ/?Protein-Array-Analyzer-for-ImageJ&amp;lang=en#nb3">3</a>]</span><span> a graphically interfaced tool that greatly simplifying analysis of dot arrays.</span></p>\r
 """ .
 
+<http://biii.eu/node/1561> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "KMLVision" ;
+    nb:hasFunction <http://edamontology.org/operation_2409>,
+        <http://edamontology.org/operation_3553> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-06/Capture.PNG" ;
+    nb:hasLocation <http://www.ikosa.ai/>,
+        "Webpage, hosted server after Log-in" ;
+    nb:hasTopic <http://edamontology.org/topic_3474>,
+        <http://edamontology.org/topic__RwTXNChEQ9hv7IpvHjQGin> ;
+    dc:created "2019-06-07T08:58:29"^^xsd:dateTime ;
+    dc:modified "2019-06-07T09:08:22"^^xsd:dateTime ;
+    dc:title "Ikosa" ;
+    rdfs:comment """<p><span>online image data management systemwhich supports authenticated image upload, cloud-based storage, project-based management and viewing of standard and whole slide images. One can use different annotation tools to highlight important objects or areas within images. It is the first basic version and new features such as sharing for easy collaboration with your colleagues or first automated analysis applications based on artificial intelligence will be added soon.</span></p>\r
+\r
+<p><span>Ikosa Portal: multi user image data management</span></p>\r
+\r
+<p><span>Ikosa Prisma: Automated Image Analysis based on deep learning (available in summer 2019)</span></p>\r
+\r
+<p><span>Free if limited to 2 users and 1 gigabyte, otherwise montly fees.</span></p>\r
+\r
+<p>&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1562> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Neal D. Mathew",
+        "Mark D. Mathew",
+        "Paul R. Ebert" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-06/wormscan.png" ;
+    nb:requires <http://biii.eu/node/79> ;
+    dc:created "2019-06-07T14:43:40"^^xsd:dateTime ;
+    dc:modified "2019-06-07T14:49:31"^^xsd:dateTime ;
+    dc:title "WormScan" ;
+    rdfs:comment ">We have developed WormScan, an automated image acquisition system that allows quantitative analysis of each of these four phenotypes on standard NGM plates seeded with E. coli. This system is very easy to implement and has the capacity to be used in high-throughput analysis." .
+
 <http://biii.eu/node/157> a <http://biii.eu/node/software> ;
     nb:hasAuthor "A. Mazouchi, JN. Milstein " ;
     nb:hasLocation <http://www.mybiosoftware.com/focal-cluster-analysis-for-super-resolved-microscopy.html> ;
