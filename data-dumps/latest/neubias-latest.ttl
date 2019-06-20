@@ -4700,7 +4700,7 @@ intuitive, user-friendly toolbox without sacrificing their power and flexibility
 
 <http://biii.eu/node/1432> a <http://biii.eu/node/software> ;
     dc:created "2019-02-04T11:07:58"^^xsd:dateTime ;
-    dc:modified "2019-02-04T11:45:02"^^xsd:dateTime ;
+    dc:modified "2019-06-20T09:21:26"^^xsd:dateTime ;
     dc:title "3D vessel segmentation of synchrotron phase contrast tomography" .
 
 <http://biii.eu/node/1433> a <http://biii.eu/node/software> ;
