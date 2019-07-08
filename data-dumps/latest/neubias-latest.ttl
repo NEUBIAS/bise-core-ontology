@@ -3173,6 +3173,7 @@ More details, see here: **[GIMP Batch Mode](https://www.gimp.org/tutorials/Basic
         <http://edamontology.org/operation_Cell_segmentation>,
         <http://edamontology.org/operation_Cell_tracking>,
         <http://edamontology.org/operation_Image_colocalization>,
+        <http://edamontology.org/operation_Image_deconvolution>,
         <http://edamontology.org/operation_Image_segmentation>,
         <http://edamontology.org/operation_Image_tracking>,
         <http://edamontology.org/operation_Image_visualisation>,
@@ -3187,13 +3188,13 @@ More details, see here: **[GIMP Batch Mode](https://www.gimp.org/tutorials/Basic
         <http://edamontology.org/operation__RyCFuPLOeGxpcGjYbWcWWD>,
         <http://edamontology.org/operation___Colocalisation_analysis>,
         <http://edamontology.org/operation___Pixel-based_colocalisation> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-06/Aivia%206%20multires%20multiblock%20large%20data%20b.PNG" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-07/Aivia%207.7%20-%20Clipping%20Plane%20Mesh%20Only%20Keller%20-%20Fluo-N3DL-DRO_02_tracked_z62_t027.png" ;
     nb:hasLocation <https://www.drvtechnologies.com/demo>,
         "https://www.drvtechnologies.com/demo" ;
     nb:hasTopic <http://edamontology.org/topic_3474> ;
     dc:created "2018-06-28T02:10:51"^^xsd:dateTime ;
-    dc:modified "2018-11-16T09:47:48"^^xsd:dateTime ;
-    dc:title "Aivia" .
+    dc:modified "2019-07-08T19:11:57"^^xsd:dateTime ;
+    dc:title "Aivia - Aivia Cloud - Aivia Web" .
 
 <http://biii.eu/node/1332> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Eugene Katrukha" ;
