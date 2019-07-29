@@ -5688,19 +5688,23 @@ It comes with 3 main modules:\r
     nb:hasFunction <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB> ;
     nb:hasLocation <https://github.com/LauLauThom/MultiTemplateMatching/>,
         "GitHub repo" ;
-    nb:hasReferencePublication <https://www.biorxiv.org/content/10.1101/619338v1>,
+    nb:hasReferencePublication <https://pypi.org/project/Multi-Template-Matching>,
+        <https://www.biorxiv.org/content/10.1101/619338v1>,
+        "Package on PyPI",
         "Preprint" ;
     nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
         <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/79> ;
     dc:created "2019-04-29T11:45:55"^^xsd:dateTime ;
-    dc:modified "2019-04-29T11:52:07"^^xsd:dateTime ;
+    dc:modified "2019-07-29T08:56:08"^^xsd:dateTime ;
     dc:title "Multi-Template matching" ;
     rdfs:comment """<p>Multi-template matching can be used to localize multiple objects using one or a set of template images.</p>\r
 \r
 <p>Contrary to previous implementations that allow to use only one template, here a set of templates can be used or the initial template(s) can be transformed by rotation/flipping.</p>\r
 \r
 <p>Multiple objects&nbsp;detection without redundant detections is possible thanks to a Non-Maxima Supression&nbsp;relying on the degree of overlap between detections.</p>\r
+\r
+<p>The solution is available as a Fiji plugin (Multi-Template Matching update site) and as a Python package (Multi-Template-Matching on PyPI)</p>\r
 """ .
 
 <http://biii.eu/node/156> a <http://biii.eu/node/software> ;
