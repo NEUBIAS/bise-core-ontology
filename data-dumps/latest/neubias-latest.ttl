@@ -5804,6 +5804,17 @@ It comes with 3 main modules:\r
     rdfs:comment """<p>FOCAL (Fast Optimized Cluster Algorithm for Localizations) is a rapid density based algorithm for detecting clusters in localization microscopy datasets.</p>\r
 """ .
 
+<http://biii.eu/node/1570> a <http://biii.eu/node/software> ;
+    dc:created "2019-08-07T19:49:42"^^xsd:dateTime ;
+    dc:modified "2019-08-07T19:53:32"^^xsd:dateTime ;
+    dc:title "Neuroglancer" ;
+    rdfs:comment """<p>Web based viewer developped&nbsp;for&nbsp;google for very big data</p>\r
+\r
+<p>Can generate url for sharing a specific view&nbsp;</p>\r
+\r
+<p>&nbsp;</p>\r
+""" .
+
 <http://biii.eu/node/158> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Eric Danielson, Sang H. Lee" ;
     nb:hasLocation <https://sourceforge.net/projects/synpanal/> ;
