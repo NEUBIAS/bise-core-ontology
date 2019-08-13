@@ -1351,13 +1351,21 @@ IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999.<br />
         "Hartenstein Volker / orcid.org/0000-0001-9676-7393",
         "Saalfeld Stephan /  orcid.org/0000-0002-4106-1761",
         "Tomacák Pavel / orcid.org/0000-0002-2222-9370" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_2409>,
+        <http://edamontology.org/operation_3553>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Image_visualisation>,
+        <http://edamontology.org/operation_Interactive_segmentation> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Catmaid.png" ;
     nb:hasLocation <http://fly.mpi-cbg.de/%7Esaalfeld/catmaid/> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/321>,
+    nb:hasTopic <http://edamontology.org/topic_0611>,
+        <http://edamontology.org/topic_Light-sheet_microscopy>,
+        <http://edamontology.org/topic__RwTXNChEQ9hv7IpvHjQGin> ;
+    nb:requires <http://biii.eu/node/321>,
         <http://biii.eu/node/38> ;
     dc:created "2013-11-07T21:03:07"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:13:08"^^xsd:dateTime ;
+    dc:modified "2019-08-13T10:54:01"^^xsd:dateTime ;
     dc:title "CATMAID" ;
     rdfs:comment """<p>**Collaborative Annotation Toolkit for Massive Amounts of Image Data** CATMAID is a Collaborative Annotation Toolkit for Massive Amounts of Image Data. It is designed to navigate, share and collaboratively annotate massive image data sets of biological specimens. The interface is inspired by GoogleMaps, with which it shares basic navigation concepts, enhanced to allow the exploration of 3D biological image data acquired by optical or physical sectioning microscopy techniques. The interface enables seamless sharing of regions of interest through bookmarks and synchronized navigation through multiple registered data sets. With massive biological image data sets it is unrealistic to create a sustainable centralized repository. A unique feature of CATMAID is its partially decentralized architecture where the presented image data can reside on any Internet accessible server and yet can be easily cross-referenced in the central database. In this way no image data are duplicated and the data producers retain full control over their images. CATMAID is intended to serve as data sharing platform for biologists using high-resolution imaging techniques to probe large specimens. Any high-throughput, high-content imaging project such as gene expression pattern screens would benefit from the interface for data sharing and annotation.</p>\r
 """ .
@@ -5805,14 +5813,63 @@ It comes with 3 main modules:\r
 """ .
 
 <http://biii.eu/node/1570> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "google" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_2409>,
+        <http://edamontology.org/operation_Image_visualisation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-08/CaptureNeuroglancer.JPG" ;
+    nb:hasLocation <https://github.com/google/neuroglancer>,
+        "GitHub (Install with NVM) see building section." ;
+    nb:hasTopic <http://edamontology.org/topic_0611>,
+        <http://edamontology.org/topic_Light-sheet_microscopy>,
+        <http://edamontology.org/topic__RwTXNChEQ9hv7IpvHjQGin> ;
     dc:created "2019-08-07T19:49:42"^^xsd:dateTime ;
-    dc:modified "2019-08-07T19:53:32"^^xsd:dateTime ;
+    dc:modified "2019-08-13T10:54:30"^^xsd:dateTime ;
     dc:title "Neuroglancer" ;
-    rdfs:comment """<p>Web based viewer developped&nbsp;for&nbsp;google for very big data</p>\r
+    rdfs:comment """<p>Web based viewer developped&nbsp;for&nbsp;google for very big data:&nbsp;</p>\r
 \r
-<p>Can generate url for sharing a specific view&nbsp;</p>\r
+<p>Neuroglancer is a WebGL-based viewer for volumetric data. It is capable of displaying arbitrary (non axis-aligned) cross-sectional views of volumetric data, as well as 3-D meshes and line-segment based models (skeletons). The segmentation has to be done before loading the dataset, it is not done Inside the viewer.</p>\r
+\r
+<p>This is not an official Google product.</p>\r
+\r
+<p>It has among other the nice feature of beeing able to generate url for sharing a specific view.</p>\r
+\r
+<p>Note that the only supported browser for now are&nbsp;</p>\r
+\r
+<ul>\r
+	<li>Chrome &gt;= 51</li>\r
+	<li>Firefox &gt;= 46</li>\r
+</ul>\r
 \r
 <p>&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1572> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Object Research Systems Montreal" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Image_visualisation>,
+        <http://edamontology.org/operation_Interactive_segmentation>,
+        <http://edamontology.org/operation_Object_detection>,
+        <http://edamontology.org/operation_Shape_features> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-08/CaptureDragonFly.JPG" ;
+    nb:hasLocation <https://www.theobjects.com/dragonfly/get-non-commercial-license.php>,
+        "Request a non commercial license, download link sent by representatives" ;
+    nb:hasTopic <http://edamontology.org/topic_0611>,
+        <http://edamontology.org/topic_3385>,
+        <http://edamontology.org/topic_3474>,
+        <http://edamontology.org/topic_Digital_histology> ;
+    dc:created "2019-08-13T10:32:36"^^xsd:dateTime ;
+    dc:modified "2019-08-13T10:44:02"^^xsd:dateTime ;
+    dc:title "DragonFly" ;
+    rdfs:comment """<p>Dragonfly is a software platform for the intuitive inspection of multi-scale multi-modality image data. Its user-friendly experience translates into powerful quantitative findings with high-impact visuals, driven by nuanced easy-to-learn controls.</p>\r
+\r
+<p>For segmentation: It provides an engine fior machine Learning, Watershed and superpixel methods, support histological data .</p>\r
+\r
+<p>It offers a 3D viewer, and python scripting capacities .</p>\r
+\r
+<p>It is free for reserach use, but not for commercial usage.</p>\r
 """ .
 
 <http://biii.eu/node/158> a <http://biii.eu/node/software> ;
