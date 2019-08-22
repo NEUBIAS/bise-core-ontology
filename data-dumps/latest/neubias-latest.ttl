@@ -6056,18 +6056,19 @@ Sample Images: [Link](http://jelena.ece.cmu.edu/repository/rr/08_SrinivasaFGLK/0
 
 <http://biii.eu/node/172> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Volker Baecker" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_thresholding> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_thresholding>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/microtubules-in-n-1.png" ;
     nb:hasLocation <http://dev.mri.cnrs.fr/projects/imagej-macros/wiki/Microtubules_Tool_%283D%29>,
         "Microtubules Tool (3D)" ;
     nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:requires <http://biii.eu/node/38>,
+    nb:requires <http://biii.eu/node/261>,
+        <http://biii.eu/node/38>,
         <http://biii.eu/node/670>,
         <http://biii.eu/node/764>,
-        <http://biii.eu/node/79>,
-        <http://biii.eu/node/808> ;
+        <http://biii.eu/node/79> ;
     dc:created "2013-10-30T20:05:39"^^xsd:dateTime ;
-    dc:modified "2017-09-13T15:29:12"^^xsd:dateTime ;
+    dc:modified "2019-08-22T16:04:08"^^xsd:dateTime ;
     dc:title "Microtubules Tool (3D)" ;
     rdfs:comment """<p>The tool measures the total length of the microtubules in a 3D image.</p>
 
@@ -6726,12 +6727,16 @@ The authors implemented the workflow in Matlab, but do not provide a ready-to-us
 
 <http://biii.eu/node/208> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Perrine Paul-Gilloteaux" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Skeletonization>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/1140>,
         <http://biii.eu/node/261>,
         <http://biii.eu/node/79> ;
     dc:created "2014-12-08T15:32:27"^^xsd:dateTime ;
-    dc:modified "2018-05-26T00:33:41"^^xsd:dateTime ;
+    dc:modified "2019-08-22T15:56:52"^^xsd:dateTime ;
     dc:title "Microtubule Length Analysis" ;
     rdfs:comment """###Task\r
 \r
@@ -12208,7 +12213,8 @@ Results are exported into Excel readable files.\r
 
 <http://biii.eu/node/794> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Longair Mark, Ferreira Tiago" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/320px-SimpleNeuriteTracer2.png" ;
     nb:hasLocation <http://fiji.sc/Simple_Neurite_Tracer> ;
     nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btr390>,
@@ -12216,7 +12222,7 @@ Results are exported into Excel readable files.\r
     nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2019-03-08T03:08:03"^^xsd:dateTime ;
+    dc:modified "2019-08-22T16:00:50"^^xsd:dateTime ;
     dc:title "Simple Neurite Tracer" ;
     rdfs:comment """<p>Plugin designed to allow easy&nbsp;semi-automatic tracing of neurons or other filament-like structures (e.g., microtubules, blood vessels) through either 2D images or 3D image stacks. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.</p>\r
 \r
@@ -13838,7 +13844,7 @@ The Plugin can display a plot of the FRC curve, along with the LOESS smoothed ve
 2655""" .
 
 <http://biii.eu/node/1072> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "orcid.org/0000-0003-0229-5722" ;
+    nb:hasAuthor "Ignacio Arganda-Carreras orcid.org/0000-0003-0229-5722" ;
     nb:hasFunction <http://edamontology.org/operation_Pixel_classification>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG>,
         <http://edamontology.org/operation__RBNng13hEB0CJD5VzSKqrfB> ;
@@ -13848,7 +13854,7 @@ The Plugin can display a plot of the FRC curve, along with the LOESS smoothed ve
     nb:requires <http://biii.eu/node/38>,
         <http://biii.eu/node/636> ;
     dc:created "2017-09-12T12:23:39"^^xsd:dateTime ;
-    dc:modified "2018-06-04T14:50:42"^^xsd:dateTime ;
+    dc:modified "2019-08-22T16:02:37"^^xsd:dateTime ;
     dc:title "AnalyzeSkeleton" ;
     rdfs:comment """<p>This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length.</p>\r
 \r
