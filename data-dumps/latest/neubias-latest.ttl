@@ -20,13 +20,22 @@
 """ .
 
 <http://biii.eu/node/100> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://cbia.fi.muni.cz/projects/acquiarium.html> ;
+    nb:hasAuthor "Matula",
+        "kozubek" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0>,
+        <http://edamontology.org/operation__RDr8xcZEa4L3mZsslmhhee8> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-08/Capture.JPG" ;
+    nb:hasLocation <https://cbia.fi.muni.cz/software/acquiarium.html>,
+        "Download link" ;
+    nb:hasReferencePublication <http://dx.doi.org/10.1109/ISBI.2009.5193258>,
+        "Acquiarium: Free Software for Acquisition and Analysis of 3D Images of Cells in Fluorescence Microscopy. ISBI 2009" ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
     dc:created "2013-10-24T14:41:02"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:06:06"^^xsd:dateTime ;
+    dc:modified "2019-08-26T12:57:45"^^xsd:dateTime ;
     dc:title "Aquiarium" ;
-    rdfs:comment """Acquiarium is for carrying out the common pipeline of many spatial cell studies using fluorescence microscopy. It addresses image capture, raw image correction, image segmentation, quantification of segmented objects and their spatial arrangement, volume rendering, and statistical evaluation.\r
-\r
-It is focused on quantification of spatial properties of many objects and their mutual spatial relations in a collection of many 3D images.  It can be used for analysis of a collection of 2D images or time lapse series of 2D or 3D images as well. It has a modular design and is extensible via plug-ins. It is a stand-alone, easy to install application written in C++ language. The GUI is written using cross-platform wxWidgets library.""" .
+    rdfs:comment """<p>Acquiarium is for carrying out the common pipeline of many spatial cell studies using fluorescence microscopy. It addresses image capture, raw image correction, image segmentation, quantification of segmented objects and their spatial arrangement, volume rendering, and statistical evaluation. It is focused on quantification of spatial properties of many objects and their mutual spatial relations in a collection of many 3D images. It can be used for analysis of a collection of 2D images or time lapse series of 2D or 3D images as well. It has a modular design and is extensible via plug-ins. It is a stand-alone, easy to install application written in C++ language. The GUI is written using cross-platform wxWidgets library.</p>\r
+""" .
 
 <http://biii.eu/node/1000> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://cbia.fi.muni.cz/optic/> ;
@@ -791,21 +800,6 @@ OpenMOLE (Open MOdeL Experiment) is a workflow engine designed to leverage the c
 <p>MIB is a freely available, user-friendly software for effective image processing of multidimensional datasets that improves and facilitates the full utilization of acquired data and enables quantitative analysis of morphological features. Its open-source environment enables fine tuning and possibility of adding new plug-ins to customize the program for specific needs of any research project.</p>\r
 """ .
 
-<http://biii.eu/node/1080> a <http://biii.eu/node/software> ;
-    dc:created "2016-11-28T10:23:51"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:34"^^xsd:dateTime ;
-    dc:title "HeLa Cells in Phase Contrast and Nucleus Marker with manually labelled outlines" ;
-    rdfs:comment """Two-channel images (brightfield and fluorescent DNA stain) of HeLa cells in culture.\r
-\r
-Cell and nucleus outlines are manually labelled. Very suitable for cell segmentation benchmark tests.\r
-\r
-Published here:\r
-Van Valen, David A., et al. "Deep Learning Automates the Quantitative Analysis of Individual Cells in Live-Cell Imaging Experiments." PLoS Comput Biol 12.11 (2016): e1005177.\r
-\r
-http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005177\r
-\r
-""" .
-
 <http://biii.eu/node/1081> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Gregoire Pau, Xian Zhang, Michael Boutros, Wolfgang Huber" ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/html/imageHTS.html> ;
@@ -859,16 +853,6 @@ It is based on the paper "Towards Generic Image Classification using Tree-based 
 It downloads from Cytomine-Core annotations images from an image (e.g. detected by an object finder), apply a classification model (previously saved locally), and uploads to Cytomine-Core annotation terms (in a userjob layer).\r
 Based on:\r
 "Towards Generic Image Classification using Tree-based Learning: an Extensive Empirical Study". Raphael Maree, Pierre Geurts, Louis Wehenkel. Pattern Recognition Letters, DOI: 10.1016/j.patrec.2016.01.006, 2016.""" .
-
-<http://biii.eu/node/1085> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-13T13:16:25"^^xsd:dateTime ;
-    dc:modified "2017-09-12T16:41:11"^^xsd:dateTime ;
-    dc:title "Muscle stem cells contribute to myofibres in sedentary adult mice" ;
-    rdfs:comment """In terms of image analysis, this article includes an analysis of 2D myofibre labeled  with a dye to identify myofibre borders.\r
-\r
-Keefe, A.C. et al. Muscle stem cells contribute to myofibres in sedentary adult mice. Nat. Commun. 6:7087 doi: 10.1038/ncomms8087 (2015).\r
-\r
-An open source version based on python is available at: https://github.com/stevendflygare/muscleQNT""" .
 
 <http://biii.eu/node/1086> a <http://biii.eu/node/software> ;
     nb:hasAuthor "ColorMine.org" ;
@@ -1049,19 +1033,6 @@ processing.  Briefly, the tools include:\r
     rdfs:comment """<p>Matlab implementation (2014) of Local Binary Pattern. Used for texture image analysis with insensitivity to local average value. Good explanation here: <a href="http://www.ee.oulu.fi/research/imag/mvg/files/pdf/ICCV2009_tutorial.pdf">http://www.ee.oulu.fi/research/imag/mvg/files/pdf/ICCV2009_tutorial.pdf</a></p>
 """ .
 
-<http://biii.eu/node/1097> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-13T15:03:29"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:14"^^xsd:dateTime ;
-    dc:title "BBBC003v1 MOUSE EMBRYOS" ;
-    rdfs:comment """Fluorescence microscopy cannot be used to image human embryos to determine embryo viability for in vitro fertilization because the introduction of exogenous fluorescent dyes is considered a toxic procedure. As a result, embryo viability has been measured primarily using differential interference contrast (DIC). A human can readily segment the embryo (and, to some extent, individual cells) in a DIC image, but automatic segmentation remains a challenge due to the cosine-dependent shading inherent in DIC images.\r
-\r
-There are 15 images. The images were acquired using a Nikon Eclipse TE200 microscope with a 20x, 0.45 NA objective lens and a 0.52 NA condenser lens, and are provided courtesy of the W.M. Keck 3D Fusion Microscope Facility at Northeastern University. Each image contains 640 x 480 pixels with an approximate size of 0.42 x 0.42 ?m.""" .
-
-<http://biii.eu/node/1098> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-13T15:05:30"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:12"^^xsd:dateTime ;
-    dc:title "Digital Reconstructions of Neuronal Morphology: Three Decades of Research Trends" .
-
 <http://biii.eu/node/1099> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Loïc Rollus, Raphaël Marée" ;
     nb:hasLocation <https://github.com/loic911/CBIRetrieval/wiki> ;
@@ -1172,12 +1143,6 @@ import SimpleITK as sitk\r
 resultImage = sitk.Elastix(sitk.ReadImage("fixedImage.nii"), sitk.ReadImage("movingImage.nii"))\r
 ```""" .
 
-<http://biii.eu/node/1106> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-13T16:04:16"^^xsd:dateTime ;
-    dc:modified "2017-09-12T19:59:58"^^xsd:dateTime ;
-    dc:title "Annotated two-photon images of dendritic spines" ;
-    rdfs:comment "A fully annotated dataset of Two-Photon Laser Scanning Microscopy (2PLSM) images of three types of dendritic spines. We make a standard dendritic analysis dataset publicly available including raw data, manual annotations, and manual labels. Manual labels and annotation (segmentations) are provided by a neuroscience expert. The dataset has been used in Ghani2016 to perform dendritic spine analysis." .
-
 <http://biii.eu/node/1107> a <http://biii.eu/node/software> ;
     nb:hasAuthor "M U Ghani" ;
     nb:hasFunction <http://edamontology.org/operation_2990>,
@@ -1213,12 +1178,6 @@ resultImage = sitk.Elastix(sitk.ReadImage("fixedImage.nii"), sitk.ReadImage("mov
 \r
 An userguide is provided.""" .
 
-<http://biii.eu/node/1109> a <http://biii.eu/node/software> ;
-    dc:created "2017-02-13T17:27:10"^^xsd:dateTime ;
-    dc:modified "2017-09-12T19:59:52"^^xsd:dateTime ;
-    dc:title "Human colon tissue" ;
-    rdfs:comment "One of the principal challenges in counting or segmenting cells or cell nuclei is dealing with clustered objects such as in tissues. To help assess algorithms' performance in this regard, synthetic 3D image sets of human colon tissue are provided in two diferent levels of quality: high SNR and low SNR. Ground truth is available as well. The datasets are part of [Masaryk University Cell Image Collection (MUCIC)](http://cbia.fi.muni.cz/datasets/) as well [Broad Bioimage Benchmark Collection (BBBC)](https://data.broadinstitute.org/bbbc/) - entry BBBC027." .
-
 <http://biii.eu/node/111> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.vsg3d.com/avizo/overview> ;
     dc:created "2013-11-07T21:00:14"^^xsd:dateTime ;
@@ -1244,14 +1203,6 @@ Avizo is packaged in different Editions, with optional eXtension modules. Each A
     dc:modified "2017-09-12T19:59:50"^^xsd:dateTime ;
     dc:title "QuantCenter" ;
     rdfs:comment """<p>QuantCenter is the framework for 3DHISTECH image analysis applications. with the goal of helping the pathologists to diagnose in an easier way. QuantCenter, is optimized for whole slide quantification. It has a linkable algorithm concept that tries to provide an easy-to-use and logical workflow. The user has different quantification modules that he or she could link one after other to fine-tune or to speed up the analysis.</p>\r
-""" .
-
-<http://biii.eu/node/1111> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation__RBNng13hEB0CJD5VzSKqrfB> ;
-    dc:created "2017-02-13T19:33:35"^^xsd:dateTime ;
-    dc:modified "2018-01-28T12:55:40"^^xsd:dateTime ;
-    dc:title "Clustered cell nuclei" ;
-    rdfs:comment """<p>One of the principal challenges in counting or segmenting cells or cell nuclei is dealing with clustered objects. To help assess algorithms' performance in this regard, synthetic 3D image sets of HL60 cell line are provided consisting of four subsets with increasing degree of clustering. Each subset is also provided in two diferent levels of quality: high SNR and low SNR.Ground truth is available as well. The datasets are part of [Masaryk University Cell Image Collection (MUCIC)](http://cbia.fi.muni.cz/datasets/) as well [Broad Bioimage Benchmark Collection (BBBC)](https://data.broadinstitute.org/bbbc/) - entry BBBC024.</p>\r
 """ .
 
 <http://biii.eu/node/1113> a <http://biii.eu/node/software> ;
@@ -5870,6 +5821,35 @@ It comes with 3 main modules:\r
 <p>It offers a 3D viewer, and python scripting capacities .</p>\r
 \r
 <p>It is free for reserach use, but not for commercial usage.</p>\r
+""" .
+
+<http://biii.eu/node/1578> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Covert Markus",
+        "Van Valen David " ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_segmentation>,
+        <http://edamontology.org/operation_Cell_tracking>,
+        <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-08/Capturedeepcell.JPG" ;
+    nb:hasLocation <https://simtk.org/frs/%3Fgroup_id%3D1052>,
+        "Deep Cell Source code and Docker image" ;
+    nb:hasReferencePublication <https://doi.org/10.1101/505032>,
+        <https://doi.org/10.1371/journal.pcbi.1005177>,
+        "Deep Learning Automates the Quantitative Analysis of Individual Cells in Live-Cell Imaging Experiments. Plos computational Biology 2016",
+        "DeepCell 2.0: Automated cloud deployment of deep learning models for large-scale cellular image analysis" ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
+        <http://edamontology.org/topic__RtBCcu7zJiS0phrbR2HzAI> ;
+    nb:requires <http://biii.eu/node/1201>,
+        <http://biii.eu/node/1202> ;
+    dc:created "2019-08-26T12:09:13"^^xsd:dateTime ;
+    dc:modified "2019-08-26T12:30:08"^^xsd:dateTime ;
+    dc:title "DeepCell" ;
+    rdfs:comment """<p>&nbsp;</p>\r
+\r
+<p>DeepCell is neural network library for single cell analysis, written in Python and built using <a href="https://github.com/tensorflow/tensorflow">TensorFlow</a> and <a href="https://github.com/keras-team/keras">Keras</a>.</p>\r
+\r
+<p>DeepCell aids in biological analysis by automatically segmenting and classifying cells in optical microscopy images. This framework consumes raw images and provides uniquely annotated files as an output.</p>\r
+\r
+<p>The jupyter session in the read docs are broken, but the one from the GitHub are functional (see usage example )</p>\r
 """ .
 
 <http://biii.eu/node/158> a <http://biii.eu/node/software> ;
@@ -13251,12 +13231,6 @@ Limitations:\r
     dc:modified "2017-09-13T12:11:06"^^xsd:dateTime ;
     dc:title "MeasureObjectSizeShape" .
 
-<http://biii.eu/node/924> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://cbia.fi.muni.cz/projects/acquiarium.html> ;
-    dc:created "2013-10-15T12:45:49"^^xsd:dateTime ;
-    dc:modified "2017-09-12T11:40:02"^^xsd:dateTime ;
-    dc:title "Aquarium" .
-
 <http://biii.eu/node/925> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Janick Cardinale" ;
     nb:hasLocation <http://mosaic.mpi-cbg.de/%3Fq%3Ddownloads/imageJ> ;
@@ -15252,11 +15226,6 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
 <p>Source:&nbsp;https://en.wikipedia.org/wiki/OpenCL</p>\r
 """ .
 
-<http://biii.eu/node/1202> a <http://biii.eu/node/software> ;
-    dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:modified "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:title "Keras" .
-
 <http://biii.eu/node/125> a <http://biii.eu/node/software> ;
     nb:hasAuthor "ADCIS" ;
     nb:hasLocation <http://www.adcis.net/en/Image-Processing-And-Analysis-Software-And-Custom-Engineering-Developments.html> ;
@@ -15723,22 +15692,10 @@ Several options for curve fitting are available. Results can be saved back in OM
     rdfs:comment """<p>The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences. BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.</p>\r
 """ .
 
-<http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
-    nb:hasFunction <http://edamontology.org/operation_Image_classification>,
-        <http://edamontology.org/operation_Image_enhancement>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Object_detection> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-08/CaptureTF.PNG" ;
-    nb:hasLocation <https://www.tensorflow.org/install/>,
-        "Multiplatform links to python packages" ;
-    nb:hasTopic <http://edamontology.org/topic_3474> ;
+<http://biii.eu/node/1202> a <http://biii.eu/node/software> ;
     dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
-    dc:title "Tensorflow" ;
-    rdfs:comment """<p>"An open source machine learning framework for everyone "</p>\r
-\r
-<p>TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</p>\r
-""" .
+    dc:modified "2018-01-30T17:00:37"^^xsd:dateTime ;
+    dc:title "Keras" .
 
 <http://biii.eu/node/130> a <http://biii.eu/node/software> ;
     nb:hasAuthor "André Lampe",
@@ -15915,6 +15872,23 @@ The built-in vectors are :</p>\r
     dc:modified "2017-09-13T12:13:05"^^xsd:dateTime ;
     dc:title "Volocity" ;
     rdfs:comment "-" .
+
+<http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_classification>,
+        <http://edamontology.org/operation_Image_enhancement>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Object_detection> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-08/CaptureTF.PNG" ;
+    nb:hasLocation <https://www.tensorflow.org/install/>,
+        "Multiplatform links to python packages" ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
+    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
+    dc:title "Tensorflow" ;
+    rdfs:comment """<p>"An open source machine learning framework for everyone "</p>\r
+\r
+<p>TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</p>\r
+""" .
 
 <http://biii.eu/node/211> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Cellprofiler team" ;
