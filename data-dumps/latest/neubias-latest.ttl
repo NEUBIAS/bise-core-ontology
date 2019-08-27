@@ -4802,15 +4802,17 @@ on MATLAB’s image processing toolbox using the identification of sites&nbsp;of
     nb:hasFunction <http://edamontology.org/operation_2423>,
         <http://edamontology.org/operation_2990>,
         <http://edamontology.org/operation__RyCFuPLOeGxpcGjYbWcWWD> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-02/imjoy-logo-black.png" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-08/imjoy-icon.png" ;
     nb:hasLocation <https://imjoy.io/%23/>,
         "ImJoy webapp website" ;
     dc:created "2019-02-06T23:37:52"^^xsd:dateTime ;
-    dc:modified "2019-02-06T23:48:18"^^xsd:dateTime ;
+    dc:modified "2019-08-27T11:01:07"^^xsd:dateTime ;
     dc:title "ImJoy" ;
-    rdfs:comment """<p>ImJoy is a plugin powered hybrid computing platform for deploying deep learning applications such as advanced image analysis tools. ImJoy runs on mobile and desktop environment cross different operating systems, plugins can run in the browser, localhost, remote and cloud servers.With ImJoy, delivering Deep Learning tools to the end users is simple and easy thanks to its flexible plugin system and shareable plugin URL. Developers can easily add rich and interactive web interfaces to existing Python code.</p>\r
+    rdfs:comment """<p>ImJoy is a plugin powered hybrid computing platform for deploying deep learning applications such as advanced image analysis tools.</p>\r
 \r
-<p>&nbsp;</p>\r
+<p>ImJoy runs on mobile and desktop environment cross different operating systems, plugins can run in the browser, localhost, remote and cloud servers.</p>\r
+\r
+<p>With ImJoy, delivering Deep Learning tools to the end users is simple and easy thanks to its flexible plugin system and sharable plugin URL. Developer can easily add rich and interactive web interfaces to existing Python code.</p>\r
 """ .
 
 <http://biii.eu/node/1445> a <http://biii.eu/node/software> ;
