@@ -14139,9 +14139,22 @@ The command line tools primarily provide the following functionality: registrati
     dc:title "jMathPlot" .
 
 <http://biii.eu/node/1311> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paul-Gilloteaux Perrine" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_tracking>,
+        <http://edamontology.org/operation_Particle_tracking> ;
+    nb:hasLocation <https://xfer.curie.fr/get/192esfJKxA1/Trackingv2.0.zip>,
+        "Download link" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:requires <http://biii.eu/node/1310>,
+        <http://biii.eu/node/38> ;
     dc:created "2018-05-24T03:29:54"^^xsd:dateTime ;
-    dc:modified "2018-05-24T03:29:54"^^xsd:dateTime ;
-    dc:title "Tracking2.0" .
+    dc:modified "2019-08-30T18:27:00"^^xsd:dateTime ;
+    dc:title "Tracking2.0" ;
+    rdfs:comment """<p>This method was originally designed to track objects (not necessarily spots) already identified in 2D&nbsp;<br />\r
+frames and has been applied previously to particle tracking and analysis in high-speed atomic force microscopy image series.</p>\r
+\r
+<p>&nbsp;</p>\r
+""" .
 
 <http://biii.eu/node/1314> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Daniel Sage" ;
@@ -15289,16 +15302,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:modified "2018-05-24T03:29:54"^^xsd:dateTime ;
     dc:title "ImageScience.jar" .
 
-<http://biii.eu/node/1310> a <http://biii.eu/node/software> ;
-    nb:requires <http://biii.eu/node/1329> ;
-    dc:created "2018-05-24T03:29:54"^^xsd:dateTime ;
-    dc:modified "2018-06-06T15:17:20"^^xsd:dateTime ;
-    dc:title "Jama" ;
-    rdfs:comment """<blockquote>\r
-<p>JAMA is a basic linear algebra package for Java. It provides user-level classes for constructing and manipulating real, dense matrices. It is meant to provide sufficient functionality for routine problems, packaged in a way that is natural and understandable to non-experts. It is intended to serve as&nbsp;<em>the</em>&nbsp;standard matrix class for Java, and will be proposed as such to the&nbsp;<a href="http://www.nist.gov/cgi-bin/exit_nist.cgi?timeout=5&amp;url=http://www.npac.syr.edu/javagrande/">Java Grande Forum</a>&nbsp;and then to&nbsp;<a href="http://www.nist.gov/cgi-bin/exit_nist.cgi?timeout=5&amp;url=http://java.sun.com/">Sun</a>. A straightforward public-domain reference implementation has been developed by the&nbsp;<a href="http://www.mathworks.com/">MathWorks</a>&nbsp;and&nbsp;<a href="http://www.nist.gov/">NIST</a>&nbsp;as a strawman for such a class. We are releasing this version in order to obtain public comment. There is no guarantee that future versions of JAMA will be compatible with this one.</p>\r
-</blockquote>\r
-""" .
-
 <http://biii.eu/node/1322> a <http://biii.eu/node/software> ;
     dc:created "2018-05-31T21:58:47"^^xsd:dateTime ;
     dc:modified "2018-05-31T21:58:47"^^xsd:dateTime ;
@@ -15717,6 +15720,16 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:modified "2018-10-18T17:32:45"^^xsd:dateTime ;
     dc:title "RapidSTORM" ;
     rdfs:comment """<p>The rapidSTORM project is an open source evaluation tool that provides fast and highly configurable data processing for single-molecule localization microscopy such as dSTORM. It provides both two-dimensional and three-dimensional, multi-color data analysis as well as a wide range of filtering and image generation capabilities. The general operation of rapidSTORM is described in Wolter et al (2012).</p>\r
+""" .
+
+<http://biii.eu/node/1310> a <http://biii.eu/node/software> ;
+    nb:requires <http://biii.eu/node/1329> ;
+    dc:created "2018-05-24T03:29:54"^^xsd:dateTime ;
+    dc:modified "2018-06-06T15:17:20"^^xsd:dateTime ;
+    dc:title "Jama" ;
+    rdfs:comment """<blockquote>\r
+<p>JAMA is a basic linear algebra package for Java. It provides user-level classes for constructing and manipulating real, dense matrices. It is meant to provide sufficient functionality for routine problems, packaged in a way that is natural and understandable to non-experts. It is intended to serve as&nbsp;<em>the</em>&nbsp;standard matrix class for Java, and will be proposed as such to the&nbsp;<a href="http://www.nist.gov/cgi-bin/exit_nist.cgi?timeout=5&amp;url=http://www.npac.syr.edu/javagrande/">Java Grande Forum</a>&nbsp;and then to&nbsp;<a href="http://www.nist.gov/cgi-bin/exit_nist.cgi?timeout=5&amp;url=http://java.sun.com/">Sun</a>. A straightforward public-domain reference implementation has been developed by the&nbsp;<a href="http://www.mathworks.com/">MathWorks</a>&nbsp;and&nbsp;<a href="http://www.nist.gov/">NIST</a>&nbsp;as a strawman for such a class. We are releasing this version in order to obtain public comment. There is no guarantee that future versions of JAMA will be compatible with this one.</p>\r
+</blockquote>\r
 """ .
 
 <http://biii.eu/node/1317> a <http://biii.eu/node/software> ;
