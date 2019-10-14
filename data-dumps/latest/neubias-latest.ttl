@@ -14479,7 +14479,7 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     nb:hasTopic <http://edamontology.org/topic_3474> ;
     nb:requires <http://biii.eu/node/1312> ;
     dc:created "2019-03-15T00:47:49"^^xsd:dateTime ;
-    dc:modified "2019-03-15T00:52:55"^^xsd:dateTime ;
+    dc:modified "2019-10-14T18:53:45"^^xsd:dateTime ;
     dc:title "PyTorch" ;
     rdfs:comment """<p><strong>PyTorch</strong>&nbsp;is an&nbsp;open-source&nbsp;machine learning&nbsp;library&nbsp;for&nbsp;Python, based on&nbsp;Torch,&nbsp;used for applications such as&nbsp;natural language processing.</p>\r
 """ .
@@ -16268,6 +16268,15 @@ Bioformats could also be used as stand alone application from command line. See 
     dc:modified "2018-04-11T12:56:48"^^xsd:dateTime ;
     dc:title "Spot Detection" .
 
+<http://biii.eu/node/517> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Active_Contours> ;
+    nb:requires <http://biii.eu/node/286>,
+        <http://biii.eu/node/517>,
+        <http://biii.eu/node/8> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:05:22"^^xsd:dateTime ;
+    dc:title "Active Contours" .
+
 <http://biii.eu/node/671> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Histogram> ;
     nb:requires <http://biii.eu/node/671>,
@@ -16302,11 +16311,8 @@ Limitations:\r
         <http://edamontology.org/operation_Image_thresholding> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/itk.jpg" ;
     nb:hasLocation <http://itk.org/> ;
-    nb:requires <http://biii.eu/node/1016>,
-        <http://biii.eu/node/517>,
-        <http://biii.eu/node/826> ;
     dc:created "2013-10-15T20:47:12"^^xsd:dateTime ;
-    dc:modified "2018-04-11T18:08:21"^^xsd:dateTime ;
+    dc:modified "2019-10-14T18:47:51"^^xsd:dateTime ;
     dc:title "ITK" ;
     rdfs:comment """<p>ITK is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis.</p>\r
 \r
@@ -16320,15 +16326,6 @@ Limitations:\r
 \r
 <p>yet detached from the bioimage analysis world hard to use for end users without development skills</p>\r
 """ .
-
-<http://biii.eu/node/517> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Active_Contours> ;
-    nb:requires <http://biii.eu/node/286>,
-        <http://biii.eu/node/517>,
-        <http://biii.eu/node/8> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:22"^^xsd:dateTime ;
-    dc:title "Active Contours" .
 
 <http://biii.eu/node/88> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Hamprecht Fred ",
