@@ -394,13 +394,22 @@ ages, analyse textures or simplify segmentation like tasks.""" .
 
 <http://biii.eu/node/1033> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fitz Elliott " ;
-    nb:hasLocation <http://www.cellmigration.org/resource/imaging/imaging_resources.shtml%23software> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:hasFunction <http://edamontology.org/operation_3443> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://www.cellmigration.org/resource/imaging/software/ICS_Tools-0.5.16.zip> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasTopic <http://edamontology.org/topic__R8Ss4wIFt90wZ1yjFLfXyPM>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2014-12-15T12:47:39"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:02:12"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:45:09"^^xsd:dateTime ;
     dc:title "ICS tools" ;
-    rdfs:comment "Implementation of some image correlation spectroscopy tools" .
+    rdfs:comment """<p>Implementation of some image correlation spectroscopy tools</p>\r
+""" .
 
 <http://biii.eu/node/1034> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Joachim Walter" ;
@@ -416,13 +425,24 @@ ages, analyse textures or simplify segmentation like tasks.""" .
 """ .
 
 <http://biii.eu/node/1035> a <http://biii.eu/node/software> ;
+    nb:hasDocumentation <http://microbetracker.org/help/helpSpotFinder.htm> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
     nb:hasLocation <http://microbetracker.org/help/helpSpotFinder.htm> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:hasUsageExample <http://microbetracker.org/help/helpSpotFinder.htm> ;
     nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/101> ;
     dc:created "2014-12-16T00:45:40"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:02:08"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:54:08"^^xsd:dateTime ;
     dc:title "SpotFinderZ" ;
-    rdfs:comment "Quote: *SpotFinderZ (from now on simply SpotFinder) detects round, usually diffraction-limited spots inside bacterial cells outlined with MicrobeTracker and places them into the meshes structure produced by MicrobeTracker. The program is written in MATLAB and saves the data in the MicrobeTracker format by appending additional fields.*" .
+    rdfs:comment """<p>Quote: *SpotFinderZ (from now on simply SpotFinder) detects round, usually diffraction-limited spots inside bacterial cells outlined with MicrobeTracker and places them into the meshes structure produced by MicrobeTracker. The program is written in MATLAB and saves the data in the MicrobeTracker format by appending additional fields.*</p>\r
+""" .
 
 <http://biii.eu/node/1036> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sliusarenko O, Heinritz J, Emonet T, and Jacobs-Wagner C" ;
@@ -585,163 +605,253 @@ Reference: 2528\r
 
 <http://biii.eu/node/1045> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Thorsten Wagner, Pascal Behnel" ;
-    nb:hasLocation <https://github.com/thorstenwagner/ij-nl-means> ;
-    nb:hasReferencePublication <http://10.5201/ipol10.5201/ipol.201110.5201/ipol.2011.bcm_nlm> ;
+    nb:hasDocumentation <https://imagej.net/Non_Local_Means_Denoise> ;
+    nb:hasFunction <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <https://imagej.net/Non_Local_Means_Denoise> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://10.5201/ipol10.5201/ipol.201110.5201/ipol.2011.bcm_nlm>,
+        "A Non-Local Algorithm for Image Denoising" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2015-02-19T15:57:30"^^xsd:dateTime ;
-    dc:modified "2018-04-11T12:50:20"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:38:51"^^xsd:dateTime ;
     dc:title "ImageJ Plugin for Non-Local-Means Filtering" ;
     rdfs:comment """<p>A more modern approach for denoising / smoothening before segmentation, works like Gaussian blurring but preserves edges and boundaries. Listed in Fiji update sites. ## Algorithm Algorithm description is in [this page](http://www.ipol.im/pub/art/2011/bcm_nlm/) 2612. ## Example usage Localization of Membrane bound protein in Arabidopsis meristem was analyzed using the non-local-mean filter for refining its position 2613. ## impression It's effect is somewhere between Gaussian blurring and anistropic diffusion.</p>\r
 """ .
 
 <http://biii.eu/node/1046> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Thorsten Wagner" ;
+    nb:hasDocumentation <http://fiji.sc/Ridge_Detection> ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://fiji.sc/Ridge_Detection> ;
-    nb:hasReferencePublication <http://10.1109/34.659930> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://10.1109/34.659930>,
+        "An unbiased detector of curvilinear structures" ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/79> ;
     dc:created "2015-02-19T17:28:30"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:51"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:33:24"^^xsd:dateTime ;
     dc:title "ImageJ Plugin Ridge Detection" ;
-    rdfs:comment """A convenient tool for detecting lines!\r
-\r
-After the detection, detected lines are overlaid to the image. The plugin also stores these lines as ROIs, which could then easily be analyzed as vector information. \r
-\r
-Instead, the list of coordinates of all detected lines are placed in "contour" table. This could be used for redrawing or converting them as arrays. \r
-\r
-## Algorithm\r
-\r
-See 2615.""" .
+    rdfs:comment """<p>A convenient tool for detecting lines! After the detection, detected lines are overlaid to the image. The plugin also stores these lines as ROIs, which could then easily be analyzed as vector information. Instead, the list of coordinates of all detected lines are placed in "contour" table. This could be used for redrawing or converting them as arrays. ## Algorithm See 2615.</p>\r
+""" .
 
 <http://biii.eu/node/1047> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Erik Meijering" ;
+    nb:hasDocumentation <http://www.imagescience.org/meijering/software/featurej/derivatives/> ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://www.imagescience.org/meijering/software/featurej/derivatives/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://dx.doi.org/10.1007/BF00318371>,
+        "Representation of Local Geometry in the Visual System" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/515> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2015-02-25T02:34:23"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:16:05"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:08:50"^^xsd:dateTime ;
     dc:title "FeatureJ Derivatives" ;
-    rdfs:comment """\r
-## Algorithm \r
-\r
-See .""" .
+    rdfs:comment """<p>## Algorithm See .</p>\r
+""" .
 
 <http://biii.eu/node/1048> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Alex Herbert" ;
-    nb:hasLocation <http://www.sussex.ac.uk/gdsc/intranet/microscopy/imagej/smlm_plugins> ;
+    nb:hasFunction <http://edamontology.org/operation__R8EfungVXA0oQM2Ac7YY5eu> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://www.sussex.ac.uk/gdsc/intranet/microscopy/UserSupport/AnalysisProtocol/imagej/smlm_plugins/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__R8oQpUEjKZjNQCTB4x3JQuJ>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2015-06-10T12:49:00"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:49"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:35:52"^^xsd:dateTime ;
     dc:title "GDSC Single Molecule Localisation Microscopy" ;
-    rdfs:comment """The GDSC Single Molecule Light Microscopy (SMLM) plugins is a package of tools for single molecule localisation analysis. \r
-\r
-- Fitting Plugins: get point cloud from super resolution image. \r
-- Results Plugins: organize results. \r
-- Analysis plugins\r
-- Model plugins\r
-\r
+    rdfs:comment """<p>The GDSC Single Molecule Light Microscopy (SMLM) plugins is a package of tools for single molecule localisation analysis. - Fitting Plugins: get point cloud from super resolution image. - Results Plugins: organize results. - Analysis plugins - Model plugins</p>\r
 """ .
 
 <http://biii.eu/node/1049> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Downey MJ, Jeziorska DM, Ott S, Tamai TK, Koentges G, Vance KW, Bretschneider T." ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_tracking> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://www2.warwick.ac.uk/fac/sci/systemsbiology/staff/bretschneider/lineagetracker/> ;
-    nb:hasReferencePublication <http://10.1073/pnas.1320474111> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://10.1073/pnas.1320474111>,
+        "Extracting fluorescent reporter time courses of cell lineages from high-throughput microscopy at low temporal resolution" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2015-09-08T11:20:06"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:46"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:30:13"^^xsd:dateTime ;
     dc:title "ImageJ Plugin LineageTracker" ;
-    rdfs:comment """## Short Summary\r
-\r
-Quote from the plugin page:\r
-\r
->LineageTracker offers an ImageJ based framework which is easily extendible and has the capability to track cell lineages while being specifically designed to handle large cell displacements between frames. The methods are designed for fluorescent cells and have been used to analyse Schizosaccharomyces pombe, C2C12 mouse stem cells or migrating RPE cells.\r
-\r
-This tool also allows flexible cell segmentation and extendable in all aspects. The webpage is detailed with usage from ImageJ macro. Rather than being simply a component, the plugin is indeed a framework with set of components.   \r
-\r
-## Misc info\r
-\r
-A tip from the plugin author in ImageJ mailing list (08.Sep.2015): \r
-\r
-> We have an additional script to export only a selected range of frames. I can send you that if you think LineageTracker is something for you.\r
-To be on the safe side I would try it with an older version of ImageJ. We have experienced some problems, mostly related to Java. Java 8 seems to fix most of it.\r
-\r
-## References\r
-\r
-2630: Application example. \r
-\r
-2631: Plugin Paper. \r
-\r
+    rdfs:comment """<p>## Short Summary Quote from the plugin page: &gt;LineageTracker offers an ImageJ based framework which is easily extendible and has the capability to track cell lineages while being specifically designed to handle large cell displacements between frames. The methods are designed for fluorescent cells and have been used to analyse Schizosaccharomyces pombe, C2C12 mouse stem cells or migrating RPE cells. This tool also allows flexible cell segmentation and extendable in all aspects. The webpage is detailed with usage from ImageJ macro. Rather than being simply a component, the plugin is indeed a framework with set of components. ## Misc info A tip from the plugin author in ImageJ mailing list (08.Sep.2015): &gt; We have an additional script to export only a selected range of frames. I can send you that if you think LineageTracker is something for you. To be on the safe side I would try it with an older version of ImageJ. We have experienced some problems, mostly related to Java. Java 8 seems to fix most of it. ## References 2630: Application example. 2631: Plugin Paper.</p>\r
+""" .
+
+<http://biii.eu/node/1050> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Wayne Rasband" ;
+    nb:hasDocumentation <https://imagej.nih.gov/ij/docs/guide/146-29.html%23sub:Skeletonize> ;
+    nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <https://imagej.net/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2016-05-25T22:27:39"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:15:50"^^xsd:dateTime ;
+    dc:title "Skeletonize" ;
+    rdfs:comment """<p>ImageJ native "Skeletonize" implementation. - works only with 8-bit binary image. A faster implementation is available as a plugin [Skeletonize3D](http://biii.info/node/1832) written by Ignacio Arganda-Carreras. Pros of this plugin is [summarized here](https://imagej.nih.gov/ij/docs/guide/146-29.html#infobox:Skeletonize-vs-Skeletonize3D).</p>\r
 """ .
 
 <http://biii.eu/node/1051> a <http://biii.eu/node/software> ;
     nb:hasAuthor "A. Shivanandan, A. Radenovic, and I. F. Sbalzarini" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Interactive_segmentation>,
+        <http://edamontology.org/operation_Particle_tracking>,
+        <http://edamontology.org/operation___Colocalisation_analysis> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://imagej.net/MosaicIA> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/79> ;
+    nb:requires <http://biii.eu/node/1063>,
+        <http://biii.eu/node/79> ;
     dc:created "2016-07-12T16:03:02"^^xsd:dateTime ;
-    dc:modified "2017-09-13T15:04:02"^^xsd:dateTime ;
+    dc:modified "2019-10-21T11:06:24"^^xsd:dateTime ;
     dc:title "MosaicIA" ;
     rdfs:comment """<p>MosaicIA is a tool to analyze the spatial distribution of objects in images. It estimates from an observed particle or object distribution what hypothetical interaction between the objects is most likely to have created this distribution.</p>\r
 """ .
 
 <http://biii.eu/node/1052> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "P. Andrey, T. Boudier" ;
+    nb:hasAuthor "P. Andrey",
+        "T. Boudier" ;
+    nb:hasFunction <http://edamontology.org/operation_Active_contours> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://imagejdocu.tudor.lu/doku.php%3Fid%3Dplugin:segmentation:active_contour:start> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/286>,
-        <http://biii.eu/node/38> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2016-07-12T16:44:00"^^xsd:dateTime ;
-    dc:modified "2017-09-13T15:10:50"^^xsd:dateTime ;
+    dc:modified "2019-10-21T11:01:55"^^xsd:dateTime ;
     dc:title "ABSnake" ;
     rdfs:comment """<p>ABSnake can segment complex structures in 2D images as well as 3D or temporal images. It uses a new active contour model based on a geometrical approach for correctly following invaginated structures.</p>\r
 """ .
 
 <http://biii.eu/node/1053> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Hemerson Pistori, Eduardo Rocha Costa" ;
+    nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation_Object_detection> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <https://imagej.nih.gov/ij/plugins/hough-circles.html> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2016-07-12T16:47:54"^^xsd:dateTime ;
-    dc:modified "2017-09-13T15:13:31"^^xsd:dateTime ;
+    dc:modified "2019-10-21T10:59:44"^^xsd:dateTime ;
     dc:title "Hough Circles" ;
     rdfs:comment """<p>This plugin applies the Hough Transform for Circles to an 8-Bit image, shows the resulting Hough Space in a new window and marks the centers of the found circles.</p>\r
 """ .
 
 <http://biii.eu/node/1054> a <http://biii.eu/node/software> ;
-    nb:hasAuthor " Jakob Wilm, Hans Martin Kjer " ;
-    nb:hasLocation <http://www2.imm.dtu.dk/%7Ejakw/publications/bscthesis.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:hasAuthor " Jakob Wilm",
+        "Hans Martin Kjer" ;
+    nb:hasFunction <http://edamontology.org/operation__R9Vc5BV3ZMcLHEL6WEceXbY> ;
+    nb:hasReferencePublication <http://www2.imm.dtu.dk/%7Ejakw/publications/bscthesis.pdf> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3570> ;
     nb:openess <http://biii.eu/taxonomy/term/3578> ;
     dc:created "2016-09-15T20:45:05"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:32"^^xsd:dateTime ;
+    dc:modified "2019-10-21T10:53:41"^^xsd:dateTime ;
     dc:title "iterative closest point registration" ;
-    rdfs:comment """The ICP algorithm takes two point clouds as an input and return the rigid transformation (rotation matrix R and translation vector T), that best aligns the point clouds.\r
-\r
-Example:\r
-[R,T] = icp(q,p,10);\r
-\r
-Aligns the points of p to the points q with 10 iterations of the algorithm.\r
-The transformation is then applied using\r
-R*p + repmat(T,1,length(p));\r
-\r
-The file has implemented both point to point and point to plane as well as a couple of other features such as extrapolation, weighting functions, edge point rejection, etc.""" .
+    rdfs:comment """<p>The ICP algorithm takes two point clouds as an input and return the rigid transformation (rotation matrix R and translation vector T), that best aligns the point clouds. Example: [R,T] = icp(q,p,10); Aligns the points of p to the points q with 10 iterations of the algorithm. The transformation is then applied using R*p + repmat(T,1,length(p)); The file has implemented both point to point and point to plane as well as a couple of other features such as extrapolation, weighting functions, edge point rejection, etc.</p>\r
+""" .
 
 <http://biii.eu/node/1055> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jan Detrez et al" ;
+    nb:hasFunction <http://edamontology.org/operation_2928> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <https://github.com/JanDetrez/BiDiFuse/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     dc:created "2016-09-15T20:48:14"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:31"^^xsd:dateTime ;
+    dc:modified "2019-10-21T10:48:51"^^xsd:dateTime ;
     dc:title "BiDiFuse" ;
-    rdfs:comment "to be completed" .
+    rdfs:comment """<p>to be completed</p>\r
+""" .
+
+<http://biii.eu/node/1056> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Alex Herbert ",
+        "Olivier Burri" ;
+    nb:hasFunction <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation__RBYLqCqN4rP7Jy5m5mxpTeM> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://imagej.net/Fourier_Ring_Correlation_Plugin> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://10.1038/nmeth.2448> ;
+    nb:hasTopic <http://edamontology.org/topic_Super-resolution_microscopy>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2016-10-01T18:13:54"^^xsd:dateTime ;
+    dc:modified "2019-10-21T10:44:45"^^xsd:dateTime ;
+    dc:title "Fourier Ring Correlation" ;
+    rdfs:comment """<p>Calculate the Fourier ring correlation (FRC). The FRC can be used as a resolution criterion for super resolution microscopy. The Plugin can display a plot of the FRC curve, along with the LOESS smoothed version of the curve. Finally it displays the threshold method used and the intersection of the FRC with the threshold, providing the FIRE number. It can be used on two open images or on pairs of images in batch mode. 2654 2655</p>\r
+""" .
 
 <http://biii.eu/node/1058> a <http://biii.eu/node/software> ;
     nb:hasAuthor "David Legland" ;
@@ -889,18 +999,25 @@ The file has implemented both point to point and point to plane as well as a cou
 
 <http://biii.eu/node/1069> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Iván Gómez Conde, David Olivieri, Carlos Tadokoro" ;
+    nb:hasFunction <http://edamontology.org/operation__R9Vc5BV3ZMcLHEL6WEceXbY> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
+    nb:hasLicense "GPLv3" ;
     nb:hasLocation <https://sourceforge.net/projects/stabitissue/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
     nb:hasReferencePublication <http://10.1371/journal.ppat.1003154> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1312> ;
     dc:created "2016-10-10T17:26:12"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:52"^^xsd:dateTime ;
+    dc:modified "2019-10-21T10:39:40"^^xsd:dateTime ;
     dc:title "StabiTissue" ;
-    rdfs:comment """- 2D Stabilization in each slice of the stacks in time.\r
-- 3D Stabilization intravital imaging of all the stacks (including the dimension Z)\r
-- create the videos and the stabilized images in a new folder\r
-\r
-2701""" .
+    rdfs:comment """<p>- 2D Stabilization in each slice of the stacks in time. - 3D Stabilization intravital imaging of all the stacks (including the dimension Z) - create the videos and the stabilized images in a new folder 2701</p>\r
+""" .
 
 <http://biii.eu/node/107> a <http://biii.eu/node/software> ;
     nb:hasLicense "AGPLv3 free software license" ;
@@ -12526,17 +12643,24 @@ The parameters used  for this example data Beads, were \r
     dc:title "NeuronJ" .
 
 <http://biii.eu/node/338> a <http://biii.eu/node/software> ;
+    nb:hasDocumentation <http://fiji.sc/Analyze_Skeleton_2D_time_series> ;
+    nb:hasFunction <http://edamontology.org/operation_Skeletonization> ;
     nb:hasLocation <http://fiji.sc/Analyze_Skeleton_2D_time_series> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:hasUsageExample <http://fiji.sc/Analyze_Skeleton_2D_time_series> ;
     nb:openess <http://biii.eu/taxonomy/term/3578> ;
     nb:requires <http://biii.eu/node/1072>,
-        <http://biii.eu/node/17>,
         <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:02:03"^^xsd:dateTime ;
+    dc:modified "2019-10-21T11:14:03"^^xsd:dateTime ;
     dc:title "Analyze Skeleton 2D time series" ;
-    rdfs:comment """\r
-This is a scripting example to process stack of images using [AnalyzeSkeleton3D](http://biii.info/node/1976)""" .
+    rdfs:comment """<p>This is a scripting example to process stack of images using [AnalyzeSkeleton3D](http://biii.info/node/1976)</p>\r
+""" .
 
 <http://biii.eu/node/339> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bitplane.com/imaris/imaris> ;
@@ -14591,6 +14715,14 @@ There are two implementations of Tschumperle/ R. Deriche filter ("anisotropic di
     dc:modified "2019-10-17T14:04:43"^^xsd:dateTime ;
     dc:title "EBImage Transpose" .
 
+<http://biii.eu/node/504> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2017-09-12T10:52:44"^^xsd:dateTime ;
+    dc:title "Bilateral Filter" .
+
 <http://biii.eu/node/505> a <http://biii.eu/node/software> ;
     nb:hasAuthor "de Chaumont, Fabrice " ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Connected%20components%20XLS%20export%20Block.PNG" ;
@@ -14722,6 +14854,24 @@ There are two implementations of Tschumperle/ R. Deriche filter ("anisotropic di
 \r
 This plugin comes with Fiji. """ .
 
+<http://biii.eu/node/515> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Philippe Thévenaz" ;
+    nb:hasLocation <http://bigwww.epfl.ch/thevenaz/differentials/> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:05:20"^^xsd:dateTime ;
+    dc:title "Differentials" ;
+    rdfs:comment """Six 2D differential operations are implemented in this ImageJ plugin.\r
+\r
+- Gradient Magnitude\r
+- Gradient Direction\r
+- Laplacian\r
+- Largest Hessian\r
+- Smallest Hessian\r
+- Hessian Orientation""" .
+
 <http://biii.eu/node/518> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Johannes Schindelin" ;
     nb:hasFunction <http://edamontology.org/operation_Image_registration> ;
@@ -14837,16 +14987,27 @@ This plugin comes with Fiji. """ .
 """ .
 
 <http://biii.eu/node/522> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Florian Luisier" ;
+    nb:hasDocumentation <http://bigwww.epfl.ch/algorithms/denoise/> ;
+    nb:hasFunction <http://edamontology.org/operation__RDyyXyhf1oHK93opXhEnRND> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://bigwww.epfl.ch/algorithms/denoise/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:hasUsageExample <http://bigwww.epfl.ch/algorithms/denoise/> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:26"^^xsd:dateTime ;
+    dc:modified "2019-10-21T10:55:52"^^xsd:dateTime ;
     dc:title "PureDenoise" ;
-    rdfs:comment """Outline\r
-The incessant development of improved microscopy imaging techniques, as well as the advent of highly selective fluorescent dyes has made possible the precise identification of tagged molecules in almost any biological specimen. Of particular interest are the visualization and the study of living cells, which induce tight constraints on the imaging process. To avoid the alteration of the sample and to achieve a high temporal resolution, low fluorophore concentrations, low-power illumination and short exposure time need to be used in practice. Such restrictions have a tremendous impact on the image quality. This is why we have recently introduced a new method, coined PURE-LET [1,2,3], for efficient, fast, and automatic denoising of multidimensional fluorescence microscopy images.""" .
+    rdfs:comment """<p>Outline The incessant development of improved microscopy imaging techniques, as well as the advent of highly selective fluorescent dyes has made possible the precise identification of tagged molecules in almost any biological specimen. Of particular interest are the visualization and the study of living cells, which induce tight constraints on the imaging process. To avoid the alteration of the sample and to achieve a high temporal resolution, low fluorophore concentrations, low-power illumination and short exposure time need to be used in practice. Such restrictions have a tremendous impact on the image quality. This is why we have recently introduced a new method, coined PURE-LET [1,2,3], for efficient, fast, and automatic denoising of multidimensional fluorescence microscopy images.</p>\r
+""" .
 
 <http://biii.eu/node/523> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://bigwww.epfl.ch/thevenaz/affine/> ;
@@ -16333,24 +16494,28 @@ Though this package mostly works in any platform, some of them are limited to Wi
     dc:title "Intramodal registration software" .
 
 <http://biii.eu/node/633> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Philippe Andrey, Thomas Boudier" ;
+    nb:hasAuthor "Philippe Andrey",
+        "Thomas Boudier" ;
+    nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB>,
+        <http://edamontology.org/operation___Clustering> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://imagejdocu.tudor.lu/doku.php%3Fid%3Dplugin:analysis:spatial_statistics_2d_3d:start> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic_Statistics>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:07:06"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:21:27"^^xsd:dateTime ;
     dc:title "Spatial statistics 2D/3D ImageJ plugin" ;
-    rdfs:comment """>The plugin analyses a point pattern (positions of objects of interest) distributed within a reference structure. This analysis allows in particular to assess deviation from spatial randomness, and to reveal trends for clustering (attraction) or regularity (repulsion). No edge correction is performed, as it is assumed that no point is expected outside the reference structure.\r
-\r
-See 2636 for the original article. \r
-\r
-![F-function plot](http://imagejdocu.tudor.lu/lib/exe/fetch.php?cache=&media=plugin:stacks:3d_ij_suite:fhisto.png)\r
-\r
-This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/1945).\r
-\r
- """ .
+    rdfs:comment """<p>&gt;The plugin analyses a point pattern (positions of objects of interest) distributed within a reference structure. This analysis allows in particular to assess deviation from spatial randomness, and to reveal trends for clustering (attraction) or regularity (repulsion). No edge correction is performed, as it is assumed that no point is expected outside the reference structure. See 2636 for the original article. ![F-function plot](http://imagejdocu.tudor.lu/lib/exe/fetch.php?cache=&amp;media=plugin:stacks:3d_ij_suite:fhisto.png) This plugin comes together with [3D ImageJ suites plugin](http://biii.info/node/1945).</p>\r
+""" .
 
 <http://biii.eu/node/634> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Kirshner Hagai" ;
@@ -20848,36 +21013,6 @@ The original paper is 2449""" .
     rdfs:comment """<p>Manual Tracking GUI. Many shortcut keys, and after being experienced, manual tracking can efficiently done. Post-editing capability to delete segments, merge and splitting tracks is quite useful.</p>\r
 """ .
 
-<http://biii.eu/node/1050> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Wayne Rasband" ;
-    nb:hasLocation <https://github.com/imagej/imagej1/blob/master/ij/process/BinaryProcessor.java%23L101-L131> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    dc:created "2016-05-25T22:27:39"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:01:42"^^xsd:dateTime ;
-    dc:title "Skeletonize" ;
-    rdfs:comment """ImageJ native "Skeletonize" implementation. \r
-\r
-- works only with 8-bit binary image. \r
-\r
-A faster implementation is available as a plugin [Skeletonize3D](http://biii.info/node/1832) written by Ignacio Arganda-Carreras. Pros of this plugin is [summarized here](https://imagej.nih.gov/ij/docs/guide/146-29.html#infobox:Skeletonize-vs-Skeletonize3D).""" .
-
-<http://biii.eu/node/1056> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Olivier Burri, Alex Herbert " ;
-    nb:hasLocation <http://imagej.net/Fourier_Ring_Correlation_Plugin> ;
-    nb:hasReferencePublication <http://10.1038/nmeth.2448> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/1056> ;
-    dc:created "2016-10-01T18:13:54"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:16:27"^^xsd:dateTime ;
-    dc:title "Fourier Ring Correlation" ;
-    rdfs:comment """Calculate the Fourier ring correlation (FRC). The  FRC can be used as a resolution criterion for super resolution microscopy.\r
-The Plugin can display a plot of the FRC curve, along with the LOESS smoothed version of the curve. Finally it displays the threshold method used and the intersection of the FRC with the threshold, providing the FIRE number. It can be used on two open images or on pairs of images in batch mode.\r
-\r
-2654\r
-2655""" .
-
 <http://biii.eu/node/1117> a <http://biii.eu/node/software> ;
     dc:created "2017-09-12T17:00:23"^^xsd:dateTime ;
     dc:modified "2017-09-12T17:00:23"^^xsd:dateTime ;
@@ -20921,17 +21056,24 @@ The Plugin can display a plot of the FRC curve, along with the LOESS smoothed ve
         "Mark Longair",
         "Stephan Preibisch  orcid.org/0000-0002-0276-494X" ;
     nb:hasDocumentation <https://www.longair.net/edinburgh/imagej/tubeness/> ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/tubeness.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLicense "GPL" ;
+    nb:hasLocation <https://www.longair.net/edinburgh/imagej/tubeness/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
     nb:hasReferencePublication <https://www.ncbi.nlm.nih.gov/pubmed/10646760>,
         "Sato Y, Nakajima S, Shiraga N, Atsumi H, Yoshida S, Koller T, Gerig G, Kikinis R.  1998.  Three-dimensional multi-scale line filter for segmentation and visualization of curvilinear structures in medical images.. Med Image Anal. 2(2):143-68." ;
     nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
         <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2017-09-13T15:27:04"^^xsd:dateTime ;
-    dc:modified "2017-09-13T18:01:08"^^xsd:dateTime ;
+    dc:modified "2019-10-21T11:10:09"^^xsd:dateTime ;
     dc:title "Tubeness" ;
     rdfs:comment """<p>This plugin filters a 3D image stack (or 2D image) to produce a score for how "tube-like" each point in the image is. This is useful as a preprocessing step for tracing neurons or blood vessels, for example. For 3D image stacks, the plugin uses the eigenvalues of the Hessian matrix to calculate this measure of "tubeness", using a&nbsp;metrics mentioned in Sato et al 1997 ¹: if the larger two eigenvalues (λ₂ and λ₃) are both negative then value is √(λ₂λ₃), otherwise the value is 0. For 2D images, if the large eigenvalue is negative, we return its absolute value and otherwise return 0.</p>\r
 \r
@@ -22244,14 +22386,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2019-10-16T18:05:34"^^xsd:dateTime ;
     dc:title "NHerve Matrix" .
 
-<http://biii.eu/node/504> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://tech.knime.org/community/image-processing> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-12T10:52:44"^^xsd:dateTime ;
-    dc:title "Bilateral Filter" .
-
 <http://biii.eu/node/508> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <https://hub.knime.com/BioML-Konstanz/extensions/org.knime.knip.feature/latest/org.knime.knip.base.nodes.proc.multilvlthresholding.MultilevelThresholderNodeFactory> ;
     nb:hasFunction <http://edamontology.org/operation_Image_thresholding> ;
@@ -22271,24 +22405,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:title "KNIME Multilevel Thresholding" ;
     rdfs:comment """<p>The method to use for thresholding. Currently only OTSU is available.</p>\r
 """ .
-
-<http://biii.eu/node/515> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Philippe Thévenaz" ;
-    nb:hasLocation <http://bigwww.epfl.ch/thevenaz/differentials/> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:05:20"^^xsd:dateTime ;
-    dc:title "Differentials" ;
-    rdfs:comment """Six 2D differential operations are implemented in this ImageJ plugin.\r
-\r
-- Gradient Magnitude\r
-- Gradient Direction\r
-- Laplacian\r
-- Largest Hessian\r
-- Smallest Hessian\r
-- Hessian Orientation""" .
 
 <http://biii.eu/node/526> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Fabrice de Chaumont" ;
@@ -23863,17 +23979,21 @@ The built-in vectors are :</p>\r
 """ .
 
 <http://biii.eu/node/846> a <http://biii.eu/node/software> ;
+    nb:hasDocumentation <http://cellprofiler-manual.s3.amazonaws.com/CellProfiler-3.0.0/modules/imageprocessing.html%23smooth> ;
     nb:hasFunction <http://edamontology.org/operation_Image_processing>,
         <http://edamontology.org/operation_Image_smoothing> ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <http://www.cellprofiler.org/CPmanual/Smooth.html> ;
+    nb:hasLocation <https://cellprofiler.org/releases> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/31>,
-        <http://biii.eu/node/504> ;
+    nb:requires <http://biii.eu/node/31> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-12-12T10:16:31"^^xsd:dateTime ;
-    dc:title "Smooth" ;
+    dc:modified "2019-10-21T14:25:38"^^xsd:dateTime ;
+    dc:title "CellProfiler Smooth" ;
     rdfs:comment """<p>This CellProfiler module allows smoothen the image with a choice from various algorithms: - Fit Polynomial - Gaussian Filter - Median Filter - Bilateral Filter - Circular averaging - "Smooth to Average" filter.</p>\r
 """ .
 
@@ -24284,14 +24404,20 @@ Several options for curve fitting are available. Results can be saved back in OM
     nb:hasAuthor "Ignacio Arganda-Carreras " ;
     nb:hasFunction <http://edamontology.org/operation_Morphological_operations>,
         <http://edamontology.org/operation_Skeletonization> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLicense "GPLv3" ;
     nb:hasLocation <http://fiji.sc/Skeletonize3D> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
     nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/1050>,
-        <http://biii.eu/node/38> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:44"^^xsd:dateTime ;
-    dc:modified "2019-02-04T17:54:59"^^xsd:dateTime ;
+    dc:modified "2019-10-21T14:11:34"^^xsd:dateTime ;
     dc:title "Skeletonize3D" ;
     rdfs:comment """<p>For post-processing analysis, use [Analyze Skeleton](http://biii.info/node/1976) plugin written by the same author.</p>\r
 """ .
@@ -24871,56 +24997,6 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2017-09-13T12:12:10"^^xsd:dateTime ;
     dc:title "opening" .
 
-<http://biii.eu/node/1063> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Ivo F. Sbalzarini MOSAIC GROUP" ;
-    nb:hasDocumentation <http://mosaic.mpi-cbg.de/Downloads/MosaicSuiteDocs.zip>,
-        "Manuals" ;
-    nb:hasFunction <http://edamontology.org/operation_0337>,
-        <http://edamontology.org/operation_Illumination_correction>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Particle_tracking>,
-        <http://edamontology.org/operation_Spot_extraction>,
-        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Screenshot%202019-10-17%20at%2011.26.24.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <https://git.mpi-cbg.de/mosaic/MosaicSuite.git> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasTopic <http://edamontology.org/topic_3382> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567>,
-        <http://biii.eu/taxonomy/term/8> ;
-    nb:hasUsageExample <http://mosaic.mpi-cbg.de/docs/Rizk2014.pdf>,
-        "Squassh segmentation" ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/60>,
-        <http://biii.eu/node/79>,
-        <http://biii.eu/node/94> ;
-    dc:created "2016-10-06T15:27:43"^^xsd:dateTime ;
-    dc:modified "2019-10-17T12:27:45"^^xsd:dateTime ;
-    dc:title "MosaicSuite" ;
-    rdfs:comment """<p>Image-processing algorithms developed at the MOSAIC Group for fluorescence microscopy. Tools included:</p>\r
-\r
-<ul>\r
-	<li>2D/3D single-particle tracking tool which can be used to track bright spots in 2D/3D movies over time.</li>\r
-	<li>Optimal filament segmentation of 2D images.&nbsp;</li>\r
-	<li>Curvature filters for image filtering, denoising, and restoration.&nbsp;</li>\r
-	<li>Image naturalization for image enhancement based on gradient statistics of natural-scence images.&nbsp;</li>\r
-	<li>Tool for automatically send and distribute jobs on clusters and get back the results.</li>\r
-	<li>Multi-region image segmentation of 2D and 3D images without needing to know the number of regions beforehand.&nbsp;</li>\r
-	<li>Squassh for globally optimal segmentation of piecewise constant regions in 2D and 3D images and for object-based co-localization analysis.&nbsp;</li>\r
-	<li>Tool for inferring spatial interactions between patterns of objects in images or between coordinates read from a file.</li>\r
-	<li>Tool for robust, histogram-based background subtraction well suited to correct for inhomogeneous illumination artifacts.</li>\r
-	<li>A tool to estimate the Point-Spread Function of the microscopy out of 2D fluorescence images.</li>\r
-	<li>A tool to measure&nbsp;the 3D Point-Spread Function of a confocal microscope from an image stack.</li>\r
-	<li>Addition of&nbsp;synthetic Poisson-distributed noise to an image in order to simulate shot noise of various signal-to-noise ratios.&nbsp;</li>\r
-	<li>Convolution of an image with a Bessel function in order to simulate imaging with a microscope.&nbsp;</li>\r
-	<li>A utility to detect bright spots in images and estimate their center.&nbsp;</li>\r
-	<li>A&nbsp;utility to create manual segmentations to be used as ground truth to test and benchmark automatic segmentation algorithms.</li>\r
-	<li>A tool for replacing one color in an image with another color.</li>\r
-</ul>\r
-""" .
-
 <http://biii.eu/node/1128> a <http://biii.eu/node/software> ;
     nb:hasDOI <https://doi.org/doi:10.18129/B9.bioc.EBImage>,
         "EBimage package doi" ;
@@ -25104,6 +25180,56 @@ Bioformats could also be used as stand alone application from command line. See 
     dc:modified "2019-10-16T18:32:46"^^xsd:dateTime ;
     dc:title "Spot detection utilities" ;
     rdfs:comment """<p>A set of classes and functions which can be used by plugins performing spot detection and spot tracking.</p>\r
+""" .
+
+<http://biii.eu/node/1063> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Ivo F. Sbalzarini MOSAIC GROUP" ;
+    nb:hasDocumentation <http://mosaic.mpi-cbg.de/Downloads/MosaicSuiteDocs.zip>,
+        "Manuals" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_Illumination_correction>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Particle_tracking>,
+        <http://edamontology.org/operation_Spot_extraction>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Screenshot%202019-10-17%20at%2011.26.24.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <https://git.mpi-cbg.de/mosaic/MosaicSuite.git> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasTopic <http://edamontology.org/topic_3382> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567>,
+        <http://biii.eu/taxonomy/term/8> ;
+    nb:hasUsageExample <http://mosaic.mpi-cbg.de/docs/Rizk2014.pdf>,
+        "Squassh segmentation" ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/60>,
+        <http://biii.eu/node/79>,
+        <http://biii.eu/node/94> ;
+    dc:created "2016-10-06T15:27:43"^^xsd:dateTime ;
+    dc:modified "2019-10-17T12:27:45"^^xsd:dateTime ;
+    dc:title "MosaicSuite" ;
+    rdfs:comment """<p>Image-processing algorithms developed at the MOSAIC Group for fluorescence microscopy. Tools included:</p>\r
+\r
+<ul>\r
+	<li>2D/3D single-particle tracking tool which can be used to track bright spots in 2D/3D movies over time.</li>\r
+	<li>Optimal filament segmentation of 2D images.&nbsp;</li>\r
+	<li>Curvature filters for image filtering, denoising, and restoration.&nbsp;</li>\r
+	<li>Image naturalization for image enhancement based on gradient statistics of natural-scence images.&nbsp;</li>\r
+	<li>Tool for automatically send and distribute jobs on clusters and get back the results.</li>\r
+	<li>Multi-region image segmentation of 2D and 3D images without needing to know the number of regions beforehand.&nbsp;</li>\r
+	<li>Squassh for globally optimal segmentation of piecewise constant regions in 2D and 3D images and for object-based co-localization analysis.&nbsp;</li>\r
+	<li>Tool for inferring spatial interactions between patterns of objects in images or between coordinates read from a file.</li>\r
+	<li>Tool for robust, histogram-based background subtraction well suited to correct for inhomogeneous illumination artifacts.</li>\r
+	<li>A tool to estimate the Point-Spread Function of the microscopy out of 2D fluorescence images.</li>\r
+	<li>A tool to measure&nbsp;the 3D Point-Spread Function of a confocal microscope from an image stack.</li>\r
+	<li>Addition of&nbsp;synthetic Poisson-distributed noise to an image in order to simulate shot noise of various signal-to-noise ratios.&nbsp;</li>\r
+	<li>Convolution of an image with a Bessel function in order to simulate imaging with a microscope.&nbsp;</li>\r
+	<li>A utility to detect bright spots in images and estimate their center.&nbsp;</li>\r
+	<li>A&nbsp;utility to create manual segmentations to be used as ground truth to test and benchmark automatic segmentation algorithms.</li>\r
+	<li>A tool for replacing one color in an image with another color.</li>\r
+</ul>\r
 """ .
 
 <http://biii.eu/node/1130> a <http://biii.eu/node/software> ;
@@ -25438,10 +25564,29 @@ As of now, the annotations are saved when the sequence is closed, but you have t
     dc:title "Micro-Manager" ;
     rdfs:comment "-" .
 
-<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
-    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
-    dc:title "Python" .
+<http://biii.eu/node/286> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Steve Eddins" ;
+    nb:hasDocumentation <https://blogs.mathworks.com/steve/2006/06/02/cell-segmentation/> ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_segmentation>,
+        <http://edamontology.org/operation_Morphological_operations>,
+        <http://edamontology.org/operation_Watershed> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/cell_segmentation_MATLAB.jpg" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4223> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/101> ;
+    dc:created "2014-12-09T15:35:36"^^xsd:dateTime ;
+    dc:modified "2018-05-30T02:53:31"^^xsd:dateTime ;
+    dc:title "Segmentation of Clustered Cells in MATLAB" ;
+    rdfs:comment """<p>A clear tutorial on how to write a MATLAB script to segment clustered cells.</p>\r
+\r
+<p>The full script is downloadable near the bottom of the article.&nbsp;</p>\r
+""" .
 
 <http://biii.eu/node/77> a <http://biii.eu/node/software> ;
     nb:hasAuthor "OME Consortium" ;
@@ -25486,29 +25631,10 @@ Open source, scalable software, Supports diverse sets of imaging applications an
  Enterprise-scale software, so complex install, requires expertise, Actively developing API, Python scripts and functions still developing\r
 """ .
 
-<http://biii.eu/node/286> a <http://biii.eu/node/software> ;
-    nb:hasAuthor " Steve Eddins" ;
-    nb:hasDocumentation <https://blogs.mathworks.com/steve/2006/06/02/cell-segmentation/> ;
-    nb:hasFunction <http://edamontology.org/operation_Cell_segmentation>,
-        <http://edamontology.org/operation_Morphological_operations>,
-        <http://edamontology.org/operation_Watershed> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/cell_segmentation_MATLAB.jpg" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4223> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
-    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/101> ;
-    dc:created "2014-12-09T15:35:36"^^xsd:dateTime ;
-    dc:modified "2018-05-30T02:53:31"^^xsd:dateTime ;
-    dc:title "Segmentation of Clustered Cells in MATLAB" ;
-    rdfs:comment """<p>A clear tutorial on how to write a MATLAB script to segment clustered cells.</p>\r
-\r
-<p>The full script is downloadable near the bottom of the article.&nbsp;</p>\r
-""" .
+<http://biii.eu/node/1312> a <http://biii.eu/node/software> ;
+    dc:created "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:modified "2018-05-25T03:04:59"^^xsd:dateTime ;
+    dc:title "Python" .
 
 <http://biii.eu/node/913> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Alexandre Dufour" ;
