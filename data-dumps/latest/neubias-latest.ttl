@@ -413,13 +413,22 @@ ages, analyse textures or simplify segmentation like tasks.""" .
 
 <http://biii.eu/node/1034> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Joachim Walter" ;
+    nb:hasFunction <http://edamontology.org/operation_Edge_detection>,
+        <http://edamontology.org/operation_Image_enhancement>,
+        <http://edamontology.org/operation__RBYLqCqN4rP7Jy5m5mxpTeM> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/imageJ_bandpass.jpg" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://rsb.info.nih.gov/ij/plugins/fft-filter.html> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2014-12-15T18:37:38"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:16:00"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:42:16"^^xsd:dateTime ;
     dc:title "ImageJ Bandpass filter" ;
     rdfs:comment """<p>The Fourier transform of an image produces a representation in frequency space: i.e. separated according to spatial frequency (effectively scale). The 2D amplitude map of the different spatial frequencies is symmetrical, and is commonly displayed with low spatial frequencies (large features) in the centre, highest spatial frequencies (small features) at the edges. Fourier filtering involves suppressing or enhancing features in the Fourier domain before carrying out an inverse Fourier transform to obtain a filtered real-space image. ImageJ's _Process &gt; FFT &gt; Bandpass Filter_ implements two common Fourier-filtering functions: 1. filtering for specific sizes of feature in an image by selecting minimum and maximum feature sizes (selecting a radial band of frequencies in Fourier space); 2. filtering out repetitive horizontal or vertical stripes by cutting out a zero-frequency stripe in the orthogonal direction in frequency space. The example image above shows the effect of filtering for 2 feature size ranges: 0-8 pixels, and 8-256 pixels; where the former appears "flattened" or washed-out, and the latter very blurred. The small images displayed to the lower-right of each filtered image correspond to the mask applied to the Fourier transform. Such filtering can be useful prior to global thresholding, for noise suppression, etc.</p>\r
 """ .
@@ -446,35 +455,47 @@ ages, analyse textures or simplify segmentation like tasks.""" .
 
 <http://biii.eu/node/1036> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sliusarenko O, Heinritz J, Emonet T, and Jacobs-Wagner C" ;
+    nb:hasDocumentation <http://microbetracker.org/help/helpSpotFinderM.htm> ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_tracking>,
+        <http://edamontology.org/operation_Spot_extraction> ;
     nb:hasLocation <http://microbetracker.org/help/helpSpotFinderM.htm> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4223> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3578> ;
     dc:created "2014-12-16T00:48:24"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:02:06"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:12:43"^^xsd:dateTime ;
     dc:title "SpotFinderM" ;
-    rdfs:comment "Quote: *A GUI-based program which manually detects spots and places them into previously detected meshes. Currently the program runs from MATLAB only. *" .
+    rdfs:comment """<p>Quote: *A GUI-based program which manually detects spots and places them into previously detected meshes. Currently the program runs from MATLAB only. *</p>\r
+""" .
 
 <http://biii.eu/node/1037> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Alex Herbert" ;
+    nb:hasDocumentation <http://www.sussex.ac.uk/gdsc/intranet/pdfs/FindFoci.pdf>,
+        "pdf" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://www.sussex.ac.uk/gdsc/intranet/microscopy/imagej/findfoci> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
     nb:hasReferencePublication <http://10.1371/journal.pone.0114749> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/726> ;
     dc:created "2014-12-19T13:42:13"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:16:01"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:19:42"^^xsd:dateTime ;
     dc:title "FindFoci" ;
-    rdfs:comment """The FindFoci plugins allow the identification of peak intensity regions within 2D and 3D images. The algorithm is highly configurable and parameters can be optimised using reference images and then applied to multiple images using the batch mode.\r
-Details of the benefits of training an algorithm on multiple images can be found in the FindFoci paper: \r
-2591""" .
-
-<http://biii.eu/node/1039> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://lmb.informatik.uni-freiburg.de/resources/opensource/imagej_plugins/hdf5.html> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    dc:created "2014-12-20T03:34:41"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:02:03"^^xsd:dateTime ;
-    dc:title "HDF5 Plugin for ImageJ and Fiji" .
+    rdfs:comment """<p>The FindFoci plugins allow the identification of peak intensity regions within 2D and 3D images. The algorithm is highly configurable and parameters can be optimised using reference images and then applied to multiple images using the batch mode. Details of the benefits of training an algorithm on multiple images can be found in the FindFoci paper: 2591</p>\r
+""" .
 
 <http://biii.eu/node/104> a <http://biii.eu/node/software> ;
     nb:hasAuthor " Alfredo Rodriguez Sr. Software Engineer",
@@ -6853,7 +6874,7 @@ on MATLAB’s image processing toolbox using the identification of sites&nbsp;of
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
     dc:created "2019-02-05T14:22:12"^^xsd:dateTime ;
-    dc:modified "2019-02-05T14:34:42"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:45:04"^^xsd:dateTime ;
     dc:title "Watershed (ImageJ ij-1.52i)" ;
     rdfs:comment """<p>Performs watershed algotirhm with ij-1.52i.jar. legacy:ij.plugin.filter.EDM("watershed").</p>\r
 """ .
@@ -8820,6 +8841,41 @@ It comes with 3 main modules:\r
     dc:modified "2019-10-18T13:10:49"^^xsd:dateTime ;
     dc:title "automated structures analysis program (ASAP)" ;
     rdfs:comment """<p>ASAP allows to automatically detect, classify and quantify structures acquired by super resolution microscopy.&nbsp;</p>\r
+""" .
+
+<http://biii.eu/node/1593> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Fabrice Cordelières" ;
+    nb:hasDocumentation <https://github.com/fabricecordelieres/IJ-Toolset_OligoMacro/blob/master/README.md>,
+        "Instructions" ;
+    nb:hasFunction <http://edamontology.org/operation_3441>,
+        <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Cell_segmentation>,
+        <http://edamontology.org/operation_Cell_tracking> ;
+    nb:hasLocation <http://github.com/fabricecordelieres/IJ_Toolset-OligoMacro>,
+        "IJ-Toolset_OligoMacro" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasReferencePublication <https://doi.org/10.1002/glia.23342>,
+        "Azevedo MM, Domingues HS, Cordelières FP, Sampaio P, Seixas AI, Relvas JB. Jmy regulates oligodendrocyte differentiation via modulation of actin cytoskeleton dynamics. Glia. 2018;00:1–19." ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic_Widefield_microscopy>,
+        <http://edamontology.org/topic__R7WRbf9Y8ySw9QWPwAjzcUa>,
+        <http://edamontology.org/topic__R9P5gEAm1wic4R2PcZ7ZpPA>,
+        <http://edamontology.org/topic__RL4rPCXlIu9uzNrGcbcSNp>,
+        <http://edamontology.org/topic__RtBCcu7zJiS0phrbR2HzAI> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:hasUsageExample <https://doi.org/10.1002/glia.23342>,
+        "Jmy regulates oligodendrocyte differentiation via modulation of actin cytoskeleton dynamics" ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/597>,
+        <http://biii.eu/node/915> ;
+    dc:created "2019-10-27T19:07:26"^^xsd:dateTime ;
+    dc:modified "2019-10-27T21:44:52"^^xsd:dateTime ;
+    dc:title "OligoMacro Toolset" ;
+    rdfs:comment """<p><strong>OligoMacro Toolset</strong>, is an&nbsp;<strong>ImageJ macro-toolset</strong>&nbsp;aimed at isolating oligodendrocytes from wide-field images, tracking isolated cells, characterizing processes morphology along time, outputting numerical data and plotting them. It takes benefit of ImageJ built-in functions to process images and extract data, and relies on the&nbsp;<strong>R software</strong>&nbsp;in order to generate graphs.</p>\r
 """ .
 
 <http://biii.eu/node/160> a <http://biii.eu/node/software> ;
@@ -20669,6 +20725,16 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
     dc:modified "2017-09-13T12:11:50"^^xsd:dateTime ;
     dc:title "closingGreyScale" .
 
+<http://biii.eu/node/974> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/474>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:11:51"^^xsd:dateTime ;
+    dc:title "computeFeatures" .
+
 <http://biii.eu/node/976> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
@@ -22536,35 +22602,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2019-03-10T03:45:54"^^xsd:dateTime ;
     dc:title "File Import" .
 
-<http://biii.eu/node/597> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Philippe Thévenaz" ;
-    nb:hasDocumentation <http://bigwww.epfl.ch/thevenaz/stackreg/>,
-        "Documentation" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_registration>,
-        <http://edamontology.org/operation__R9Vc5BV3ZMcLHEL6WEceXbY> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Screenshot%202019-10-17%20at%2010.05.18.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <https://github.com/fiji-BIG/StackReg/blob/master/src/main/java/StackReg_.java> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasReferencePublication <http://bigwww.epfl.ch/publications/thevenaz9801.html>,
-        "10.1109/83.650848" ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562>,
-        <http://biii.eu/taxonomy/term/3563> ;
-    nb:hasTopic <http://edamontology.org/topic_0611>,
-        <http://edamontology.org/topic_3385>,
-        <http://edamontology.org/topic__RL4rPCXlIu9uzNrGcbcSNp> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3576> ;
-    nb:requires <http://biii.eu/node/38>,
-        <http://biii.eu/node/915> ;
-    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
-    dc:modified "2019-10-17T11:11:52"^^xsd:dateTime ;
-    dc:title "StackReg" ;
-    rdfs:comment """<p>This plugin registers (= aligns, matches)&nbsp;a stack of image slices.</p>\r
-""" .
-
 <http://biii.eu/node/61> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Piotr Baniukiewicz (ORCID: 0000-0002-4687-9407)",
         "Till Bretschneider (ORCID: 0000-0002-5317-603X)" ;
@@ -23085,6 +23122,28 @@ Previously (?) known as [3D ImageJ Suite](http://imagejdocu.tudor.lu/doku.php?id
     dc:modified "2019-10-17T12:00:55"^^xsd:dateTime ;
     dc:title "Track Processor Flow" .
 
+<http://biii.eu/node/893> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Jens Rietdorf",
+        "Kota Miura" ;
+    nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://fiji.sc/Bleach_Correction> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:28:55"^^xsd:dateTime ;
+    dc:title "Bleach Correction" ;
+    rdfs:comment """<p>Three different methods for correcting fluorescence bleaching. 1. Simple (framewise ratio based) 2. Exponential (curve fitting with exponential decay model) 3. Histogram matching (register histogram shape. with 16 bit, it takes long time... it should be improved).</p>\r
+""" .
+
 <http://biii.eu/node/896> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://tech.knime.org/community/image-processing> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
@@ -23286,16 +23345,6 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:11:50"^^xsd:dateTime ;
     dc:title "combine" .
-
-<http://biii.eu/node/974> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/474>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:51"^^xsd:dateTime ;
-    dc:title "computeFeatures" .
 
 <http://biii.eu/node/975> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -23894,6 +23943,35 @@ The built-in vectors are :</p>\r
     rdfs:comment """<p>Fast Fourier Transform (FFT) for 2D/3D images.</p>\r
 """ .
 
+<http://biii.eu/node/597> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Philippe Thévenaz" ;
+    nb:hasDocumentation <http://bigwww.epfl.ch/thevenaz/stackreg/>,
+        "Documentation" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_registration>,
+        <http://edamontology.org/operation__R9Vc5BV3ZMcLHEL6WEceXbY> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Screenshot%202019-10-17%20at%2010.05.18.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <https://github.com/fiji-BIG/StackReg/blob/master/src/main/java/StackReg_.java> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://bigwww.epfl.ch/publications/thevenaz9801.html>,
+        "10.1109/83.650848" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic_0611>,
+        <http://edamontology.org/topic_3385>,
+        <http://edamontology.org/topic__RL4rPCXlIu9uzNrGcbcSNp> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3576> ;
+    nb:requires <http://biii.eu/node/38>,
+        <http://biii.eu/node/915> ;
+    dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
+    dc:modified "2019-10-17T11:11:52"^^xsd:dateTime ;
+    dc:title "StackReg" ;
+    rdfs:comment """<p>This plugin registers (= aligns, matches)&nbsp;a stack of image slices.</p>\r
+""" .
+
 <http://biii.eu/node/618> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Jean-Yves Tinevez" ;
     nb:hasFunction <http://edamontology.org/operation_0226> ;
@@ -23995,26 +24073,6 @@ The built-in vectors are :</p>\r
     dc:modified "2019-10-21T14:25:38"^^xsd:dateTime ;
     dc:title "CellProfiler Smooth" ;
     rdfs:comment """<p>This CellProfiler module allows smoothen the image with a choice from various algorithms: - Fit Polynomial - Gaussian Filter - Median Filter - Bilateral Filter - Circular averaging - "Smooth to Average" filter.</p>\r
-""" .
-
-<http://biii.eu/node/893> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Kota Miura, Jens Rietdorf" ;
-    nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
-    nb:hasLocation <http://fiji.sc/Bleach_Correction> ;
-    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/893> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2018-10-18T17:28:46"^^xsd:dateTime ;
-    dc:title "Bleach Correction" ;
-    rdfs:comment """Three different methods for correcting fluorescence bleaching. \r
-\r
-1. Simple (framewise ratio based)\r
-2. Exponential (curve fitting with exponential decay model)\r
-3. Histogram matching (register histogram shape. with 16 bit, it takes long time... it should be improved).\r
-\r
-\r
 """ .
 
 <http://biii.eu/node/903> a <http://biii.eu/node/software> ;
@@ -24547,6 +24605,27 @@ GFP-histone transformed files provided by Rob Saint\r
 \r
 V.Foe and G.Odell, . 26 July 2001""" .
 
+<http://biii.eu/node/474> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Stephan Saalfeld" ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection>,
+        <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://fiji.sc/Feature_Extraction> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://10.1023/B:VISI.0000029664.99615.94> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:37:51"^^xsd:dateTime ;
+    dc:title "ImageJ Feature Extraction" ;
+    rdfs:comment """<p>Automatic finding of image features are very convenient for registering two images to align them in proper orientation. Two image plugins are implemented for extracting image features and are placed as menu items at: [Plugins &gt; Feature Extraction &gt; Extract SIFT Correspondences] and [Plugins &gt; Feature Extraction &gt; Extract MOPS Correspondences] For more details, see the linked page in Fiji wiki. For details about SIFT algorithm, see 2569. For more details about MOPS algorithm, see 2570.</p>\r
+""" .
+
 <http://biii.eu/node/663> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Albert Cardona",
         "Curtis Rueden",
@@ -24657,29 +24736,6 @@ V.Foe and G.Odell, . 26 July 2001""" .
 <p>This module crops images into a rectangle, ellipse, an arbitrary shape provided by you, the shape of object(s) identified by an&nbsp;<strong>Identify</strong>&nbsp;module, or a shape created using a previous&nbsp;<strong>Crop</strong>&nbsp;module in the pipeline.</p>\r
 """ .
 
-<http://biii.eu/node/915> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Philippe Thévenaz" ;
-    nb:hasDocumentation <http://bigwww.epfl.ch/thevenaz/turboreg/> ;
-    nb:hasFunction <http://edamontology.org/operation_Image_registration> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Screenshot%202019-10-17%20at%2010.23.26.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <http://bigwww.epfl.ch/thevenaz/turboreg/> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
-    nb:hasReferencePublication <http://bigwww.epfl.ch/publications/thevenaz9801.html>,
-        "10.1109/83.650848" ;
-    nb:hasTopic <http://edamontology.org/topic_3382> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2019-10-17T11:28:33"^^xsd:dateTime ;
-    dc:title "TurboReg" ;
-    rdfs:comment """<p>The purpose of this plugin is to register—in other words, to align or to match—two images, one of them being called the&nbsp;<em>source</em>&nbsp;image and the other the&nbsp;<em>target</em>&nbsp;image.</p>\r
-""" .
-
 <http://biii.eu/node/11> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Alexandre Dufour" ;
     nb:hasDocumentation <http://icy.bioimageanalysis.org/plugin/protocols/> ;
@@ -24739,21 +24795,6 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:modified "2018-05-15T01:06:06"^^xsd:dateTime ;
     dc:title "Optical Flow" ;
     rdfs:comment """<p>This protocol computes the optical flow of a 2D+T sequence. The results are displayed with flow arrows painted on top of the original sequence, and also with two additional sequences for the norm of the flow and a color-coded presentation of the flow following the Middlebury convention.</p>\r
-""" .
-
-<http://biii.eu/node/474> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Stephan Saalfeld" ;
-    nb:hasLocation <http://fiji.sc/Feature_Extraction> ;
-    nb:hasReferencePublication <http://10.1023/B:VISI.0000029664.99615.94> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/474>,
-        <http://biii.eu/node/86>,
-        <http://biii.eu/node/974> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:04:38"^^xsd:dateTime ;
-    dc:title "Feature Extraction" ;
-    rdfs:comment """<p>Automatic finding of image features are very convenient for registering two images to align them in proper orientation. Two image plugins are implemented for extracting image features and are placed as menu items at: [Plugins &gt; Feature Extraction &gt; Extract SIFT Correspondences] and [Plugins &gt; Feature Extraction &gt; Extract MOPS Correspondences] For more details, see the linked page in Fiji wiki. For details about SIFT algorithm, see 2569. For more details about MOPS algorithm, see 2570.</p>\r
 """ .
 
 <http://biii.eu/node/49> a <http://biii.eu/node/software> ;
@@ -24897,6 +24938,29 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2019-10-16T19:24:33"^^xsd:dateTime ;
     dc:title "Filter Toolbox" ;
     rdfs:comment """<p>Provides a selection of spatial, separable and customizable filters in 1D and 2D, with OpenCL implementation if supported.</p>\r
+""" .
+
+<http://biii.eu/node/915> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Philippe Thévenaz" ;
+    nb:hasDocumentation <http://bigwww.epfl.ch/thevenaz/turboreg/> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_registration> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-10/Screenshot%202019-10-17%20at%2010.23.26.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://bigwww.epfl.ch/thevenaz/turboreg/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasReferencePublication <http://bigwww.epfl.ch/publications/thevenaz9801.html>,
+        "10.1109/83.650848" ;
+    nb:hasTopic <http://edamontology.org/topic_3382> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
+    dc:modified "2019-10-17T11:28:33"^^xsd:dateTime ;
+    dc:title "TurboReg" ;
+    rdfs:comment """<p>The purpose of this plugin is to register—in other words, to align or to match—two images, one of them being called the&nbsp;<em>source</em>&nbsp;image and the other the&nbsp;<em>target</em>&nbsp;image.</p>\r
 """ .
 
 <http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
