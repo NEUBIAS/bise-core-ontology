@@ -2507,12 +2507,14 @@ See installation Instructions on the website.\r
 <http://biii.eu/node/1157> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://docs.opencv.org/master/d2/dbc/cuda_intro.html>,
         "CUDA Module Introduction" ;
+    nb:hasFunction <http://edamontology.org/operation_2409> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/OpenCV_Logo_1.png" ;
     nb:hasLicense "BSD" ;
-    nb:hasType <http://biii.eu/taxonomy/term/3566> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/108> ;
     dc:created "2017-09-14T11:27:54"^^xsd:dateTime ;
-    dc:modified "2017-09-14T11:29:28"^^xsd:dateTime ;
+    dc:modified "2019-10-30T13:38:23"^^xsd:dateTime ;
     dc:title "OpenCV / CUDA" ;
     rdfs:comment """<p>The OpenCV CUDA module is a set of classes and functions to utilize CUDA computational capabilities. It is implemented using NVIDIA* CUDA* Runtime API and supports only NVIDIA GPUs. The OpenCV CUDA module includes utility functions, low-level vision primitives, and high-level algorithms. The utility functions and low-level primitives provide a powerful infrastructure for developing fast vision algorithms taking advantage of CUDA whereas the high-level functionality includes some state-of-the-art algorithms (such as stereo correspondence, face and people detectors, and others) ready to be used by the application developers.</p>\r
 \r
@@ -2691,10 +2693,16 @@ See installation Instructions on the website.\r
     nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/Introduction.htm>,
         "FracLac site" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
     nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2017-11-10T16:41:54"^^xsd:dateTime ;
-    dc:modified "2017-11-10T16:41:54"^^xsd:dateTime ;
+    dc:modified "2019-10-30T14:18:01"^^xsd:dateTime ;
     dc:title "FracLac" ;
     rdfs:comment """<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>FracLac is for digital image analysis. Use it to measure&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>difficult&nbsp;to describe morphological features<span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />\r
 <a href="http://rsb.info.nih.gov/ij/plugins/fraclac/fraclac.html">FracLac</a>&nbsp;is a plugin for ImageJ. It is freely available software developed and maintained by our&nbsp;<a href="http://www.csu.edu.au/faculty/science/cmhealth/staff/profiles/academic-staff/herbert-jelinek">lab</a>&nbsp;at the School of Community Health, Faculty of Science, Charles Sturt University, Australia. The author of the software and project lead is also the author of this document (me, Audrey Karperien). The basic box counting algorithm was originally modified from&nbsp;<em>ImageJ</em>'s box counting algorithm and H. Jelinek's&nbsp;<em>NIH Image</em>&nbsp;plugin, and was further elaborated based on extensive research and development. The convex hull algorithm was provided by Thomas Roy, University of Alberta, Canada. As open source software, with the continuing help of a host of users and collaborators, FracLac has evolved to a suite of fractal analysis and morphology functions.</p>\r
@@ -20277,11 +20285,11 @@ Weakness:\r
 <http://biii.eu/node/934> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bitplane.com/imaris/imaris> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3577> ;
     nb:requires <http://biii.eu/node/116>,
         <http://biii.eu/node/87> ;
     dc:created "2013-10-15T12:45:49"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:16"^^xsd:dateTime ;
+    dc:modified "2019-10-30T13:26:03"^^xsd:dateTime ;
     dc:title "ImarisFileReaders" .
 
 <http://biii.eu/node/935> a <http://biii.eu/node/software> ;
@@ -20838,12 +20846,21 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas BÃ
     dc:title "filter2" .
 
 <http://biii.eu/node/984> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <https://rdrr.io/bioc/EBImage/man/floodFill.html>,
+        "online link" ;
+    nb:hasFunction <http://edamontology.org/operation_3553> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4236> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:hasUsageExample <https://rdrr.io/bioc/EBImage/man/floodFill.html> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:00"^^xsd:dateTime ;
+    dc:modified "2019-10-30T13:31:19"^^xsd:dateTime ;
     dc:title "floodFill" .
 
 <http://biii.eu/node/986> a <http://biii.eu/node/software> ;
@@ -20963,12 +20980,11 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas BÃ
 """ .
 
 <http://biii.eu/node/995> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:07"^^xsd:dateTime ;
+    dc:modified "2019-10-30T13:35:24"^^xsd:dateTime ;
     dc:title "makeBrush" .
 
 <http://biii.eu/node/996> a <http://biii.eu/node/software> ;
@@ -25103,36 +25119,6 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2017-09-13T12:11:48"^^xsd:dateTime ;
     dc:title "channel" .
 
-<http://biii.eu/node/1128> a <http://biii.eu/node/software> ;
-    nb:hasDOI <https://doi.org/doi:10.18129/B9.bioc.EBImage>,
-        "EBimage package doi" ;
-    nb:hasDocumentation <http://bioconductor.org/packages/devel/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html>,
-        "Tutorials" ;
-    nb:hasFunction <http://edamontology.org/operation_Geometrical_transform>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Morphological_operations> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/indexebimage.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
-    nb:hasLicense "LGPL" ;
-    nb:hasLocation <https://github.com/aoles/EBImage>,
-        "Github" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/30> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4236> ;
-    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btq046>,
-        "EBImageâ€”an R package for image processing with applications to cellular phenotypes" ;
-    nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
-        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/1297> ;
-    dc:created "2017-09-13T09:41:00"^^xsd:dateTime ;
-    dc:modified "2019-02-03T18:04:04"^^xsd:dateTime ;
-    dc:title " EBImage" ;
-    rdfs:comment """<p>EBImage provides general purpose functionality for image processing and analysis. In the context of (high-throughput) microscopy-based cellular assays, EBImage offers tools to segment cells and extract quantitative cellular descriptors. This allows the automation of such tasks using the R programming language and facilitates the use of other tools in the R environment for signal processing, statistical modeling, machine learning and visualization with image data.</p>\r
-\r
-<p>EBImage is available through the Bioconductor software project (<a href="http://www.bioconductor.org">www.bioconductor.org</a>). Strengths Lightweight Suitable for automated, scripted analyses All functions are documented with examples Modular links to R and Bioconductor software, notably imageHTS and cellHTS2 Community support via the Bioconductor mailing list Reproducible (image) analysis using the Sweave report-writing system</p>\r
-""" .
-
 <http://biii.eu/node/1376> a <http://biii.eu/node/software> ;
     nb:hasDOI <https://zenodo.org/record/1034765%23.W8mhARO2ns0>,
         "https://zenodo.org/record/1034765#.W8mhARO2ns0" ;
@@ -25332,6 +25318,36 @@ Mahotas and all packages on which it relies are open-source.\r
 	<li>A&nbsp;utility to create manual segmentations to be used as ground truth to test and benchmark automatic segmentation algorithms.</li>\r
 	<li>A tool for replacing one color in an image with another color.</li>\r
 </ul>\r
+""" .
+
+<http://biii.eu/node/1128> a <http://biii.eu/node/software> ;
+    nb:hasDOI <https://doi.org/doi:10.18129/B9.bioc.EBImage>,
+        "EBimage package doi" ;
+    nb:hasDocumentation <http://bioconductor.org/packages/devel/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html>,
+        "Tutorials" ;
+    nb:hasFunction <http://edamontology.org/operation_Geometrical_transform>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/indexebimage.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
+    nb:hasLicense "LGPL" ;
+    nb:hasLocation <https://github.com/aoles/EBImage>,
+        "Github" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/30> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4236> ;
+    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btq046>,
+        "EBImageâ€”an R package for image processing with applications to cellular phenotypes" ;
+    nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1297> ;
+    dc:created "2017-09-13T09:41:00"^^xsd:dateTime ;
+    dc:modified "2019-02-03T18:04:04"^^xsd:dateTime ;
+    dc:title " EBImage" ;
+    rdfs:comment """<p>EBImage provides general purpose functionality for image processing and analysis. In the context of (high-throughput) microscopy-based cellular assays, EBImage offers tools to segment cells and extract quantitative cellular descriptors. This allows the automation of such tasks using the R programming language and facilitates the use of other tools in the R environment for signal processing, statistical modeling, machine learning and visualization with image data.</p>\r
+\r
+<p>EBImage is available through the Bioconductor software project (<a href="http://www.bioconductor.org">www.bioconductor.org</a>). Strengths Lightweight Suitable for automated, scripted analyses All functions are documented with examples Modular links to R and Bioconductor software, notably imageHTS and cellHTS2 Community support via the Bioconductor mailing list Reproducible (image) analysis using the Sweave report-writing system</p>\r
 """ .
 
 <http://biii.eu/node/1130> a <http://biii.eu/node/software> ;
