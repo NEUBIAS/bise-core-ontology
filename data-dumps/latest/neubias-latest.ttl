@@ -8892,6 +8892,33 @@ It comes with 3 main modules:\r
     rdfs:comment """<p><strong>OligoMacro Toolset</strong>, is an&nbsp;<strong>ImageJ macro-toolset</strong>&nbsp;aimed at isolating oligodendrocytes from wide-field images, tracking isolated cells, characterizing processes morphology along time, outputting numerical data and plotting them. It takes benefit of ImageJ built-in functions to process images and extract data, and relies on the&nbsp;<strong>R software</strong>&nbsp;in order to generate graphs.</p>\r
 """ .
 
+<http://biii.eu/node/1594> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Juan Nunez-Iglesias",
+        "Kira Evans",
+        "Nicholas Sofroniew",
+        "Talley Lambert" ;
+    nb:hasDocumentation <https://napari.org/>,
+        "Documentation" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_Image_visualisation> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
+    nb:hasLicense "BSD-3" ;
+    nb:hasLocation <https://github.com/napari/napari>,
+        "GitHub repository" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasTopic <http://edamontology.org/topic_3382>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2019-11-08T10:06:22"^^xsd:dateTime ;
+    dc:modified "2019-11-08T10:22:07"^^xsd:dateTime ;
+    dc:title "Napari image viewer" ;
+    rdfs:comment """<p><strong>napari</strong>&nbsp;is a fast, interactive, multi-dimensional image viewer for Python. It’s designed for browsing, annotating, and analyzing large multi-dimensional images. It’s built on top of&nbsp;<code>Qt</code>&nbsp;(for the GUI),&nbsp;<code>vispy</code>&nbsp;(for performant GPU-based rendering), and the scientific Python stack (e.g.&nbsp;<code>numpy</code>,&nbsp;<code>scipy</code>). It includes critical viewer features out-of-the-box, such as support for large multi-dimensional data, and layering and annotation. By integrating closely with the Python ecosystem,&nbsp;<strong>napari</strong>&nbsp;can be easily coupled to leading machine learning and image analysis tools (e.g.&nbsp;<code>scikit-image</code>,&nbsp;<code>scikit-learn</code>,&nbsp;<code>TensorFlow</code>,&nbsp;<code>PyTorch</code>), enabling more user-friendly automated analysis.</p>\r
+""" .
+
 <http://biii.eu/node/160> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Olaf Ronneberger" ;
     nb:hasLicense "web" ;
@@ -18556,7 +18583,8 @@ Results are exported into Excel readable files.\r
     dc:title "Shape Index Map" .
 
 <http://biii.eu/node/794> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Longair Mark, Ferreira Tiago" ;
+    nb:hasAuthor "Ferreira Tiago",
+        "Longair Mark" ;
     nb:hasFunction <http://edamontology.org/operation_Image_segmentation>,
         <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/320px-SimpleNeuriteTracer2.png" ;
@@ -18572,14 +18600,19 @@ Results are exported into Excel readable files.\r
         <http://biii.eu/taxonomy/term/3562> ;
     nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:hasUsageExample <http://snyderlab.com/2016/05/25/tracing-neurons-using-fiji-imagej/> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/79> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2019-08-22T16:00:50"^^xsd:dateTime ;
+    dc:modified "2019-11-07T22:46:02"^^xsd:dateTime ;
     dc:title "Simple Neurite Tracer" ;
-    rdfs:comment """<p>Plugin designed to allow easy&nbsp;semi-automatic tracing of neurons or other filament-like structures (e.g., microtubules, blood vessels) through either 2D images or 3D image stacks. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.</p>\r
+    rdfs:comment """Plugin designed to allow easy semi-automatic tracing of neurons or other filament-like structures (e.g., microtubules, blood vessels) through either 2D images or 3D image stacks. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.\r
 \r
-<p>This plugin comes with Fiji.</p>\r
+This plugin is included in Fiji by default.\r
+\r
+A usage instruction is available here:  \r
+[Tracing Neurons using FIJI (ImageJ)](http://snyderlab.com/2016/05/25/tracing-neurons-using-fiji-imagej/)\r
+\r
 """ .
 
 <http://biii.eu/node/795> a <http://biii.eu/node/software> ;
