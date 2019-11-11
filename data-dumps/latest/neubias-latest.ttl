@@ -12996,14 +12996,20 @@ The parameters used  for this example data Beads, were \r
     dc:title "h-dome Extraction" .
 
 <http://biii.eu/node/357> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Johannes Schindelin" ;
+    nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-11/Clown-magenta_crop.jpg" ;
     nb:hasLocation <http://fiji.sc/Replace_Red_with_Magenta> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
     dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:02:27"^^xsd:dateTime ;
-    dc:title "Replace Red with Magenta" .
+    dc:modified "2019-11-12T00:07:12"^^xsd:dateTime ;
+    dc:title "Replace Red with Magenta" ;
+    rdfs:comment """<p>This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.</p>\r
+\r
+<p>Note: the plugin completely ignores the blue channel, and replaces it with a copy of the red channel.</p>\r
+""" .
 
 <http://biii.eu/node/358> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Hervé Nicolas" ;
