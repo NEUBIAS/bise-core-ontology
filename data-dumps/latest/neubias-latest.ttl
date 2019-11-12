@@ -12999,12 +12999,15 @@ The parameters used  for this example data Beads, were \r
     nb:hasAuthor "Johannes Schindelin" ;
     nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-11/Clown-magenta_crop.jpg" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
     nb:hasLocation <http://fiji.sc/Replace_Red_with_Magenta> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2019-11-12T00:07:12"^^xsd:dateTime ;
+    dc:created "2019-11-12T00:13:54"^^xsd:dateTime ;
+    dc:modified "2019-11-12T00:13:54"^^xsd:dateTime ;
     dc:title "Replace Red with Magenta" ;
     rdfs:comment """<p>This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.</p>\r
 \r
@@ -18818,13 +18821,22 @@ A usage instruction is available here:  \r
     dc:title "Oriented Contours" .
 
 <http://biii.eu/node/811> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Cell Profiler team" ;
+    nb:hasFunction <http://edamontology.org/operation__R7MFwdgojfmkZ07yWbdcda0> ;
     nb:hasLocation <http://www.cellprofiler.org/CPmanual/RescaleIntensity.html> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/31> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:09:17"^^xsd:dateTime ;
-    dc:title "RescaleIntensity" .
+    dc:modified "2019-11-12T00:21:31"^^xsd:dateTime ;
+    dc:title "RescaleIntensity" ;
+    rdfs:comment """<p>**RescaleIntensity** changes the intensity range of an image to your desired specifications.</p>\r
+\r
+<p>This module lets you rescale the intensity of the input images by any ofseveral methods. You should use caution when interpreting intensity and texture measurements derived from images that have been rescaled because certain options for this module do not preserve the relative intensities from image to image.</p>\r
+""" .
 
 <http://biii.eu/node/812> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Philippe Thévenaz" ;
