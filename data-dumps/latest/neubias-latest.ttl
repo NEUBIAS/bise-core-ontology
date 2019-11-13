@@ -102,13 +102,23 @@
     dc:title "restoreTools" .
 
 <http://biii.eu/node/1007> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasAuthor "Oleg Sklyar" ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
+        "pdf" ;
+    nb:hasFunction <http://edamontology.org/operation__RDFFD5jBfUw74a3vJeBAGB1> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:15"^^xsd:dateTime ;
-    dc:title "rmObjects" .
+    dc:modified "2019-11-13T13:07:04"^^xsd:dateTime ;
+    dc:title "EBImage rmObjects" ;
+    rdfs:comment """<p>deletes objects from an image by setting their pixel intensity values to 0.</p>\r
+""" .
 
 <http://biii.eu/node/1009> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -172,13 +182,20 @@
     dc:title "whiteTopHatGreyScale" .
 
 <http://biii.eu/node/1018> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
+        "pdf" ;
+    nb:hasFunction <http://edamontology.org/operation_2409> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:28"^^xsd:dateTime ;
-    dc:title "writeImage" .
+    dc:modified "2019-11-13T13:13:47"^^xsd:dateTime ;
+    dc:title "EBImage writeImage" .
 
 <http://biii.eu/node/1019> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Qingzong TSENG" ;
@@ -2524,25 +2541,40 @@ See installation Instructions on the website.\r
 <http://biii.eu/node/1158> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://docs.opencv.org/master/d6/d55/tutorial_table_of_content_calib3d.html>,
         "Camera calibration and 3D reconstruction (calib3d module)" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_reconstruction> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/OpenCV_Logo_2.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
     nb:hasLicense "BSD" ;
-    nb:hasType <http://biii.eu/taxonomy/term/3566> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/108> ;
     dc:created "2017-09-14T11:31:39"^^xsd:dateTime ;
-    dc:modified "2017-09-14T11:36:29"^^xsd:dateTime ;
+    dc:modified "2019-11-13T13:03:08"^^xsd:dateTime ;
     dc:title "OpenCV / Camera Calibration and 3D reconstration" .
 
 <http://biii.eu/node/1159> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://docs.opencv.org/master/da/de7/tutorial_table_of_content_photo.html>,
         "Computational photography (photo module)" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_processing> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/OpenCV_Logo_3.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
     nb:hasLicense "BSD" ;
     nb:hasLocation <http://opencv.org/>,
         "OpenCV website" ;
-    nb:hasType <http://biii.eu/taxonomy/term/3566> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/108> ;
     dc:created "2017-09-14T11:37:20"^^xsd:dateTime ;
-    dc:modified "2017-09-14T11:44:25"^^xsd:dateTime ;
+    dc:modified "2019-11-13T13:23:39"^^xsd:dateTime ;
     dc:title "OpenCV / Computational Photography" .
 
 <http://biii.eu/node/1160> a <http://biii.eu/node/software> ;
@@ -8980,16 +9012,21 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
 The goal of XuvTools is to provide tools, that combine multiple microscopic recordings to obtain a larger field of view (stitching) and a higher dynamic range (HDR recombination), or better resolution (multi view reconstruction), and to make these tools publicly available.""" .
 
 <http://biii.eu/node/164> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_Interactive_segmentation> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
     nb:hasLicense "commercial" ;
     nb:hasLocation <http://www.turtleseg.org/> ;
     nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
         <http://biii.eu/taxonomy/term/31> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/3567> ;
     nb:openess <http://biii.eu/taxonomy/term/3577> ;
     dc:created "2016-10-25T14:56:48"^^xsd:dateTime ;
-    dc:modified "2017-09-12T20:00:36"^^xsd:dateTime ;
+    dc:modified "2019-11-13T12:58:11"^^xsd:dateTime ;
     dc:title "TurtleSeg: 3D Image Segmentation Software" ;
-    rdfs:comment "TurtleSeg is an interactive 3D image segmentation tool. TurtleSeg has an automated system, Spotlight, for automatically directing the user towards the next steps. Typically, a user loads a 3D image and then manually contour a sparse number of slices, the full 3D segmentation can then be built automatically." .
+    rdfs:comment """<p>TurtleSeg is an interactive 3D image segmentation tool. TurtleSeg has an automated system, Spotlight, for automatically directing the user towards the next steps. Typically, a user loads a 3D image and then manually contour a sparse number of slices, the full 3D segmentation can then be built automatically.</p>\r
+""" .
 
 <http://biii.eu/node/165> a <http://biii.eu/node/software> ;
     nb:hasAuthor " Tjelvar S. G. Olsson",
@@ -20763,14 +20800,6 @@ The plugin is well suited for video imaging in cell biology relying on low-inten
     rdfs:comment """<p>Image segmentation&nbsp;based on the MOSAIC Discrete region competition algorithm.&nbsp;</p>\r
 """ .
 
-<http://biii.eu/node/966> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.turtleseg.org/> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-12T11:45:12"^^xsd:dateTime ;
-    dc:title "TurtleSeg" .
-
 <http://biii.eu/node/967> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
@@ -20821,24 +20850,20 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
     dc:title "closingGreyScale" .
 
 <http://biii.eu/node/974> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation_Texture_extraction> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/474>,
-        <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:51"^^xsd:dateTime ;
-    dc:title "computeFeatures" .
-
-<http://biii.eu/node/976> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:53"^^xsd:dateTime ;
-    dc:title "dilateGreyScale" .
+    dc:modified "2019-11-13T12:45:56"^^xsd:dateTime ;
+    dc:title "EBImage computeFeatures" .
 
 <http://biii.eu/node/978> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -20915,13 +20940,19 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
     dc:title "floodFill" .
 
 <http://biii.eu/node/986> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_smoothing> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:02"^^xsd:dateTime ;
-    dc:title "gblur" .
+    dc:modified "2019-11-13T13:17:03"^^xsd:dateTime ;
+    dc:title "EBImage gblur" .
 
 <http://biii.eu/node/987> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://cbia.fi.muni.cz/projects/graph-cut-library.html> ;
@@ -21032,29 +21063,51 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
 
 <http://biii.eu/node/995> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation_0226> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2019-10-30T13:35:24"^^xsd:dateTime ;
-    dc:title "makeBrush" .
+    dc:modified "2019-11-13T12:38:01"^^xsd:dateTime ;
+    dc:title "EBImage makeBrush" .
 
 <http://biii.eu/node/996> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
+        "pdf" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_smoothing> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:09"^^xsd:dateTime ;
-    dc:title "medianFilter" .
+    dc:modified "2019-11-13T13:00:46"^^xsd:dateTime ;
+    dc:title "EBImage medianFilter" .
 
 <http://biii.eu/node/997> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation_Feature_extraction> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:09"^^xsd:dateTime ;
-    dc:title "ocontour" .
+    dc:modified "2019-11-13T13:21:41"^^xsd:dateTime ;
+    dc:title "EBImage ocontour" ;
+    rdfs:comment """<p>Computes the oriented contour of objects.</p>\r
+""" .
 
 <http://biii.eu/node/999> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -21067,14 +21120,22 @@ Endrov started development in 2007 by Johan Henriksson in the group of Thomas B�
     dc:title "openingGreyScale" .
 
 <http://biii.eu/node/1006> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
+        "pdf" ;
+    nb:hasFunction <http://edamontology.org/operation__RDFFD5jBfUw74a3vJeBAGB1> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86>,
-        <http://biii.eu/node/970> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:14"^^xsd:dateTime ;
-    dc:title "rgbImage" .
+    dc:modified "2019-11-13T12:41:14"^^xsd:dateTime ;
+    dc:title "EBImage rgbImage" ;
+    rdfs:comment """<p>rgbImage combines Grayscale images into a Color one.</p>\r
+""" .
 
 <http://biii.eu/node/1012> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -23441,14 +23502,21 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
     dc:title "combine" .
 
 <http://biii.eu/node/975> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:52"^^xsd:dateTime ;
-    dc:title "dilate" .
+    dc:modified "2019-11-13T13:09:20"^^xsd:dateTime ;
+    dc:title "EBImage dilate" ;
+    rdfs:comment """<p>A function&nbsp;to perform morphological operation&nbsp;on binary and grayscale images.</p>\r
+""" .
 
 <http://biii.eu/node/979> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -23461,13 +23529,21 @@ In Aphelion, you can access this tool in Seglmentation->Threshold-> AphImgEntrop
     dc:title "erode" .
 
 <http://biii.eu/node/985> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation__RDFFD5jBfUw74a3vJeBAGB1> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:01"^^xsd:dateTime ;
-    dc:title "flop" .
+    dc:modified "2019-11-13T12:52:47"^^xsd:dateTime ;
+    dc:title "EBImage flop" ;
+    rdfs:comment """<p>flop mirrors x around the image vertical axis (horizontal reflection).</p>\r
+""" .
 
 <http://biii.eu/node/1042> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Michael Schmid" ;
@@ -24331,13 +24407,19 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:title "flip" .
 
 <http://biii.eu/node/1008> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasFunction <http://edamontology.org/operation_Geometrical_transform> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/86> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
     dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:18"^^xsd:dateTime ;
-    dc:title "rotate" .
+    dc:modified "2019-11-13T13:25:40"^^xsd:dateTime ;
+    dc:title "EBImage rotate" .
 
 <http://biii.eu/node/1038> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Erik Meijering" ;
@@ -24550,6 +24632,27 @@ Several options for curve fitting are available. Results can be saved back in OM
     dc:modified "2019-10-18T13:09:48"^^xsd:dateTime ;
     dc:title "Icy NHerve Toolbox" .
 
+<http://biii.eu/node/474> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Stephan Saalfeld" ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection>,
+        <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://fiji.sc/Feature_Extraction> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <http://10.1023/B:VISI.0000029664.99615.94> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
+    dc:modified "2019-10-28T12:37:51"^^xsd:dateTime ;
+    dc:title "ImageJ Feature Extraction" ;
+    rdfs:comment """<p>Automatic finding of image features are very convenient for registering two images to align them in proper orientation. Two image plugins are implemented for extracting image features and are placed as menu items at: [Plugins &gt; Feature Extraction &gt; Extract SIFT Correspondences] and [Plugins &gt; Feature Extraction &gt; Extract MOPS Correspondences] For more details, see the linked page in Fiji wiki. For details about SIFT algorithm, see 2569. For more details about MOPS algorithm, see 2570.</p>\r
+""" .
+
 <http://biii.eu/node/491> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Invert> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
@@ -24737,27 +24840,6 @@ Victoria Foe made this movie on a Bio-Rad Radiance 2000 laser scanning confocal 
 GFP-histone transformed files provided by Rob Saint\r
 \r
 V.Foe and G.Odell, . 26 July 2001""" .
-
-<http://biii.eu/node/474> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Stephan Saalfeld" ;
-    nb:hasFunction <http://edamontology.org/operation_Object_detection>,
-        <http://edamontology.org/operation_Spot_extraction> ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <http://fiji.sc/Feature_Extraction> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasReferencePublication <http://10.1023/B:VISI.0000029664.99615.94> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2013-10-11T15:08:41"^^xsd:dateTime ;
-    dc:modified "2019-10-28T12:37:51"^^xsd:dateTime ;
-    dc:title "ImageJ Feature Extraction" ;
-    rdfs:comment """<p>Automatic finding of image features are very convenient for registering two images to align them in proper orientation. Two image plugins are implemented for extracting image features and are placed as menu items at: [Plugins &gt; Feature Extraction &gt; Extract SIFT Correspondences] and [Plugins &gt; Feature Extraction &gt; Extract MOPS Correspondences] For more details, see the linked page in Fiji wiki. For details about SIFT algorithm, see 2569. For more details about MOPS algorithm, see 2570.</p>\r
-""" .
 
 <http://biii.eu/node/663> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Albert Cardona",
@@ -25072,6 +25154,16 @@ Mahotas and all packages on which it relies are open-source.\r
     rdfs:comment """<p>The purpose of this plugin is to register—in other words, to align or to match—two images, one of them being called the&nbsp;<em>source</em>&nbsp;image and the other the&nbsp;<em>target</em>&nbsp;image.</p>\r
 """ .
 
+<http://biii.eu/node/970> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/1006>,
+        <http://biii.eu/node/86> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:11:48"^^xsd:dateTime ;
+    dc:title "channel" .
+
 <http://biii.eu/node/971> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
@@ -25159,16 +25251,6 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:title "Histogram" ;
     rdfs:comment """<p>Compute and display the histogram of a sequence, with a more accurate control on the histogram parameters (such as the number of bins) than the built-in Icy widget. In particular, the histogram can be computed either over a whole sequence or over a sub-region defined by a ROI.</p>\r
 """ .
-
-<http://biii.eu/node/970> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/1006>,
-        <http://biii.eu/node/86> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:11:48"^^xsd:dateTime ;
-    dc:title "channel" .
 
 <http://biii.eu/node/1376> a <http://biii.eu/node/software> ;
     nb:hasDOI <https://zenodo.org/record/1034765%23.W8mhARO2ns0>,
@@ -25371,36 +25453,6 @@ Mahotas and all packages on which it relies are open-source.\r
 </ul>\r
 """ .
 
-<http://biii.eu/node/1128> a <http://biii.eu/node/software> ;
-    nb:hasDOI <https://doi.org/doi:10.18129/B9.bioc.EBImage>,
-        "EBimage package doi" ;
-    nb:hasDocumentation <http://bioconductor.org/packages/devel/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html>,
-        "Tutorials" ;
-    nb:hasFunction <http://edamontology.org/operation_Geometrical_transform>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Morphological_operations> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/indexebimage.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
-    nb:hasLicense "LGPL" ;
-    nb:hasLocation <https://github.com/aoles/EBImage>,
-        "Github" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/30> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4236> ;
-    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btq046>,
-        "EBImage—an R package for image processing with applications to cellular phenotypes" ;
-    nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
-        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/1297> ;
-    dc:created "2017-09-13T09:41:00"^^xsd:dateTime ;
-    dc:modified "2019-02-03T18:04:04"^^xsd:dateTime ;
-    dc:title " EBImage" ;
-    rdfs:comment """<p>EBImage provides general purpose functionality for image processing and analysis. In the context of (high-throughput) microscopy-based cellular assays, EBImage offers tools to segment cells and extract quantitative cellular descriptors. This allows the automation of such tasks using the R programming language and facilitates the use of other tools in the R environment for signal processing, statistical modeling, machine learning and visualization with image data.</p>\r
-\r
-<p>EBImage is available through the Bioconductor software project (<a href="http://www.bioconductor.org">www.bioconductor.org</a>). Strengths Lightweight Suitable for automated, scripted analyses All functions are documented with examples Modular links to R and Bioconductor software, notably imageHTS and cellHTS2 Community support via the Bioconductor mailing list Reproducible (image) analysis using the Sweave report-writing system</p>\r
-""" .
-
 <http://biii.eu/node/1130> a <http://biii.eu/node/software> ;
     dc:created "2017-09-13T10:53:00"^^xsd:dateTime ;
     dc:modified "2017-09-13T10:53:00"^^xsd:dateTime ;
@@ -25547,6 +25599,20 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:title "OpenCV" ;
     rdfs:comment "OpenCV is released under a BSD license and hence its free for both academic and commercial use. It has C++, C, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Adopted all around the world, OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 6 million. Usage ranges from interactive art, to mines inspection, stitching maps on the web or through advanced robotics." .
 
+<http://biii.eu/node/332> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/332>,
+        <http://biii.eu/node/86>,
+        <http://biii.eu/node/971>,
+        <http://biii.eu/node/975>,
+        <http://biii.eu/node/979>,
+        <http://biii.eu/node/998> ;
+    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:01:58"^^xsd:dateTime ;
+    dc:title "Morphological Operations" .
+
 <http://biii.eu/node/88> a <http://biii.eu/node/software> ;
     nb:hasAuthor "ilastik team" ;
     nb:hasFunction <http://edamontology.org/operation_Cell_counting>,
@@ -25656,20 +25722,6 @@ Limitations:\r
     rdfs:comment """This plugin (Icy Tool) allows the user to create and edit annotations. Annotations are blocks of text that the user can put anywhere in the sequence. Run the plugin to get the GUI with all the features. Once a note is added to a sequence, left click on it to edit this one. If you closed your GUI and you have some notes on your sequence, right click and select "edit" to display the GUI.\r
 \r
 As of now, the annotations are saved when the sequence is closed, but you have to run the plugin at least once to be able to see all the annotations in the image.""" .
-
-<http://biii.eu/node/332> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86>,
-        <http://biii.eu/node/971>,
-        <http://biii.eu/node/975>,
-        <http://biii.eu/node/979>,
-        <http://biii.eu/node/998> ;
-    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:01:58"^^xsd:dateTime ;
-    dc:title "Morphological Operations" .
 
 <http://biii.eu/node/601> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Benjamin Schmid" ;
@@ -25859,6 +25911,36 @@ Open source, scalable software, Supports diverse sets of imaging applications an
     dc:modified "2019-10-17T10:22:59"^^xsd:dateTime ;
     dc:title "Track Manager" ;
     rdfs:comment """<p>The track manager enables the use of DSP-like trackProcessors. This can affect the display of tracks, selection in time or by ROIs, and also compute some views like the overlaid and animated local flow graph, polar graph.</p>\r
+""" .
+
+<http://biii.eu/node/1128> a <http://biii.eu/node/software> ;
+    nb:hasDOI <https://doi.org/doi:10.18129/B9.bioc.EBImage>,
+        "EBimage package doi" ;
+    nb:hasDocumentation <http://bioconductor.org/packages/devel/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html>,
+        "Tutorials" ;
+    nb:hasFunction <http://edamontology.org/operation_Geometrical_transform>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/indexebimage.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
+    nb:hasLicense "LGPL" ;
+    nb:hasLocation <https://github.com/aoles/EBImage>,
+        "Github" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/30> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4236> ;
+    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btq046>,
+        "EBImage—an R package for image processing with applications to cellular phenotypes" ;
+    nb:hasTopic <http://edamontology.org/topic_High_content_screening>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1297> ;
+    dc:created "2017-09-13T09:41:00"^^xsd:dateTime ;
+    dc:modified "2019-02-03T18:04:04"^^xsd:dateTime ;
+    dc:title " EBImage" ;
+    rdfs:comment """<p>EBImage provides general purpose functionality for image processing and analysis. In the context of (high-throughput) microscopy-based cellular assays, EBImage offers tools to segment cells and extract quantitative cellular descriptors. This allows the automation of such tasks using the R programming language and facilitates the use of other tools in the R environment for signal processing, statistical modeling, machine learning and visualization with image data.</p>\r
+\r
+<p>EBImage is available through the Bioconductor software project (<a href="http://www.bioconductor.org">www.bioconductor.org</a>). Strengths Lightweight Suitable for automated, scripted analyses All functions are documented with examples Modular links to R and Bioconductor software, notably imageHTS and cellHTS2 Community support via the Bioconductor mailing list Reproducible (image) analysis using the Sweave report-writing system</p>\r
 """ .
 
 <http://biii.eu/node/87> a <http://biii.eu/node/software> ;
