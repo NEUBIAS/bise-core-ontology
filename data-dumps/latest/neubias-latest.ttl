@@ -196,17 +196,6 @@
     dc:modified "2017-09-13T12:12:24"^^xsd:dateTime ;
     dc:title "untile" .
 
-<http://biii.eu/node/1017> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86>,
-        <http://biii.eu/node/998> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:12:26"^^xsd:dateTime ;
-    dc:title "whiteTopHatGreyScale" .
-
 <http://biii.eu/node/1018> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
         "pdf" ;
@@ -19798,15 +19787,27 @@ Weakness:\r
     dc:title "ClassifyPixels" .
 
 <http://biii.eu/node/881> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Nicolas Chenouard",
+        "Zsuzsanna Püspöki" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_processing>,
+        <http://edamontology.org/operation__RBYLqCqN4rP7Jy5m5mxpTeM> ;
     nb:hasLocation <http://bigwww.epfl.ch/demo/circular-wavelets/> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/101>,
-        <http://biii.eu/node/17>,
-        <http://biii.eu/node/38> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/4223> ;
+    nb:hasReferencePublication <http://bigwww.epfl.ch/publications/puespoeki1502.html>,
+        "Template-Free Wavelet-Based Detection of Local Symmetries" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/101> ;
     dc:created "2013-10-11T15:08:46"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:10:28"^^xsd:dateTime ;
-    dc:title "A Unifying Parametric Framework for 2D Steerable Wavelet Transforms" .
+    dc:modified "2019-11-15T13:56:07"^^xsd:dateTime ;
+    dc:title "A Unifying Parametric Framework for 2D Steerable Wavelet Transforms" ;
+    rdfs:comment """<p>A complete parametric framework and set of MATLAB tools for computing steerable wavelet frames in 2-D.</p>\r
+""" .
 
 <http://biii.eu/node/882> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Daniel Sage" ;
@@ -24779,6 +24780,20 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
     dc:modified "2018-05-27T19:47:50"^^xsd:dateTime ;
     dc:title "matplotlib" .
 
+<http://biii.eu/node/332> a <http://biii.eu/node/software> ;
+    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/332>,
+        <http://biii.eu/node/86>,
+        <http://biii.eu/node/971>,
+        <http://biii.eu/node/975>,
+        <http://biii.eu/node/979>,
+        <http://biii.eu/node/998> ;
+    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:01:58"^^xsd:dateTime ;
+    dc:title "Morphological Operations" .
+
 <http://biii.eu/node/465> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Sorin Pop, Alexandre Dufour" ;
     nb:hasDocumentation <http://icy.bioimageanalysis.org/plugin/diffusion-filters-tool/> ;
@@ -24960,6 +24975,26 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
     dc:modified "2019-11-14T14:10:20"^^xsd:dateTime ;
     dc:title "EBImage closing" .
 
+<http://biii.eu/node/998> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Andrzej Oles ",
+        "Ilia Kats" ;
+    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
+        "pdf" ;
+    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1128> ;
+    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
+    dc:modified "2019-11-14T11:03:19"^^xsd:dateTime ;
+    dc:title "EBImage opening" ;
+    rdfs:comment """<p>Function&nbsp;to perform an erosion followed by a dilation morphological operation&nbsp;on binary and grayscale images.</p>\r
+""" .
+
 <http://biii.eu/node/105> a <http://biii.eu/node/software> ;
     nb:hasLicense "commercial" ;
     nb:hasLocation <http://www.perkinelmer.com/pages/020/cellularimaging/products/volocity.xhtml> ;
@@ -25030,20 +25065,6 @@ Victoria Foe made this movie on a Bio-Rad Radiance 2000 laser scanning confocal 
 GFP-histone transformed files provided by Rob Saint\r
 \r
 V.Foe and G.Odell, . 26 July 2001""" .
-
-<http://biii.eu/node/332> a <http://biii.eu/node/software> ;
-    nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/332>,
-        <http://biii.eu/node/86>,
-        <http://biii.eu/node/971>,
-        <http://biii.eu/node/975>,
-        <http://biii.eu/node/979>,
-        <http://biii.eu/node/998> ;
-    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:01:58"^^xsd:dateTime ;
-    dc:title "Morphological Operations" .
 
 <http://biii.eu/node/663> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Albert Cardona",
@@ -25131,26 +25152,6 @@ V.Foe and G.Odell, . 26 July 2001""" .
     rdfs:comment """<p><strong>Crop</strong>&nbsp;crops or masks an image.</p>\r
 \r
 <p>This module crops images into a rectangle, ellipse, an arbitrary shape provided by you, the shape of object(s) identified by an&nbsp;<strong>Identify</strong>&nbsp;module, or a shape created using a previous&nbsp;<strong>Crop</strong>&nbsp;module in the pipeline.</p>\r
-""" .
-
-<http://biii.eu/node/998> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Andrzej Oles ",
-        "Ilia Kats" ;
-    nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf>,
-        "pdf" ;
-    nb:hasFunction <http://edamontology.org/operation_Morphological_operations> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/1128> ;
-    dc:created "2013-10-15T12:45:51"^^xsd:dateTime ;
-    dc:modified "2019-11-14T11:03:19"^^xsd:dateTime ;
-    dc:title "EBImage opening" ;
-    rdfs:comment """<p>Function&nbsp;to perform an erosion followed by a dilation morphological operation&nbsp;on binary and grayscale images.</p>\r
 """ .
 
 <http://biii.eu/node/11> a <http://biii.eu/node/software> ;
