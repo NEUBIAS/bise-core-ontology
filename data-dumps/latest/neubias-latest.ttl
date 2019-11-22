@@ -1401,32 +1401,6 @@ Online example at http://colormine.org/color-converter\r
     rdfs:comment """<p>SIMcheck is an ImageJ plugin suite&nbsp;for assessing the quality and reliability of Structured Illumination Microscopy (SIM) data. The quality of the raw data, the quality of the reconstruction and the calibration of the microscope can be tested.&nbsp;</p>\r
 """ .
 
-<http://biii.eu/node/109> a <http://biii.eu/node/software> ;
-    nb:hasDocumentation <https://www.fei.com/software/amira-avizo-technical-resources-and-support/>,
-        "Amira technical ressources and support" ;
-    nb:hasFunction <http://edamontology.org/operation_0337>,
-        <http://edamontology.org/operation_2945> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Amira.png" ;
-    nb:hasLicense "commercial" ;
-    nb:hasLocation <http://www.vsg3d.com/amira/overview> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562>,
-        <http://biii.eu/taxonomy/term/3563>,
-        <http://biii.eu/taxonomy/term/3565> ;
-    nb:hasTopic <http://edamontology.org/topic____Multimodal_imaging> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3577> ;
-    nb:requires <http://biii.eu/node/101> ;
-    dc:created "2013-11-07T20:55:56"^^xsd:dateTime ;
-    dc:modified "2019-10-17T11:46:02"^^xsd:dateTime ;
-    dc:title "Amira" ;
-    rdfs:comment """<p>Amira is 3D visualization and analysis software for life sciences.<br />\r
-&nbsp;</p>\r
-\r
-<p>" Amira software is a powerful, multifaceted 3D platform for visualizing, manipulating, and understanding life sciences data from computed tomography, microscopy, MRI, and many other imaging modalities.&nbsp;<br />\r
-With incredible speed and flexibility, Amira software enables advanced 3D imaging workflows for specialists in research areas ranging from molecular and cellular biology to neuroscience and bioengineering. "</p>\r
-""" .
-
 <http://biii.eu/node/1090> a <http://biii.eu/node/software> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/stan_CLARITY_0.PNG" ;
     nb:hasLicense "commercial" ;
@@ -9003,6 +8977,77 @@ It comes with 3 main modules:\r
     dc:modified "2019-11-08T10:22:07"^^xsd:dateTime ;
     dc:title "Napari image viewer" ;
     rdfs:comment """<p><strong>napari</strong>&nbsp;is a fast, interactive, multi-dimensional image viewer for Python. It’s designed for browsing, annotating, and analyzing large multi-dimensional images. It’s built on top of&nbsp;<code>Qt</code>&nbsp;(for the GUI),&nbsp;<code>vispy</code>&nbsp;(for performant GPU-based rendering), and the scientific Python stack (e.g.&nbsp;<code>numpy</code>,&nbsp;<code>scipy</code>). It includes critical viewer features out-of-the-box, such as support for large multi-dimensional data, and layering and annotation. By integrating closely with the Python ecosystem,&nbsp;<strong>napari</strong>&nbsp;can be easily coupled to leading machine learning and image analysis tools (e.g.&nbsp;<code>scikit-image</code>,&nbsp;<code>scikit-learn</code>,&nbsp;<code>TensorFlow</code>,&nbsp;<code>PyTorch</code>), enabling more user-friendly automated analysis.</p>\r
+""" .
+
+<http://biii.eu/node/1595> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jan Wolfgang Krieger",
+        "Jörg Langowski" ;
+    nb:hasDocumentation <https://www.dkfz.de/Macromol/quickfit/>,
+        "documentation" ;
+    nb:hasFunction <http://edamontology.org/operation_3441>,
+        <http://edamontology.org/operation_3443> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-11/Captureqf.PNG" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
+    nb:hasLicense "GPL 3.0" ;
+    nb:hasLocation <https://github.com/jkriege2/QuickFit3>,
+        "GIT HUB" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic___Fluorescence_correlative_spectroscopy>,
+        <http://edamontology.org/topic___Image_correlation_spectroscopy> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567>,
+        <http://biii.eu/taxonomy/term/8> ;
+    nb:hasUsageExample <https://doi.org/10.1038/nprot.2015.100>,
+        "Imaging fluorescence (cross-) correlation spectroscopy in live cells and organisms" ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2019-11-22T05:51:24"^^xsd:dateTime ;
+    dc:modified "2019-11-22T06:07:16"^^xsd:dateTime ;
+    dc:title "QuickFit 3" ;
+    rdfs:comment """<p><span>QuickFit 3 is a data evaluation software for FCS Fluorescence Correlation Spectroscopy and imagingFCS (imFCS) measurements, developed in the group B040 (Prof. Jörg Langowski) at the German Cancer Research Center (DKFZ). Actually QuickFit 3 itself is a project manager and all functionality is added as plugins. A set of tested plugins for FCS, imagingFCS and some microscopy-related image processing tasks is supplied together with the software.</span></p>\r
+""" .
+
+<http://biii.eu/node/1596> a <http://biii.eu/node/software> ;
+    nb:hasFunction <http://edamontology.org/operation_2928>,
+        <http://edamontology.org/operation_3443>,
+        <http://edamontology.org/operation_Image_processing>,
+        <http://edamontology.org/operation_Image_registration> ;
+    nb:hasLocation <http://www.imagelab.at/en_download.html>,
+        "download (test version)" ;
+    nb:hasTopic <http://edamontology.org/topic____Multimodal_imaging> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3577> ;
+    dc:created "2019-11-22T06:09:27"^^xsd:dateTime ;
+    dc:modified "2019-11-22T06:12:43"^^xsd:dateTime ;
+    dc:title "Epina Image Lab" ;
+    rdfs:comment """<p><em>Epina ImageLab</em><span> is a Microsoft Windows-based multisensor imaging tool for processing and analyzing hyperspectral images. It is a modular system consisting of a basic engine, a graphical user interface, a chemometrics toolbox and optional user-supplied modules. It supports the most important spectroscopic imaging techniques, such as UV/Vis, infrared, Raman, THz, optical emission/absorption, and mass spectrometry. On top of that </span><em>Epina ImageLab</em><span> enables the user to merge hyperspectral images with maps of physical properties and conventional high-resolution color photos.&nbsp;</span></p>\r
+""" .
+
+<http://biii.eu/node/1597> a <http://biii.eu/node/software> ;
+    nb:hasAuthor " Zuse Institute Berlin (ZIB) and Thermo Fisher Scientific " ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-11/AmiraLogo.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
+    nb:hasLocation <https://xtras.amira-avizo.com/>,
+        "Amira / Avizo Xtra" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567>,
+        <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3577> ;
+    nb:requires <http://biii.eu/node/109> ;
+    dc:created "2019-11-22T10:33:39"^^xsd:dateTime ;
+    dc:modified "2019-11-22T13:08:32"^^xsd:dateTime ;
+    dc:title "Amira / Avizo Xtra library" ;
+    rdfs:comment """<p>Collection of add-ons (recipes, scripts, demos,…) that will help you improve your day-to-day use of&nbsp;<a href="https://www.thermofisher.com/uk/en/home/industrial/electron-microscopy/electron-microscopy-instruments-workflow-solutions/3d-visualization-analysis-software.html?cid=fl-msd-amira-avizo">Amira-Avizo and PerGeos Software</a>&nbsp;and make you gain both time and efficiency.<br />\r
+Use the Search field to look for specific keywords related to your domain of interest. The different filters also help you target specific resources.</p>\r
 """ .
 
 <http://biii.eu/node/160> a <http://biii.eu/node/software> ;
@@ -21448,6 +21493,37 @@ The original paper is 2449""" .
     dc:modified "2018-05-27T17:15:29"^^xsd:dateTime ;
     dc:title "MTrackJ" ;
     rdfs:comment """<p>Manual Tracking GUI. Many shortcut keys, and after being experienced, manual tracking can efficiently done. Post-editing capability to delete segments, merge and splitting tracks is quite useful.</p>\r
+""" .
+
+<http://biii.eu/node/109> a <http://biii.eu/node/software> ;
+    nb:hasDocumentation <https://www.fei.com/software/amira-avizo-technical-resources-and-support/>,
+        "Amira technical ressources and support" ;
+    nb:hasFunction <http://edamontology.org/operation_0337>,
+        <http://edamontology.org/operation_2945> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Amira.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
+    nb:hasLicense "commercial" ;
+    nb:hasLocation <http://www.vsg3d.com/amira/overview> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic____Multimodal_imaging> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:hasUsageExample <https://jcs.biologists.org/content/joces/suppl/2016/01/12/jcs.181842.DC1/JCS181842supp.pdf>,
+        "usage example in multimodal imaging" ;
+    nb:openess <http://biii.eu/taxonomy/term/3577> ;
+    dc:created "2013-11-07T20:55:56"^^xsd:dateTime ;
+    dc:modified "2019-11-22T06:16:16"^^xsd:dateTime ;
+    dc:title "Amira" ;
+    rdfs:comment """<p>Amira is 3D visualization and analysis software for life sciences.<br />\r
+&nbsp;</p>\r
+\r
+<p>" Amira software is a powerful, multifaceted 3D platform for visualizing, manipulating, and understanding life sciences data from computed tomography, microscopy, MRI, and many other imaging modalities.&nbsp;<br />\r
+With incredible speed and flexibility, Amira software enables advanced 3D imaging workflows for specialists in research areas ranging from molecular and cellular biology to neuroscience and bioengineering. "</p>\r
 """ .
 
 <http://biii.eu/node/1117> a <http://biii.eu/node/software> ;
