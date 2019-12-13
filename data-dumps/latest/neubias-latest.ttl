@@ -9050,6 +9050,37 @@ It comes with 3 main modules:\r
 Use the Search field to look for specific keywords related to your domain of interest. The different filters also help you target specific resources.</p>\r
 """ .
 
+<http://biii.eu/node/1598> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Poulet, Alex" ;
+    nb:hasDocumentation <https://imagejdocu.tudor.lu/plugin/stacks/nuclear_analysis_plugin/start%23installation> ;
+    nb:hasFunction <http://edamontology.org/operation_Image_segmentation> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-12/NUCJ_schema1.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLicense "GPLv3" ;
+    nb:hasLocation <https://github.com/PouletAxel/NucleusJ_/releases>,
+        "Github Releases" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasReferencePublication <http://doi.org/10.1093/bioinformatics/btu774>,
+        "Poulet, Axel, Ignacio Arganda-Carreras, David Legland, Aline V. Probst, Philippe Andrey, and Christophe Tatout. “NucleusJ: An ImageJ Plugin for Quantifying 3D Images of Interphase Nuclei.” Bioinformatics 31, no. 7 (April 1, 2015): 1144–46. " ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:hasUsageExample <https://doi.org/10.1007/978-1-4939-7318-7_33>,
+        "Desset et al. “Quantitative 3D Analysis of Nuclear Morphology and Heterochromatin Organization from Whole-Mount Plant Tissue Using NucleusJ.” Methods in Molecular Biology (Clifton, N.J.) 1675 (2018): 615–32. " ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1057>,
+        <http://biii.eu/node/79> ;
+    dc:created "2019-12-13T00:40:22"^^xsd:dateTime ;
+    dc:modified "2019-12-13T00:51:57"^^xsd:dateTime ;
+    dc:title "NucleusJ" ;
+    rdfs:comment """Quote\r
+\r
+> Starting from image stacks, the nuclear boundary as well as nuclear bodies are segmented. As output, NucleusJ automatically measures 15 parameters quantifying shape and size of nuclei as well as intra-nuclear objects and the positioning of the objects within the nuclear volume.""" .
+
 <http://biii.eu/node/160> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Olaf Ronneberger" ;
     nb:hasLicense "web" ;
@@ -24713,48 +24744,6 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
     rdfs:comment """<p>An often used Laplacian filter for enhancing signals at object boundaries and dots. It works with XY, XYZ, XYZ-T, XYZ-T-Ch1, XYZT-C1-C2 images. Distributed as a part of ImageJ plugin [FeatureJ](http://imagescience.org/meijering/software/featurej/), and included in Fiji. The second URL above is the link to its Javadoc. (imagescience.feature.Laplacian). A primer for using this class in Jython script is in [CMCI Jython/Fiji cookbook: FeatureJ](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#laplacian)</p>\r
 """ .
 
-<http://biii.eu/node/1057> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Arganda-Carreras, Ignacio",
-        "Legland, David" ;
-    nb:hasDocumentation <https://github.com/ijpb/MorphoLibJ/releases/download/v1.3.3/MorphoLibJ-manual-v1.3.3.pdf>,
-        "MorphoLibJ user manual (v1.3.3)" ;
-    nb:hasFunction <http://edamontology.org/operation_Cell_counting>,
-        <http://edamontology.org/operation_Cell_segmentation>,
-        <http://edamontology.org/operation_Feature_extraction>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Morphological_operations>,
-        <http://edamontology.org/operation_Shape_features>,
-        <http://edamontology.org/operation_Watershed> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-04/fourScreens.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4339>,
-        <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <http://imagej.net/MorphoLibJ> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
-    nb:hasReferencePublication <http://10.1093/bioinformatics/btw413> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562> ;
-    nb:hasTopic <http://edamontology.org/topic_Microscopy>,
-        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2016-10-01T18:31:47"^^xsd:dateTime ;
-    dc:modified "2019-03-08T02:58:35"^^xsd:dateTime ;
-    dc:title "MorphoLibJ" ;
-    rdfs:comment """<p>MorphoLibJ is a library of plugin for ImageJ with functionalities for image processing such as filtering, reconstructing, segmenting, etc... Tools are based on Mathematical morphology with more rigorous mathematical approach than in the standard tools of ImageJ in particular for surface (or perimeter) measurements which are usually based on voxel counting.&nbsp;&nbsp;</p>\r
-\r
-<p><a href="http://imagej.net/MorphoLibJ#Measurements">http://imagej.net/MorphoLibJ#Measurements</a></p>\r
-\r
-<p>Among the features:</p>\r
-\r
-<p>Morphological operations :&nbsp;&nbsp;Dilation, Erosion,&nbsp;Opening,&nbsp;&nbsp;Closing , Top hat (white and black), Morphological gradient (aka Beucher Gradient), Morphological&nbsp;Laplacian, Morphological reconstruction, Maxima/Minima , Extended Maxima/Minima -Watershed (classic or controlled) -Image overlay -Image labelling -Geodesic diameter -Region Adjacency Graph -Granulometry curves, morphological image analysis.</p>\r
-\r
-<p>&nbsp;</p>\r
-""" .
-
 <http://biii.eu/node/1075> a <http://biii.eu/node/software> ;
     dc:created "2017-09-12T15:22:26"^^xsd:dateTime ;
     dc:modified "2017-09-12T15:22:26"^^xsd:dateTime ;
@@ -25081,6 +25070,48 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
     dc:modified "2017-09-13T12:13:05"^^xsd:dateTime ;
     dc:title "Volocity" ;
     rdfs:comment "-" .
+
+<http://biii.eu/node/1057> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Arganda-Carreras, Ignacio",
+        "Legland, David" ;
+    nb:hasDocumentation <https://github.com/ijpb/MorphoLibJ/releases/download/v1.3.3/MorphoLibJ-manual-v1.3.3.pdf>,
+        "MorphoLibJ user manual (v1.3.3)" ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_counting>,
+        <http://edamontology.org/operation_Cell_segmentation>,
+        <http://edamontology.org/operation_Feature_extraction>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Morphological_operations>,
+        <http://edamontology.org/operation_Shape_features>,
+        <http://edamontology.org/operation_Watershed> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-04/fourScreens.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339>,
+        <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://imagej.net/MorphoLibJ> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasReferencePublication <http://10.1093/bioinformatics/btw413> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2016-10-01T18:31:47"^^xsd:dateTime ;
+    dc:modified "2019-03-08T02:58:35"^^xsd:dateTime ;
+    dc:title "MorphoLibJ" ;
+    rdfs:comment """<p>MorphoLibJ is a library of plugin for ImageJ with functionalities for image processing such as filtering, reconstructing, segmenting, etc... Tools are based on Mathematical morphology with more rigorous mathematical approach than in the standard tools of ImageJ in particular for surface (or perimeter) measurements which are usually based on voxel counting.&nbsp;&nbsp;</p>\r
+\r
+<p><a href="http://imagej.net/MorphoLibJ#Measurements">http://imagej.net/MorphoLibJ#Measurements</a></p>\r
+\r
+<p>Among the features:</p>\r
+\r
+<p>Morphological operations :&nbsp;&nbsp;Dilation, Erosion,&nbsp;Opening,&nbsp;&nbsp;Closing , Top hat (white and black), Morphological gradient (aka Beucher Gradient), Morphological&nbsp;Laplacian, Morphological reconstruction, Maxima/Minima , Extended Maxima/Minima -Watershed (classic or controlled) -Image overlay -Image labelling -Geodesic diameter -Region Adjacency Graph -Granulometry curves, morphological image analysis.</p>\r
+\r
+<p>&nbsp;</p>\r
+""" .
 
 <http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <https://www.tensorflow.org/tutorials/images/image_recognition>,
