@@ -9081,6 +9081,32 @@ Use the Search field to look for specific keywords related to your domain of int
 \r
 > Starting from image stacks, the nuclear boundary as well as nuclear bodies are segmented. As output, NucleusJ automatically measures 15 parameters quantifying shape and size of nuclei as well as intra-nuclear objects and the positioning of the objects within the nuclear volume.""" .
 
+<http://biii.eu/node/1599> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Knop Mickael",
+        "Mongis Cyril",
+        "Theer Patrick" ;
+    nb:hasDocumentation <https://github.com/cmongis/psfj>,
+        "GitHub repo" ;
+    nb:hasFunction <http://edamontology.org/operation___Optimisation_or_refinement> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
+    nb:hasLicense "GPL 3.0" ;
+    nb:hasLocation <https://www.knoplab.de/psfj>,
+        "HomePage" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasReferencePublication <https://www.nature.com/articles/nmeth.3102>,
+        "Article (Nature Method)" ;
+    nb:hasTopic <http://edamontology.org/topic_Microscopy> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2019-12-19T14:20:34"^^xsd:dateTime ;
+    dc:modified "2019-12-19T14:35:42"^^xsd:dateTime ;
+    dc:title "PSFj" ;
+    rdfs:comment """<p><span>PSFj is a software tool that automatically analyses the full field-of-view (FOV) performance of a given fluorescence microscope/objective lens combination with respect to its optical resolution and chromatic aberrations. PSFj provides reporting functions to document the momentary performance of a system and it allows for the export of the obtained data, e.g. for image restoration purposes. PSFj is based on ImageJ and JAVA, and runs on Windows, Mac, and Linux PCs as a stand-alone application.</span></p>\r
+""" .
+
 <http://biii.eu/node/160> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Olaf Ronneberger" ;
     nb:hasLicense "web" ;
@@ -9093,6 +9119,37 @@ Use the Search field to look for specific keywords related to your domain of int
     dc:title "ViBE-Z" ;
     rdfs:comment """The Virtual Brain Explorer (ViBE-Z) is a software 2708 that automatically maps gene expression data with cellular resolution to a 3D standard larval zebrafish (Danio rerio) brain. It automatically detects 14 predefined anatomical landmarks for aligning data. It also offers a database and atlas.\r
 The ViBE-Z database, atlas and software are provided via a web interface. A data preparation step is needed in order to provide the right input data and format.""" .
+
+<http://biii.eu/node/1600> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Amat Fernando",
+        "Branson Kristin",
+        "Keller J Philipp",
+        "Lemon William",
+        "McDole Katie",
+        "Mossing P Daniel",
+        "Myers W Eugene",
+        "Wan Yinan" ;
+    nb:hasFunction <http://edamontology.org/operation_Cell_tracking> ;
+    nb:hasLocation <https://git.rcc.uchicago.edu/open-source/TGMM/tree/master/bin>,
+        "Download executables from Git" ;
+    nb:hasReferencePublication <https://www.nature.com/articles/nmeth.3036>,
+        "Article in Nature Methods" ;
+    nb:hasTopic <http://edamontology.org/topic_Light-sheet_microscopy>,
+        <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V>,
+        <http://edamontology.org/topic__RL4rPCXlIu9uzNrGcbcSNp> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:hasUsageExample <https://github.com/KellerLabTeam/tgmm-docker>,
+        "TGMM docker" ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2019-12-19T14:48:13"^^xsd:dateTime ;
+    dc:modified "2019-12-19T15:30:03"^^xsd:dateTime ;
+    dc:title "3D cell tracking using Gaussian Mixture Model (TGMM)" ;
+    rdfs:comment """<p>TGMM is a cell tracking solution for large 3D volume (typically lightsheet).</p>\r
+\r
+<p>It detects cell nuclei by fitting gaussians on their fluorescent intensity.</p>\r
+\r
+<p>It can run on GPU using CUDA and is called via the command line.</p>\r
+""" .
 
 <http://biii.eu/node/161> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Volker Baecker, Aaron Ponti, Asheesh Gulati, Alessandra Griffa, José Viña, Daniel Sevilla, Niko Ehrenfeuchter, Torsten Stöter, Olivier Burri" ;
