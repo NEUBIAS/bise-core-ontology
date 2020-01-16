@@ -7329,9 +7329,9 @@ A supported digital camera, or raw interferogram files</p>\r
         <http://biii.eu/node/1455>,
         <http://biii.eu/node/38> ;
     dc:created "2019-02-25T15:00:16"^^xsd:dateTime ;
-    dc:modified "2019-02-25T15:24:56"^^xsd:dateTime ;
+    dc:modified "2020-01-16T16:59:28"^^xsd:dateTime ;
     dc:title "Spot detection (ImageJ)" ;
-    rdfs:comment """<p>This workflow detects spots from a 2D image by using straightforward set of ImageJ components. It receives the Laplacian Radius and the Noise tolerance as input.</p>\r
+    rdfs:comment """<p>This workflow detects spots in a 2D image by filtering the image&nbsp;by Laplacian of Gaussian (user defined radius) and detecting regional intensity minima (user defined noise tolerance).</p>\r
 """ .
 
 <http://biii.eu/node/1457> a <http://biii.eu/node/software> ;
@@ -7423,15 +7423,17 @@ A supported digital camera, or raw interferogram files</p>\r
 """ .
 
 <http://biii.eu/node/1461> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Marrée, Raphael " ;
+    nb:hasAuthor "Marée, Raphaël " ;
     nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
     nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection-Icy/blob/master/protocol.protocol>,
         "Neubias BIAFLOWS workflow of Spot Detection with Icy protocol" ;
     nb:hasType <http://biii.eu/taxonomy/term/3568> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
     dc:created "2019-02-26T11:57:51"^^xsd:dateTime ;
-    dc:modified "2019-02-26T12:38:39"^^xsd:dateTime ;
-    dc:title "Spot Detection (Icy)" .
+    dc:modified "2020-01-16T17:06:12"^^xsd:dateTime ;
+    dc:title "Spot Detection (Icy)" ;
+    rdfs:comment """<p>This workflow uses ICY wavelet based spot detector to detect spots in 2D images.</p>\r
+""" .
 
 <http://biii.eu/node/1462> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Tosí, Sébastien" ;
