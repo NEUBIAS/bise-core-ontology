@@ -2170,23 +2170,6 @@ IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999.<br />
 </ul>\r
 """ .
 
-<http://biii.eu/node/113> a <http://biii.eu/node/software> ;
-    nb:hasLicense "GNU" ;
-    nb:hasLocation <http://www.gnu.org/software/octave/> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/101> ;
-    dc:created "2013-11-07T21:06:26"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:13:09"^^xsd:dateTime ;
-    dc:title "GNU Octave" ;
-    rdfs:comment """"GNU Octave is a high-level language, primarily intended for numerical computations."*\r
-It can also be used for image processing, statistics and plotting as well as Matlab.\r
-"GNU Octave is also freely redistributable software. You may redistribute it and/or mod-\r
-ify it under the terms of the GNU General Public License as published by the Free Software\r
-Foundation."*\r
-\r
-* """ .
-
 <http://biii.eu/node/1132> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Claire J Stocker",
         "Jacqueline F O’Dowd",
@@ -2718,34 +2701,6 @@ See installation Instructions on the website.\r
     dc:modified "2018-10-16T02:13:24"^^xsd:dateTime ;
     dc:title "Simple Tracing DF-Tracing " ;
     rdfs:comment """<p>We have developed a novel approach, named DF-Tracing, to tackle this challenge. This method first extracts the neurite signal (foreground) from a noisy image by using anisotropic filtering and automated thresholding. Then, DF-Tracing executes a coupled distance-field (DF) algorithm on the extracted foreground neurite signal and reconstructs the neuron morphology automatically. Two distance-transform based “force” fields are used: one for “pressure”, which is the distance transform field of foreground pixels (voxels) to the background, and another for “thrust”, which is the distance transform field of the foreground pixels to an automatically determined seed point. The coupling of these two force fields can“push” a “rolling ball” quickly along the skeleton of a neuron, reconstructing the 3D cell morphology.</p>\r
-""" .
-
-<http://biii.eu/node/1166> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Jingpeng Wu " ;
-    nb:hasFunction <http://edamontology.org/operation_Image_enhancement>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
-    nb:hasLicense "Apache 2.0 " ;
-    nb:hasLocation <https://github.com/Vaa3D/vaa3d_tools/tree/master/released_plugins/v3d_plugins/neurontracing_MOST>,
-        "MOST Github repository in Vaa3D" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
-    nb:hasReferencePublication <https://doi.org/10.1016/j.neuroimage.2013.10.036>,
-        "3D BrainCV: Simultaneous visualization and analysis of cells and capillaries in a whole mouse brain with one-micron voxel resolution " ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
-    nb:hasTopic <http://edamontology.org/topic_3382>,
-        <http://edamontology.org/topic_3452> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/62> ;
-    dc:created "2017-09-14T18:21:57"^^xsd:dateTime ;
-    dc:modified "2017-09-14T18:58:10"^^xsd:dateTime ;
-    dc:title "MOST-Raytracer " ;
-    rdfs:comment """<p>This project was designed for vectorize and analyze the&nbsp; blood vessels in the mouse brain.</p>\r
-\r
-<p>This plugin requires the definition of seed point detection settings by the user (Semi-automated).</p>\r
 """ .
 
 <http://biii.eu/node/1167> a <http://biii.eu/node/software> ;
@@ -5073,13 +5028,13 @@ ZEN Intellesis offers a straightforward, ease-to-use workﬂow that enables ever
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-09/RivuletStudio.png" ;
     nb:hasImplementation <http://biii.eu/taxonomy/term/4341> ;
     nb:hasLicense "BSD 3-Clause \"New\" or \"Revised\" License" ;
-    nb:hasLocation <https://github.com/RivuletStudio/rivuletpy%20>,
+    nb:hasLocation <https://github.com/RivuletStudio/rivuletpy>,
         "Rivulet project Github repository" ;
     nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
         <http://biii.eu/taxonomy/term/31>,
         <http://biii.eu/taxonomy/term/32> ;
     nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
-    nb:hasReferencePublication <http://ieeexplore.ieee.org/stamp/stamp.jsp%3Ftp%3D%26arnumber%3D8354803%26isnumber%3D4359023%20>,
+    nb:hasReferencePublication <http://ieeexplore.ieee.org/stamp/stamp.jsp%3Ftp%3D%26arnumber%3D8354803%26isnumber%3D4359023>,
         "Automated 3D Neuron Tracing with Precise Branch Erasing and Confidence Controlled Back-Tracking" ;
     nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
     nb:hasType <http://biii.eu/taxonomy/term/3567> ;
@@ -5091,8 +5046,8 @@ ZEN Intellesis offers a straightforward, ease-to-use workﬂow that enables ever
         <http://biii.eu/node/1347>,
         <http://biii.eu/node/1348> ;
     dc:created "2018-09-09T16:45:18"^^xsd:dateTime ;
-    dc:modified "2018-09-09T22:49:25"^^xsd:dateTime ;
-    dc:title "Rivulet 2" .
+    dc:modified "2020-01-23T17:07:31"^^xsd:dateTime ;
+    dc:title "Rivulet 2 (Rivuletpy)" .
 
 <http://biii.eu/node/135> a <http://biii.eu/node/software> ;
     nb:hasAuthor "IVE development team" ;
@@ -7053,9 +7008,9 @@ on MATLAB’s image processing toolbox using the identification of sites&nbsp;of
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
     nb:requires <http://biii.eu/node/38> ;
     dc:created "2019-02-05T15:38:45"^^xsd:dateTime ;
-    dc:modified "2019-02-05T15:42:26"^^xsd:dateTime ;
-    dc:title "Nuclei Segmentation 3D (ImageJ)" ;
-    rdfs:comment """<p>The macro will segment nuclei and separate clustered nuclei in a 3D image using a binary watershed. As a result an index-mask image is written for each input image.</p>\r
+    dc:modified "2020-01-23T15:43:06"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation 3D DT Watershed (ImageJ)" ;
+    rdfs:comment """<p>The macro will segment nuclei and separate clustered nuclei in a 3D image using a distance transform watershed. As a result an index-mask image is written for each input image.</p>\r
 """ .
 
 <http://biii.eu/node/1442> a <http://biii.eu/node/software> ;
@@ -9153,6 +9108,126 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
 <p>It can run on GPU using CUDA and is called via the command line.</p>\r
 """ .
 
+<http://biii.eu/node/1603> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosi, Sebastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Distance_transform>,
+        <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection-Dmap-IJ/blob/master/IJSpotDetection.ijm>,
+        "Neubias BIAFLOWS workflow of Spot Detection Dmap with ImageJ" ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1038>,
+        <http://biii.eu/node/1455>,
+        <http://biii.eu/node/38> ;
+    dc:created "2020-01-23T13:24:09"^^xsd:dateTime ;
+    dc:modified "2020-01-23T13:35:25"^^xsd:dateTime ;
+    dc:title "Spot Detection Dmap (ImageJ)" ;
+    rdfs:comment """<p>This workflow detects spots in a 2D image by filtering the image by Laplacian of Gaussian (user defined radius), thresholding (user defined threshold) and finding local intensity maxima in mask distance map (Dmap).</p>\r
+""" .
+
+<http://biii.eu/node/1604> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Baecker, Volker" ;
+    nb:hasFunction <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection3D-Icy>,
+        " Neubias BIAFLOWS workflow of Spot Detection 3D with Icy protocol" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3595> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/82> ;
+    dc:created "2020-01-23T13:36:28"^^xsd:dateTime ;
+    dc:modified "2020-01-23T13:52:57"^^xsd:dateTime ;
+    dc:title "Spot Detection 3D (Icy)" ;
+    rdfs:comment """<p>Spot detection in 3D images by Wavelet Adaptive Threshold in Icy.</p>\r
+""" .
+
+<http://biii.eu/node/1606> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosi, Sebastien" ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_SpotDetection3D-Hessian-IJ>,
+        "Neubias BIAFLOWS workflow of Spot Detection 3D Hessian with ImagJ" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1038>,
+        <http://biii.eu/node/1455>,
+        <http://biii.eu/node/1605>,
+        <http://biii.eu/node/38> ;
+    dc:created "2020-01-23T13:53:44"^^xsd:dateTime ;
+    dc:modified "2020-01-23T14:11:22"^^xsd:dateTime ;
+    dc:title "Spot Detection 3D Hessian (ImageJ)" ;
+    rdfs:comment """<p>3D spot detection using the Determinant of Hessian (DoH) and the detection of 3D minima.</p>\r
+""" .
+
+<http://biii.eu/node/1607> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paavolainen, Lassi" ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-DeepCell/blob/master/Dockerfile>,
+        "Neubias BIAFLOWS workflow of Nuclei Segmentation with DeepCell" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasReferencePublication <http://doi.org/10.1371/journal.pcbi.1005177>,
+        "Deep Learning Automates the Quantitative Analysis of Individual Cells in Live-Cell Imaging Experiments" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/128>,
+        <http://biii.eu/node/1286>,
+        <http://biii.eu/node/1288>,
+        <http://biii.eu/node/1317>,
+        <http://biii.eu/node/1322>,
+        <http://biii.eu/node/1376> ;
+    dc:created "2020-01-23T14:15:18"^^xsd:dateTime ;
+    dc:modified "2020-01-23T14:48:11"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation (DeepCell)" ;
+    rdfs:comment """<p>Nuclei Segmentation using Deep Learning for single cell analysis (DeepCell).</p>\r
+""" .
+
+<http://biii.eu/node/1608> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paavolainen, Lassi" ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation-UNet>,
+        "Neubias BIAFLOWS workflow of Nuclei Segmentation with U-Net" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasReferencePublication <https://doi.org/10.1002/cyto.a.23863>,
+        "Evaluation of Deep Learning Strategies for Nucleus Segmentation in Fluorescence Images" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/128>,
+        <http://biii.eu/node/1288> ;
+    dc:created "2020-01-23T15:03:27"^^xsd:dateTime ;
+    dc:modified "2020-01-23T15:16:58"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation (U-Net)" ;
+    rdfs:comment """<p>U-Net segmentation as presented in Reference Publication. The model predicts three classes: background, edge and foreground. The model was trained with Kaggle Data Science Bowl (DSB) 2018 training set.</p>\r
+""" .
+
+<http://biii.eu/node/1609> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucSeg3DThr-ImageJ>,
+        "Neubias BIAFLOWS workflow of Nuclei Segmentation 3D with ImageJ " ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2020-01-23T15:21:28"^^xsd:dateTime ;
+    dc:modified "2020-01-23T15:39:09"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation 3D watershed (ImageJ)" ;
+    rdfs:comment """<p>The macro will segment nuclei and separate clustered nuclei in a 3D image using a 2D Gaussian blur, followed by Thresholding, 2D hole filling and a 2D watershed. As a result an index-mask image is written for each input image.</p>\r
+""" .
+
 <http://biii.eu/node/161> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Volker Baecker, Aaron Ponti, Asheesh Gulati, Alessandra Griffa, José Viña, Daniel Sevilla, Niko Ehrenfeuchter, Torsten Stöter, Olivier Burri" ;
     nb:hasLicense "CeCILL license" ;
@@ -9165,6 +9240,199 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
     dc:modified "2017-09-12T20:00:45"^^xsd:dateTime ;
     dc:title "Huygens Remote Manager" ;
     rdfs:comment "The Huygens Remote Manager is an open-source, efficient, multi-user web-based interface to the Huygens software by Scientific Volume Imaging for parallel batch deconvolutions." .
+
+<http://biii.eu/node/1610> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paavolainen, Lassi" ;
+    nb:hasFunction <http://edamontology.org/operation_Pixel_classification> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiSegmentation3D-ilastik>,
+        "Neubias BIAFLOWS workflow of Nuclei Segmentation 3D with ilastik" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasReferencePublication <https://github.com/Neubias-WG5/W_NucleiSegmentation3D-ilastik>,
+        "ilastik: interactive machine learning for (bio)image analysis" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/88> ;
+    dc:created "2020-01-23T15:47:13"^^xsd:dateTime ;
+    dc:modified "2020-01-23T15:54:10"^^xsd:dateTime ;
+    dc:title "Nuclei Segmentation 3D (Ilastik)" ;
+    rdfs:comment """<p>Execute Nuclei Segmentation in 3D images using pixel classification with ilastik.</p>\r
+""" .
+
+<http://biii.eu/node/1611> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Particle_tracking> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_LogPartTrack_IJ>,
+        "Neubias BIAFLOWS workflow of Particle Tracking with ImageJ" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1038>,
+        <http://biii.eu/node/38> ;
+    dc:created "2020-01-23T15:55:45"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:00:09"^^xsd:dateTime ;
+    dc:title "Particle Tracking (ImageJ)" ;
+    rdfs:comment """<p>Particle tracking in 2D time-lapse based on linking closest regional intensity minima (user defined noise tolerance) detected from Laplacian of Gaussian filtered images (user defined radius). A maximum linking distance is set (user defined).</p>\r
+""" .
+
+<http://biii.eu/node/1613> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Paavolainen, Lassi" ;
+    nb:hasFunction <http://edamontology.org/operation_Particle_tracking> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NucleiTrackingTrackmate-IJ>,
+        "Neubias BIAFLOWS workflow of Particle Tracking with TrackMate" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.ymeth.2016.09.016>,
+        "TrackMate: An open and extensible platform for single-particle tracking" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1612>,
+        <http://biii.eu/node/330> ;
+    dc:created "2020-01-23T16:01:46"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:09:15"^^xsd:dateTime ;
+    dc:title "Nuclei Tracking (TrackMate)" ;
+    rdfs:comment """<p>Track non-dividing particles in 2D time-lapse image.</p>\r
+""" .
+
+<http://biii.eu/node/1614> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_ObjectTracking-ImageJ>,
+        "Neubias BIAFLOWS workflow of Object Tracking with ImageJ" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2020-01-23T16:10:05"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:13:07"^^xsd:dateTime ;
+    dc:title "Object Tracking (ImageJ)" ;
+    rdfs:comment """<p>Object tracking. For each time-frame, an image mask is obtained from median filtering (user defined radius), thresholding (user defined level) and hole filling. Convex objects are split apart by distance map watershed from regional intensity maxima (user defined noise tolerance), eroded (user defined radius) and analyzed as 3D particles (assuming some overlap between objects from a frame to the next frame). Finally, division events are analyzed and accounted for to relabel objects.</p>\r
+""" .
+
+<http://biii.eu/node/1615> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_ObjectTracking-Octave>,
+        "Neubias BIAFLOWS workflow of Object Tracking with Octave" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btz945>,
+        "LOBSTER: an environment to design bioimage analysis workflows for large and complex fluorescence microscopy data" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/113> ;
+    dc:created "2020-01-23T16:15:33"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:19:31"^^xsd:dateTime ;
+    dc:title "Object Tracking (Octave)" ;
+    rdfs:comment """<p>Nuclei tracking in 2D time-lapse with Octave tracker (adapted from Matlab LOBSTER version.</p>\r
+""" .
+
+<http://biii.eu/node/1616> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Maska, Martin" ;
+    nb:hasDocumentation <https://public.celltrackingchallenge.net/participants/MU-Lux-CZ.pdf>,
+        "DEscription of the algorithm from Cell Tracking Challenge Page" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_ObjectTracking-MU-Lux-CZ/blob/master/cell_tracker.py>,
+        "Neubias BIAFLOWS workflow of Object Tracking with MU-Lux" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3563> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/108>,
+        <http://biii.eu/node/1201>,
+        <http://biii.eu/node/1202>,
+        <http://biii.eu/node/128> ;
+    dc:created "2020-01-23T16:23:14"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:34:50"^^xsd:dateTime ;
+    dc:title "Object Tracking (MU-Lux-CZ)" ;
+    rdfs:comment """<p>Cell tracking using MU-Lux algorithm.</p>\r
+""" .
+
+<http://biii.eu/node/1617> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Pavie, Benjamin" ;
+    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NeuronTracing_vaa3d_app2>,
+        "Neubias BIAFLOWS workflow of Neuron Tracking with Vaa3d APP2" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592>,
+        <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btt170>,
+        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree " ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/62>,
+        <http://biii.eu/node/64> ;
+    dc:created "2020-01-23T16:35:57"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:39:43"^^xsd:dateTime ;
+    dc:title "Neuron Tracing Vaa3D (App2) " ;
+    rdfs:comment """<p>Vaa3d All-Path-Pruning 2.0 (APP2) dockerised workflow for BIAFLOWS.</p>\r
+""" .
+
+<http://biii.eu/node/1618> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Pavie, Benjamin",
+        "Scholz, Leandro",
+        "Tosí, Sebastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_FilamentTracing3D_Rivuletpy>,
+        "Neubias BIAFLOWS workflow of Neuron Tracking with Rivuletpy (Rivulet 2)" ;
+    nb:hasReferencePublication <https://doi.org/10.1109/TMI.2018.2833420>,
+        "Automated 3-D Neuron Tracing With Precise Branch Erasing and Confidence Controlled Back Tracking" ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2020-01-23T17:07:51"^^xsd:dateTime ;
+    dc:modified "2020-01-23T17:11:30"^^xsd:dateTime ;
+    dc:title "Neuron Tracing 3D (Rivuletpy)" ;
+    rdfs:comment """<p>Rivuletpy dockerised workflow for BIAFLOWS.</p>\r
+""" .
+
+<http://biii.eu/node/1619> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Pavie, Benjamin" ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NeuronTracing_vaa3d_mst>,
+        "Neubias BIAFLOWS workflow of Neuron Tracing with Vaa3d MST" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592>,
+        <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/62> ;
+    dc:created "2020-01-23T17:13:49"^^xsd:dateTime ;
+    dc:modified "2020-01-23T17:16:20"^^xsd:dateTime ;
+    dc:title "Neuron Tracing Vaa3D (MST)" ;
+    rdfs:comment """<p>3D Neuron Tracing using Dockerized version of Vaa3D Minimum Spanning Tree (MST).</p>\r
+""" .
 
 <http://biii.eu/node/162> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Aaron Ponti" ;
@@ -9181,6 +9449,73 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
     dc:modified "2017-09-13T12:16:45"^^xsd:dateTime ;
     dc:title "IceImarisConnector" ;
     rdfs:comment "IceImarisConnector is a simple commodity class that eases communication between Bitplane Imaris and MATLAB or python using the Imaris XT interface." .
+
+<http://biii.eu/node/1620> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Pavie, Benjamin" ;
+    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_Neuron3dTree_vaa3d_most>,
+        "Neubias BIAFLOWS workflow of Neuron Tracing with Vaa3d MOST" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592>,
+        <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.neuroimage.2013.10.036>,
+        "3D BrainCV: Simultaneous visualization and analysis of cells and capillaries in a whole mouse brain with one-micron voxel resolution" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1166>,
+        <http://biii.eu/node/62> ;
+    dc:created "2020-01-23T17:18:19"^^xsd:dateTime ;
+    dc:modified "2020-01-23T17:21:08"^^xsd:dateTime ;
+    dc:title "Neuron Tracing Vaa3D (MOST)" ;
+    rdfs:comment """<p>3D Neuron Tracing with a Dockerized version of Vaa3D MOST Raytracer.</p>\r
+""" .
+
+<http://biii.eu/node/1621> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Edge_detection>,
+        <http://edamontology.org/operation_Skeletonization>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_FilamentTracing3D-Tub-IJ>,
+        "Neubias BIAFLOWS workflow of Filament Tracing with ImageJ" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/1140>,
+        <http://biii.eu/node/38> ;
+    dc:created "2020-01-23T17:22:13"^^xsd:dateTime ;
+    dc:modified "2020-01-23T17:29:27"^^xsd:dateTime ;
+    dc:title "Filament Tracing Tubeness (ImageJ)" ;
+    rdfs:comment """<p>Blood vessels tracing in 3D image from Tubeness filtering (user defined scale), 3D opening (radius set to 2), thresholding (user defined level) and 3D skeletonization.</p>\r
+""" .
+
+<http://biii.eu/node/1622> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Tosí, Sébastien" ;
+    nb:hasFunction <http://edamontology.org/operation_Local_thresholding>,
+        <http://edamontology.org/operation_Skeletonization>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_FilamentTracing3D-LocThr-IJ>,
+        "Neubias BIAFLOWS workflow of Filament Tracing with LocThresh ImageJ" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3594> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2020-01-23T17:30:05"^^xsd:dateTime ;
+    dc:modified "2020-01-23T17:33:39"^^xsd:dateTime ;
+    dc:title "Filament Tracing LocThresh (ImageJ)" ;
+    rdfs:comment """<p>Blood vessels tracing in 3D image from 3D Gaussian blurring (user defined radius), local thresholding (user defined radius and offset) and 3D skeletonization. Dockerized version for BIAFLOWS,</p>\r
+""" .
 
 <http://biii.eu/node/163> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Mario Emmenlauer, Aaron Ponti, Olaf Ronneberger" ;
@@ -16981,37 +17316,6 @@ Though this package mostly works in any platform, some of them are limited to Wi
     dc:modified "2019-10-16T20:32:01"^^xsd:dateTime ;
     dc:title "Shifted-Linear Interpolation" .
 
-<http://biii.eu/node/64> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Peng, Hanchuan (http://orcid.org/0000-0002-3478-3942)",
-        "Xiao, Hang " ;
-    nb:hasComparison <https://doi.org/10.1093/bioinformatics/btt170>,
-        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
-    nb:hasFunction <http://edamontology.org/operation_Distance_transform>,
-        <http://edamontology.org/operation_Neuron_image_analysis>,
-        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/APP2.PNG" ;
-    nb:hasLocation <https://github.com/Vaa3D/vaa3d_tools/tree/master/released_plugins/v3d_plugins/neurontracing_vn2>,
-        "APP2 Plugin Github repository in Vaa3D" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
-    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btt170>,
-        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562> ;
-    nb:hasTopic <http://edamontology.org/topic__R9Cmje2ZUXyDW6aQAvFhwSM> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:hasUsageExample <https://doi.org/10.1093/bioinformatics/btt170>,
-        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/62> ;
-    dc:created "2017-09-12T02:18:47"^^xsd:dateTime ;
-    dc:modified "2018-10-16T15:07:34"^^xsd:dateTime ;
-    dc:title "APP2" ;
-    rdfs:comment """<p>All-path-pruning 2.0 (APP2) is a component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm-based method to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters.</p>\r
-""" .
-
 <http://biii.eu/node/640> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.cellprofiler.org/CPmanual/LabelImages.html> ;
     nb:hasType <http://biii.eu/taxonomy/term/8> ;
@@ -21621,6 +21925,23 @@ With incredible speed and flexibility, Amira software enables advanced 3D imagin
     dc:modified "2017-09-12T17:00:23"^^xsd:dateTime ;
     dc:title "Matlab compiler runtime" .
 
+<http://biii.eu/node/113> a <http://biii.eu/node/software> ;
+    nb:hasLicense "GNU" ;
+    nb:hasLocation <http://www.gnu.org/software/octave/> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/101> ;
+    dc:created "2013-11-07T21:06:26"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:13:09"^^xsd:dateTime ;
+    dc:title "GNU Octave" ;
+    rdfs:comment """"GNU Octave is a high-level language, primarily intended for numerical computations."*\r
+It can also be used for image processing, statistics and plotting as well as Matlab.\r
+"GNU Octave is also freely redistributable software. You may redistribute it and/or mod-\r
+ify it under the terms of the GNU General Public License as published by the Free Software\r
+Foundation."*\r
+\r
+* """ .
+
 <http://biii.eu/node/114> a <http://biii.eu/node/software> ;
     nb:hasFunction <http://edamontology.org/operation_Image_colocalization>,
         <http://edamontology.org/operation_Image_deconvolution>,
@@ -21652,35 +21973,6 @@ With incredible speed and flexibility, Amira software enables advanced 3D imagin
     dc:modified "2019-10-15T12:25:54"^^xsd:dateTime ;
     dc:title "Huygens" ;
     rdfs:comment """<p>The Huygens Software Suite consists of different image processing packages with functionalities that include deconvolution, interactive analysis, and volume visualization of 2D-3D multi-channel and time series images from fluorescence microscopes such as widefield, confocal, multi-photon, spinning disk, Array Detector, STED, and Light Sheet</p>\r
-""" .
-
-<http://biii.eu/node/1140> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Johannes Schindelin",
-        "Mark Longair",
-        "Stephan Preibisch  orcid.org/0000-0002-0276-494X" ;
-    nb:hasDocumentation <https://www.longair.net/edinburgh/imagej/tubeness/> ;
-    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/tubeness.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLicense "GPL" ;
-    nb:hasLocation <https://www.longair.net/edinburgh/imagej/tubeness/> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasReferencePublication <https://www.ncbi.nlm.nih.gov/pubmed/10646760>,
-        "Sato Y, Nakajima S, Shiraga N, Atsumi H, Yoshida S, Koller T, Gerig G, Kikinis R.  1998.  Three-dimensional multi-scale line filter for segmentation and visualization of curvilinear structures in medical images.. Med Image Anal. 2(2):143-68." ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2017-09-13T15:27:04"^^xsd:dateTime ;
-    dc:modified "2019-10-21T11:10:09"^^xsd:dateTime ;
-    dc:title "Tubeness" ;
-    rdfs:comment """<p>This plugin filters a 3D image stack (or 2D image) to produce a score for how "tube-like" each point in the image is. This is useful as a preprocessing step for tracing neurons or blood vessels, for example. For 3D image stacks, the plugin uses the eigenvalues of the Hessian matrix to calculate this measure of "tubeness", using a&nbsp;metrics mentioned in Sato et al 1997 ¹: if the larger two eigenvalues (λ₂ and λ₃) are both negative then value is √(λ₂λ₃), otherwise the value is 0. For 2D images, if the large eigenvalue is negative, we return its absolute value and otherwise return 0.</p>\r
-\r
-<p>This plugin is now bundled as part of Fiji.</p>\r
 """ .
 
 <http://biii.eu/node/1141> a <http://biii.eu/node/software> ;
@@ -21730,6 +22022,34 @@ Many types of analysis besides simply finding foci detection (spot detection) is
     dc:modified "2017-09-12T20:05:44"^^xsd:dateTime ;
     dc:title "Metamorph" ;
     rdfs:comment """<p>Metamorph provides all tools needed to perform analysis of acquired images with user-friendly application modules for biology-specific analysis such as cell signaling, cell counting, and protein expression.</p>\r
+""" .
+
+<http://biii.eu/node/1166> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jingpeng Wu " ;
+    nb:hasFunction <http://edamontology.org/operation_Image_enhancement>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLicense "Apache 2.0 " ;
+    nb:hasLocation <https://github.com/Vaa3D/vaa3d_tools/tree/master/released_plugins/v3d_plugins/neurontracing_MOST>,
+        "MOST Github repository in Vaa3D" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.neuroimage.2013.10.036>,
+        "3D BrainCV: Simultaneous visualization and analysis of cells and capillaries in a whole mouse brain with one-micron voxel resolution " ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic_3382>,
+        <http://edamontology.org/topic_3452> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/62> ;
+    dc:created "2017-09-14T18:21:57"^^xsd:dateTime ;
+    dc:modified "2017-09-14T18:58:10"^^xsd:dateTime ;
+    dc:title "MOST-Raytracer " ;
+    rdfs:comment """<p>This project was designed for vectorize and analyze the&nbsp; blood vessels in the mouse brain.</p>\r
+\r
+<p>This plugin requires the definition of seed point detection settings by the user (Semi-automated).</p>\r
 """ .
 
 <http://biii.eu/node/118> a <http://biii.eu/node/software> ;
@@ -22518,27 +22838,6 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2019-02-19T16:43:55"^^xsd:dateTime ;
     dc:title "NVidia CUDA 9" .
 
-<http://biii.eu/node/1455> a <http://biii.eu/node/software> ;
-    nb:hasDocumentation <https://imagej.nih.gov/ij/developer/macro/functions.html>,
-        "List of Built-in Macro Functions (ImageJ website)" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
-    nb:hasLicense "BSD-2" ;
-    nb:hasLocation <https://imagej.nih.gov/ij/developer/source/>,
-        "ImageJ source code (go to ij.Macro package then Functions java file) " ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2019-02-25T15:18:27"^^xsd:dateTime ;
-    dc:modified "2019-02-25T15:38:03"^^xsd:dateTime ;
-    dc:title "ImageJ Built-in Macro Functions" ;
-    rdfs:comment """<p>A set of ImageJ Built-in Macro Functions used to perform operations on the ImageJ platform.</p>\r
-""" .
-
 <http://biii.eu/node/1476> a <http://biii.eu/node/software> ;
     nb:hasIllustration "http://www.biii.eu/sites/default/files/2019-03/PyTorch-logo.jpg" ;
     nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
@@ -22708,6 +23007,31 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:created "2019-10-18T18:35:24"^^xsd:dateTime ;
     dc:modified "2019-10-18T18:39:50"^^xsd:dateTime ;
     dc:title "MATLAB Wavelet toolbox" .
+
+<http://biii.eu/node/1605> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Meijering, Erik" ;
+    nb:hasDocumentation <https://imagescience.org/meijering/software/featurej/hessian/>,
+        "FeatureJ Hessian page" ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2020-01-23T14:01:45"^^xsd:dateTime ;
+    dc:modified "2020-01-23T14:05:01"^^xsd:dateTime ;
+    dc:title "FeatureJ Hessian" ;
+    rdfs:comment """<p>This plugin computes for each image element (pixel/voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures</p>\r
+""" .
+
+<http://biii.eu/node/1612> a <http://biii.eu/node/software> ;
+    nb:hasReferencePublication <https://github.com/imagej/pyimagej>,
+        "GitHub repo of pyimagej: Python wrapper for ImageJ" ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2020-01-23T16:05:23"^^xsd:dateTime ;
+    dc:modified "2020-01-23T16:08:04"^^xsd:dateTime ;
+    dc:title "pyimagej" ;
+    rdfs:comment """<p>pyimagej provides a set of wrapper functions for integration between ImageJ and Python.</p>\r
+\r
+<p>It also provides a high-level entry point for invoking ImageJ server APIs.</p>\r
+""" .
 
 <http://biii.eu/node/195> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Richard Mort, original macro by Andy Weller http://imagejdocu.tudor.lu/doku.php?id=macro:normalized_variance" ;
@@ -23190,6 +23514,37 @@ MiToBo ships with a set of operators ready to be used as plugins in ImageJ. They
     dc:modified "2018-05-14T22:16:23"^^xsd:dateTime ;
     dc:title "Analyze 12.0" ;
     rdfs:comment "Analyze 12.0 is a set of image processing, visualization and analysis tools that provides users access to a breadth of essential post-processing functions critical for innovative research. Analyze 12.0 provides users with all the key display, editing, processing, registration, and measurement tools needed to realize their research goals in a single multifaceted software package. Analyze 12.0 is open-ended, allowing for the application of its tools to novel and emerging research." .
+
+<http://biii.eu/node/64> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Peng, Hanchuan (http://orcid.org/0000-0002-3478-3942)",
+        "Xiao, Hang " ;
+    nb:hasComparison <https://doi.org/10.1093/bioinformatics/btt170>,
+        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
+    nb:hasFunction <http://edamontology.org/operation_Distance_transform>,
+        <http://edamontology.org/operation_Neuron_image_analysis>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/APP2.PNG" ;
+    nb:hasLocation <https://github.com/Vaa3D/vaa3d_tools/tree/master/released_plugins/v3d_plugins/neurontracing_vn2>,
+        "APP2 Plugin Github repository in Vaa3D" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasReferencePublication <https://doi.org/10.1093/bioinformatics/btt170>,
+        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__R9Cmje2ZUXyDW6aQAvFhwSM> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:hasUsageExample <https://doi.org/10.1093/bioinformatics/btt170>,
+        "APP2: automatic tracing of 3D neuron morphology based on hierarchical pruning of a gray-weighted image distance-tree" ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/62> ;
+    dc:created "2017-09-12T02:18:47"^^xsd:dateTime ;
+    dc:modified "2018-10-16T15:07:34"^^xsd:dateTime ;
+    dc:title "APP2" ;
+    rdfs:comment """<p>All-path-pruning 2.0 (APP2) is a component of Vaa3D. APP2 prunes an initial reconstruction tree of a neuron’s morphology using a long-segment-first hierarchical procedure instead of the original termini-first-search process in APP. APP2 computes the distance transform of all image voxels directly for a gray-scale image, without the need to binarize the image before invoking the conventional distance transform. APP2 uses a fast-marching algorithm-based method to compute the initial reconstruction trees without pre-computing a large graph. This method allows to trace large images. This method can be used with default parameters or user-defined parameters.</p>\r
+""" .
 
 <http://biii.eu/node/651> a <http://biii.eu/node/software> ;
     nb:hasAuthor "de Chaumont Fabrice" ;
@@ -24034,6 +24389,35 @@ Several options for curve fitting are available. Results can be saved back in OM
 <p>&nbsp;</p>\r
 """ .
 
+<http://biii.eu/node/1140> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Johannes Schindelin",
+        "Mark Longair",
+        "Stephan Preibisch  orcid.org/0000-0002-0276-494X" ;
+    nb:hasDocumentation <https://www.longair.net/edinburgh/imagej/tubeness/> ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/tubeness.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLicense "GPL" ;
+    nb:hasLocation <https://www.longair.net/edinburgh/imagej/tubeness/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasReferencePublication <https://www.ncbi.nlm.nih.gov/pubmed/10646760>,
+        "Sato Y, Nakajima S, Shiraga N, Atsumi H, Yoshida S, Koller T, Gerig G, Kikinis R.  1998.  Three-dimensional multi-scale line filter for segmentation and visualization of curvilinear structures in medical images.. Med Image Anal. 2(2):143-68." ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2017-09-13T15:27:04"^^xsd:dateTime ;
+    dc:modified "2019-10-21T11:10:09"^^xsd:dateTime ;
+    dc:title "Tubeness" ;
+    rdfs:comment """<p>This plugin filters a 3D image stack (or 2D image) to produce a score for how "tube-like" each point in the image is. This is useful as a preprocessing step for tracing neurons or blood vessels, for example. For 3D image stacks, the plugin uses the eigenvalues of the Hessian matrix to calculate this measure of "tubeness", using a&nbsp;metrics mentioned in Sato et al 1997 ¹: if the larger two eigenvalues (λ₂ and λ₃) are both negative then value is √(λ₂λ₃), otherwise the value is 0. For 2D images, if the large eigenvalue is negative, we return its absolute value and otherwise return 0.</p>\r
+\r
+<p>This plugin is now bundled as part of Fiji.</p>\r
+""" .
+
 <http://biii.eu/node/1185> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Gunther Ulrik",
         "Pietzsch Tobias",
@@ -24163,11 +24547,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:modified "2018-05-24T03:29:54"^^xsd:dateTime ;
     dc:title "ImageScience.jar" .
 
-<http://biii.eu/node/1322> a <http://biii.eu/node/software> ;
-    dc:created "2018-05-31T21:58:47"^^xsd:dateTime ;
-    dc:modified "2018-05-31T21:58:47"^^xsd:dateTime ;
-    dc:title "Libtiff" .
-
 <http://biii.eu/node/1323> a <http://biii.eu/node/software> ;
     dc:created "2018-06-04T15:13:43"^^xsd:dateTime ;
     dc:modified "2018-06-04T15:13:43"^^xsd:dateTime ;
@@ -24236,35 +24615,6 @@ Examples of available categories of operators : filtering, edge detection, mathe
     dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:01:51"^^xsd:dateTime ;
     dc:title "Graph Cut" .
-
-<http://biii.eu/node/330> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Jean-Yves Tinevez" ;
-    nb:hasDocumentation <https://imagej.net/_images/8/85/TrackMate-manual.pdf>,
-        "Manual" ;
-    nb:hasFunction <http://edamontology.org/operation_Particle_tracking>,
-        <http://edamontology.org/operation_Spot_extraction> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/160px-TrackMate-Logo85x50-color-300p.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLicense "GPLv3" ;
-    nb:hasLocation <http://fiji.sc/TrackMate> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
-    nb:hasReferencePublication <https://doi.org/10.1016/j.ymeth.2016.09.016>,
-        "Tinevez et. al. (2017) TrackMate: An open and extensible platform for single-particle tracking" ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562>,
-        <http://biii.eu/taxonomy/term/3563>,
-        <http://biii.eu/taxonomy/term/3565> ;
-    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/79> ;
-    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
-    dc:modified "2019-10-17T10:27:18"^^xsd:dateTime ;
-    dc:title "TrackMate" ;
-    rdfs:comment "TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labeled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc..." .
 
 <http://biii.eu/node/337> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Gabriel Landini" ;
@@ -24783,26 +25133,6 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
     dc:modified "2019-11-13T13:25:40"^^xsd:dateTime ;
     dc:title "EBImage rotate" .
 
-<http://biii.eu/node/1038> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Erik Meijering" ;
-    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
-    nb:hasLocation <http://imagescience.org/meijering/software/featurej/laplacian/> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
-    nb:hasType <http://biii.eu/taxonomy/term/8> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/38> ;
-    dc:created "2014-12-19T23:07:55"^^xsd:dateTime ;
-    dc:modified "2019-10-29T18:19:35"^^xsd:dateTime ;
-    dc:title "FeatureJ Laplacian" ;
-    rdfs:comment """<p>An often used Laplacian filter for enhancing signals at object boundaries and dots. It works with XY, XYZ, XYZ-T, XYZ-T-Ch1, XYZT-C1-C2 images. Distributed as a part of ImageJ plugin [FeatureJ](http://imagescience.org/meijering/software/featurej/), and included in Fiji. The second URL above is the link to its Javadoc. (imagescience.feature.Laplacian). A primer for using this class in Jython script is in [CMCI Jython/Fiji cookbook: FeatureJ](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#laplacian)</p>\r
-""" .
-
 <http://biii.eu/node/1075> a <http://biii.eu/node/software> ;
     dc:created "2017-09-12T15:22:26"^^xsd:dateTime ;
     dc:modified "2017-09-12T15:22:26"^^xsd:dateTime ;
@@ -24843,11 +25173,6 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
     dc:title "BigDataViewer" ;
     rdfs:comment """<p>The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences. BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.</p>\r
 """ .
-
-<http://biii.eu/node/1202> a <http://biii.eu/node/software> ;
-    dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:modified "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:title "Keras" .
 
 <http://biii.eu/node/130> a <http://biii.eu/node/software> ;
     nb:hasAuthor "André Lampe",
@@ -24899,10 +25224,60 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
 </blockquote>\r
 """ .
 
-<http://biii.eu/node/1317> a <http://biii.eu/node/software> ;
-    dc:created "2018-05-27T19:47:50"^^xsd:dateTime ;
-    dc:modified "2018-05-27T19:47:50"^^xsd:dateTime ;
-    dc:title "matplotlib" .
+<http://biii.eu/node/1322> a <http://biii.eu/node/software> ;
+    dc:created "2018-05-31T21:58:47"^^xsd:dateTime ;
+    dc:modified "2018-05-31T21:58:47"^^xsd:dateTime ;
+    dc:title "Libtiff" .
+
+<http://biii.eu/node/1455> a <http://biii.eu/node/software> ;
+    nb:hasDocumentation <https://imagej.nih.gov/ij/developer/macro/functions.html>,
+        "List of Built-in Macro Functions (ImageJ website)" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
+    nb:hasLicense "BSD-2" ;
+    nb:hasLocation <https://imagej.nih.gov/ij/developer/source/>,
+        "ImageJ source code (go to ij.Macro package then Functions java file) " ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2019-02-25T15:18:27"^^xsd:dateTime ;
+    dc:modified "2019-02-25T15:38:03"^^xsd:dateTime ;
+    dc:title "ImageJ Built-in Macro Functions" ;
+    rdfs:comment """<p>A set of ImageJ Built-in Macro Functions used to perform operations on the ImageJ platform.</p>\r
+""" .
+
+<http://biii.eu/node/330> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Jean-Yves Tinevez" ;
+    nb:hasDocumentation <https://imagej.net/_images/8/85/TrackMate-manual.pdf>,
+        "Manual" ;
+    nb:hasFunction <http://edamontology.org/operation_Particle_tracking>,
+        <http://edamontology.org/operation_Spot_extraction> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-05/160px-TrackMate-Logo85x50-color-300p.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLicense "GPLv3" ;
+    nb:hasLocation <http://fiji.sc/TrackMate> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3591> ;
+    nb:hasReferencePublication <https://doi.org/10.1016/j.ymeth.2016.09.016>,
+        "Tinevez et. al. (2017) TrackMate: An open and extensible platform for single-particle tracking" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic_Fluorescent_microscopy> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/79> ;
+    dc:created "2013-10-11T15:08:40"^^xsd:dateTime ;
+    dc:modified "2019-10-17T10:27:18"^^xsd:dateTime ;
+    dc:title "TrackMate" ;
+    rdfs:comment "TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labeled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc..." .
 
 <http://biii.eu/node/332> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -25172,31 +25547,15 @@ images using a plugin for that purpose in FIJI/ImageJ.\r
 <p>&nbsp;</p>\r
 """ .
 
-<http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
-    nb:hasDocumentation <https://www.tensorflow.org/tutorials/images/image_recognition>,
-        "Example for image recognition" ;
-    nb:hasFunction <http://edamontology.org/operation_Image_classification>,
-        <http://edamontology.org/operation_Image_enhancement>,
-        <http://edamontology.org/operation_Image_segmentation>,
-        <http://edamontology.org/operation_Object_detection> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-08/CaptureTF.PNG" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
-    nb:hasLocation <https://www.tensorflow.org/install/>,
-        "Multiplatform links to python packages" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
-    nb:hasTopic <http://edamontology.org/topic_3474> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+<http://biii.eu/node/1202> a <http://biii.eu/node/software> ;
     dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
-    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
-    dc:title "Tensorflow" ;
-    rdfs:comment """<p>"An open source machine learning framework for everyone "</p>\r
-\r
-<p>TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</p>\r
-""" .
+    dc:modified "2018-01-30T17:00:37"^^xsd:dateTime ;
+    dc:title "Keras" .
+
+<http://biii.eu/node/1317> a <http://biii.eu/node/software> ;
+    dc:created "2018-05-27T19:47:50"^^xsd:dateTime ;
+    dc:modified "2018-05-27T19:47:50"^^xsd:dateTime ;
+    dc:title "matplotlib" .
 
 <http://biii.eu/node/211> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Cellprofiler team" ;
@@ -25344,29 +25703,30 @@ V.Foe and G.Odell, . 26 July 2001""" .
     dc:modified "2017-09-14T10:15:16"^^xsd:dateTime ;
     dc:title "R" .
 
-<http://biii.eu/node/128> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu and the scikit-image contributors. " ;
-    nb:hasDocumentation <http://scikit-image.org/docs/dev/>,
-        "Scikit-image Documentation (Manual, installation guides, introductory examples)" ;
-    nb:hasFunction <http://edamontology.org/operation_2945>,
-        <http://edamontology.org/operation_Image_processing> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/logo.png" ;
-    nb:hasLocation <http://scikit-image.org/> ;
+<http://biii.eu/node/1201> a <http://biii.eu/node/software> ;
+    nb:hasDocumentation <https://www.tensorflow.org/tutorials/images/image_recognition>,
+        "Example for image recognition" ;
+    nb:hasFunction <http://edamontology.org/operation_Image_classification>,
+        <http://edamontology.org/operation_Image_enhancement>,
+        <http://edamontology.org/operation_Image_segmentation>,
+        <http://edamontology.org/operation_Object_detection> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-08/CaptureTF.PNG" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
+    nb:hasLocation <https://www.tensorflow.org/install/>,
+        "Multiplatform links to python packages" ;
     nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
         <http://biii.eu/taxonomy/term/31>,
         <http://biii.eu/taxonomy/term/32> ;
     nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562>,
-        <http://biii.eu/taxonomy/term/3563>,
-        <http://biii.eu/taxonomy/term/3565> ;
-    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
     nb:hasType <http://biii.eu/taxonomy/term/3567> ;
     nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    dc:created "2014-12-09T11:33:32"^^xsd:dateTime ;
-    dc:modified "2018-12-17T02:00:14"^^xsd:dateTime ;
-    dc:title "scikit-image" ;
-    rdfs:comment """<p>Image processing library for Python &gt;The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to provide a versatile set of image processing routines. It is written in the Python language. This SciKit is developed by the SciPy community. All contributions are most welcome!</p>\r
+    dc:created "2018-01-30T17:00:37"^^xsd:dateTime ;
+    dc:modified "2018-10-18T17:31:08"^^xsd:dateTime ;
+    dc:title "Tensorflow" ;
+    rdfs:comment """<p>"An open source machine learning framework for everyone "</p>\r
+\r
+<p>TensorFlow™ is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices. Originally developed by researchers and engineers from the Google Brain team within Google’s AI organization, it comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</p>\r
 """ .
 
 <http://biii.eu/node/239> a <http://biii.eu/node/software> ;
@@ -25553,10 +25913,25 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2019-11-14T13:09:56"^^xsd:dateTime ;
     dc:title "EBImage channel" .
 
-<http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
-    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:title "scipy" .
+<http://biii.eu/node/1038> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Erik Meijering" ;
+    nb:hasFunction <http://edamontology.org/operation_Object_detection> ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4340> ;
+    nb:hasLocation <http://imagescience.org/meijering/software/featurej/laplacian/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/8> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/38> ;
+    dc:created "2014-12-19T23:07:55"^^xsd:dateTime ;
+    dc:modified "2019-10-29T18:19:35"^^xsd:dateTime ;
+    dc:title "FeatureJ Laplacian" ;
+    rdfs:comment """<p>An often used Laplacian filter for enhancing signals at object boundaries and dots. It works with XY, XYZ, XYZ-T, XYZ-T-Ch1, XYZT-C1-C2 images. Distributed as a part of ImageJ plugin [FeatureJ](http://imagescience.org/meijering/software/featurej/), and included in Fiji. The second URL above is the link to its Javadoc. (imagescience.feature.Laplacian). A primer for using this class in Jython script is in [CMCI Jython/Fiji cookbook: FeatureJ](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#laplacian)</p>\r
+""" .
 
 <http://biii.eu/node/141> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Raphaël Marée, Loïc Rollus, Benjamin Stévens, Renaud Hoyoux, Gilles Louppe, Rémy Vandaele, Jean-Michel Begon, Philipp Kainz, Pierre Geurts and Louis Wehenkel" ;
@@ -25621,40 +25996,10 @@ Mahotas and all packages on which it relies are open-source.\r
     rdfs:comment """<p>Compute and display the histogram of a sequence, with a more accurate control on the histogram parameters (such as the number of bins) than the built-in Icy widget. In particular, the histogram can be computed either over a whole sequence or over a sub-region defined by a ROI.</p>\r
 """ .
 
-<http://biii.eu/node/1376> a <http://biii.eu/node/software> ;
-    nb:hasDOI <https://zenodo.org/record/1034765%23.W8mhARO2ns0>,
-        "https://zenodo.org/record/1034765#.W8mhARO2ns0" ;
-    nb:hasDocumentation <http://scikit-learn.org/stable/documentation.html>,
-        "Documentation of scikit-learn 0.20.0" ;
-    nb:hasFunction <http://edamontology.org/operation_2423>,
-        <http://edamontology.org/operation_2945>,
-        <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB> ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-10/scikit-learn-logo-small.png" ;
-    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
-    nb:hasLicense "BSD license" ;
-    nb:hasLocation <http://scikit-learn.org/stable/install.html> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
-    nb:hasReferencePublication <http://www.jmlr.org/papers/v12/pedregosa11a.html> ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
-        <http://biii.eu/taxonomy/term/3562>,
-        <http://biii.eu/taxonomy/term/3563>,
-        <http://biii.eu/taxonomy/term/3565> ;
-    nb:hasTopic <http://edamontology.org/topic_3474> ;
-    nb:hasTrainingMaterial <http://biii.eu/node/1384> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:hasUsageExample <http://scikit-learn.org/stable/auto_examples/index.html>,
-        "Link to examples" ;
-    nb:requires <http://biii.eu/node/1288>,
-        <http://biii.eu/node/1312>,
-        <http://biii.eu/node/1317> ;
-    dc:created "2018-10-18T12:29:30"^^xsd:dateTime ;
-    dc:modified "2018-10-19T11:34:17"^^xsd:dateTime ;
-    dc:title "scikit-learn (sklearn)" ;
-    rdfs:comment """<p>Scikit-learn (sklearn) is a python library used for machine learning. sklearn contains simple and efficient tools for data mining and data analysis. Modules and functions&nbsp;include those for classification, regression, clustering, dimensionality reduction, model selection and data preprocessing. Many people&nbsp;have contributed to sklearn (<a href="http://scikit-learn.org/stable/about.html#people">list of&nbsp;authors</a>)</p>\r
-""" .
+<http://biii.eu/node/1286> a <http://biii.eu/node/software> ;
+    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:title "scipy" .
 
 <http://biii.eu/node/1413> a <http://biii.eu/node/software> ;
     dc:created "2019-01-02T18:15:39"^^xsd:dateTime ;
@@ -25827,10 +26172,65 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2017-09-13T10:53:00"^^xsd:dateTime ;
     dc:title "KNIME" .
 
-<http://biii.eu/node/1288> a <http://biii.eu/node/software> ;
-    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
-    dc:title "numpy" .
+<http://biii.eu/node/128> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu and the scikit-image contributors. " ;
+    nb:hasDocumentation <http://scikit-image.org/docs/dev/>,
+        "Scikit-image Documentation (Manual, installation guides, introductory examples)" ;
+    nb:hasFunction <http://edamontology.org/operation_2945>,
+        <http://edamontology.org/operation_Image_processing> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/logo.png" ;
+    nb:hasLocation <http://scikit-image.org/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic__RBDp7HwdUBEjpS6PRjYfV2V> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    dc:created "2014-12-09T11:33:32"^^xsd:dateTime ;
+    dc:modified "2018-12-17T02:00:14"^^xsd:dateTime ;
+    dc:title "scikit-image" ;
+    rdfs:comment """<p>Image processing library for Python &gt;The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to provide a versatile set of image processing routines. It is written in the Python language. This SciKit is developed by the SciPy community. All contributions are most welcome!</p>\r
+""" .
+
+<http://biii.eu/node/1376> a <http://biii.eu/node/software> ;
+    nb:hasDOI <https://zenodo.org/record/1034765%23.W8mhARO2ns0>,
+        "https://zenodo.org/record/1034765#.W8mhARO2ns0" ;
+    nb:hasDocumentation <http://scikit-learn.org/stable/documentation.html>,
+        "Documentation of scikit-learn 0.20.0" ;
+    nb:hasFunction <http://edamontology.org/operation_2423>,
+        <http://edamontology.org/operation_2945>,
+        <http://edamontology.org/operation__RDetoixS3xEu0agR2CebaoB> ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2018-10/scikit-learn-logo-small.png" ;
+    nb:hasImplementation <http://biii.eu/taxonomy/term/4339> ;
+    nb:hasLicense "BSD license" ;
+    nb:hasLocation <http://scikit-learn.org/stable/install.html> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasReferencePublication <http://www.jmlr.org/papers/v12/pedregosa11a.html> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
+        <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasTopic <http://edamontology.org/topic_3474> ;
+    nb:hasTrainingMaterial <http://biii.eu/node/1384> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:hasUsageExample <http://scikit-learn.org/stable/auto_examples/index.html>,
+        "Link to examples" ;
+    nb:requires <http://biii.eu/node/1288>,
+        <http://biii.eu/node/1312>,
+        <http://biii.eu/node/1317> ;
+    dc:created "2018-10-18T12:29:30"^^xsd:dateTime ;
+    dc:modified "2018-10-19T11:34:17"^^xsd:dateTime ;
+    dc:title "scikit-learn (sklearn)" ;
+    rdfs:comment """<p>Scikit-learn (sklearn) is a python library used for machine learning. sklearn contains simple and efficient tools for data mining and data analysis. Modules and functions&nbsp;include those for classification, regression, clustering, dimensionality reduction, model selection and data preprocessing. Many people&nbsp;have contributed to sklearn (<a href="http://scikit-learn.org/stable/about.html#people">list of&nbsp;authors</a>)</p>\r
+""" .
 
 <http://biii.eu/node/517> a <http://biii.eu/node/software> ;
     nb:hasLocation <http://icy.bioimageanalysis.org/plugin/Active_Contours> ;
@@ -25842,43 +26242,6 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:created "2013-10-11T15:08:43"^^xsd:dateTime ;
     dc:modified "2017-09-13T12:05:22"^^xsd:dateTime ;
     dc:title "Active Contours" .
-
-<http://biii.eu/node/62> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Fuhui Long",
-        "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)",
-        "Zongcai Ruan" ;
-    nb:hasDocumentation <https://github.com/Vaa3D/Vaa3D_Wiki>,
-        "Vaa3D Wiki" ;
-    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Vaa3D.jpg" ;
-    nb:hasLicense "MIT License" ;
-    nb:hasLocation <http://vaa3d.org/>,
-        "Vaa3D Main website" ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
-    nb:hasReferencePublication <http://www.nature.com/nbt/journal/v28/n4/full/nbt.1612.html>,
-        "V3D enables real-time 3D visualization and quantitative analysis of large-scale biological image data sets" ;
-    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562>,
-        <http://biii.eu/taxonomy/term/3563>,
-        <http://biii.eu/taxonomy/term/3565> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3575> ;
-    nb:requires <http://biii.eu/node/321>,
-        <http://biii.eu/node/601>,
-        <http://biii.eu/node/62>,
-        <http://biii.eu/node/92> ;
-    dc:created "2017-09-12T02:02:42"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:13:14"^^xsd:dateTime ;
-    dc:title "Vaa3D" ;
-    rdfs:comment """<p>Vaa3D is a handy, fast, and versatile 3D/4D/5D Image Visualization and Analysis System for Bioimages and Surface Objects. It also provides many unique functions that you may not find in other software. It is Open Source, and supports a very simple and powerful plugin interface and thus can be extended and enhanced easily.</p>\r
-\r
-<p>Vaa3D is cross-platform (Mac, Linux, and Windows). This software suite is powerful for visualizing large- or massive-scale (giga-voxels and even tera-voxels) 3D image stacks and various surface data. Vaa3D is also a container of powerful modules for 3D image analysis (cell segmentation, neuron tracing, brain registration, annotation, quantitative measurement and statistics, etc) and data management. This makes Vaa3D suitable for various bioimage informatics applications, and a nice platform to develop new 3D image analysis algorithms for high-throughput processing. In short, Vaa3D streamlines the workflow of visualization-assisted analysis.</p>\r
-\r
-<p>Vaa3D can render 5D (spatial-temporal) data directly in 3D volume-rendering mode; it supports convenient and interactive local and global 3D views at different scales... it comes with a number of plugins and toolboxes. Importantly, you can now write your own plugins to take advantage of the Vaa3D platform, possibly within minutes!</p>\r
-\r
-<p>&nbsp;</p>\r
-""" .
 
 <http://biii.eu/node/977> a <http://biii.eu/node/software> ;
     nb:hasDocumentation <http://www.bioconductor.org/packages/release/bioc/manuals/EBImage/man/EBImage.pdf> ;
@@ -25938,6 +26301,11 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2017-09-13T12:12:25"^^xsd:dateTime ;
     dc:title "watershed" .
 
+<http://biii.eu/node/1288> a <http://biii.eu/node/software> ;
+    dc:created "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:modified "2018-04-27T01:54:02"^^xsd:dateTime ;
+    dc:title "numpy" .
+
 <http://biii.eu/node/826> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Daniel Sage" ;
     nb:hasDocumentation <http://bigwww.epfl.ch/sage/soft/watershed/> ;
@@ -25957,6 +26325,43 @@ Mahotas and all packages on which it relies are open-source.\r
     dc:modified "2019-10-18T14:29:51"^^xsd:dateTime ;
     dc:title "Graylevel Watershed for ImageJ" ;
     rdfs:comment """<p>The grayscale watershed segmentation is useful to segment particles in contact when the model of shape is unknown a priori.</p>\r
+""" .
+
+<http://biii.eu/node/62> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Fuhui Long",
+        "Hanchuan Peng (http://orcid.org/0000-0002-3478-3942)",
+        "Zongcai Ruan" ;
+    nb:hasDocumentation <https://github.com/Vaa3D/Vaa3D_Wiki>,
+        "Vaa3D Wiki" ;
+    nb:hasIllustration "http://www.biii.eu/sites/default/files/2017-09/Vaa3D.jpg" ;
+    nb:hasLicense "MIT License" ;
+    nb:hasLocation <http://vaa3d.org/>,
+        "Vaa3D Main website" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasReferencePublication <http://www.nature.com/nbt/journal/v28/n4/full/nbt.1612.html>,
+        "V3D enables real-time 3D visualization and quantitative analysis of large-scale biological image data sets" ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562>,
+        <http://biii.eu/taxonomy/term/3563>,
+        <http://biii.eu/taxonomy/term/3565> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/321>,
+        <http://biii.eu/node/601>,
+        <http://biii.eu/node/62>,
+        <http://biii.eu/node/92> ;
+    dc:created "2017-09-12T02:02:42"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:13:14"^^xsd:dateTime ;
+    dc:title "Vaa3D" ;
+    rdfs:comment """<p>Vaa3D is a handy, fast, and versatile 3D/4D/5D Image Visualization and Analysis System for Bioimages and Surface Objects. It also provides many unique functions that you may not find in other software. It is Open Source, and supports a very simple and powerful plugin interface and thus can be extended and enhanced easily.</p>\r
+\r
+<p>Vaa3D is cross-platform (Mac, Linux, and Windows). This software suite is powerful for visualizing large- or massive-scale (giga-voxels and even tera-voxels) 3D image stacks and various surface data. Vaa3D is also a container of powerful modules for 3D image analysis (cell segmentation, neuron tracing, brain registration, annotation, quantitative measurement and statistics, etc) and data management. This makes Vaa3D suitable for various bioimage informatics applications, and a nice platform to develop new 3D image analysis algorithms for high-throughput processing. In short, Vaa3D streamlines the workflow of visualization-assisted analysis.</p>\r
+\r
+<p>Vaa3D can render 5D (spatial-temporal) data directly in 3D volume-rendering mode; it supports convenient and interactive local and global 3D views at different scales... it comes with a number of plugins and toolboxes. Importantly, you can now write your own plugins to take advantage of the Vaa3D platform, possibly within minutes!</p>\r
+\r
+<p>&nbsp;</p>\r
 """ .
 
 <http://biii.eu/node/88> a <http://biii.eu/node/software> ;
@@ -26046,20 +26451,6 @@ Limitations:\r
 - no embedded visualization of nD Microscopy data\r
 """ .
 
-<http://biii.eu/node/108> a <http://biii.eu/node/software> ;
-    nb:hasLicense "BSD" ;
-    nb:hasLocation <http://opencv.org/> ;
-    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
-        <http://biii.eu/taxonomy/term/31>,
-        <http://biii.eu/taxonomy/term/32> ;
-    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
-    nb:openess <http://biii.eu/taxonomy/term/3578> ;
-    nb:requires <http://biii.eu/node/211> ;
-    dc:created "2013-11-07T20:53:48"^^xsd:dateTime ;
-    dc:modified "2017-09-13T12:13:06"^^xsd:dateTime ;
-    dc:title "OpenCV" ;
-    rdfs:comment "OpenCV is released under a BSD license and hence its free for both academic and commercial use. It has C++, C, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Adopted all around the world, OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 6 million. Usage ranges from interactive art, to mines inspection, stitching maps on the web or through advanced robotics." .
-
 <http://biii.eu/node/321> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Stéphane Dallongeville",
         "Thomas Provoost" ;
@@ -26138,6 +26529,20 @@ As of now, the annotations are saved when the sequence is closed, but you have t
     dc:title "KNIME Image Processing and Analysis" ;
     rdfs:comment """<p>KNIME is a user-friendly graphical workbench for the entire analysis process: data access, data transformation, initial investigation, powerful predictive analytics, visualisation and reporting. Its an open integration platform and provides over 1000 modules (nodes), including those of the KNIME community and its extensive partner network. One of these extensions adds the ability for image analysis allowing to process, segment and further analyze images which can easily be used in combination with the other extensions, potentially from other fields.</p>\r
 """ .
+
+<http://biii.eu/node/108> a <http://biii.eu/node/software> ;
+    nb:hasLicense "BSD" ;
+    nb:hasLocation <http://opencv.org/> ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3567> ;
+    nb:openess <http://biii.eu/taxonomy/term/3578> ;
+    nb:requires <http://biii.eu/node/211> ;
+    dc:created "2013-11-07T20:53:48"^^xsd:dateTime ;
+    dc:modified "2017-09-13T12:13:06"^^xsd:dateTime ;
+    dc:title "OpenCV" ;
+    rdfs:comment "OpenCV is released under a BSD license and hence its free for both academic and commercial use. It has C++, C, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Adopted all around the world, OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 6 million. Usage ranges from interactive art, to mines inspection, stitching maps on the web or through advanced robotics." .
 
 <http://biii.eu/node/116> a <http://biii.eu/node/software> ;
     nb:hasLicense "-" ;
