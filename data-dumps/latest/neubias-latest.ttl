@@ -9517,6 +9517,27 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
     rdfs:comment """<p>Blood vessels tracing in 3D image from 3D Gaussian blurring (user defined radius), local thresholding (user defined radius and offset) and 3D skeletonization. Dockerized version for BIAFLOWS,</p>\r
 """ .
 
+<http://biii.eu/node/1623> a <http://biii.eu/node/software> ;
+    nb:hasAuthor "Pavie, Benjamin" ;
+    nb:hasFunction <http://edamontology.org/operation_Neuron_image_analysis>,
+        <http://edamontology.org/operation__R9Qf06vxvFj2UbAk7pW3IMG> ;
+    nb:hasLocation <https://github.com/Neubias-WG5/W_NeuronTracing_vaa3d_fastmarching_spanningtree/tree/v0.4>,
+        "Neubias BIAFLOWS workflow of Neuron Tracing with Vaa3d BJUT Fast Marching Spanning Tree" ;
+    nb:hasPlatform <http://biii.eu/taxonomy/term/29>,
+        <http://biii.eu/taxonomy/term/31>,
+        <http://biii.eu/taxonomy/term/32> ;
+    nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592>,
+        <http://biii.eu/taxonomy/term/3593> ;
+    nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3562> ;
+    nb:hasType <http://biii.eu/taxonomy/term/3568> ;
+    nb:openess <http://biii.eu/taxonomy/term/3575> ;
+    nb:requires <http://biii.eu/node/62> ;
+    dc:created "2020-01-27T06:25:33"^^xsd:dateTime ;
+    dc:modified "2020-01-27T06:28:13"^^xsd:dateTime ;
+    dc:title "Neuron Tracing Vaa3D (BJUT FM Spanning Tree)" ;
+    rdfs:comment """<p>Vaa3d BJUT Fast Marching Spanning Tree algorithm dockerised workflow for BIAFLOWS</p>\r
+""" .
+
 <http://biii.eu/node/163> a <http://biii.eu/node/software> ;
     nb:hasAuthor "Mario Emmenlauer, Aaron Ponti, Olaf Ronneberger" ;
     nb:hasLicense "GNU General Public License v2" ;
