@@ -9348,7 +9348,8 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
 """ .
 
 <http://biii.eu/node/1616> a <http://biii.eu/node/software> ;
-    nb:hasAuthor "Maska, Martin" ;
+    nb:hasAuthor "Lux, Filip",
+        "Matula, Petr" ;
     nb:hasDocumentation <https://public.celltrackingchallenge.net/participants/MU-Lux-CZ.pdf>,
         "DEscription of the algorithm from Cell Tracking Challenge Page" ;
     nb:hasFunction <http://edamontology.org/operation_Image_tracking> ;
@@ -9358,6 +9359,8 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
         <http://biii.eu/taxonomy/term/31>,
         <http://biii.eu/taxonomy/term/32> ;
     nb:hasProgrammingLanguage <http://biii.eu/taxonomy/term/3592> ;
+    nb:hasReferencePublication <https://doi.org/10.1109/ISBI.2019.8759594>,
+        "DIC Image Segmentation of Dense Cell Populations by Combining Deep Learning and Watershed" ;
     nb:hasSupportedImageDimension <http://biii.eu/taxonomy/term/3561>,
         <http://biii.eu/taxonomy/term/3563> ;
     nb:hasTopic <http://edamontology.org/topic_3474> ;
@@ -9368,9 +9371,9 @@ The ViBE-Z database, atlas and software are provided via a web interface. A data
         <http://biii.eu/node/1202>,
         <http://biii.eu/node/128> ;
     dc:created "2020-01-23T16:23:14"^^xsd:dateTime ;
-    dc:modified "2020-01-23T16:34:50"^^xsd:dateTime ;
+    dc:modified "2020-01-28T23:43:06"^^xsd:dateTime ;
     dc:title "Object Tracking (MU-Lux-CZ)" ;
-    rdfs:comment """<p>Cell tracking using MU-Lux algorithm.</p>\r
+    rdfs:comment """<p>Cell tracking using MU-Lux-CZ algorithm. Dockerized Workflow for BIAFLOWS implemented by Martin Maska (Masaryk University).</p>\r
 """ .
 
 <http://biii.eu/node/1617> a <http://biii.eu/node/software> ;
