@@ -2,10 +2,11 @@
 * @Author: Alban Gaignard
 * @Date:   2020-03-01 15:55:48
 * @Last Modified by:   Alban Gaignard
-* @Last Modified time: 2020-03-02 11:18:00
+* @Last Modified time: 2020-03-02 11:59:09
 */
 
-var node_url = "http://test.biii.eu/node/1432"
+var node_id = "1432"
+var node_url = "http://test.biii.eu/node/" + node_id
 //var node_url_json = node_url + "?_format=json "
 
 var nodes = new Set() ;
@@ -32,13 +33,13 @@ var edge2cy = function(x) {
 
 var updateWorkflowVis = function(json_node_url) {
 
-		//$.getJSON('http://test.biii.eu/wfsteps?_format=json', function(data) {
-		$.getJSON(json_node_url + "?_format=json ", function(data) {
+		$.getJSON('http://test.biii.eu/wfsteps?_format=json', function(data) {
+		//$.getJSON(json_node_url + "?_format=json", function(data) {
 		    console.log(data);
 
 		    $.each(data, function( key, value ) {
 		  		// console.log( key + ": " + value["parent_id"] );
-		  		 if (value["parent_id"] == "1432") {
+		  		 if (value["parent_id"] == node_id) {
 		  			nodes.add(value["field_current_workflow_step__1"])
 		  			nodes.add(value["field_previous_workflow_step"])
 		  			edges.push({source:value["field_previous_workflow_step"], target:value["field_current_workflow_step__1"]})

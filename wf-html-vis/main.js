@@ -2,7 +2,7 @@
 * @Author: Alban Gaignard
 * @Date:   2020-03-01 15:55:48
 * @Last Modified by:   Alban Gaignard
-* @Last Modified time: 2020-03-02 11:28:49
+* @Last Modified time: 2020-03-02 12:29:42
 */
 
 var node_id = "1432"
@@ -68,8 +68,21 @@ var updateWorkflowVis = function(json_node_url) {
 		            {
 		              selector: 'node',
 		              style: {
-		                'background-color': '#11479e',
-		                'label': 'data(name)',
+		                'border-color': '#11479e',
+		                'border-width': '2px',
+		                'background-color': 'white',
+		                'content': 'data(name)',
+		                'shape': 'roundrectangle', 
+		                'text-valign': 'center', 
+		                'text-halign': 'center',
+		                'text-wrap': 'wrap',
+		                'text-max-width': '130px',
+		                'width': '150px',
+		                'height': 'label', 
+		                'padding-left': '5px', 
+		                'padding-right': '5px', 
+		                'padding-top': '10px', 
+		                'padding-bottom': '10px', 
 		              }
 		            },
 
@@ -90,6 +103,19 @@ var updateWorkflowVis = function(json_node_url) {
 		            edges: cyjs_edges
 		          }
 		     });
+
+			// cy.nodeHtmlLabel([ {
+   //  			query: 'node', // cytoscape query selector
+   //  			halign: 'center', // title vertical position. Can be 'left',''center, 'right'
+			//     valign: 'center', // title vertical position. Can be 'top',''center, 'bottom'
+			//     halignBox: 'center', // title vertical position. Can be 'left',''center, 'right'
+			//     valignBox: 'center', // title relative box vertical position. Can be 'top',''center, 'bottom'
+			//     cssClass: '', // any classes will be as attribute of <div> container for every title
+			//     tpl(data) {
+			//       return '<a href="node_url">' + data.name + '</a>'; // your html template here
+			//     }
+			// }
+			//]);
 
 		});
 	}
