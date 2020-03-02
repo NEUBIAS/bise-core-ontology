@@ -5,7 +5,8 @@
   "main": "main.js",
   "dependencies": {
     "cytoscape": "^3.14.0",
-    "cytoscape-dagre": "^2.2.2"
+    "cytoscape-dagre": "^2.2.2",
+    "cytoscape-node-html-label": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
