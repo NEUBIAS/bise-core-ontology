@@ -2,11 +2,13 @@
 * @Author: Alban Gaignard
 * @Date:   2020-03-01 15:55:48
 * @Last Modified by:   Alban Gaignard
-* @Last Modified time: 2020-03-02 12:54:21
+* @Last Modified time: 2020-03-02 13:04:39
 */
 
-var node_id = "1432"
+// var node_id = "1432"
+var node_id = "50"
 var node_url = "http://test.biii.eu/node/" + node_id
+var node_url = "http://biii.eu/node/" + node_id
 //var node_url_json = node_url + "?_format=json "
 
 var nodes = new Set() ;
@@ -33,7 +35,8 @@ var edge2cy = function(x) {
 
 var updateWorkflowVis = function(json_node_url) {
 
-		$.getJSON('http://test.biii.eu/wfsteps?_format=json', function(data) {
+		// $.getJSON('http://test.biii.eu/wfsteps?_format=json', function(data) {
+		$.getJSON('http://biii.eu/wfsteps?_format=json', function(data) {	
 		// $.getJSON(json_node_url + "?_format=json ", function(data) {
 		    console.log(data);
 
