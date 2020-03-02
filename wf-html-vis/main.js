@@ -2,7 +2,7 @@
 * @Author: Alban Gaignard
 * @Date:   2020-03-01 15:55:48
 * @Last Modified by:   Alban Gaignard
-* @Last Modified time: 2020-03-02 12:29:42
+* @Last Modified time: 2020-03-02 12:54:21
 */
 
 var node_id = "1432"
@@ -41,8 +41,16 @@ var updateWorkflowVis = function(json_node_url) {
 		  		// console.log( key + ": " + value["parent_id"] );
 		  		 if (value["parent_id"] == node_id) {
 		  			nodes.add(value["field_current_workflow_step__1"])
-		  			nodes.add(value["field_previous_workflow_step"])
-		  			edges.push({source:value["field_previous_workflow_step"], target:value["field_current_workflow_step__1"]})
+		  			if (value["field_previous_workflow_step"].includes(", ")) {
+		  				$.each(value["field_previous_workflow_step"].split(", "), function( key, sub_value ) {
+		  					nodes.add(sub_value)
+		  					edges.push({source:sub_value, target:value["field_current_workflow_step__1"]})
+		  				})
+		  			} else {
+		  				nodes.add(value["field_previous_workflow_step"])	
+		  				edges.push({source:value["field_previous_workflow_step"], target:value["field_current_workflow_step__1"]})
+		  			}
+		  			
 		  			//console.log( value["field_current_workflow_step__1"] );
 		  			//console.log( value["field_previous_workflow_step"] );
 		  		 }
@@ -122,6 +130,10 @@ var updateWorkflowVis = function(json_node_url) {
 
 updateWorkflowVis(node_url)
 
-//console.log(cyjs_nodes)
-//console.log(cyjs_edges)
+// console.log('NODES')
+// console.log(cyjs_nodes)
+// console.log('----')
+// console.log('EDGES')
+// console.log(cyjs_edges)
+// console.log('----')
 
