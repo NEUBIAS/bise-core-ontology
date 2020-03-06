@@ -289,12 +289,12 @@ def graph():
         SELECT DISTINCT ?c2 ?f2_label ?c1 ?f1_label WHERE {
             ?c2 p-plan:isPreceededBy ?c1 .
 
-            ?c2 biii:hasImplementation ?s2 .
-            ?c2 biii:hasFunction ?f2 .
+            ?c2 nb:hasImplementation ?s2 .
+            ?c2 nb:hasFunction> ?f2 .
             ?f2 rdfs:label ?f2_label .
 
-            ?c1 biii:hasImplementation ?s1 .    
-            ?c1 biii:hasFunction ?f1 .  
+            ?c1 nb:hasImplementation ?s1 .    
+            ?c1 nb:hasFunction ?f1 .  
             ?f1 rdfs:label ?f1_label .
         }
         """, initNs=ns)
@@ -359,5 +359,7 @@ def welcome():
 
 
 if __name__ == "__main__":
-    context = ('myserver-dev.crt', 'myserver-dev.key')
-    app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
+    # context = ('myserver-dev.crt', 'myserver-dev.key')
+    # app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
+    # context = ('myserver-dev.crt', 'myserver-dev.key')
+    app.run(host='0.0.0.0', port=5000, debug=True)
