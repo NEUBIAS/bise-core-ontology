@@ -1,6 +1,7 @@
 # Bise Core Ontology
 
 This repository hosts the core ontology of the BISE BioImaging Search Engine. 
+Latest data dump is available from the bio.tools git hub:  https://raw.githubusercontent.com/bio-tools/content/master/datasets/bise-ontology-biii-dump.ttl
 
 ## Ontology development process 
 1. Web protégé (online web editor) : https://webprotege.stanford.edu/#projects/38b3da5d-b5ce-4d59-972c-23fcb700256a 
