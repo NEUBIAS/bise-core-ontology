@@ -16,7 +16,7 @@ Latest data dump is available from the bio.tools git hub:  https://raw.githubuse
 # Demo notebooks 
  - Example of advanced ontology-based queries : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeuBIAS/bise-core-ontology/master?filepath=advanced-queries-demo.ipynb)
  - Quality-oriented queries : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeuBIAS/bise-core-ontology/master?filepath=quality-curation-queries.ipynb)
- - Authorts network visualisation query:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeuBIAS/bise-core-ontology/master?filepath=network-visualization-queries.ipynb)
+ - Authors network visualisation query:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeuBIAS/bise-core-ontology/master?filepath=network-visualization-queries.ipynb)
 
 ### Getting python dependencies
 With Conda :
